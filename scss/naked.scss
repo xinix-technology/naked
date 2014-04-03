@@ -1,0 +1,20 @@
+$version: "1.2.3";
+
+/*! naked.css v#{$version} | MIT License | xinix.co.id */
+
+@import 'include/normalize';
+@import 'include/variables';
+@import 'include/grid';
+@import 'include/globals';
+@import 'include/table';
+@import 'include/form';
+@import 'include/button';
+@import 'include/pagination';
+@import 'include/listview';
+@import 'include/navbar-tabstrip';
+@import 'include/alert';
+@import 'include/tooltip-dropdown';
+@import 'include/tree';
+@import 'include/tabs';
+@import 'include/login';
+@import 'include/context-menu';

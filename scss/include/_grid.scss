@@ -1,0 +1,114 @@
+@media #{$screen} {
+    .row {
+        @for $i from 1 through $grid-total-columns {
+            .tiny-#{$i},
+            .small-#{$i},
+            .medium-#{$i},
+            .xlarge-#{$i} {
+                display: none
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .large-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); 
+                display: block; 
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .span-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); 
+                display: block; 
+            }
+        }
+        @for $i from 1 through $tabstrip-columns {
+            .tabspan-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$tabstrip-columns); 
+                display: block; 
+            }
+        }
+    }
+}
+
+@media #{$large} {
+    .row {
+        @for $i from 1 through $grid-total-columns {
+            .tiny-#{$i},
+            .small-#{$i},
+            .medium-#{$i},
+            .large-#{$i} {
+                display: none
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .xlarge-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); 
+                display: block; 
+            }
+        }
+    }
+}
+
+@media #{$medium} {
+    .row {
+        @for $i from 1 through $grid-total-columns {
+            .large-#{$i} {
+                display: none
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .medium-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); display: block; 
+            }
+        }
+    }
+}
+
+@media #{$small} {
+    .row {
+        @for $i from 1 through $grid-total-columns {
+            .tiny-#{$i},
+            .medium-#{$i},
+            .large-#{$i},
+            .xlarge-#{$i} {
+                display: none
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .small-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); display: block; 
+            }
+        }
+    }
+}
+
+@media #{$tiny} {
+    .row {
+        @for $i from 1 through $grid-total-columns {
+            .small-#{$i},
+            .medium-#{$i},
+            .large-#{$i},
+            .xlarge-#{$i} {
+                display: none
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
+            .tiny-#{$i} { 
+                float: left; 
+                position: relative; 
+                width: percentage($i/$grid-total-columns); display: block; 
+            }
+        }
+    }
+}

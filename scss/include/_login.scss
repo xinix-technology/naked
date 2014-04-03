@@ -1,0 +1,32 @@
+#login {
+	padding: 40px;
+	margin: 0 auto;
+	background: #f5f5f5;
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-ms-border-radius: 10px; 
+	-o-border-radius: 10px; 
+	border-radius: 10px; 
+
+	.title {
+		margin-bottom: 30px;
+
+		h2 {
+			margin: 0;
+			text-align: center;
+			font-weight: 300;
+			color: #ff9500;
+			line-height: 120%;
+
+			strong {
+				color: #13c4ff;
+				font-weight: 400;
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	.check-label {
+		margin-bottom: 20px;
+	}
+}

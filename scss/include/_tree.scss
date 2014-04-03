@@ -1,0 +1,67 @@
+ul.tree, ol.tree {
+    padding-left: 25px;
+
+    li {
+        padding: 0;
+        list-style: none;
+        margin-left: -15px;
+        position: relative;
+
+        label {
+            position: relative;
+            padding-left: 15px;
+            cursor: pointer;
+            text-transform: none;
+            font-size: 1em;
+            &:before {
+                content: "+";
+                left: 0px;
+                position: absolute;
+            }
+
+            > a {
+                padding-left: 0;
+
+                &:before {
+                    content: " ";
+                }
+            }
+        }
+
+        input {
+            position: absolute;
+            left: -15px;
+            top: 0;
+            margin-top: 5px;
+            display: none;
+        }
+
+
+        input ~ ol, input ~ ul {
+            display: none;
+            padding-left: 30px;
+        }
+
+        input:checked + label {
+            &:before {
+                content: "-";
+                left: 0px;
+                position: absolute;
+            }
+        }
+
+        input:checked ~ ol, input:checked ~ ul {
+            display: block;
+        }
+
+        a {
+            display: block;
+            font-size: 0.9em;
+            padding-bottom: 2px;
+            color: #000;
+
+            position: relative;
+        }
+    }
+
+}

@@ -1,0 +1,220 @@
+// ============================ dropdown ===============================
+ul.menu {
+	text-align: left;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: table;
+
+	> li {
+		float: left;
+		display: block;
+	}
+	
+	li {	
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+
+		a {
+			color: #333;
+			display: block;
+			padding: 3px 25px;
+			clear: both;
+			white-space: nowrap;
+		}
+
+		&:hover,
+		&.selected {
+			background: #f5f5f5;
+
+			ul {
+				display: block;
+				opacity: 1;
+				visibility: visible;
+				border: 1px solid #{$border-color};
+			}
+		}
+	}
+
+	.collapsible {
+		> a {
+			position: relative;
+
+			&:after {
+
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				display: block;
+				border-style: solid;
+				border-color: black transparent transparent transparent;
+				top: 50%;
+				border-width: 0.4em;
+				right: 8px;
+				margin-top: -0.3em;
+			}
+		}
+
+		&.up {
+			> a {
+				position: relative;
+
+				&:after {
+					position: absolute;
+					content: "";
+					width: 0;
+					height: 0;
+					display: block;
+					border-style: solid;
+					border-color: transparent transparent black transparent;
+					top: 50%;
+					border-width: 0.4em;
+					right: 8px;
+					margin-top: -0.4em;
+				}
+			}
+
+			ul {
+				top: -101px;
+			}
+		}
+
+		ul {
+			padding: 0;
+			position: absolute;
+			top: 100%;
+			display: none;
+			opacity: 0;
+			z-index: 9;
+			visibility: hidden;
+			-webkit-transition: all 0.2s;
+			-moz-transition: all 0.2s;
+			-ms-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			transition: all 0.2s;
+
+			li {
+				display: block;
+				background: #fff;
+
+				&.divider {
+					border-top: 1px solid #{$border-color};
+					padding: 0px;
+					overflow: hidden;
+				}
+
+				&:hover,
+				&.selected {
+					background: #f5f5f5;
+
+					ul {
+						display: block;
+						left: 100%;
+						top: 0;
+					}
+				}
+
+				&.left:hover,
+				&.left.selected {
+					ul {
+						left: -70%;
+					}
+				}
+			}
+
+			.collapsible {
+				&.right {
+					> a {
+						position: relative;
+
+						&:after {
+							position: absolute;
+							content: "";
+							width: 0;
+							height: 0;
+							display: block;
+							border-style: solid;
+							border-color: transparent transparent transparent black;
+							top: 50%;
+							border-width: 0.4em;
+							right: 6px;
+							margin-top: -0.4em;
+						}
+					}
+				}
+
+				&.left {
+					> a {
+						position: relative;
+
+						&:after {
+							position: absolute;
+							content: "";
+							width: 0;
+							height: 0;
+							display: block;
+							border-style: solid;
+							border-color: transparent black transparent transparent;
+							top: 50%;
+							border-width: 0.4em;
+							left: 6px;
+							margin-top: -0.4em;
+						}
+					}
+				}
+				ul {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.tooltip-text {
+	position: relative;
+	color: black;
+	font-weight: 300;
+
+	.tooltip {
+		background: #F5F5C0;
+		color: black;
+		position: absolute;
+		padding: 2px 3px 2px 3px;
+		display: none;
+		text-align: center;
+		width: 100%;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		-ms-border-radius: 7px;
+		-o-border-radius: 7px;
+		border-radius-: 7px;
+
+		&.down {
+			top: 100%;
+			left: 0;
+		}
+
+		&.top {
+			bottom: 100%;
+			left: 0;
+		}
+
+		&.left {
+			right: 100%;
+			top: 10%;
+		}
+
+		&.right {
+			left: 100%;
+			top: 10%;
+		}
+	}
+}
+.tooltip-text:hover {
+	.tooltip {
+		display: block;
+	}
+}
+// =====================================================================

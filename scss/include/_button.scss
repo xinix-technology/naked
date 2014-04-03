@@ -1,0 +1,148 @@
+button, 
+.button {
+    padding: 5px 10px 5px;
+    cursor: pointer;
+    line-height: #{$body-line-height};
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    background: #{$submit-bg};
+    border: 1px solid #{$border-button-color};
+    color: #{$submit-color};
+    font-weight: 400;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    &:active {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+    }
+
+    &:hover {
+        color: #{$submit-color};
+    }
+
+    &.alert {
+    	background: #{$button-alert};
+    	padding: 5px 10px 5px;
+    	font-weight: 400;
+    }
+
+    &.success {
+    	background: #{$button-success};
+    }
+
+    &.warning {
+    	background: #{$button-warning};
+    }
+
+    &.round {
+    	-webkit-border-radius: 1000px;
+		border-radius: 1000px;
+		padding: 5px 20px 5px;
+    }
+
+}
+
+.button-group { 
+	list-style: none; 
+	margin: 0; 
+	padding-left: 0;
+
+	&.left {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	&.centered { 
+		display: table; 
+		margin: 0 auto; 
+		margin-bottom: 10px; 
+	}
+
+	&.right {
+		position: absolute;
+		left: initial;
+		right: 0;
+		top: 0;
+	}
+
+	&.round {
+		li {
+			&:first-child {
+				a {
+					border-top-left-radius: 10px; 
+					border-bottom-left-radius: 10px;
+				}
+			}
+			&:last-child {
+				a{
+					border-top-right-radius: 10px; 
+					border-bottom-right-radius: 10px;
+				}
+			}
+		}
+	}
+}
+.button-group > :first-child { 
+	margin-left: 0; 
+}
+.button-group > * { 
+	margin: 0 0 0 -1px; 
+	float: left; 
+}
+.button-group::after { 
+	clear: both; 
+}
+.button-group::before, 
+.button-group::after { 
+	content: " "; 
+	display: table; 
+}
+.button-bar { 
+	position: relative; 
+}
+.button-bar { 
+	width: 100% 
+}
+.button-bar::after { 
+	clear: both; 
+}
+.submit { border: 0; }
+
+
+// =========================== media query =======================
+
+@media #{$small} {
+	.button-bar {
+		ul.button-group { 
+	        position: relative; 
+	        margin: 0 auto; 
+	        // float: none;
+	        width: 100%; 
+	        margin-bottom: 10px; 
+
+	        &.left ,
+	        &.centered ,
+	        &.right {
+				width: auto;
+				clear: both;
+	        }
+	        &.right {
+	        	float: right;
+	        }
+	    }
+		ul.pagination-centered,
+		ul.button-group.right, ul.button-group.left {
+		}
+	}
+}

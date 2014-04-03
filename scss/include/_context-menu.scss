@@ -1,0 +1,33 @@
+.context-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #ddd;
+	position: absolute;
+	display: none;
+
+	li {
+		padding: 0;
+
+		&.divider {
+			border-top: 1px solid #{$border-color};
+			padding: 0px;
+			overflow: hidden;
+		}
+
+		a {
+			padding: 5px 20px;
+			display: block;
+
+			&:hover {
+				background: #f5f5f5;
+			}
+		}
+
+		&:last-child {
+			a {
+				border-bottom: 0;	
+			}
+		}
+	}
+}

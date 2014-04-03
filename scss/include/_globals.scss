@@ -1,0 +1,432 @@
+*, ::before, ::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+}
+// body * {
+//     -webkit-touch-callout: none;
+//     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+// .container, .container-fluid {
+//     -webkit-user-select: none;
+//     -moz-user-select: -moz-none;
+//     user-select: none;
+// }
+.container {
+    &.fluid {
+        width: 100%;
+        
+    }
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0 5px;
+    line-height: #{$body-line-height};
+    font-weight: normal;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.8em;
+}
+h4 {
+    font-size: 1.6em;
+}
+h5 {
+    font-size: 1.4em;
+}
+h6 {
+    font-size: 1.2em;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: 60%;
+    color: #{$h1-small-color};
+    line-height: 0;
+}
+p {
+    font-size: 1em;
+    line-height: #{$body-line-height};
+}
+a {
+    color: #{$a-color};
+    text-decoration: none;
+    line-height: inherit;
+    outline: 0;
+}
+a:hover,
+a:focus {
+    color: darken($a-color, $a-color-amount);
+}
+small {
+    font-size: 60%;
+    line-height: inherit;
+}
+strong,
+b {
+    font-weight: bold;
+    line-height: inherit;
+}
+em,
+i {
+    font-style: italic;
+    line-height: inherit;
+}
+ul,
+ol {
+    line-height: #{$body-line-height};
+}
+li {
+    padding: 3px 0;
+}
+ul.flat {
+    display: table;
+    list-style: none;
+    padding: 0;
+    li {
+        float: left;
+        margin-right: 10px;
+    }
+}
+.subheader {
+    color: #{$subheader-color};
+    font-weight: 300;
+}
+.clearfix {
+    clear: both
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+form {
+    overflow:hidden
+}
+fieldset {
+    border: solid 1px #{$border-color};
+    padding: 1.25em;
+    margin: 10px 0 20px;
+    .wrapper {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+hr {
+    border: 1px solid #{$border-color};
+    border-width: 1px 0 0;
+}
+legend {
+    border: 0;
+    padding: 0 5px;
+    font-weight: bold;
+}
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding-bottom: 2px;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select,
+span.field {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    height: 2.3125em;
+    width: 100%;
+    border: 1px solid #{$border-input-color};
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-weight: 300;
+    background: #fff;
+}
+textarea {
+    height: 7em;
+}
+input[type="checkbox"].swipe {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: darken($checkbox-white, 2%);
+    border: 1px solid $checkbox-grey;
+    border-radius: 26px;
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    transition: border .25s .15s,
+    box-shadow .25s .3s,
+    padding .25s;
+    width: 50px;
+    vertical-align: top;
+    outline: 0;
+
+    &:after {
+        background-color: $checkbox-white;
+        border: 1px solid $checkbox-grey;
+        border-radius: 24px;
+        box-shadow: inset 0 -3px 3px hsla(0,0%,0%,.025),
+        0 1px 4px hsla(0,0%,0%,.15),
+        0 4px 4px hsla(0,0%,0%,.1);
+        content: '';
+        display: block;
+        height: 28px;
+        left: -1px;
+        position: absolute;
+        right: 20px;
+        top: -0px;
+        transition: border .25s .15s,
+        left .25s .1s,
+        right .15s .175s;
+    }
+
+    &:checked {
+        border-color: $checkbox-green;
+        box-shadow: inset 0 0 0 13px $checkbox-green;
+        padding-left: 18px;
+        transition: border .25s,
+        box-shadow .25s,
+        padding .25s .15s;
+        background: #53d76a;
+
+        &:after {
+            border-color: $checkbox-green;
+            left: 20px;
+            right: 0px;
+            box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), -1px 2px 3px rgba(0, 0, 0, 0.1);
+            transition: border .25s,
+            left .15s .25s,
+            right .25s .175s;
+        }
+    }
+}
+input[type=submit],
+input[type=reset] {
+    padding: 5px 10px 5px;
+    cursor: pointer;
+    line-height: #{$body-line-height};
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    background: #{$submit-bg};
+    border: 1px solid #{$border-button-color};
+    color: #{$submit-color};
+    font-weight: 400;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    outline: 0;
+
+    &:active {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+    }
+
+    &:hover {
+        color: #{$submit-color};
+    }
+}
+select {
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
+    background-size: 12px 12px;
+    background-position: right 2% top 50%;
+    padding-right: 30px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: white;
+}
+span.field {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+form .radio,
+form .checkbox {
+    padding: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.placeholder {
+    display: inline;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-transform: none;
+    font-size: 0.9em;
+
+    &.full {
+        display: block;
+    }
+}
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+img.img-circle {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
+
+
+
+// ================== media query ====================
+@media #{$screen} {
+    .container {
+        width: 984px;
+        margin: 0 auto;
+    }
+    #menu_icon {
+        display: none;
+    }
+    ul.flat {
+        margin: 0;
+    }
+}
+@media #{$large} {
+    .container {
+        width: 1320px;
+        margin: 0 auto;
+    }
+    .hidden-xlarge {
+        display: none;
+    }
+}
+@media #{$medium} {
+    .container {
+        width: 728px;
+        margin: 0 auto;
+    }
+}
+@media #{$small} {
+    .container {
+        width: 440px;
+        margin: 0 auto;
+    }
+    #menu_icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        a {
+            font-size: 40px;
+            color: white;
+        }
+    }
+}
+@media #{$tiny} {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+// @media (-webkit-min-device-pixel-ratio: 1.5) {
+// }
+
+@media only screen and (min-width: 960px) {
+    .touch {
+        * {
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        .container, .container-fluid {
+            -webkit-user-select: none;
+            -moz-user-select: -moz-none;
+            user-select: none;
+        }
+    }
+}
+
+// @media screen and (orientation:landscape) {
+//     body * {
+//         -webkit-touch-callout: none;
+//         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+//     }
+//     .container, .container-fluid {
+//         -webkit-user-select: none;
+//         -moz-user-select: -moz-none;
+//         user-select: none;
+//     }
+// }
+
+
+

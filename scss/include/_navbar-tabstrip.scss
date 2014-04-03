@@ -1,0 +1,269 @@
+.navbar-menu {
+	background: #{$header-bg};
+	display: inline-block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+
+	h2 {
+		float: left;
+		margin: 0;
+
+		a {
+			color: #fff;
+			font-size: 0.7em;
+		}
+	}
+
+	.topbar {
+		ul.menu {
+
+			li {
+				padding: 0;
+
+				a {
+					color: #fff;
+					line-height: 40px;
+
+					&:after {
+						border-color: white transparent transparent transparent;
+					}
+				}
+
+				&.active {
+					background: #13c4ff;
+				}
+
+				&:hover {
+					background: #13c4ff;
+				}
+				
+				ul {
+					right: 0;
+					border: 0;
+
+					li {
+						background: #333;
+
+						a {
+							line-height: inherit;
+						}
+
+						&:hover {
+							a {
+								color: white;
+							}
+						}
+					}
+				}
+
+				&.divide {
+					border-bottom: none;
+					border-top: none;
+					border-right: solid 1px #4d4d4d;
+					clear: none;
+					height: 46px;
+					width: 0;
+				}
+			}
+			
+
+
+		}
+	}
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #f5f5f5;
+	padding: 10px 7px;
+	border-top: 1px solid #{$border-color};
+	border-bottom: 1px solid #{$border-color};
+	z-index: 99;
+
+	.row {
+		margin-bottom: 0;
+	}
+
+	a.back-button {
+		padding: 5px 0px 5px 16px;
+		display: block;
+		font-weight: 300;
+		color: #333;
+		font-size: 1.2em;
+
+		&:before {
+			color: #97a0a4;
+			width: 12px;
+			height: 12px;
+			border-color: #000;
+			position: absolute;
+			left: 3%;
+			top: 50%;
+			margin-top: -0.35rem;
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			border-style: solid;
+			border-width: .14rem .14rem 0 0;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			-ms-transform: rotate(-135deg);
+			-o-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
+	}
+
+	ul.button-group {
+		margin-bottom: 0;
+		li {
+			padding: 1px 0;
+
+			a {
+				line-height: 120%;
+				background: transparent;
+				color: #13c4ff;
+				border: 1px solid #13c4ff;
+			}
+
+			a:hover,
+			a.active {
+				color: white;
+				background: #13c4ff;
+				border: 1px solid #13c4ff;
+			}
+
+			&:first-child {
+				a {
+					border-top-left-radius: 5px; 
+					border-bottom-left-radius: 5px;
+				}
+			}
+			&:last-child {
+				a{
+					border-top-right-radius: 5px; 
+					border-bottom-right-radius: 5px;
+				}
+			}
+		}
+	}
+
+	h6.label {
+		margin: 0;
+		text-align: center;
+		font-weight: 400;
+		font-size: 1.4em;
+
+		&.title {
+			line-height: 120%;
+			font-size: 1.1em;
+		}
+		max-width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	p {
+		margin: 0;
+		text-align: center;
+		font-size: 0.8em;
+		color: #666;
+		line-height: 120%;
+		max-width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.icon-menu {
+		position: relative;
+		display: block;
+
+		&.icon-menu:after {
+			content: "";
+			position: absolute;
+			top: 0.5em;
+			right: 4%;
+			width: 23px;
+			height: 17px;
+			border-top: 10px double #000;
+			border-bottom: 3px solid #000;
+			margin-top: 0.41rem;
+			top: 50%;
+		}
+	}
+
+	input {
+		text-align: center;
+		margin-bottom: 0;
+		height: 2.15em;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		&:focus {
+			text-align: left;
+		}
+	}
+}
+
+.navbar + .container {
+	padding-top: 53px;
+}
+
+.tabstrip {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #{$border-color};
+	border-bottom: 1px solid #{$border-color};
+	z-index: 99;
+	background: #f5f5f5;
+
+	.row {
+		margin-bottom: 0;
+	}
+
+	.tabs {
+		border-right: 1px solid #{$border-color};
+		text-align: center;
+		padding: 2px 0 2px;
+
+		.icon {
+			margin: 0 auto;
+			width: 32px;
+			height: 32px;
+			position: relative;
+
+			&.star {
+				background: url(../images/star-icon.png) center no-repeat;
+			}
+			&.profile {
+				background: url(../images/profile-icon.png) center no-repeat;
+			}
+			&.search {
+				background: url(../images/search-icon.png) center no-repeat;
+			}
+			&.more {
+				background: url(../images/more-icon.png) center no-repeat;
+			}
+		}
+
+		span {
+			display: block;
+			font-weight: 300;
+			font-size: 0.8em;
+			color: #333;
+		}
+	}
+	.tabs:last-child {
+		border-right: 0;
+	}
+}
