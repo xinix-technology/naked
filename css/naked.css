@@ -1624,7 +1624,7 @@ span.field {
   display: block;
   margin: 0 0 1em 0;
   padding: 0.5em;
-  height: 2.3125em;
+  height: auto;
   width: 100%;
   border: 1px solid #dddddd;
   outline: 0;

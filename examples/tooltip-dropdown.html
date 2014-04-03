@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Naked CSS</title>
+        <link rel="stylesheet" href="css/naked.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="third-party/zepto.min.js"></script>
+        <script type="text/javascript" src="third-party/run_prettify.js"></script>
+    </head>
+
+    <body>
+
+        <!-- use html5 header -->
+        <header class="header">
+            <div class="wrapper">
+                <div class="brand">
+                    <h2>
+                        <a href="index.html">Naked CSS</a>
+                    </h2>
+                </div>
+                <div id="menu_icon">
+                    <a href="#">≣</a>
+                </div>
+                <!-- use html5 nav -->
+                <nav class="ex-navbar">
+                    <ul class="flat nav-menu">
+                        <li><a href="grid-system.html">Grid System</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="button.html">Button</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="pagination.html">Pagination</a></li>
+                        <li><a href="list-view.html">List View</a></li>
+                        <li><a href="navbar-tabstrip.html">Navbar & Tabstrip</a></li>
+                        <li><a href="alert.html">Alert</a></li>
+                        <li><a href="tooltip-dropdown.html">Tooltip - Dropdown</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="tree.html">Tree</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="context-menu.html">Context Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="wrapper">
+
+                <h1 class="title">Dropdown</h1>
+                <p>
+                    These are examples of different ways to use the Naked CSS Grid. Since Naked is mobile-first, we'll stack content by default. You do have access to an entirely separate small grid to use up to the 768px breakpoint. This means you can create some pretty complex layouts and even drop columns if you want.
+                </p>
+                <div class="ex-dropdown-content">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">No Dropdown</a>
+                        </li>
+                        <li class="collapsible">
+                            <a href="#">Dropdown</a>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Illustrations</a></li>
+                            </ul>
+                        </li>
+                        <li class="collapsible up">
+                            <a href="#">Dropup Nested</a>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li class="collapsible left">
+                                    <a href="#">Web Development</a>
+                                    <ul>
+                                        <li><a href="#">Designer</a></li>
+                                        <li><a href="#">Developer</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Illustrations</a></li>
+                            </ul>
+                        </li>
+                        <li class="collapsible">
+                            <a href="#">Dropdown Nested</a>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li class="collapsible right">
+                                    <a href="#">Web Development</a>
+                                    <ul>
+                                        <li><a href="#">Designer</a></li>
+                                        <li><a href="#">Developer</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Illustrations</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;ul class="menu"&gt;
+   &lt;li&gt;
+      &lt;a href="#"&gt;No Dropdown&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li class="collapsible"&gt;
+      &lt;a href="#"&gt;Dropdown&lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Web Design&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+         &lt;li class="divider"&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Illustrations&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li class="collapsible up"&gt;
+      &lt;a href="#"&gt;Dropup Nested&lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Web Design&lt;/a&gt;&lt;/li&gt;
+         &lt;li class="collapsible left"&gt;
+            &lt;a href="#"&gt;Web Development&lt;/a&gt;
+            &lt;ul&gt;
+               &lt;li&gt;&lt;a href="#"&gt;Designer&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="#"&gt;Developer&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Illustrations&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li class="collapsible"&gt;
+      &lt;a href="#"&gt;Dropdown Nested&lt;/a&gt;
+      &lt;ul&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Web Design&lt;/a&gt;&lt;/li&gt;
+         &lt;li class="collapsible right"&gt;
+            &lt;a href="#"&gt;Web Development&lt;/a&gt;
+            &lt;ul&gt;
+               &lt;li&gt;&lt;a href="#"&gt;Designer&lt;/a&gt;&lt;/li&gt;
+               &lt;li&gt;&lt;a href="#"&gt;Developer&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href="#"&gt;Illustrations&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+                <h1 class="title">Tooltip</h1>
+                <p>
+                    These are examples of different ways to use the Naked CSS Grid. Since Naked is mobile-first, we'll stack content by default. You do have access to an entirely separate small grid to use up to the 768px breakpoint. This means you can create some pretty complex layouts and even drop columns if you want.
+                </p>
+                <div class="ex-tooltip-content">
+                    <ul class="flat">
+                        <li>
+                            <a href="#" class="tooltip-text">
+                                Tooltip Left
+                                <span class="tooltip left">Helloo!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltip-text">
+                                Tooltip Down
+                                <span class="tooltip down">Helloo!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltip-text">
+                                Tooltip Top
+                                <span class="tooltip top">Helloo!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltip-text">
+                                Tooltip Right
+                                <span class="tooltip right">Helloo!</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;a href="#" class="tooltip-text"&gt;
+   Tooltip Left
+   &lt;span class="tooltip left"&gt;Helloo!&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a href="#" class="tooltip-text"&gt;
+   Tooltip Down
+   &lt;span class="tooltip down"&gt;Helloo!&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a href="#" class="tooltip-text"&gt;
+   Tooltip Top
+   &lt;span class="tooltip top"&gt;Helloo!&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;a href="#" class="tooltip-text"&gt;
+   Tooltip Right
+   &lt;span class="tooltip right"&gt;Helloo!&lt;/span&gt;
+&lt;/a&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <div class="copyright">
+                    <p>Copyright Xinix Technology 2013 - 2014. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function closeMenu(){
+                if ($('body').hasClass('navigating')) {
+                  $('body').removeClass('navigating')
+                  setTimeout(function(){
+                    $('.ex-navbar').css('display','none')
+                  }, 350)
+                }
+              }
+
+                $('#menu_icon a').on('click', function(){
+                if ($('body').hasClass('navigating')) {
+                  closeMenu()
+                } else {
+                  $('.ex-navbar').css('display','block')
+                  $('.ex-navbar')[0].offsetLeft // force render
+                  $('body').addClass('navigating')
+                }
+                return false
+              })
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Naked CSS</title>
+        <link rel="stylesheet" href="css/naked.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="third-party/zepto.min.js"></script>
+      <script type="text/javascript" src="third-party/run_prettify.js"></script>
+  </head>
+
+  <body>
+
+    <!-- use html5 header -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="brand">
+          <h2>
+            <a href="index.html">Naked CSS</a>
+          </h2>
+        </div>
+        <div id="menu_icon">
+          <a href="#">≣</a>
+        </div>
+        <!-- use html5 nav -->
+        <nav class="ex-navbar">
+          <ul class="flat nav-menu">
+            <li><a href="grid-system.html">Grid System</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="pagination.html">Pagination</a></li>
+            <li><a href="list-view.html">List View</a></li>
+            <li><a href="navbar-tabstrip.html">Navbar & Tabstrip</a></li>
+            <li><a href="alert.html">Alert</a></li>
+            <li><a href="tooltip-dropdown.html">Tooltip - Dropdown</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tree.html">Tree</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="context-menu.html">Context Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="wrapper">
+
+        <h1 class="title">Tables</h1>
+        <hr>
+        <p>
+          With Naked CSS, we set out to create an easy to handle, powerful and versatile form layout system. A combination of form styles and the Naked grid means you can do basically anything
+        </p>
+        <h4 class="sub-title">Table Grid</h4>
+        <div class="wrapper">
+          <div class="table-container">
+            <table class="table" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table"&gt;
+      &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+     &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+        <h4 class="sub-title">Table No Wrap</h4>
+        <div class="wrapper">
+          <div class="table-container">
+            <table class="table nowrap" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table nowrap"&gt;
+      &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+     &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+        <h4 class="sub-title">Table Stripped</h4>
+        <div class="wrapper">
+          <div class="table-container">
+            <table class="table nowrap stripped" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table nowrap stripped"&gt;
+      &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+     &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+
+
+
+        <h4 class="sub-title">Table Fixed Tail</h4>
+        <div class="table-body">
+          <div class="fixed">
+            <table class="table nowrap stripped fixed-tail" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <!-- <td>Content Goes Here</td> -->
+                  <td><a href="#">Edit | Delete</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-body"&gt;
+   &lt;div class="fixed"&gt;
+      &lt;table class="table nowrap stripped fixed-tail"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;#&lt;/th&gt;
+               &lt;th&gt;Table Header&lt;/th&gt;
+               &lt;th&gt;Table Header&lt;/th&gt;
+               &lt;th&gt;Table Header&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;1&lt;/td&gt;
+               &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;2&lt;/td&gt;
+               &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;3&lt;/td&gt;
+               &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;4&lt;/td&gt;
+               &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+               &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+
+
+
+        <h4 class="sub-title">Table Hover</h4>
+        <div class="wrapper">
+          <div class="table-container">
+            <table class="table nowrap stripped hover" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                  <th>Table Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table nowrap stripped hover"&gt;
+      &lt;thead&gt;
+     &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+        &lt;th&gt;Table Header&lt;/th&gt;
+     &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+     &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+     &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+        &lt;td&gt;Content Goes Here&lt;/td&gt;
+     &lt;/tr&gt;
+  &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+        <h4 class="sub-title">Table Flip Scroll</h4>
+        <div class="table-container">
+          <table class="table nowrap stripped flip-scroll">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                <td>Content Goes Here</td>
+                <td>Content Goes Here</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table nowrap stripped flip-scroll"&gt;
+      &lt;thead&gt;
+         &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Table Header&lt;/th&gt;
+            &lt;th&gt;Table Header&lt;/th&gt;
+            &lt;th&gt;Table Header&lt;/th&gt;
+       &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+         &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+            &lt;td&gt;Content Goes Here&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+        <h4 class="sub-title">No More Table</h4>
+        <div class="table-container">
+          <table class="table stripped no-more-table">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-title="Number">AAC</td>
+                <td data-title="Title">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                <td data-title="Content" class="numeric">$1.38</td>
+                <td data-title="Content" class="numeric">-0.01</td>
+              </tr>
+              <tr>
+                <td data-title="Number">CSS</td>
+                <td data-title="Title">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                <td data-title="Content" class="numeric">$1.38</td>
+                <td data-title="Content" class="numeric">-0.01</td>
+              </tr>
+              <tr>
+                <td data-title="Number">SCSS</td>
+                <td data-title="Title">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                <td data-title="Content" class="numeric">$1.38</td>
+                <td data-title="Content" class="numeric">-0.01</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="html">
+          <div class="highlight">
+            <pre class="prettyprint">
+&lt;div class="table-container"&gt;
+   &lt;table class="table stripped no-more-table"&gt;
+      &lt;thead&gt;
+         &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Title&lt;/th&gt;
+            &lt;th&gt;Content&lt;/th&gt;
+            &lt;th&gt;Content&lt;/th&gt;
+         &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+         &lt;tr&gt;
+            &lt;td data-title="Number"&gt;&hellip;&lt;/td&gt;
+            &lt;td data-title="Title"&gt;&hellip;&lt;/td&gt;
+            &lt;td data-title="Content"&gt;&hellip;&lt;/td&gt;
+            &lt;td data-title="Content"&gt;&hellip;&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+            </pre>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <div class="copyright">
+          <p>Copyright Xinix Technology 2013 - 2014. All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function closeMenu(){
+          if ($('body').hasClass('navigating')) {
+            $('body').removeClass('navigating')
+            setTimeout(function(){
+              $('.ex-navbar').css('display','none')
+            }, 350)
+          }
+        }
+
+        $('#menu_icon a').on('click', function(){
+          if ($('body').hasClass('navigating')) {
+            closeMenu()
+          } else {
+            $('.ex-navbar').css('display','block')
+            $('.ex-navbar')[0].offsetLeft // force render
+            $('body').addClass('navigating')
+          }
+          return false
+        })
+    </script>
+
+  </body>
+</html>
