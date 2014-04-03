@@ -1719,20 +1719,21 @@ input[type=reset] {
   -moz-border-radius: 0;
   border-radius: 0;
   outline: 0;
+  -webkit-font-smoothing: antialiased;
 }
-/* line 289, ../scss/include/_globals.scss */
+/* line 290, ../scss/include/_globals.scss */
 input[type=submit]:active,
 input[type=reset]:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
-/* line 294, ../scss/include/_globals.scss */
+/* line 295, ../scss/include/_globals.scss */
 input[type=submit]:hover,
 input[type=reset]:hover {
   color: white;
 }
 
-/* line 298, ../scss/include/_globals.scss */
+/* line 299, ../scss/include/_globals.scss */
 select {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
   background-size: 12px 12px;
@@ -1745,14 +1746,14 @@ select {
   background-color: white;
 }
 
-/* line 309, ../scss/include/_globals.scss */
+/* line 310, ../scss/include/_globals.scss */
 span.field {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-/* line 315, ../scss/include/_globals.scss */
+/* line 316, ../scss/include/_globals.scss */
 form .radio,
 form .checkbox {
   padding: 3px;
@@ -1766,7 +1767,7 @@ form .checkbox {
   cursor: pointer;
 }
 
-/* line 326, ../scss/include/_globals.scss */
+/* line 327, ../scss/include/_globals.scss */
 .placeholder {
   display: inline;
   font-weight: 500;
@@ -1774,22 +1775,22 @@ form .checkbox {
   text-transform: none;
   font-size: 0.9em;
 }
-/* line 333, ../scss/include/_globals.scss */
+/* line 334, ../scss/include/_globals.scss */
 .placeholder.full {
   display: block;
 }
 
-/* line 337, ../scss/include/_globals.scss */
+/* line 338, ../scss/include/_globals.scss */
 .pull-right {
   float: right;
 }
 
-/* line 340, ../scss/include/_globals.scss */
+/* line 341, ../scss/include/_globals.scss */
 .pull-left {
   float: left;
 }
 
-/* line 343, ../scss/include/_globals.scss */
+/* line 344, ../scss/include/_globals.scss */
 img.img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -1797,75 +1798,75 @@ img.img-circle {
 }
 
 @media screen {
-  /* line 353, ../scss/include/_globals.scss */
+  /* line 354, ../scss/include/_globals.scss */
   .container {
     width: 984px;
     margin: 0 auto;
   }
 
-  /* line 357, ../scss/include/_globals.scss */
+  /* line 358, ../scss/include/_globals.scss */
   #menu_icon {
     display: none;
   }
 
-  /* line 360, ../scss/include/_globals.scss */
+  /* line 361, ../scss/include/_globals.scss */
   ul.flat {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1360px) {
-  /* line 365, ../scss/include/_globals.scss */
+  /* line 366, ../scss/include/_globals.scss */
   .container {
     width: 1320px;
     margin: 0 auto;
   }
 
-  /* line 369, ../scss/include/_globals.scss */
+  /* line 370, ../scss/include/_globals.scss */
   .hidden-xlarge {
     display: none;
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 374, ../scss/include/_globals.scss */
+  /* line 375, ../scss/include/_globals.scss */
   .container {
     width: 728px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 380, ../scss/include/_globals.scss */
+  /* line 381, ../scss/include/_globals.scss */
   .container {
     width: 440px;
     margin: 0 auto;
   }
 
-  /* line 384, ../scss/include/_globals.scss */
+  /* line 385, ../scss/include/_globals.scss */
   #menu_icon {
     display: block;
     position: absolute;
     right: 10px;
     top: 0;
   }
-  /* line 389, ../scss/include/_globals.scss */
+  /* line 390, ../scss/include/_globals.scss */
   #menu_icon a {
     font-size: 40px;
     color: white;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 396, ../scss/include/_globals.scss */
+  /* line 397, ../scss/include/_globals.scss */
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 407, ../scss/include/_globals.scss */
+  /* line 408, ../scss/include/_globals.scss */
   .touch * {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  /* line 411, ../scss/include/_globals.scss */
+  /* line 412, ../scss/include/_globals.scss */
   .touch .container, .touch .container-fluid {
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
