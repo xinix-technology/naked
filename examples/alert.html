@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Naked CSS</title>
+        <link rel="stylesheet" href="css/naked.css">
+        <link rel="stylesheet" href="css/docs.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="third-party/zepto.min.js"></script>
+        <script type="text/javascript" src="third-party/run_prettify.js"></script>
+    </head>
+
+    <body>
+
+        <!-- use html5 header -->
+        <header class="header">
+            <div class="wrapper">
+                <div class="brand">
+                    <h2>
+                        <a href="index.html">Naked CSS</a>
+                    </h2>
+                </div>
+                <div id="menu_icon">
+                    <a href="#">≣</a>
+                </div>
+                <!-- use html5 nav -->
+                <nav class="ex-navbar">
+                    <ul class="flat nav-menu">
+                        <li><a href="grid-system.html">Grid System</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="button.html">Button</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="pagination.html">Pagination</a></li>
+                        <li><a href="list-view.html">List View</a></li>
+                        <li><a href="navbar-tabstrip.html">Navbar & Tabstrip</a></li>
+                        <li><a href="alert.html">Alert</a></li>
+                        <li><a href="tooltip-dropdown.html">Tooltip - Dropdown</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="tree.html">Tree</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="context-menu.html">Context Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="wrapper">
+
+                <h1 class="title">Alert</h1>
+                <p>
+                    These are examples of different ways to use the Naked CSS Grid. Since Naked is mobile-first, we'll stack content by default. You do have access to an entirely separate small grid to use up to the 768px breakpoint. This means you can create some pretty complex layouts and even drop columns if you want.
+                </p>
+                <h4 class="sub-title">Alert Error</h4>
+                <div class="ex-alert-content">
+                    <div class="alert error">
+                        <button type="button" class="close">&times;</button>
+                        <h6>Error!</h6>
+                        <p>Error Example</p>
+                    </div>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;div class="alert error"&gt;
+   &lt;button type="button" class="close"&gt;&times;&lt;/button&gt;
+   &lt;h6&gt;Error!&lt;/h6&gt;
+   &lt;p&gt;Error Example&lt;/p&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="sub-title">Alert Success</h4>
+                <div class="ex-alert-content">
+                    <div class="alert success">
+                        <button type="button" class="close">&times;</button>
+                        <h6>Success!</h6>
+                        <p>Success Example</p>
+                    </div>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;div class="alert success"&gt;
+   &lt;button type="button" class="close"&gt;&times;&lt;/button&gt;
+   &lt;h6&gt;Success!&lt;/h6&gt;
+   &lt;p&gt;Success Example&lt;/p&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="sub-title">Alert Warning</h4>
+                <div class="ex-alert-content">
+                    <div class="alert warning">
+                        <button type="button" class="close">&times;</button>
+                        <h6>Warning!</h6>
+                        <p>Warning Example</p>
+                    </div>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;div class="alert warning"&gt;
+   &lt;button type="button" class="close"&gt;&times;&lt;/button&gt;
+   &lt;h6&gt;Warning!&lt;/h6&gt;
+   &lt;p&gt;Warning Example&lt;/p&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="sub-title">Alert Info</h4>
+                <div class="ex-alert-content">
+                    <div class="alert info">
+                        <button type="button" class="close">&times;</button>
+                        <h6>Info!</h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl ipsum, bibendum eu semper eu, tristique a nisi. Nullam mattis iaculis interdum. Curabitur sed sem at est mollis gravida. Nullam vitae vestibulum ligula. Proin tincidunt, dolor non ornare malesuada, turpis risus iaculis nulla, vel consectetur justo ligula eu justo.
+                        </p>
+                    </div>
+                </div>
+                <div class="html">
+                    <div class="highlight">
+                        <pre class="prettyprint">
+&lt;div class="alert info"&gt;
+   &lt;button type="button" class="close"&gt;&times;&lt;/button&gt;
+   &lt;h6&gt;Info!&lt;/h6&gt;
+   &lt;p&gt;&hellip;&lt;/p&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <div class="copyright">
+                    <p>Copyright Xinix Technology 2013 - 2014. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function closeMenu(){
+                if ($('body').hasClass('navigating')) {
+                  $('body').removeClass('navigating')
+                  setTimeout(function(){
+                    $('.ex-navbar').css('display','none')
+                  }, 350)
+                }
+              }
+
+                $('#menu_icon a').on('click', function(){
+                if ($('body').hasClass('navigating')) {
+                  closeMenu()
+                } else {
+                  $('.ex-navbar').css('display','block')
+                  $('.ex-navbar')[0].offsetLeft // force render
+                  $('body').addClass('navigating')
+                }
+                return false
+              })
+        </script>
+
+    </body>
+</html>
