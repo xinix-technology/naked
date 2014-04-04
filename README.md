@@ -1,7 +1,6 @@
 <article class="markdown-body entry-content" itemprop="mainContentOfPage">
 <h1><a href="">naked</a></h1>
 <p>The naked CSS framework you've been waiting for.</p>
-<p>naked created by xinix technology </p>
 <h2>Table Of Content</h2>
 <ul>
 	<li>
@@ -10,13 +9,15 @@
 	<li>
 		<a href="#example">Example</a>
 	</li>
+	<li>
+		<a href="#authors">Authors</a>
+	</li>
 </ul>
 <h2>
 	<a name="quick-start" class="anchor" href="#quick-start">
 		<span class="octicon octicon-link"></span>
 	</a>
 	Quick start
-	
 </h2>
 <p>Three quick start options are available:</p>
 
@@ -35,4 +36,19 @@
 </h2>	
 <p>You can see the example in directory <code>example</code></p>
 <img src="http://farm8.staticflickr.com/7326/13618064164_0dcd2d0c89_b.jpg">
+<h2>
+	<a name="authors" class="anchor" href="#authors">
+		<span class="octicon octicon-link"></span>
+	</a>
+	Authors
+</h2>
+<p>naked created by <a href="http://xinix.co.id">xinix technology</a> </p>
+<ul>
+	<li>
+		<p>xinix on github : <a href="https://github.com/xinix-technology">Github Xinix Technology</a></p>
+	</li>
+	<li>
+		<p>xinix on twitter : <a href="https://twitter.com/xinixtechnology">Twitter Xinix Technology</a></p>
+	</li>
+</ul>
 </article>
