@@ -11,9 +11,6 @@
 	<li>
 		<a href="#quick-start">Quick Start</a>
 	</li>
-	<li>
-		<a href="#quick-start">Quick Start</a>
-	</li>
 </ul>
 <h2>
 	<a name="quick-start" class="anchor" href="#quick-start">
