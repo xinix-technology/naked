@@ -18,7 +18,7 @@
 	Quick start
 	
 </h2>
-	<p>Three quick start options are available:</p>
+<p>Three quick start options are available:</p>
 
 <ul>
 	<li>
