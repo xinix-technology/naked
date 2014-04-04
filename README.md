@@ -1,7 +1,3 @@
-<style type="text/css">
-	h1	{margin: 0}
-	h1 a {color: #4183c4}
-</style>
 <article class="markdown-body entry-content" itemprop="mainContentOfPage">
 <h1><a href="">naked</a></h1>
 <p>The naked CSS framework you've been waiting for.</p>
