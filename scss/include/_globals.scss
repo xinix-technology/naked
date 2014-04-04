@@ -285,6 +285,7 @@ input[type=reset] {
     -moz-border-radius: 0;
     border-radius: 0;
     outline: 0;
+    -webkit-font-smoothing: antialiased;
 
     &:active {
         -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
