@@ -3303,18 +3303,21 @@ article.tabs section h2 {
 #login {
   padding: 40px;
   margin: 0 auto;
-  background: #f5f5f5;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  margin-top: 40px;
+  display: table;
+  background: #fbfbfb;
+  width: 100%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
-/* line 11, ../scss/include/_login.scss */
+/* line 14, ../scss/include/_login.scss */
 #login .title {
   margin-bottom: 30px;
 }
-/* line 14, ../scss/include/_login.scss */
+/* line 17, ../scss/include/_login.scss */
 #login .title h2 {
   margin: 0;
   text-align: center;
@@ -3322,15 +3325,89 @@ article.tabs section h2 {
   color: #ff9500;
   line-height: 120%;
 }
-/* line 21, ../scss/include/_login.scss */
+/* line 24, ../scss/include/_login.scss */
 #login .title h2 strong {
   color: #13c4ff;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 29, ../scss/include/_login.scss */
+/* line 32, ../scss/include/_login.scss */
 #login .check-label {
   margin-bottom: 20px;
+}
+/* line 36, ../scss/include/_login.scss */
+#login input[type="submit"] {
+  margin: 0 auto;
+  display: table;
+  font-size: 16px;
+}
+/* line 43, ../scss/include/_login.scss */
+#login input[type="text"],
+#login input[type="password"] {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  color: #5c7883;
+}
+/* line 51, ../scss/include/_login.scss */
+#login a.button,
+#login input[type="submit"] {
+  border: 1px solid #13c4ff;
+  background: transparent;
+  color: #13c4ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 63, ../scss/include/_login.scss */
+#login a.button:hover,
+#login input[type="submit"]:hover {
+  background: #13c4ff;
+  color: #fff;
+}
+/* line 67, ../scss/include/_login.scss */
+#login .myCheckbox {
+  padding: 0;
+  line-height: 20px;
+  display: table;
+  position: relative;
+  width: auto;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+/* line 76, ../scss/include/_login.scss */
+#login .myCheckbox #accept {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/check.png) 0 0 no-repeat;
+  margin-right: 10px;
+  margin-top: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+/* line 91, ../scss/include/_login.scss */
+#login .myCheckbox #accept:checked {
+  background: url(../images/checked.png) 0 0 no-repeat;
+  display: block;
+}
+/* line 97, ../scss/include/_login.scss */
+#login .myCheckbox .placeholder {
+  cursor: pointer;
+}
+/* line 101, ../scss/include/_login.scss */
+#login .myCheckbox .term {
+  font-size: 16px;
+  color: #5c7883;
+  font-weight: 300;
+  line-height: 25px;
 }
 
 /* line 1, ../scss/include/_context-menu.scss */
