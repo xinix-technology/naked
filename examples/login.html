@@ -53,37 +53,36 @@
                 <p>This is Naked Css Login Form</p>
                 <div class="ex-login">
                     <div id="login">
-                        <div class="title">
-                            <h2>
-                                Xinix
-                                <br>
-                                <strong>Naked Css</strong>
-                            </h2>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="span-12">
-                                    <label>Email</label>
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="span-12">
-                                    <label>Password</label>
-                                    <input type="text" placeholder="Password">
-                                </div>
-                                <div class="span-12">
-                                    <label class="check-label">
-                                        <input class="checkbox" type="checkbox">
-                                        Remember me
+                       <div class="title">
+                          <h2>
+                             Xinix
+                             <br>
+                             <strong>Naked Css</strong>
+                          </h2>
+                       </div>
+                       <form action="" method="POST">
+                          <div class="row">
+                             <div class="span-12">
+                                <input type="text" name="username" placeholder="Email / Username" value="">
+                             </div>
+                             <div class="span-12">
+                                <input type="password" name="password" placeholder="Password">
+                             </div>
+                              <div class="span-12">
+                                <span class="myCheckbox">
+                                    <label class="placeholder">
+                                        <input type="checkbox" id="accept" />
+                                        <span class="term">Keep me signed in</span>
                                     </label>
-                                </div>
-                                <div class="span-12">
-                                    <input type="submit" value="Sign In"></input>
-                                </div>
-                            </div>
-                        </form>
+                                </span>
+                             </div>
+                             <div class="span-12">
+                                <input type="submit" value="Sign In"></input>
+                             </div>
+                          </div>
+                       </form>
                     </div>
                 </div>
-
                 <div class="html">
                     <div class="highlight">
                         <pre class="prettyprint">
@@ -98,17 +97,18 @@
    &lt;form&gt;
       &lt;div class="row"&gt;
          &lt;div class="span-12"&gt;
-            &lt;label&gt;Email&lt;/label&gt;
-            &lt;input type="text" placeholder="Email"&gt;
+            &lt;input type="text" placeholder="Email / Username" value=""&gt;
          &lt;/div&gt;
          &lt;div class="span-12"&gt;
-            &lt;label&gt;Password&lt;/label&gt;
             &lt;input type="text" placeholder="Password"&gt;
          &lt;/div&gt;
          &lt;div class="span-12"&gt;
-            &lt;label class="check-label"&gt;
-               &lt;input class="checkbox" type="checkbox"&gt;Remember me
-            &lt;/label&gt;
+            &lt;span class="myCheckbox"&gt;
+               &lt;label class="placeholder"&gt;
+                  &lt;input type="checkbox" id="accept"&gt;
+                  &lt;span class="term"&gt;Keep me sign in&lt;/&gt;
+               &lt;/label&gt;
+            &lt;/span&gt;
          &lt;/div&gt;
          &lt;div class="span-12"&gt;
             &lt;input type="submit" value="Sign In"&gt;&lt;/input&gt;
