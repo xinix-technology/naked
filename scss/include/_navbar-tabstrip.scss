@@ -8,9 +8,10 @@
 	right: 0;
 	z-index: 999;
 
-	h2 {
+	h1 {
 		float: left;
 		margin: 0;
+		line-height: 140%;
 
 		a {
 			color: #fff;
@@ -40,7 +41,7 @@
 				&:hover {
 					background: #13c4ff;
 				}
-				
+
 				ul {
 					right: 0;
 					border: 0;
@@ -69,7 +70,7 @@
 					width: 0;
 				}
 			}
-			
+
 
 
 		}
@@ -141,13 +142,13 @@
 
 			&:first-child {
 				a {
-					border-top-left-radius: 5px; 
+					border-top-left-radius: 5px;
 					border-bottom-left-radius: 5px;
 				}
 			}
 			&:last-child {
 				a{
-					border-top-right-radius: 5px; 
+					border-top-right-radius: 5px;
 					border-bottom-right-radius: 5px;
 				}
 			}

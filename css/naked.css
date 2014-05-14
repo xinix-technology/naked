@@ -2467,7 +2467,7 @@ ul.pagination.centered {
 }
 /* line 84, ../scss/include/_listview.scss */
 .listview .list-group li a {
-  padding: 5px 30px 5px 10px;
+  padding: 8px 30px 8px 8px;
   font-size: 1.2em;
   width: 100%;
   -moz-box-sizing: border-box;
@@ -2488,7 +2488,7 @@ ul.pagination.centered {
 }
 /* line 106, ../scss/include/_listview.scss */
 .listview .list-group li.plain a {
-  padding: 14px 10px 14px 10px;
+  padding: 10px;
 }
 /* line 109, ../scss/include/_listview.scss */
 .listview .list-group li.plain a:after {
@@ -2648,54 +2648,55 @@ ul.pagination.centered {
   z-index: 999;
 }
 /* line 11, ../scss/include/_navbar-tabstrip.scss */
-.navbar-menu h2 {
+.navbar-menu h1 {
   float: left;
   margin: 0;
+  line-height: 140%;
 }
-/* line 15, ../scss/include/_navbar-tabstrip.scss */
-.navbar-menu h2 a {
+/* line 16, ../scss/include/_navbar-tabstrip.scss */
+.navbar-menu h1 a {
   color: #fff;
   font-size: 0.7em;
 }
-/* line 24, ../scss/include/_navbar-tabstrip.scss */
+/* line 25, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li {
   padding: 0;
 }
-/* line 27, ../scss/include/_navbar-tabstrip.scss */
+/* line 28, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li a {
   color: #fff;
   line-height: 40px;
 }
-/* line 31, ../scss/include/_navbar-tabstrip.scss */
+/* line 32, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li a:after {
   border-color: white transparent transparent transparent;
 }
-/* line 36, ../scss/include/_navbar-tabstrip.scss */
+/* line 37, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li.active {
   background: #13c4ff;
 }
-/* line 40, ../scss/include/_navbar-tabstrip.scss */
+/* line 41, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li:hover {
   background: #13c4ff;
 }
-/* line 44, ../scss/include/_navbar-tabstrip.scss */
+/* line 45, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul {
   right: 0;
   border: 0;
 }
-/* line 48, ../scss/include/_navbar-tabstrip.scss */
+/* line 49, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li {
   background: #333;
 }
-/* line 51, ../scss/include/_navbar-tabstrip.scss */
+/* line 52, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li a {
   line-height: inherit;
 }
-/* line 56, ../scss/include/_navbar-tabstrip.scss */
+/* line 57, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li:hover a {
   color: white;
 }
-/* line 63, ../scss/include/_navbar-tabstrip.scss */
+/* line 64, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li.divide {
   border-bottom: none;
   border-top: none;
@@ -2705,7 +2706,7 @@ ul.pagination.centered {
   width: 0;
 }
 
-/* line 79, ../scss/include/_navbar-tabstrip.scss */
+/* line 80, ../scss/include/_navbar-tabstrip.scss */
 .navbar {
   position: absolute;
   top: 0;
@@ -2717,11 +2718,11 @@ ul.pagination.centered {
   border-bottom: 1px solid #eeeeee;
   z-index: 99;
 }
-/* line 90, ../scss/include/_navbar-tabstrip.scss */
+/* line 91, ../scss/include/_navbar-tabstrip.scss */
 .navbar .row {
   margin-bottom: 0;
 }
-/* line 94, ../scss/include/_navbar-tabstrip.scss */
+/* line 95, ../scss/include/_navbar-tabstrip.scss */
 .navbar a.back-button {
   padding: 5px 0px 5px 16px;
   display: block;
@@ -2729,7 +2730,7 @@ ul.pagination.centered {
   color: #333;
   font-size: 1.2em;
 }
-/* line 101, ../scss/include/_navbar-tabstrip.scss */
+/* line 102, ../scss/include/_navbar-tabstrip.scss */
 .navbar a.back-button:before {
   color: #97a0a4;
   width: 12px;
@@ -2750,39 +2751,39 @@ ul.pagination.centered {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-/* line 123, ../scss/include/_navbar-tabstrip.scss */
+/* line 124, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group {
   margin-bottom: 0;
 }
-/* line 125, ../scss/include/_navbar-tabstrip.scss */
+/* line 126, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li {
   padding: 1px 0;
 }
-/* line 128, ../scss/include/_navbar-tabstrip.scss */
+/* line 129, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li a {
   line-height: 120%;
   background: transparent;
   color: #13c4ff;
   border: 1px solid #13c4ff;
 }
-/* line 136, ../scss/include/_navbar-tabstrip.scss */
+/* line 137, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li a:hover,
 .navbar ul.button-group li a.active {
   color: white;
   background: #13c4ff;
   border: 1px solid #13c4ff;
 }
-/* line 143, ../scss/include/_navbar-tabstrip.scss */
+/* line 144, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li:first-child a {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 149, ../scss/include/_navbar-tabstrip.scss */
+/* line 150, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li:last-child a {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 157, ../scss/include/_navbar-tabstrip.scss */
+/* line 158, ../scss/include/_navbar-tabstrip.scss */
 .navbar h6.label {
   margin: 0;
   text-align: center;
@@ -2793,12 +2794,12 @@ ul.pagination.centered {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 163, ../scss/include/_navbar-tabstrip.scss */
+/* line 164, ../scss/include/_navbar-tabstrip.scss */
 .navbar h6.label.title {
   line-height: 120%;
   font-size: 1.1em;
 }
-/* line 172, ../scss/include/_navbar-tabstrip.scss */
+/* line 173, ../scss/include/_navbar-tabstrip.scss */
 .navbar p {
   margin: 0;
   text-align: center;
@@ -2810,12 +2811,12 @@ ul.pagination.centered {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 184, ../scss/include/_navbar-tabstrip.scss */
+/* line 185, ../scss/include/_navbar-tabstrip.scss */
 .navbar .icon-menu {
   position: relative;
   display: block;
 }
-/* line 188, ../scss/include/_navbar-tabstrip.scss */
+/* line 189, ../scss/include/_navbar-tabstrip.scss */
 .navbar .icon-menu.icon-menu:after {
   content: "";
   position: absolute;
@@ -2828,7 +2829,7 @@ ul.pagination.centered {
   margin-top: 0.41rem;
   top: 50%;
 }
-/* line 202, ../scss/include/_navbar-tabstrip.scss */
+/* line 203, ../scss/include/_navbar-tabstrip.scss */
 .navbar input {
   text-align: center;
   margin-bottom: 0;
@@ -2837,17 +2838,17 @@ ul.pagination.centered {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 210, ../scss/include/_navbar-tabstrip.scss */
+/* line 211, ../scss/include/_navbar-tabstrip.scss */
 .navbar input:focus {
   text-align: left;
 }
 
-/* line 216, ../scss/include/_navbar-tabstrip.scss */
+/* line 217, ../scss/include/_navbar-tabstrip.scss */
 .navbar + .container {
   padding-top: 53px;
 }
 
-/* line 220, ../scss/include/_navbar-tabstrip.scss */
+/* line 221, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip {
   position: fixed;
   bottom: 0;
@@ -2858,47 +2859,47 @@ ul.pagination.centered {
   z-index: 99;
   background: #f5f5f5;
 }
-/* line 230, ../scss/include/_navbar-tabstrip.scss */
+/* line 231, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .row {
   margin-bottom: 0;
 }
-/* line 234, ../scss/include/_navbar-tabstrip.scss */
+/* line 235, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs {
   border-right: 1px solid #eeeeee;
   text-align: center;
   padding: 2px 0 2px;
 }
-/* line 239, ../scss/include/_navbar-tabstrip.scss */
+/* line 240, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon {
   margin: 0 auto;
   width: 32px;
   height: 32px;
   position: relative;
 }
-/* line 245, ../scss/include/_navbar-tabstrip.scss */
+/* line 246, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.star {
   background: url(../images/star-icon.png) center no-repeat;
 }
-/* line 248, ../scss/include/_navbar-tabstrip.scss */
+/* line 249, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.profile {
   background: url(../images/profile-icon.png) center no-repeat;
 }
-/* line 251, ../scss/include/_navbar-tabstrip.scss */
+/* line 252, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.search {
   background: url(../images/search-icon.png) center no-repeat;
 }
-/* line 254, ../scss/include/_navbar-tabstrip.scss */
+/* line 255, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.more {
   background: url(../images/more-icon.png) center no-repeat;
 }
-/* line 259, ../scss/include/_navbar-tabstrip.scss */
+/* line 260, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs span {
   display: block;
   font-weight: 300;
   font-size: 0.8em;
   color: #333;
 }
-/* line 266, ../scss/include/_navbar-tabstrip.scss */
+/* line 267, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs:last-child {
   border-right: 0;
 }
@@ -3368,46 +3369,17 @@ article.tabs section h2 {
   color: #fff;
 }
 /* line 67, ../scss/include/_login.scss */
-#login .myCheckbox {
-  padding: 0;
-  line-height: 20px;
-  display: table;
-  position: relative;
-  width: auto;
-  margin: 10px auto;
+#login .placeholder {
+  cursor: pointer;
+  margin: 0 auto;
   margin-bottom: 20px;
-}
-/* line 76, ../scss/include/_login.scss */
-#login .myCheckbox #accept {
-  float: left;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: url(../images/check.png) 0 0 no-repeat;
-  margin-right: 10px;
-  margin-top: 0;
-  cursor: pointer;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-}
-/* line 91, ../scss/include/_login.scss */
-#login .myCheckbox #accept:checked {
-  background: url(../images/checked.png) 0 0 no-repeat;
-  display: block;
-}
-/* line 97, ../scss/include/_login.scss */
-#login .myCheckbox .placeholder {
-  cursor: pointer;
-}
-/* line 101, ../scss/include/_login.scss */
-#login .myCheckbox .term {
+  margin-top: 10px;
+  display: table;
   font-size: 16px;
   color: #5c7883;
   font-weight: 300;
   line-height: 25px;
+  padding: 0;
 }
 
 /* line 1, ../scss/include/_context-menu.scss */
