@@ -306,6 +306,8 @@ select {
     white-space: nowrap;
     text-overflow: ellipsis;
     background-color: white;
+    text-overflow: "";
+    text-indent: 0.01px;
 }
 span.field {
     overflow: hidden;

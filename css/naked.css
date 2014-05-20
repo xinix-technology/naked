@@ -1744,16 +1744,18 @@ select {
   white-space: nowrap;
   text-overflow: ellipsis;
   background-color: white;
+  text-overflow: "";
+  text-indent: 0.01px;
 }
 
-/* line 310, ../scss/include/_globals.scss */
+/* line 312, ../scss/include/_globals.scss */
 span.field {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-/* line 316, ../scss/include/_globals.scss */
+/* line 318, ../scss/include/_globals.scss */
 form .radio,
 form .checkbox {
   padding: 3px;
@@ -1767,7 +1769,7 @@ form .checkbox {
   cursor: pointer;
 }
 
-/* line 327, ../scss/include/_globals.scss */
+/* line 329, ../scss/include/_globals.scss */
 .placeholder {
   display: inline;
   font-weight: 500;
@@ -1775,22 +1777,22 @@ form .checkbox {
   text-transform: none;
   font-size: 0.9em;
 }
-/* line 334, ../scss/include/_globals.scss */
+/* line 336, ../scss/include/_globals.scss */
 .placeholder.full {
   display: block;
 }
 
-/* line 338, ../scss/include/_globals.scss */
+/* line 340, ../scss/include/_globals.scss */
 .pull-right {
   float: right;
 }
 
-/* line 341, ../scss/include/_globals.scss */
+/* line 343, ../scss/include/_globals.scss */
 .pull-left {
   float: left;
 }
 
-/* line 344, ../scss/include/_globals.scss */
+/* line 346, ../scss/include/_globals.scss */
 img.img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -1798,75 +1800,75 @@ img.img-circle {
 }
 
 @media screen {
-  /* line 354, ../scss/include/_globals.scss */
+  /* line 356, ../scss/include/_globals.scss */
   .container {
     width: 984px;
     margin: 0 auto;
   }
 
-  /* line 358, ../scss/include/_globals.scss */
+  /* line 360, ../scss/include/_globals.scss */
   #menu_icon {
     display: none;
   }
 
-  /* line 361, ../scss/include/_globals.scss */
+  /* line 363, ../scss/include/_globals.scss */
   ul.flat {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1360px) {
-  /* line 366, ../scss/include/_globals.scss */
+  /* line 368, ../scss/include/_globals.scss */
   .container {
     width: 1320px;
     margin: 0 auto;
   }
 
-  /* line 370, ../scss/include/_globals.scss */
+  /* line 372, ../scss/include/_globals.scss */
   .hidden-xlarge {
     display: none;
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 375, ../scss/include/_globals.scss */
+  /* line 377, ../scss/include/_globals.scss */
   .container {
     width: 728px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 381, ../scss/include/_globals.scss */
+  /* line 383, ../scss/include/_globals.scss */
   .container {
     width: 440px;
     margin: 0 auto;
   }
 
-  /* line 385, ../scss/include/_globals.scss */
+  /* line 387, ../scss/include/_globals.scss */
   #menu_icon {
     display: block;
     position: absolute;
     right: 10px;
     top: 0;
   }
-  /* line 390, ../scss/include/_globals.scss */
+  /* line 392, ../scss/include/_globals.scss */
   #menu_icon a {
     font-size: 40px;
     color: white;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 397, ../scss/include/_globals.scss */
+  /* line 399, ../scss/include/_globals.scss */
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 408, ../scss/include/_globals.scss */
+  /* line 410, ../scss/include/_globals.scss */
   .touch * {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  /* line 412, ../scss/include/_globals.scss */
+  /* line 414, ../scss/include/_globals.scss */
   .touch .container, .touch .container-fluid {
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
