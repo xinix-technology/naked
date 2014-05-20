@@ -64,45 +64,16 @@
 	    background: #13c4ff; color: #fff;
 	}
 
-	.myCheckbox {
-		padding: 0;
-		line-height: 20px;
-		display: table;
-		position: relative;
-		width: auto;
-		margin: 10px auto;
+	.placeholder {
+		cursor: pointer;
+		margin: 0 auto;
 		margin-bottom: 20px;
-
-		#accept {
-		    float: left;
-		    display: block;
-		    width: 20px;
-		    height: 20px;
-		    background: url(../images/check.png) 0 0 no-repeat;
-		    margin-right: 10px;
-		    margin-top: 0;
-		    cursor: pointer;
-		    outline: 0;
-		    -webkit-appearance: none;
-		    -moz-appearance: none;
-		    -ms-appearance: none;
-		    appearance: none;
-
-			&:checked {
-				background: url(../images/checked.png) 0 0 no-repeat;
-				display: block;
-			}
-		}
-
-		.placeholder {
-			cursor: pointer;
-		}
-
-		.term {
-			font-size: 16px;
-			color: #5c7883;
-			font-weight: 300;
-			line-height: 25px;
-		}
+		margin-top: 10px;
+		display: table;
+		font-size: 16px;
+		color: #5c7883;
+		font-weight: 300;
+		line-height: 25px;
+		padding: 0;
 	}
 }

@@ -1,4 +1,4 @@
-.listview, 
+.listview,
 .listview * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -82,7 +82,7 @@
 			width: 100%;
 
 			a {
-				padding: 5px 30px 5px 10px;
+				padding: 8px 30px 8px 8px;
 				font-size: 1.2em;
 				width: 100%;
 				-moz-box-sizing: border-box;
@@ -104,7 +104,7 @@
 
 			&.plain {
 				a {
-					padding: 14px 10px 14px 10px;
+					padding: 10px;
 
 					&:after {
 						border: 0;

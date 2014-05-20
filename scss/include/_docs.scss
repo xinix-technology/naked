@@ -4,12 +4,17 @@ header,
 	background: #{$header-bg};
 	width: 100%;
 	display: inline-block;
-	h2 a {
-		color: white;
-		font-weight: normal;
-		margin-top: 15px;
-		margin-bottom: 15px;
-		font-size: 20px;
+	h1 {
+		margin: 4px 0 0;
+		line-height: 150%;
+
+		a {
+			color: white;
+			font-weight: normal;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			font-size: 20px;
+		}
 	}
 }
 .brand {
@@ -22,7 +27,7 @@ header,
 		margin-bottom: 15px;
 		li {
 			margin-right: 0;
-			margin-left: 20px;
+			margin-left: 15px;
 			a {
 				color: white;
 				font-size: 15px;
@@ -279,8 +284,8 @@ code {
 
 // ============================= MEDIA QUERY ===================================
 @media #{$small} {
-    .ex-navbar { 
-        display: none; 
+    .ex-navbar {
+        display: none;
     }
 }
 // =============================================================================
