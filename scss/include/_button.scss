@@ -1,4 +1,4 @@
-button, 
+button,
 .button {
     padding: 5px 10px 5px;
     cursor: pointer;
@@ -45,16 +45,17 @@ button,
     }
 
     &.round {
-    	-webkit-border-radius: 1000px;
-		border-radius: 1000px;
+        -webkit-border-radius: 1000px;
+        -moz-border-radius: 1000px;
+        border-radius: 1000px;
 		padding: 5px 20px 5px;
     }
 
 }
 
-.button-group { 
-	list-style: none; 
-	margin: 0; 
+.button-group {
+	list-style: none;
+	margin: 0;
 	padding-left: 0;
 
 	&.left {
@@ -62,11 +63,11 @@ button,
 		left: 0;
 		top: 0;
 	}
-	
-	&.centered { 
-		display: table; 
-		margin: 0 auto; 
-		margin-bottom: 10px; 
+
+	&.centered {
+		display: table;
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 
 	&.right {
@@ -80,42 +81,42 @@ button,
 		li {
 			&:first-child {
 				a {
-					border-top-left-radius: 10px; 
+					border-top-left-radius: 10px;
 					border-bottom-left-radius: 10px;
 				}
 			}
 			&:last-child {
 				a{
-					border-top-right-radius: 10px; 
+					border-top-right-radius: 10px;
 					border-bottom-right-radius: 10px;
 				}
 			}
 		}
 	}
 }
-.button-group > :first-child { 
-	margin-left: 0; 
+.button-group > :first-child {
+	margin-left: 0;
 }
-.button-group > * { 
-	margin: 0 0 0 -1px; 
-	float: left; 
+.button-group > * {
+	margin: 0 0 0 -1px;
+	float: left;
 }
-.button-group::after { 
-	clear: both; 
+.button-group::after {
+	clear: both;
 }
-.button-group::before, 
-.button-group::after { 
-	content: " "; 
-	display: table; 
+.button-group::before,
+.button-group::after {
+	content: " ";
+	display: table;
 }
-.button-bar { 
-	position: relative; 
+.button-bar {
+	position: relative;
 }
-.button-bar { 
-	width: 100% 
+.button-bar {
+	width: 100%
 }
-.button-bar::after { 
-	clear: both; 
+.button-bar::after {
+	clear: both;
 }
 .submit { border: 0; }
 
@@ -124,12 +125,12 @@ button,
 
 @media #{$small} {
 	.button-bar {
-		ul.button-group { 
-	        position: relative; 
-	        margin: 0 auto; 
+		ul.button-group {
+	        position: relative;
+	        margin: 0 auto;
 	        // float: none;
-	        width: 100%; 
-	        margin-bottom: 10px; 
+	        width: 100%;
+	        margin-bottom: 10px;
 
 	        &.left ,
 	        &.centered ,
