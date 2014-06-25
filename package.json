@@ -7,42 +7,11 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-compass": "~0.6.0",
-    "grunt-contrib-cssmin": "~0.6.2"
-  },
-  "pax": {
-    "grunt": {
-      "clean": {
-        "dist": [
-          "js",
-          "css"
-        ]
-      },
-      "build": {
-        "dist": [
-          "compass",
-          "cssmin"
-        ]
-      },
-      "compass": {
-        "dev": {
-          "options": {
-            "sassDir": "scss",
-            "cssDir": "css"
-          }
-        }
-      },
-      "cssmin": {
-        "minify": {
-          "expand": true,
-          "cwd": "css/",
-          "src": [
-            "*.css",
-            "!*.min.css"
-          ],
-          "dest": "css/",
-          "ext": ".min.css"
-        }
-      }
-    }
+    "grunt-contrib-cssmin": "~0.6.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-minify-css": "^0.3.5",
+    "gulp-compass": "^1.1.9",
+    "gulp-util": "^2.2.17",
+    "gulp": "^3.8.2"
   }
 }
