@@ -51,9 +51,9 @@ footer {
 
 
 // =============== grid system ===============
-.row {
-	margin-bottom: 5px;
-}
+// .row {
+// 	margin-bottom: 5px;
+// }
 .xlarge-screen,
 .large-screen,
 .medium-screen,
@@ -77,6 +77,22 @@ footer {
 
 
 // ===================== global ===================
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select,
+span.field { margin: 0 0 1em 0; }
 .container {
 	h1.title {
 		font-weight: normal;
@@ -100,7 +116,6 @@ footer {
 .wrapper {
 	padding-left: 10px;
 	padding-right: 10px;
-	// padding: 0;
 }
 .html {
 	position: relative;

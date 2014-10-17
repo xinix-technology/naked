@@ -2,6 +2,11 @@
     overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	border: 1px solid #{$table-border-color};
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .table-body {
@@ -11,24 +16,29 @@
     	-webkit-overflow-scrolling: none;
     	overflow: auto;
 		border: 1px solid #{$table-border-color};
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
 	}
 }
 
-.table { 
-	width: 100%; 
-	border-collapse: collapse; 
-	border-spacing: 0; 
-	max-width: 100%; 
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	max-width: 100%;
 
-	thead tr { 
-		background: #{$table-head-color}; 
+	thead tr {
+		background: #{$table-head-color};
 	}
 
 
-	th, 
-	td { 
-		padding: 5px; 
-		line-height: #{$body-line-height}; 
+	th,
+	td {
+		padding: 5px;
+		line-height: #{$body-line-height};
 		border-left: 1px solid #{$table-border-color};
 	}
 
@@ -37,18 +47,18 @@
 		border-left:0;
 	}
 
-	td { 
-		border-top: 1px solid #{$table-border-color}; 
+	td {
+		border-top: 1px solid #{$table-border-color};
 	}
 
 	&.nowrap {
 		th,
-		td { 
-			white-space: nowrap 
+		td {
+			white-space: nowrap
 		}
 
 		&.fixed-tail {
-			th, 
+			th,
 			td {
 				&:nth-last-of-type(-n+2) {
 					padding-right: 100px;
@@ -72,16 +82,16 @@
 	}
 
 	&.stripped {
-		tr.even, 
-		tr.alt, 
-		tr:nth-of-type(even) { 
-			background: #{$table-stripped-color}; 
+		tr.even,
+		tr.alt,
+		tr:nth-of-type(even) {
+			background: #{$table-stripped-color};
 		}
 	}
 
 	&.hover {
-		tr:hover td { 
-			background: #{$table-hover-color}; 
+		tr:hover td {
+			background: #{$table-hover-color};
 		}
 	}
 }
@@ -89,37 +99,37 @@
 
 
 @media #{$medium} {
-	table.flip-scroll { 
-		width: 100%; 
-		border-collapse: collapse; 
-		border-spacing: 0; 
-		display: block; 
-		position: relative; 
-		width: 100%; 
+	table.flip-scroll {
+		width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		display: block;
+		position: relative;
+		width: 100%;
 
 		:after {
-			visibility: hidden; 
-			display: block; 
-			font-size: 0; 
-			content: " "; 
-			clear: both; 
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
 			height: 0;
 		}
 
 		th, td {
-			margin: 0; 
+			margin: 0;
 			vertical-align: top;
 		}
 
 		th {
-			display: block; 
+			display: block;
 			text-align: right;
-			border-bottom: 0; 
+			border-bottom: 0;
 			border-left: 0;
 		}
 
 		thead {
-			display: block; 
+			display: block;
 			float: left;
 
 			tr {
@@ -129,15 +139,15 @@
 		}
 
 		tbody {
-			display: block; 
-			width: auto; 
-			position: relative; 
-			overflow-x: auto; 
+			display: block;
+			width: auto;
+			position: relative;
+			overflow-x: auto;
 			-webkit-overflow-scrolling: touch;
 			white-space: nowrap;
 
 			tr {
-				display: inline-block; 
+				display: inline-block;
 				vertical-align: top;
 				border-left: 1px solid #{$table-border-color};
 			}
@@ -147,23 +157,23 @@
 		}
 
 		td {
-			display: block; 
-			min-height: 1.25em; 
+			display: block;
+			min-height: 1.25em;
 			text-align: left;
-			border-left: 0; 
-			border-right: 0; 
-			border-bottom: 0; 
+			border-left: 0;
+			border-right: 0;
+			border-bottom: 0;
 			border-top: 0;
 		}
 	}
 
 	table.no-more-table {
-		thead, 
-		tbody, 
-		th, 
-		td, 
-		tr { 
-			display: block; 
+		thead,
+		tbody,
+		th,
+		td,
+		tr {
+			display: block;
 		}
 
 		thead {
@@ -176,9 +186,9 @@
 
 		td {
 			border: none;
-			border-bottom: 1px solid #{$table-border-color}; 
+			border-bottom: 1px solid #{$table-border-color};
 			position: relative;
-			padding-left: 50%; 
+			padding-left: 50%;
 			white-space: normal;
 			text-align:left;
 
@@ -186,8 +196,8 @@
 				position: absolute;
 				top: 6px;
 				left: 6px;
-				width: 45%; 
-				padding-right: 10px; 
+				width: 45%;
+				padding-right: 10px;
 				white-space: nowrap;
 				text-align:left;
 				font-weight: bold;

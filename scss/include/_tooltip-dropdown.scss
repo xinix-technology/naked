@@ -19,9 +19,10 @@ ul.menu {
 		a {
 			color: #333;
 			display: block;
-			padding: 3px 25px;
 			clear: both;
 			white-space: nowrap;
+			padding: 3px 0;
+			margin: 0px 15px;
 		}
 
 		&:hover,
@@ -40,9 +41,9 @@ ul.menu {
 	.collapsible {
 		> a {
 			position: relative;
+			padding: 3px 25px 3px 0;
 
 			&:after {
-
 				position: absolute;
 				content: "";
 				width: 0;
@@ -51,9 +52,9 @@ ul.menu {
 				border-style: solid;
 				border-color: black transparent transparent transparent;
 				top: 50%;
-				border-width: 0.4em;
-				right: 8px;
-				margin-top: -0.3em;
+				right: 5px;
+				border-width: 0.5em;
+				margin-top: -0.2em;
 			}
 		}
 
@@ -62,22 +63,14 @@ ul.menu {
 				position: relative;
 
 				&:after {
-					position: absolute;
-					content: "";
-					width: 0;
-					height: 0;
-					display: block;
-					border-style: solid;
 					border-color: transparent transparent black transparent;
-					top: 50%;
-					border-width: 0.4em;
-					right: 8px;
-					margin-top: -0.4em;
+					border-width: 0.5em;
+					margin-top: -0.6em;
 				}
 			}
 
 			ul {
-				top: -101px;
+				top: -83px;
 			}
 		}
 
@@ -96,6 +89,11 @@ ul.menu {
 			transition: all 0.2s;
 
 			li {
+				> a {
+					padding: 3px 25px;
+					margin: 0;
+				}
+
 				display: block;
 				background: #fff;
 
@@ -148,6 +146,8 @@ ul.menu {
 				&.left {
 					> a {
 						position: relative;
+						// padding: 3px 25px;
+						margin: 0;
 
 						&:after {
 							position: absolute;
@@ -159,8 +159,8 @@ ul.menu {
 							border-color: transparent black transparent transparent;
 							top: 50%;
 							border-width: 0.4em;
-							left: 6px;
-							margin-top: -0.4em;
+							left: 4px;
+							margin-top: -0.35em;
 						}
 					}
 				}

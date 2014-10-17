@@ -1403,9 +1403,10 @@ body {
   font-size: 14px;
   color: #000;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', sans-serif;
 }
 
-/* line 27, ../scss/include/_globals.scss */
+/* line 28, ../scss/include/_globals.scss */
 .container.fluid {
   width: 100%;
 }
@@ -1435,7 +1436,7 @@ h5,
 h6 {
   margin: 10px 0 5px;
   line-height: 150%;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* line 56, ../scss/include/_globals.scss */
@@ -1488,7 +1489,7 @@ p {
 
 /* line 88, ../scss/include/_globals.scss */
 a {
-  color: #13c4ff;
+  color: #0088cc;
   text-decoration: none;
   line-height: inherit;
   outline: 0;
@@ -1497,7 +1498,7 @@ a {
 /* line 95, ../scss/include/_globals.scss */
 a:hover,
 a:focus {
-  color: #0094c6;
+  color: #005580;
 }
 
 /* line 98, ../scss/include/_globals.scss */
@@ -1526,75 +1527,74 @@ ol {
   line-height: 150%;
 }
 
-/* line 116, ../scss/include/_globals.scss */
-li {
-  padding: 3px 0;
-}
-
 /* line 119, ../scss/include/_globals.scss */
 ul.flat {
   display: table;
   list-style: none;
   padding: 0;
 }
-/* line 123, ../scss/include/_globals.scss */
+/* line 124, ../scss/include/_globals.scss */
 ul.flat li {
   float: left;
   margin-right: 10px;
 }
-
 /* line 128, ../scss/include/_globals.scss */
+ul.flat li:last-child {
+  margin-right: 0;
+}
+
+/* line 133, ../scss/include/_globals.scss */
 .subheader {
   color: #6f6f6f;
   font-weight: 300;
 }
 
-/* line 132, ../scss/include/_globals.scss */
+/* line 137, ../scss/include/_globals.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 135, ../scss/include/_globals.scss */
+/* line 140, ../scss/include/_globals.scss */
 .pull-right {
   float: right;
 }
 
-/* line 138, ../scss/include/_globals.scss */
+/* line 143, ../scss/include/_globals.scss */
 .pull-left {
   float: left;
 }
 
-/* line 141, ../scss/include/_globals.scss */
+/* line 146, ../scss/include/_globals.scss */
 form {
   overflow: hidden;
 }
 
-/* line 144, ../scss/include/_globals.scss */
+/* line 149, ../scss/include/_globals.scss */
 fieldset {
   border: solid 1px #eeeeee;
   padding: 1.25em;
   margin: 10px 0 20px;
 }
-/* line 148, ../scss/include/_globals.scss */
+/* line 153, ../scss/include/_globals.scss */
 fieldset .wrapper {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 153, ../scss/include/_globals.scss */
+/* line 158, ../scss/include/_globals.scss */
 hr {
   border: 1px solid #eeeeee;
   border-width: 1px 0 0;
 }
 
-/* line 157, ../scss/include/_globals.scss */
+/* line 162, ../scss/include/_globals.scss */
 legend {
   border: 0;
-  padding: 0 5px;
-  font-weight: bold;
+  padding: 0 10px;
+  font-size: 1.3em;
 }
 
-/* line 162, ../scss/include/_globals.scss */
+/* line 167, ../scss/include/_globals.scss */
 label {
   display: block;
   text-transform: uppercase;
@@ -1603,7 +1603,7 @@ label {
   padding-bottom: 2px;
 }
 
-/* line 184, ../scss/include/_globals.scss */
+/* line 189, ../scss/include/_globals.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -1622,7 +1622,7 @@ select,
 span.field {
   box-sizing: border-box;
   display: block;
-  margin: 0 0 1em 0;
+  margin: 0;
   padding: 0.5em;
   height: auto;
   width: 100%;
@@ -1640,12 +1640,12 @@ span.field {
   background: #fff;
 }
 
-/* line 204, ../scss/include/_globals.scss */
+/* line 209, ../scss/include/_globals.scss */
 textarea {
   height: 7em;
 }
 
-/* line 207, ../scss/include/_globals.scss */
+/* line 212, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1663,7 +1663,7 @@ input[type="checkbox"].swipe {
   vertical-align: top;
   outline: 0;
 }
-/* line 226, ../scss/include/_globals.scss */
+/* line 231, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:after {
   background-color: white;
   border: 1px solid lightgrey;
@@ -1678,7 +1678,7 @@ input[type="checkbox"].swipe:after {
   top: -0px;
   transition: border .25s .15s, left .25s .1s, right .15s .175s;
 }
-/* line 245, ../scss/include/_globals.scss */
+/* line 250, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:checked {
   border-color: #53d76a;
   box-shadow: inset 0 0 0 13px #53d76a;
@@ -1686,7 +1686,7 @@ input[type="checkbox"].swipe:checked {
   transition: border .25s, box-shadow .25s, padding .25s .15s;
   background: #53d76a;
 }
-/* line 254, ../scss/include/_globals.scss */
+/* line 259, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:checked:after {
   border-color: #53d76a;
   left: 20px;
@@ -1695,49 +1695,51 @@ input[type="checkbox"].swipe:checked:after {
   transition: border .25s, left .15s .25s, right .25s .175s;
 }
 
-/* line 266, ../scss/include/_globals.scss */
+/* line 271, ../scss/include/_globals.scss */
 input[type=submit],
 input[type=reset] {
-  padding: 5px 10px 5px;
+  padding: 6px 16px;
   cursor: pointer;
   line-height: 150%;
   margin: 0;
   position: relative;
   text-decoration: none;
   text-align: center;
-  background: #13c4ff;
+  background: #0088cc;
   border: 1px solid white;
   color: white;
-  font-weight: 400;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
   outline: 0;
   -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 700;
 }
-/* line 290, ../scss/include/_globals.scss */
+/* line 297, ../scss/include/_globals.scss */
 input[type=submit]:active,
 input[type=reset]:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
-/* line 295, ../scss/include/_globals.scss */
+/* line 302, ../scss/include/_globals.scss */
 input[type=submit]:hover,
 input[type=reset]:hover {
   color: white;
 }
 
-/* line 299, ../scss/include/_globals.scss */
+/* line 306, ../scss/include/_globals.scss */
 select {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
   background-size: 12px 12px;
-  background-position: right 2% top 50%;
+  background-position: right 8px top 50%;
   padding-right: 30px;
   max-width: 100%;
   overflow: hidden;
@@ -1748,14 +1750,14 @@ select {
   text-indent: 0.01px;
 }
 
-/* line 312, ../scss/include/_globals.scss */
+/* line 319, ../scss/include/_globals.scss */
 span.field {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-/* line 318, ../scss/include/_globals.scss */
+/* line 325, ../scss/include/_globals.scss */
 form .radio,
 form .checkbox {
   padding: 3px;
@@ -1769,7 +1771,7 @@ form .checkbox {
   cursor: pointer;
 }
 
-/* line 329, ../scss/include/_globals.scss */
+/* line 336, ../scss/include/_globals.scss */
 .placeholder {
   display: inline;
   font-weight: 500;
@@ -1777,22 +1779,22 @@ form .checkbox {
   text-transform: none;
   font-size: 0.9em;
 }
-/* line 336, ../scss/include/_globals.scss */
+/* line 343, ../scss/include/_globals.scss */
 .placeholder.full {
   display: block;
 }
 
-/* line 340, ../scss/include/_globals.scss */
+/* line 347, ../scss/include/_globals.scss */
 .pull-right {
   float: right;
 }
 
-/* line 343, ../scss/include/_globals.scss */
+/* line 350, ../scss/include/_globals.scss */
 .pull-left {
   float: left;
 }
 
-/* line 346, ../scss/include/_globals.scss */
+/* line 353, ../scss/include/_globals.scss */
 img.img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -1800,75 +1802,75 @@ img.img-circle {
 }
 
 @media screen {
-  /* line 356, ../scss/include/_globals.scss */
+  /* line 363, ../scss/include/_globals.scss */
   .container {
     width: 984px;
     margin: 0 auto;
   }
 
-  /* line 360, ../scss/include/_globals.scss */
+  /* line 367, ../scss/include/_globals.scss */
   #menu_icon {
     display: none;
   }
 
-  /* line 363, ../scss/include/_globals.scss */
+  /* line 370, ../scss/include/_globals.scss */
   ul.flat {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1360px) {
-  /* line 368, ../scss/include/_globals.scss */
+  /* line 375, ../scss/include/_globals.scss */
   .container {
     width: 1320px;
     margin: 0 auto;
   }
 
-  /* line 372, ../scss/include/_globals.scss */
+  /* line 379, ../scss/include/_globals.scss */
   .hidden-xlarge {
     display: none;
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 377, ../scss/include/_globals.scss */
+  /* line 384, ../scss/include/_globals.scss */
   .container {
     width: 728px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 383, ../scss/include/_globals.scss */
+  /* line 390, ../scss/include/_globals.scss */
   .container {
     width: 440px;
     margin: 0 auto;
   }
 
-  /* line 387, ../scss/include/_globals.scss */
+  /* line 394, ../scss/include/_globals.scss */
   #menu_icon {
     display: block;
     position: absolute;
     right: 10px;
     top: 0;
   }
-  /* line 392, ../scss/include/_globals.scss */
+  /* line 399, ../scss/include/_globals.scss */
   #menu_icon a {
     font-size: 40px;
     color: white;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 399, ../scss/include/_globals.scss */
+  /* line 406, ../scss/include/_globals.scss */
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 410, ../scss/include/_globals.scss */
+  /* line 417, ../scss/include/_globals.scss */
   .touch * {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  /* line 414, ../scss/include/_globals.scss */
+  /* line 421, ../scss/include/_globals.scss */
   .touch .container, .touch .container-fluid {
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
@@ -1880,57 +1882,67 @@ img.img-circle {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
-/* line 7, ../scss/include/_table.scss */
+/* line 12, ../scss/include/_table.scss */
 .table-body {
   position: relative;
 }
-/* line 10, ../scss/include/_table.scss */
+/* line 15, ../scss/include/_table.scss */
 .table-body .fixed {
   -webkit-overflow-scrolling: none;
   overflow: auto;
   border: 1px solid #dddddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
-/* line 17, ../scss/include/_table.scss */
+/* line 27, ../scss/include/_table.scss */
 .table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   max-width: 100%;
 }
-/* line 23, ../scss/include/_table.scss */
+/* line 33, ../scss/include/_table.scss */
 .table thead tr {
   background: whitesmoke;
 }
-/* line 29, ../scss/include/_table.scss */
+/* line 39, ../scss/include/_table.scss */
 .table th,
 .table td {
   padding: 5px;
   line-height: 150%;
   border-left: 1px solid #dddddd;
 }
-/* line 36, ../scss/include/_table.scss */
+/* line 46, ../scss/include/_table.scss */
 .table th:first-child,
 .table td:first-child {
   border-left: 0;
 }
-/* line 40, ../scss/include/_table.scss */
+/* line 50, ../scss/include/_table.scss */
 .table td {
   border-top: 1px solid #dddddd;
 }
-/* line 46, ../scss/include/_table.scss */
+/* line 56, ../scss/include/_table.scss */
 .table.nowrap th,
 .table.nowrap td {
   white-space: nowrap;
 }
-/* line 53, ../scss/include/_table.scss */
+/* line 63, ../scss/include/_table.scss */
 .table.nowrap.fixed-tail th:nth-last-of-type(-n+2),
 .table.nowrap.fixed-tail td:nth-last-of-type(-n+2) {
   padding-right: 100px;
 }
-/* line 57, ../scss/include/_table.scss */
+/* line 67, ../scss/include/_table.scss */
 .table.nowrap.fixed-tail th:last-child,
 .table.nowrap.fixed-tail td:last-child {
   position: absolute;
@@ -1939,24 +1951,24 @@ img.img-circle {
   padding-right: 5px;
   background: white;
 }
-/* line 66, ../scss/include/_table.scss */
+/* line 76, ../scss/include/_table.scss */
 .table.nowrap.fixed-tail th:last-child {
   padding-right: 22px;
   padding-left: 21px;
 }
-/* line 77, ../scss/include/_table.scss */
+/* line 87, ../scss/include/_table.scss */
 .table.stripped tr.even,
 .table.stripped tr.alt,
 .table.stripped tr:nth-of-type(even) {
   background: #f9f9f9;
 }
-/* line 83, ../scss/include/_table.scss */
+/* line 93, ../scss/include/_table.scss */
 .table.hover tr:hover td {
   background: #f9efe8;
 }
 
 @media only screen and (max-width: 1023px) {
-  /* line 92, ../scss/include/_table.scss */
+  /* line 102, ../scss/include/_table.scss */
   table.flip-scroll {
     width: 100%;
     border-collapse: collapse;
@@ -1965,7 +1977,7 @@ img.img-circle {
     position: relative;
     width: 100%;
   }
-  /* line 100, ../scss/include/_table.scss */
+  /* line 110, ../scss/include/_table.scss */
   table.flip-scroll :after {
     visibility: hidden;
     display: block;
@@ -1974,29 +1986,29 @@ img.img-circle {
     clear: both;
     height: 0;
   }
-  /* line 109, ../scss/include/_table.scss */
+  /* line 119, ../scss/include/_table.scss */
   table.flip-scroll th, table.flip-scroll td {
     margin: 0;
     vertical-align: top;
   }
-  /* line 114, ../scss/include/_table.scss */
+  /* line 124, ../scss/include/_table.scss */
   table.flip-scroll th {
     display: block;
     text-align: right;
     border-bottom: 0;
     border-left: 0;
   }
-  /* line 121, ../scss/include/_table.scss */
+  /* line 131, ../scss/include/_table.scss */
   table.flip-scroll thead {
     display: block;
     float: left;
   }
-  /* line 125, ../scss/include/_table.scss */
+  /* line 135, ../scss/include/_table.scss */
   table.flip-scroll thead tr {
     display: block;
     border-right: 1px solid #dddddd;
   }
-  /* line 131, ../scss/include/_table.scss */
+  /* line 141, ../scss/include/_table.scss */
   table.flip-scroll tbody {
     display: block;
     width: auto;
@@ -2005,17 +2017,17 @@ img.img-circle {
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
   }
-  /* line 139, ../scss/include/_table.scss */
+  /* line 149, ../scss/include/_table.scss */
   table.flip-scroll tbody tr {
     display: inline-block;
     vertical-align: top;
     border-left: 1px solid #dddddd;
   }
-  /* line 144, ../scss/include/_table.scss */
+  /* line 154, ../scss/include/_table.scss */
   table.flip-scroll tbody tr:first-child {
     border-left: 0;
   }
-  /* line 149, ../scss/include/_table.scss */
+  /* line 159, ../scss/include/_table.scss */
   table.flip-scroll td {
     display: block;
     min-height: 1.25em;
@@ -2026,7 +2038,7 @@ img.img-circle {
     border-top: 0;
   }
 
-  /* line 165, ../scss/include/_table.scss */
+  /* line 175, ../scss/include/_table.scss */
   table.no-more-table thead,
   table.no-more-table tbody,
   table.no-more-table th,
@@ -2034,13 +2046,13 @@ img.img-circle {
   table.no-more-table tr {
     display: block;
   }
-  /* line 170, ../scss/include/_table.scss */
+  /* line 180, ../scss/include/_table.scss */
   table.no-more-table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  /* line 177, ../scss/include/_table.scss */
+  /* line 187, ../scss/include/_table.scss */
   table.no-more-table td {
     border: none;
     border-bottom: 1px solid #dddddd;
@@ -2049,7 +2061,7 @@ img.img-circle {
     white-space: normal;
     text-align: left;
   }
-  /* line 185, ../scss/include/_table.scss */
+  /* line 195, ../scss/include/_table.scss */
   table.no-more-table td:before {
     position: absolute;
     top: 6px;
@@ -2061,7 +2073,7 @@ img.img-circle {
     font-weight: bold;
     content: attr(data-title);
   }
-  /* line 197, ../scss/include/_table.scss */
+  /* line 207, ../scss/include/_table.scss */
   table.no-more-table tr:last-child td:last-child {
     border-bottom: 0;
   }
@@ -2076,9 +2088,7 @@ span.postfix {
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
+  border: 1px solid #cccccc;
   background: #f2f2f2;
   overflow: hidden;
   font-size: 0.875em;
@@ -2087,17 +2097,17 @@ span.postfix {
   color: #333333;
 }
 
-/* line 20, ../scss/include/_form.scss */
+/* line 18, ../scss/include/_form.scss */
 span.prefix {
   border-right: none;
 }
 
-/* line 23, ../scss/include/_form.scss */
+/* line 21, ../scss/include/_form.scss */
 span.postfix {
   border-left: none;
 }
 
-/* line 28, ../scss/include/_form.scss */
+/* line 26, ../scss/include/_form.scss */
 .postfix,
 .prefix,
 input.postfix-input {
@@ -2105,14 +2115,36 @@ input.postfix-input {
   box-sizing: border-box;
 }
 
-/* line 33, ../scss/include/_form.scss */
+/* line 32, ../scss/include/_form.scss */
+.input-button input[type="text"] {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 37, ../scss/include/_form.scss */
 .input-button .button {
   width: 100%;
   margin: -1px 0px 0px -1px;
-  padding: 5px 10px 6px;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 46, ../scss/include/_form.scss */
+.input-button.left input[type="text"] {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 53, ../scss/include/_form.scss */
+.input-button.left .button {
+  margin: -1px 0px 0px 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-/* line 38, ../scss/include/_form.scss */
+/* line 64, ../scss/include/_form.scss */
 .input-button.left .button {
   margin: -1px 0px 0px 1px;
 }
@@ -2120,44 +2152,44 @@ input.postfix-input {
 /* line 2, ../scss/include/_button.scss */
 button,
 .button {
-  padding: 5px 10px 5px;
+  padding: 6px 16px;
   cursor: pointer;
   line-height: 150%;
   margin: 0;
   position: relative;
   text-decoration: none;
   text-align: center;
-  background: #13c4ff;
+  background: #0088cc;
   border: 1px solid white;
   color: white;
-  font-weight: 400;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 700;
 }
-/* line 24, ../scss/include/_button.scss */
+/* line 26, ../scss/include/_button.scss */
 button:active,
 .button:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
-/* line 29, ../scss/include/_button.scss */
+/* line 31, ../scss/include/_button.scss */
 button:hover,
 .button:hover {
   color: white;
 }
-/* line 33, ../scss/include/_button.scss */
-button.alert,
-.button.alert {
+/* line 35, ../scss/include/_button.scss */
+button.error,
+.button.error {
   background: #ff3b30;
-  padding: 5px 10px 5px;
-  font-weight: 400;
 }
 /* line 39, ../scss/include/_button.scss */
 button.success,
@@ -2203,74 +2235,82 @@ button.round,
   right: 0;
   top: 0;
 }
-/* line 83, ../scss/include/_button.scss */
+/* line 82, ../scss/include/_button.scss */
+.button-group.round li a {
+  border-radius: 0;
+}
+/* line 86, ../scss/include/_button.scss */
 .button-group.round li:first-child a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-/* line 89, ../scss/include/_button.scss */
+/* line 94, ../scss/include/_button.scss */
 .button-group.round li:last-child a {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-/* line 97, ../scss/include/_button.scss */
+/* line 104, ../scss/include/_button.scss */
 .button-group > :first-child {
   margin-left: 0;
 }
 
-/* line 100, ../scss/include/_button.scss */
+/* line 107, ../scss/include/_button.scss */
 .button-group > * {
   margin: 0 0 0 -1px;
   float: left;
 }
 
-/* line 104, ../scss/include/_button.scss */
+/* line 111, ../scss/include/_button.scss */
 .button-group::after {
   clear: both;
 }
 
-/* line 108, ../scss/include/_button.scss */
+/* line 115, ../scss/include/_button.scss */
 .button-group::before,
 .button-group::after {
   content: " ";
   display: table;
 }
 
-/* line 112, ../scss/include/_button.scss */
+/* line 119, ../scss/include/_button.scss */
 .button-bar {
   position: relative;
 }
 
-/* line 115, ../scss/include/_button.scss */
+/* line 122, ../scss/include/_button.scss */
 .button-bar {
   width: 100%;
 }
 
-/* line 118, ../scss/include/_button.scss */
+/* line 125, ../scss/include/_button.scss */
 .button-bar::after {
   clear: both;
 }
 
-/* line 121, ../scss/include/_button.scss */
+/* line 128, ../scss/include/_button.scss */
 .submit {
   border: 0;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 128, ../scss/include/_button.scss */
+  /* line 135, ../scss/include/_button.scss */
   .button-bar ul.button-group {
     position: relative;
     margin: 0 auto;
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 137, ../scss/include/_button.scss */
+  /* line 144, ../scss/include/_button.scss */
   .button-bar ul.button-group.left, .button-bar ul.button-group.centered, .button-bar ul.button-group.right {
     width: auto;
     clear: both;
   }
-  /* line 141, ../scss/include/_button.scss */
+  /* line 148, ../scss/include/_button.scss */
   .button-bar ul.button-group.right {
     float: right;
   }
@@ -2313,7 +2353,7 @@ ul.pagination li.unavailable a:hover {
 }
 /* line 35, ../scss/include/_pagination.scss */
 ul.pagination li.active a {
-  background: #13c4ff;
+  background: #0088cc;
   color: white;
   font-weight: bold;
   cursor: default;
@@ -2640,6 +2680,179 @@ ul.pagination.centered {
 }
 
 /* line 1, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu {
+  background: #666;
+  width: 100%;
+}
+/* line 5, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .wrapper {
+  padding: 8px 20px;
+}
+/* line 9, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .brand {
+  margin: 0;
+  float: left;
+  font-size: 1.5em;
+}
+/* line 14, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .brand a {
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  color: #fff;
+}
+/* line 21, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .brand:hover {
+  color: #f5f5f5;
+}
+/* line 25, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .brand .logo img {
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  display: inline-block;
+}
+/* line 34, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar > li {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: 25px;
+  line-height: 40px;
+}
+/* line 42, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar li a {
+  color: #fff;
+  display: block;
+}
+/* line 48, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user {
+  position: relative;
+}
+/* line 51, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user > a {
+  padding-right: 20px;
+  position: relative;
+  line-height: 0;
+}
+/* line 57, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user .avatar {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  margin-right: 5px;
+  display: inline-block;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 70, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user span {
+  line-height: 120%;
+  display: inline-block;
+  vertical-align: top;
+  top: 4px;
+  position: relative;
+}
+/* line 77, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user span small {
+  font-size: 85%;
+  display: block;
+}
+/* line 82, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .user i.fa-caret-down {
+  position: absolute;
+  right: 0;
+  top: 33%;
+}
+/* line 89, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 103, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul.fadeInDown {
+  display: block;
+}
+/* line 107, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul.sub li {
+  display: block;
+  float: none;
+  margin: 0;
+  padding-left: 15px;
+}
+/* line 113, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul.sub li:hover {
+  background: #eee;
+}
+/* line 119, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul li a {
+  padding: 5px 15px 5px 0;
+  color: #465d6f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 128, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul li a i {
+  margin-right: 3px;
+}
+/* line 133, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul li:last-child a {
+  border-bottom: 0;
+}
+/* line 137, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul li:hover a {
+  color: #08c;
+}
+/* line 141, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar ul li .sub-badge {
+  color: #f79263;
+}
+/* line 147, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .notification {
+  position: relative;
+}
+/* line 150, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .notification .badge {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.75em;
+  text-align: center;
+  display: inline-block;
+  background: red;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 165, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .notification > a {
+  font-size: 1.4em;
+}
+/* line 169, ../scss/include/_navbar-tabstrip.scss */
+.nav-menu .topbar .notification .sub {
+  width: 210px;
+  margin-top: 7px;
+}
+
+/* line 183, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu {
   background: #333333;
   display: inline-block;
@@ -2650,56 +2863,56 @@ ul.pagination.centered {
   right: 0;
   z-index: 999;
 }
-/* line 11, ../scss/include/_navbar-tabstrip.scss */
+/* line 193, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu h1 {
   float: left;
   margin: 0;
   line-height: 140%;
 }
-/* line 16, ../scss/include/_navbar-tabstrip.scss */
+/* line 198, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu h1 a {
   color: #fff;
   font-size: 0.7em;
 }
-/* line 25, ../scss/include/_navbar-tabstrip.scss */
+/* line 207, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li {
   padding: 0;
 }
-/* line 28, ../scss/include/_navbar-tabstrip.scss */
+/* line 210, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li a {
   color: #fff;
   line-height: 40px;
 }
-/* line 32, ../scss/include/_navbar-tabstrip.scss */
+/* line 214, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li a:after {
   border-color: white transparent transparent transparent;
 }
-/* line 37, ../scss/include/_navbar-tabstrip.scss */
+/* line 219, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li.active {
   background: #13c4ff;
 }
-/* line 41, ../scss/include/_navbar-tabstrip.scss */
+/* line 223, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li:hover {
   background: #13c4ff;
 }
-/* line 45, ../scss/include/_navbar-tabstrip.scss */
+/* line 227, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul {
   right: 0;
   border: 0;
 }
-/* line 49, ../scss/include/_navbar-tabstrip.scss */
+/* line 231, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li {
   background: #333;
 }
-/* line 52, ../scss/include/_navbar-tabstrip.scss */
+/* line 234, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li a {
   line-height: inherit;
 }
-/* line 57, ../scss/include/_navbar-tabstrip.scss */
+/* line 239, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li ul li:hover a {
   color: white;
 }
-/* line 64, ../scss/include/_navbar-tabstrip.scss */
+/* line 246, ../scss/include/_navbar-tabstrip.scss */
 .navbar-menu .topbar ul.menu li.divide {
   border-bottom: none;
   border-top: none;
@@ -2709,38 +2922,38 @@ ul.pagination.centered {
   width: 0;
 }
 
-/* line 80, ../scss/include/_navbar-tabstrip.scss */
+/* line 262, ../scss/include/_navbar-tabstrip.scss */
 .navbar {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background: #f5f5f5;
+  background: whitesmoke;
   padding: 10px 7px;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   z-index: 99;
 }
-/* line 91, ../scss/include/_navbar-tabstrip.scss */
+/* line 273, ../scss/include/_navbar-tabstrip.scss */
 .navbar .row {
   margin-bottom: 0;
 }
-/* line 95, ../scss/include/_navbar-tabstrip.scss */
+/* line 277, ../scss/include/_navbar-tabstrip.scss */
 .navbar a.back-button {
-  padding: 5px 0px 5px 16px;
+  padding: 5px 0px 5px 20px;
   display: block;
   font-weight: 300;
   color: #333;
   font-size: 1.2em;
 }
-/* line 102, ../scss/include/_navbar-tabstrip.scss */
+/* line 284, ../scss/include/_navbar-tabstrip.scss */
 .navbar a.back-button:before {
   color: #97a0a4;
   width: 12px;
   height: 12px;
   border-color: #000;
   position: absolute;
-  left: 3%;
+  left: 5px;
   top: 50%;
   margin-top: -0.35rem;
   content: "";
@@ -2754,39 +2967,40 @@ ul.pagination.centered {
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-/* line 124, ../scss/include/_navbar-tabstrip.scss */
+/* line 306, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group {
   margin-bottom: 0;
 }
-/* line 126, ../scss/include/_navbar-tabstrip.scss */
+/* line 308, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li {
   padding: 1px 0;
 }
-/* line 129, ../scss/include/_navbar-tabstrip.scss */
+/* line 311, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li a {
   line-height: 120%;
-  background: transparent;
-  color: #13c4ff;
-  border: 1px solid #13c4ff;
+  border-radius: 0;
+  border: 1px solid whitesmoke;
 }
-/* line 137, ../scss/include/_navbar-tabstrip.scss */
+/* line 320, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li a:hover,
 .navbar ul.button-group li a.active {
   color: white;
-  background: #13c4ff;
-  border: 1px solid #13c4ff;
 }
-/* line 144, ../scss/include/_navbar-tabstrip.scss */
+/* line 327, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li:first-child a {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-/* line 150, ../scss/include/_navbar-tabstrip.scss */
+/* line 335, ../scss/include/_navbar-tabstrip.scss */
 .navbar ul.button-group li:last-child a {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
-/* line 158, ../scss/include/_navbar-tabstrip.scss */
+/* line 345, ../scss/include/_navbar-tabstrip.scss */
 .navbar h6.label {
   margin: 0;
   text-align: center;
@@ -2797,12 +3011,12 @@ ul.pagination.centered {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 164, ../scss/include/_navbar-tabstrip.scss */
+/* line 351, ../scss/include/_navbar-tabstrip.scss */
 .navbar h6.label.title {
   line-height: 120%;
   font-size: 1.1em;
 }
-/* line 173, ../scss/include/_navbar-tabstrip.scss */
+/* line 360, ../scss/include/_navbar-tabstrip.scss */
 .navbar p {
   margin: 0;
   text-align: center;
@@ -2814,26 +3028,25 @@ ul.pagination.centered {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 185, ../scss/include/_navbar-tabstrip.scss */
+/* line 372, ../scss/include/_navbar-tabstrip.scss */
 .navbar .icon-menu {
   position: relative;
   display: block;
 }
-/* line 189, ../scss/include/_navbar-tabstrip.scss */
+/* line 376, ../scss/include/_navbar-tabstrip.scss */
 .navbar .icon-menu.icon-menu:after {
   content: "";
   position: absolute;
-  top: 0.5em;
   right: 4%;
   width: 23px;
-  height: 17px;
-  border-top: 10px double #000;
+  height: 15px;
+  border-top: 9px double #000;
   border-bottom: 3px solid #000;
-  margin-top: 0.41rem;
+  margin-top: 0.4rem;
   top: 50%;
 }
-/* line 203, ../scss/include/_navbar-tabstrip.scss */
-.navbar input {
+/* line 389, ../scss/include/_navbar-tabstrip.scss */
+.navbar input[type="text"] {
   text-align: center;
   margin-bottom: 0;
   height: 2.15em;
@@ -2841,17 +3054,17 @@ ul.pagination.centered {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 211, ../scss/include/_navbar-tabstrip.scss */
-.navbar input:focus {
+/* line 397, ../scss/include/_navbar-tabstrip.scss */
+.navbar input[type="text"]:focus {
   text-align: left;
 }
 
-/* line 217, ../scss/include/_navbar-tabstrip.scss */
+/* line 403, ../scss/include/_navbar-tabstrip.scss */
 .navbar + .container {
   padding-top: 53px;
 }
 
-/* line 221, ../scss/include/_navbar-tabstrip.scss */
+/* line 407, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip {
   position: fixed;
   bottom: 0;
@@ -2862,47 +3075,47 @@ ul.pagination.centered {
   z-index: 99;
   background: #f5f5f5;
 }
-/* line 231, ../scss/include/_navbar-tabstrip.scss */
+/* line 417, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .row {
   margin-bottom: 0;
 }
-/* line 235, ../scss/include/_navbar-tabstrip.scss */
+/* line 421, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs {
   border-right: 1px solid #eeeeee;
   text-align: center;
   padding: 2px 0 2px;
 }
-/* line 240, ../scss/include/_navbar-tabstrip.scss */
+/* line 426, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon {
   margin: 0 auto;
   width: 32px;
   height: 32px;
   position: relative;
 }
-/* line 246, ../scss/include/_navbar-tabstrip.scss */
+/* line 432, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.star {
   background: url(../images/star-icon.png) center no-repeat;
 }
-/* line 249, ../scss/include/_navbar-tabstrip.scss */
+/* line 435, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.profile {
   background: url(../images/profile-icon.png) center no-repeat;
 }
-/* line 252, ../scss/include/_navbar-tabstrip.scss */
+/* line 438, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.search {
   background: url(../images/search-icon.png) center no-repeat;
 }
-/* line 255, ../scss/include/_navbar-tabstrip.scss */
+/* line 441, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs .icon.more {
   background: url(../images/more-icon.png) center no-repeat;
 }
-/* line 260, ../scss/include/_navbar-tabstrip.scss */
+/* line 446, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs span {
   display: block;
   font-weight: 300;
   font-size: 0.8em;
   color: #333;
 }
-/* line 267, ../scss/include/_navbar-tabstrip.scss */
+/* line 453, ../scss/include/_navbar-tabstrip.scss */
 .tabstrip .tabs:last-child {
   border-right: 0;
 }
@@ -2910,43 +3123,38 @@ ul.pagination.centered {
 /* line 1, ../scss/include/_alert.scss */
 .alert {
   position: relative;
-  z-index: 99;
-  padding: 15px;
-  padding-right: 35px;
-  font-weight: 300;
+  z-index: 9;
+  padding: 0;
 }
-/* line 12, ../scss/include/_alert.scss */
+/* line 6, ../scss/include/_alert.scss */
 .alert.error {
   color: white;
   background-color: #ff3b30;
 }
-/* line 17, ../scss/include/_alert.scss */
+/* line 11, ../scss/include/_alert.scss */
 .alert.success {
   color: white;
-  background-color: #4cd964;
+  background-color: #007aff;
 }
-/* line 22, ../scss/include/_alert.scss */
+/* line 16, ../scss/include/_alert.scss */
 .alert.warning {
   color: white;
   background-color: #ff9500;
 }
-/* line 27, ../scss/include/_alert.scss */
+/* line 21, ../scss/include/_alert.scss */
 .alert.info {
   color: white;
-  background-color: #007aff;
+  background-color: #4cd964;
 }
-/* line 32, ../scss/include/_alert.scss */
-.alert h6 {
-  margin: 0;
-  font-weight: 600;
-}
-/* line 37, ../scss/include/_alert.scss */
+/* line 26, ../scss/include/_alert.scss */
 .alert p {
+  font-weight: 600;
   margin: 0;
-  font-weight: 400;
-  font-size: 0.9em;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 10px;
 }
-/* line 43, ../scss/include/_alert.scss */
+/* line 34, ../scss/include/_alert.scss */
 .alert button.close {
   padding: 0;
   cursor: pointer;
@@ -2988,26 +3196,28 @@ ul.menu li {
 ul.menu li a {
   color: #333;
   display: block;
-  padding: 3px 25px;
   clear: both;
   white-space: nowrap;
+  padding: 3px 0;
+  margin: 0px 15px;
 }
-/* line 28, ../scss/include/_tooltip-dropdown.scss */
+/* line 29, ../scss/include/_tooltip-dropdown.scss */
 ul.menu li:hover, ul.menu li.selected {
   background: #f5f5f5;
 }
-/* line 31, ../scss/include/_tooltip-dropdown.scss */
+/* line 32, ../scss/include/_tooltip-dropdown.scss */
 ul.menu li:hover ul, ul.menu li.selected ul {
   display: block;
   opacity: 1;
   visibility: visible;
   border: 1px solid #eeeeee;
 }
-/* line 41, ../scss/include/_tooltip-dropdown.scss */
+/* line 42, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible > a {
   position: relative;
+  padding: 3px 25px 3px 0;
 }
-/* line 44, ../scss/include/_tooltip-dropdown.scss */
+/* line 46, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible > a:after {
   position: absolute;
   content: "";
@@ -3017,33 +3227,25 @@ ul.menu .collapsible > a:after {
   border-style: solid;
   border-color: black transparent transparent transparent;
   top: 50%;
-  border-width: 0.4em;
-  right: 8px;
-  margin-top: -0.3em;
+  right: 5px;
+  border-width: 0.5em;
+  margin-top: -0.2em;
 }
-/* line 61, ../scss/include/_tooltip-dropdown.scss */
+/* line 62, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible.up > a {
   position: relative;
 }
-/* line 64, ../scss/include/_tooltip-dropdown.scss */
+/* line 65, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible.up > a:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  display: block;
-  border-style: solid;
   border-color: transparent transparent black transparent;
-  top: 50%;
-  border-width: 0.4em;
-  right: 8px;
-  margin-top: -0.4em;
+  border-width: 0.5em;
+  margin-top: -0.6em;
 }
-/* line 79, ../scss/include/_tooltip-dropdown.scss */
+/* line 72, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible.up ul {
-  top: -101px;
+  top: -83px;
 }
-/* line 84, ../scss/include/_tooltip-dropdown.scss */
+/* line 77, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul {
   padding: 0;
   position: absolute;
@@ -3058,36 +3260,41 @@ ul.menu .collapsible ul {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 98, ../scss/include/_tooltip-dropdown.scss */
+/* line 91, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul li {
   display: block;
   background: #fff;
 }
-/* line 102, ../scss/include/_tooltip-dropdown.scss */
+/* line 92, ../scss/include/_tooltip-dropdown.scss */
+ul.menu .collapsible ul li > a {
+  padding: 3px 25px;
+  margin: 0;
+}
+/* line 100, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul li.divider {
   border-top: 1px solid #eeeeee;
   padding: 0px;
   overflow: hidden;
 }
-/* line 109, ../scss/include/_tooltip-dropdown.scss */
+/* line 107, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul li:hover, ul.menu .collapsible ul li.selected {
   background: #f5f5f5;
 }
-/* line 112, ../scss/include/_tooltip-dropdown.scss */
+/* line 110, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul li:hover ul, ul.menu .collapsible ul li.selected ul {
   display: block;
   left: 100%;
   top: 0;
 }
-/* line 121, ../scss/include/_tooltip-dropdown.scss */
+/* line 119, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul li.left:hover ul, ul.menu .collapsible ul li.left.selected ul {
   left: -70%;
 }
-/* line 129, ../scss/include/_tooltip-dropdown.scss */
+/* line 127, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul .collapsible.right > a {
   position: relative;
 }
-/* line 132, ../scss/include/_tooltip-dropdown.scss */
+/* line 130, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul .collapsible.right > a:after {
   position: absolute;
   content: "";
@@ -3101,9 +3308,10 @@ ul.menu .collapsible ul .collapsible.right > a:after {
   right: 6px;
   margin-top: -0.4em;
 }
-/* line 149, ../scss/include/_tooltip-dropdown.scss */
+/* line 147, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul .collapsible.left > a {
   position: relative;
+  margin: 0;
 }
 /* line 152, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul .collapsible.left > a:after {
@@ -3116,8 +3324,8 @@ ul.menu .collapsible ul .collapsible.left > a:after {
   border-color: transparent black transparent transparent;
   top: 50%;
   border-width: 0.4em;
-  left: 6px;
-  margin-top: -0.4em;
+  left: 4px;
+  margin-top: -0.35em;
 }
 /* line 167, ../scss/include/_tooltip-dropdown.scss */
 ul.menu .collapsible ul .collapsible ul {
@@ -3307,9 +3515,8 @@ article.tabs section h2 {
 #login {
   padding: 40px;
   margin: 0 auto;
-  margin-top: 40px;
-  display: table;
-  background: #fbfbfb;
+  border: 1px solid #eee;
+  background: #f9f9f9;
   width: 100%;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -3345,32 +3552,6 @@ article.tabs section h2 {
   display: table;
   font-size: 16px;
 }
-/* line 43, ../scss/include/_login.scss */
-#login input[type="text"],
-#login input[type="password"] {
-  border: 0;
-  border-bottom: 1px solid #ddd;
-  background: transparent;
-  color: #5c7883;
-}
-/* line 51, ../scss/include/_login.scss */
-#login a.button,
-#login input[type="submit"] {
-  border: 1px solid #13c4ff;
-  background: transparent;
-  color: #13c4ff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 63, ../scss/include/_login.scss */
-#login a.button:hover,
-#login input[type="submit"]:hover {
-  background: #13c4ff;
-  color: #fff;
-}
 /* line 67, ../scss/include/_login.scss */
 #login .placeholder {
   cursor: pointer;
@@ -3378,8 +3559,7 @@ article.tabs section h2 {
   margin-bottom: 20px;
   margin-top: 10px;
   display: table;
-  font-size: 16px;
-  color: #5c7883;
+  font-size: 1.15em;
   font-weight: 300;
   line-height: 25px;
   padding: 0;
