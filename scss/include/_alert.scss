@@ -1,13 +1,7 @@
 .alert {
-	// position: fixed;
 	position: relative;
-	// top: 5%;
-	// left: 10%;
-	// right: 10%;
-	z-index: 99;
-	padding: 15px;
-	padding-right: 35px;
-	font-weight: 300;
+	z-index: 9;
+	padding: 0;
 
 	&.error {
 		color: #{$alert-error-color};
@@ -29,15 +23,12 @@
 		background-color: #{$alert-info};
 	}
 
-	h6 {
-		margin: 0;
-		font-weight: 600;
-	}
-
 	p {
+		font-weight: 600;
 		margin: 0;
-		font-weight: 400;
-		font-size: 0.9em;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 5px 10px;
 	}
 
 	button.close {

@@ -7,9 +7,7 @@ span.postfix {
 	width: 100%;
 	padding-top: 0;
 	padding-bottom: 0;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #{$border-postprefix-color};
+	border: 1px solid #{$border-postprefix-color};
 	background: #{$prepostfix-bg};
 	overflow: hidden;
 	font-size: 0.875em;
@@ -23,18 +21,46 @@ span.prefix {
 span.postfix {
 	border-left: none;
 }
-.postfix, 
-.prefix, 
-input.postfix-input { 
-	height: 28px; 
-	box-sizing: border-box; 
+.postfix,
+.prefix,
+input.postfix-input {
+	height: 28px;
+	box-sizing: border-box;
 }
 
-.input-button .button {
-	width: 100%;
-	margin: -1px 0px 0px -1px;
-	padding: 5px 10px 6px;
+.input-button {
+	input[type="text"] {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+
+	.button {
+		width: 100%;
+		margin: -1px 0px 0px -1px;
+		border-radius: 0;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	&.left {
+		input[type="text"] {
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		.button {
+			margin: -1px 0px 0px 1px;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+	}
 }
+
+
 .input-button.left .button {
 	margin: -1px 0px 0px 1px;
 }

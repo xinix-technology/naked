@@ -1,9 +1,9 @@
 #login {
 	padding: 40px;
 	margin: 0 auto;
-    margin-top: 40px;
-    display: table;
-    background: #fbfbfb;
+    // display: table;
+    border: 1px solid #eee;
+    background: #f9f9f9;
     width: 100%;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -39,30 +39,30 @@
 		font-size: 16px;
 	}
 
-	input[type="text"],
-	input[type="password"] {
-		border: 0;
-		border-bottom: 1px solid #ddd;
-		background: transparent;
-		color: #5c7883;
-	}
+	// input[type="text"],
+	// input[type="password"] {
+	// 	border: 0;
+	// 	border-bottom: 1px solid #ddd;
+	// 	background: transparent;
+	// 	color: #5c7883;
+	// }
 
-	a.button,
-	input[type="submit"] {
-	    border: 1px solid #13c4ff;
-	    background: transparent;
-	    color: #13c4ff;
-	    -webkit-border-radius: 5px;
-	    -moz-border-radius: 5px;
-	    -ms-border-radius: 5px;
-	    -o-border-radius: 5px;
-	    border-radius: 5px;
-	}
+	// a.button,
+	// input[type="submit"] {
+	//     border: 1px solid #13c4ff;
+	//     background: transparent;
+	//     color: #13c4ff;
+	//     -webkit-border-radius: 5px;
+	//     -moz-border-radius: 5px;
+	//     -ms-border-radius: 5px;
+	//     -o-border-radius: 5px;
+	//     border-radius: 5px;
+	// }
 
-	a.button:hover,
-	input[type="submit"]:hover {
-	    background: #13c4ff; color: #fff;
-	}
+	// a.button:hover,
+	// input[type="submit"]:hover {
+	//     background: #13c4ff; color: #fff;
+	// }
 
 	.placeholder {
 		cursor: pointer;
@@ -70,8 +70,7 @@
 		margin-bottom: 20px;
 		margin-top: 10px;
 		display: table;
-		font-size: 16px;
-		color: #5c7883;
+		font-size: 1.15em;
 		font-weight: 300;
 		line-height: 25px;
 		padding: 0;

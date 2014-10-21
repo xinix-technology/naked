@@ -9,27 +9,27 @@
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .large-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); 
-                display: block; 
+            .large-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns);
+                display: block;
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .span-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); 
-                display: block; 
+            .span-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns);
+                display: block;
             }
         }
         @for $i from 1 through $tabstrip-columns {
-            .tabspan-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$tabstrip-columns); 
-                display: block; 
+            .tabspan-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$tabstrip-columns);
+                display: block;
             }
         }
     }
@@ -46,11 +46,11 @@
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .xlarge-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); 
-                display: block; 
+            .xlarge-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns);
+                display: block;
             }
         }
     }
@@ -64,10 +64,10 @@
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .medium-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); display: block; 
+            .medium-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns); display: block;
             }
         }
     }
@@ -84,10 +84,10 @@
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .small-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); display: block; 
+            .small-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns); display: block;
             }
         }
     }
@@ -104,10 +104,10 @@
             }
         }
         @for $i from 1 through $grid-total-columns {
-            .tiny-#{$i} { 
-                float: left; 
-                position: relative; 
-                width: percentage($i/$grid-total-columns); display: block; 
+            .tiny-#{$i} {
+                float: left;
+                position: relative;
+                width: percentage($i/$grid-total-columns); display: block;
             }
         }
     }

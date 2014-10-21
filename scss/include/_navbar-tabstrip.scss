@@ -1,3 +1,185 @@
+.nav-menu {
+	background: #666;
+	width: 100%;
+
+	.wrapper {
+		padding: 8px 20px;
+	}
+
+	.brand {
+		margin: 0;
+		float: left;
+		font-size: 1.5em;
+
+		a {
+			display: inline-block;
+			float: left;
+			line-height: 40px;
+			color: #fff;
+		}
+
+		&:hover {
+			color: #f5f5f5;
+		}
+
+		.logo img {
+			height: 40px;
+			float: left;
+			margin-right: 10px;
+			display: inline-block;
+		}
+	}
+
+	.topbar {
+		>li {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+			margin-right: 25px;
+			line-height: 40px;
+		}
+		li {
+			a {
+				color: #fff;
+				display: block;
+			}
+		}
+
+		.user {
+			position: relative;
+
+			>a {
+				padding-right: 20px;
+				position: relative;
+				line-height: 0;
+			}
+
+			.avatar {
+				width: 40px;
+				height: 40px;
+				border: 2px solid #fff;
+				margin-right: 5px;
+				display: inline-block;
+				-webkit-border-radius: 500px;
+				-moz-border-radius: 500px;
+				-ms-border-radius: 500px;
+				-o-border-radius: 500px;
+				border-radius: 500px;
+			}
+
+			span {
+				line-height: 120%;
+				display: inline-block;
+				vertical-align: top;
+				top: 4px;
+				position: relative;
+
+				small {
+					font-size: 85%;
+					display: block;
+				}
+			}
+			i.fa-caret-down {
+				position: absolute;
+				right: 0;
+				top: 33%;
+			}
+		}
+
+		ul {
+			display: none;
+			position: absolute;
+			padding: 0;
+			list-style: none;
+			width: 100%;
+			background: #f9f9f9;
+			border: 1px solid #e5e5e5;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+
+			&.fadeInDown {
+				display: block;
+			}
+
+			&.sub li {
+				display: block;
+				float: none;
+				margin: 0;
+				padding-left: 15px;
+
+				&:hover {
+					background: #eee;
+				}
+			}
+
+			li {
+				a {
+					padding: 5px 15px 5px 0;
+					color: #465d6f;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					max-width: 100%;
+					border-bottom: 1px solid #e5e5e5;
+
+					i {
+						margin-right: 3px;
+					}
+				}
+
+				&:last-child a {
+					border-bottom: 0;
+				}
+
+				&:hover a {
+					color: #08c;
+				}
+
+				.sub-badge {
+					color: #f79263;
+				}
+			}
+		}
+
+		.notification {
+			position: relative;
+
+			.badge {
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 0.75em;
+				text-align: center;
+				display: inline-block;
+				background: red;
+				-webkit-border-radius: 500px;
+				-moz-border-radius: 500px;
+				-ms-border-radius: 500px;
+				-o-border-radius: 500px;
+				border-radius: 500px;
+			}
+
+			>a {
+				font-size: 1.4em;
+			}
+
+			.sub {
+				width: 210px;
+				margin-top: 7px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
 .navbar-menu {
 	background: #{$header-bg};
 	display: inline-block;
@@ -82,7 +264,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #f5f5f5;
+	background: #{$navbar-bg};
 	padding: 10px 7px;
 	border-top: 1px solid #{$border-color};
 	border-bottom: 1px solid #{$border-color};
@@ -93,7 +275,7 @@
 	}
 
 	a.back-button {
-		padding: 5px 0px 5px 16px;
+		padding: 5px 0px 5px 20px;
 		display: block;
 		font-weight: 300;
 		color: #333;
@@ -105,7 +287,7 @@
 			height: 12px;
 			border-color: #000;
 			position: absolute;
-			left: 3%;
+			left: 5px;
 			top: 50%;
 			margin-top: -0.35rem;
 			content: "";
@@ -128,28 +310,33 @@
 
 			a {
 				line-height: 120%;
-				background: transparent;
-				color: #13c4ff;
-				border: 1px solid #13c4ff;
+				border-radius: 0;
+				// background: transparent;
+				// color: #13c4ff;
+				border: 1px solid #{$navbar-bg};
 			}
 
 			a:hover,
 			a.active {
 				color: white;
-				background: #13c4ff;
-				border: 1px solid #13c4ff;
+				// background: #13c4ff;
+				// border: 1px solid #13c4ff;
 			}
 
 			&:first-child {
 				a {
 					border-top-left-radius: 5px;
 					border-bottom-left-radius: 5px;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
 				}
 			}
 			&:last-child {
 				a{
 					border-top-right-radius: 5px;
 					border-bottom-right-radius: 5px;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
 				}
 			}
 		}
@@ -189,18 +376,17 @@
 		&.icon-menu:after {
 			content: "";
 			position: absolute;
-			top: 0.5em;
 			right: 4%;
 			width: 23px;
-			height: 17px;
-			border-top: 10px double #000;
+			height: 15px;
+			border-top: 9px double #000;
 			border-bottom: 3px solid #000;
-			margin-top: 0.41rem;
+			margin-top: 0.4rem;
 			top: 50%;
 		}
 	}
 
-	input {
+	input[type="text"] {
 		text-align: center;
 		margin-bottom: 0;
 		height: 2.15em;

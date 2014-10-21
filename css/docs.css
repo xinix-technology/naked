@@ -61,11 +61,6 @@ footer p {
   font-size: 11px;
 }
 
-/* line 54, ../scss/include/_docs.scss */
-.row {
-  margin-bottom: 5px;
-}
-
 /* line 62, ../scss/include/_docs.scss */
 .xlarge-screen,
 .large-screen,
@@ -90,35 +85,55 @@ footer p {
   padding-right: 10px;
 }
 
-/* line 81, ../scss/include/_docs.scss */
+/* line 95, ../scss/include/_docs.scss */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select,
+span.field {
+  margin: 0 0 1em 0;
+}
+
+/* line 97, ../scss/include/_docs.scss */
 .container h1.title {
   font-weight: normal;
-  color: #13c4ff;
+  color: #0088cc;
   font-size: 3em;
   font-weight: 300;
 }
-/* line 88, ../scss/include/_docs.scss */
+/* line 104, ../scss/include/_docs.scss */
 .container h4.sub-title {
   font-weight: normal;
   color: #6f6f6f;
 }
-/* line 92, ../scss/include/_docs.scss */
+/* line 108, ../scss/include/_docs.scss */
 .container h5.showto {
   color: red;
   font-weight: normal;
 }
-/* line 96, ../scss/include/_docs.scss */
+/* line 112, ../scss/include/_docs.scss */
 .container h6.code {
   margin-bottom: 5px;
 }
 
-/* line 100, ../scss/include/_docs.scss */
+/* line 116, ../scss/include/_docs.scss */
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 105, ../scss/include/_docs.scss */
+/* line 120, ../scss/include/_docs.scss */
 .html {
   position: relative;
   width: 100%;
@@ -126,7 +141,7 @@ footer p {
   margin-bottom: 40px;
 }
 
-/* line 111, ../scss/include/_docs.scss */
+/* line 126, ../scss/include/_docs.scss */
 .highlight {
   background-color: #eee;
   border: 1px solid  #ccc;
@@ -140,14 +155,14 @@ footer p {
   -webkit-overflow-scrolling: touch;
   position: relative;
 }
-/* line 121, ../scss/include/_docs.scss */
+/* line 136, ../scss/include/_docs.scss */
 .highlight pre {
   font-size: 1em;
   line-height: 1.4em;
   margin: 0;
   border: none !important;
 }
-/* line 126, ../scss/include/_docs.scss */
+/* line 141, ../scss/include/_docs.scss */
 .highlight:before {
   content: "Code";
   position: absolute;
@@ -159,14 +174,14 @@ footer p {
   background-color: #fff;
 }
 
-/* line 137, ../scss/include/_docs.scss */
+/* line 152, ../scss/include/_docs.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #7f0a0c;
 }
 
-/* line 146, ../scss/include/_docs.scss */
+/* line 161, ../scss/include/_docs.scss */
 .ex-list-view-content {
   background: #fcfcfc;
   margin-bottom: 40px;
@@ -174,31 +189,31 @@ code {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 153, ../scss/include/_docs.scss */
+/* line 168, ../scss/include/_docs.scss */
 .ex-list-view-content .wrapper {
   padding: 5px 15px 5px 15px;
   padding: 0;
 }
 
-/* line 161, ../scss/include/_docs.scss */
+/* line 176, ../scss/include/_docs.scss */
 .mix .list-group h5 {
   margin: 0;
   line-height: 25px;
   font-weight: 400;
   margin-bottom: 5px;
 }
-/* line 167, ../scss/include/_docs.scss */
+/* line 182, ../scss/include/_docs.scss */
 .mix .list-group p {
   margin: 0;
 }
 
-/* line 176, ../scss/include/_docs.scss */
+/* line 191, ../scss/include/_docs.scss */
 .ex-navbar-content {
   border: 1px solid #eee;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 181, ../scss/include/_docs.scss */
+/* line 196, ../scss/include/_docs.scss */
 .ex-navbar-content .navbar {
   position: relative;
   padding: 10px 7px;
@@ -206,39 +221,39 @@ code {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 189, ../scss/include/_docs.scss */
+/* line 204, ../scss/include/_docs.scss */
 .ex-navbar-menu {
   border: 1px solid #ddd;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 194, ../scss/include/_docs.scss */
+/* line 209, ../scss/include/_docs.scss */
 .ex-navbar-menu .navbar-menu {
   position: relative;
 }
 
-/* line 199, ../scss/include/_docs.scss */
+/* line 214, ../scss/include/_docs.scss */
 .ex-tabstrip-content {
   border: 1px solid #eee;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 204, ../scss/include/_docs.scss */
+/* line 219, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-/* line 209, ../scss/include/_docs.scss */
+/* line 224, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip .tabs {
   border-right: 1px solid #ddd;
 }
-/* line 212, ../scss/include/_docs.scss */
+/* line 227, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip .tabs:last-child {
   border-right: 0;
 }
 
-/* line 223, ../scss/include/_docs.scss */
+/* line 238, ../scss/include/_docs.scss */
 .ex-alert-content .alert {
   position: relative;
   left: 0;
@@ -246,53 +261,53 @@ code {
   top: 0;
 }
 
-/* line 234, ../scss/include/_docs.scss */
+/* line 249, ../scss/include/_docs.scss */
 .ex-dropdown-content {
   border: 1px solid #eeeeee;
 }
-/* line 237, ../scss/include/_docs.scss */
+/* line 252, ../scss/include/_docs.scss */
 .ex-dropdown-content .menu {
   margin: auto;
 }
 
-/* line 246, ../scss/include/_docs.scss */
+/* line 261, ../scss/include/_docs.scss */
 .ex-tooltip-content ul {
   margin: auto;
 }
-/* line 249, ../scss/include/_docs.scss */
+/* line 264, ../scss/include/_docs.scss */
 .ex-tooltip-content .tooltip-text {
   border: 1px solid #ddd;
   padding: 5px 10px 5px 10px;
   display: block;
 }
-/* line 254, ../scss/include/_docs.scss */
+/* line 269, ../scss/include/_docs.scss */
 .ex-tooltip-content .tooltip-text:hover {
   background: #f5f5f5;
 }
 
-/* line 262, ../scss/include/_docs.scss */
+/* line 277, ../scss/include/_docs.scss */
 .ex-tabs {
   display: table;
   width: 100%;
 }
-/* line 266, ../scss/include/_docs.scss */
+/* line 281, ../scss/include/_docs.scss */
 .ex-tabs article.tabs {
   margin-bottom: 50px;
 }
 
-/* line 274, ../scss/include/_docs.scss */
+/* line 289, ../scss/include/_docs.scss */
 .ex-login {
   margin-top: 30px;
 }
 
-/* line 279, ../scss/include/_docs.scss */
+/* line 294, ../scss/include/_docs.scss */
 .context-menu {
   position: relative;
   display: inline-block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 287, ../scss/include/_docs.scss */
+  /* line 302, ../scss/include/_docs.scss */
   .ex-navbar {
     display: none;
   }
