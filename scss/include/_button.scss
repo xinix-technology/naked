@@ -7,7 +7,7 @@ button,
     position: relative;
     text-decoration: none;
     text-align: center;
-    background: #{$submit-bg};
+    background: transparent;
     border: 1px solid #{$border-button-color};
     color: #{$submit-color};
     display: inline-block;
@@ -29,19 +29,41 @@ button,
     }
 
     &:hover {
-        color: #{$submit-color};
+        background: #{$submit-bg};
+	    color: #{$submit-solid-color};
     }
 
     &.error {
-    	background: #{$button-alert};
+    	background: transparent;
+	    border: 1px solid #{$button-alert};
+	    color: #{$button-alert};
+
+	    &:hover {
+	        background: #{$button-alert};
+		    color: #{$submit-solid-color};
+	    }
     }
 
     &.success {
-    	background: #{$button-success};
+    	background: transparent;
+	    border: 1px solid #{$button-success};
+	    color: #{$button-success};
+
+	    &:hover {
+	        background: #{$button-success};
+		    color: #{$submit-solid-color};
+	    }
     }
 
     &.warning {
-    	background: #{$button-warning};
+    	background: transparent;
+	    border: 1px solid #{$button-warning};
+	    color: #{$button-warning};
+
+	    &:hover {
+	        background: #{$button-warning};
+		    color: #{$submit-solid-color};
+	    }
     }
 
     &.round {
@@ -51,6 +73,26 @@ button,
 		padding: 5px 20px 5px;
     }
 
+    &.solid {
+		background: #{$submit-bg};
+	    border: 1px solid #{$border-button-solid-color};
+	    color: #{$submit-solid-color};
+
+		&.error {
+	    	background: #{$button-alert};
+		    color: #{$submit-solid-color};
+	    }
+
+	    &.success {
+	    	background: #{$button-success};
+		    color: #{$submit-solid-color};
+	    }
+
+	    &.warning {
+	    	background: #{$button-warning};
+		    color: #{$submit-solid-color};
+	    }
+    }
 }
 
 .button-group {

@@ -34,12 +34,13 @@ input.postfix-input {
 		border-bottom-left-radius: 5px;
 	}
 
-	.button {
+	.button.solid {
 		width: 100%;
-		margin: -1px 0px 0px -1px;
+		margin: 0;
 		border-radius: 0;
 		border-top-right-radius: 5px;
 		border-bottom-right-radius: 5px;
+		border: 0;
 	}
 
 	&.left {
@@ -51,7 +52,6 @@ input.postfix-input {
 		}
 
 		.button {
-			margin: -1px 0px 0px 1px;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			border-top-left-radius: 5px;
@@ -62,5 +62,5 @@ input.postfix-input {
 
 
 .input-button.left .button {
-	margin: -1px 0px 0px 1px;
+	margin: 0;
 }

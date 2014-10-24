@@ -1,51 +1,49 @@
 .alert {
-	position: relative;
-	z-index: 9;
-	padding: 0;
+	position: absolute; 
+	top: 1px; 
+	padding: 0; 
+	left: 0; 
+	right: 0; 
+	z-index: 8;
 
 	&.error {
 		color: #{$alert-error-color};
 		background-color: #{$alert-error};
+		border: 1px solid #{$alert-border-error};
 	}
 
 	&.success {
 		color: #{$alert-success-color};
 		background-color: #{$alert-success};
+		border: 1px solid #{$alert-border-success};
 	}
 
 	&.warning {
 		color: #{$alert-warning-color};
 		background-color: #{$alert-warning};
+		border: 1px solid #{$alert-border-warning};
 	}
 
 	&.info {
 		color: #{$alert-info-color};
 		background-color: #{$alert-info};
+		border: 1px solid #{$alert-border-info};
 	}
 
 	p {
-		font-weight: 600;
+		font-weight: 500;
 		margin: 0;
 		text-align: center;
 		font-size: 1.2em;
 		padding: 5px 10px;
-	}
 
-	button.close {
-		padding: 0;
-		cursor: pointer;
-		background: transparent;
-		border: 0;
-		-webkit-appearance: none;
-		outline: 0;
-		float: right;
-		font-size: 21px;
-		line-height: 1;
-		opacity: .8;
-		filter: alpha(opacity=20);
-		position: relative;
-		top: -5px;
-		right: -21px;
-		color: inherit;
+		.close { 
+			opacity: .7; 
+			top: -6px; 
+			right: -5px; 
+			position: relative; 
+			font-size: 0.6em; 
+			cursor: pointer; 
+		}
 	}
 }

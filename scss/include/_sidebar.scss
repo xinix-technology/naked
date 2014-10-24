@@ -1,0 +1,103 @@
+.sidebar { 
+    width: 256px; 
+    position: fixed; 
+    top: 56px; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 1000; 
+    display: block; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background-color: #f7f7f7; 
+    border: 1px solid #e5e5e5; 
+
+    .nav {
+        display: block; 
+        margin: 0; 
+        padding: 0;
+
+        li {
+            display: block; 
+            float: none; 
+            margin-bottom: -1px; 
+            padding-left: 35px;
+
+            a {
+                padding: 10px 25px 10px 0; 
+                display: block; 
+                color: #465d6f; 
+                border-bottom: 1px solid #e5e5e5; 
+                border-top: 1px solid transparent; 
+                position: relative;
+
+                i.icn-left {
+                    position: absolute; 
+                    left: -20px; 
+                    top: 13px;
+                }
+
+                i.icn-right {
+                    position: absolute; 
+                    right: 15px; 
+                    top: 13px;
+                }
+
+                i.icn-plus {
+                    font-style: normal; position: absolute; right: 15px; top: 10px;
+                    -webkit-transform: rotate(0deg) scale(1);
+                    -ms-transform: rotate(0deg) scale(1);
+                    transform: rotate(0deg) scale(1);
+                    -webkit-transition: -webkit-transform 0.3s ease-out;
+                    transition: transform 0.3s ease-out;
+                    -webkit-transform-origin: center center;
+                    -ms-transform-origin: center center;
+                    transform-origin: center center;
+                }
+
+                &.select {
+                    i.icn-plus {
+                        -webkit-transform: rotate(45deg) scale(1);
+                        -ms-transform: rotate(45deg) scale(1);
+                        transform: rotate(45deg) scale(1);   
+                    }
+                }
+
+                &.select {
+                    border-color: #ccc; color: #08c;
+                }
+            }
+
+            &:hover a {
+                color: #08c;
+            }
+
+            &:first-child {
+                a.select {
+                    border-top: 1px solid transparent;   
+                }
+            }
+
+            &.collapsible {
+                &>a {
+                    i.fa {
+                        float: right; line-height: 150%;
+                    }
+                }
+
+                ul {
+                    position: relative; padding: 0;
+
+                    li {
+                        padding-left: 10px;
+
+                        &:last-child {
+                            a {
+                                border-bottom: 1px solid #e5e5e5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

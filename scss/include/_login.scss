@@ -1,7 +1,6 @@
 #login {
 	padding: 40px;
 	margin: 0 auto;
-    // display: table;
     border: 1px solid #eee;
     background: #f9f9f9;
     width: 100%;
@@ -39,31 +38,11 @@
 		font-size: 16px;
 	}
 
-	// input[type="text"],
-	// input[type="password"] {
-	// 	border: 0;
-	// 	border-bottom: 1px solid #ddd;
-	// 	background: transparent;
-	// 	color: #5c7883;
-	// }
-
-	// a.button,
-	// input[type="submit"] {
-	//     border: 1px solid #13c4ff;
-	//     background: transparent;
-	//     color: #13c4ff;
-	//     -webkit-border-radius: 5px;
-	//     -moz-border-radius: 5px;
-	//     -ms-border-radius: 5px;
-	//     -o-border-radius: 5px;
-	//     border-radius: 5px;
-	// }
-
-	// a.button:hover,
-	// input[type="submit"]:hover {
-	//     background: #13c4ff; color: #fff;
-	// }
-
+	input[type="text"],
+	input[type="password"] {
+		margin: 0 0 1em 0;
+	}
+	
 	.placeholder {
 		cursor: pointer;
 		margin: 0 auto;

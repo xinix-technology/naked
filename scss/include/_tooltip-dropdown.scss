@@ -1,4 +1,3 @@
-// ============================ dropdown ===============================
 ul.menu {
 	text-align: left;
 	margin: 0;
@@ -41,20 +40,9 @@ ul.menu {
 	.collapsible {
 		> a {
 			position: relative;
-			padding: 3px 25px 3px 0;
 
-			&:after {
-				position: absolute;
-				content: "";
-				width: 0;
-				height: 0;
-				display: block;
-				border-style: solid;
-				border-color: black transparent transparent transparent;
-				top: 50%;
-				right: 5px;
-				border-width: 0.5em;
-				margin-top: -0.2em;
+			i.xn {
+				margin-left: 5px;
 			}
 		}
 
@@ -127,18 +115,11 @@ ul.menu {
 					> a {
 						position: relative;
 
-						&:after {
+						i.xn {
+							margin: 0;
 							position: absolute;
-							content: "";
-							width: 0;
-							height: 0;
-							display: block;
-							border-style: solid;
-							border-color: transparent transparent transparent black;
-							top: 50%;
-							border-width: 0.4em;
-							right: 6px;
-							margin-top: -0.4em;
+							right: 12px;
+							top: 7px
 						}
 					}
 				}
@@ -146,21 +127,12 @@ ul.menu {
 				&.left {
 					> a {
 						position: relative;
-						// padding: 3px 25px;
-						margin: 0;
 
-						&:after {
+						i.xn {
+							margin: 0;
 							position: absolute;
-							content: "";
-							width: 0;
-							height: 0;
-							display: block;
-							border-style: solid;
-							border-color: transparent black transparent transparent;
-							top: 50%;
-							border-width: 0.4em;
-							left: 4px;
-							margin-top: -0.35em;
+							left: 12px;
+							top: 7px
 						}
 					}
 				}
@@ -217,4 +189,3 @@ ul.menu {
 		display: block;
 	}
 }
-// =====================================================================

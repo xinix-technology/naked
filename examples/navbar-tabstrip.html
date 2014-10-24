@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <title>Naked CSS</title>
         <link rel="stylesheet" href="../css/naked.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
         <link rel="stylesheet" href="../css/docs.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <script type="text/javascript" src="../third-party/zepto.min.js"></script>
         <script type="text/javascript" src="../third-party/run_prettify.js"></script>
@@ -95,9 +95,6 @@
                                 <div class="pull-left">
                                     <h1 class="brand">
                                         <a href="#">
-                                            <!-- <span class="logo">
-                                                <img src="img/xinix-logo.png" alt="">
-                                            </span> -->
                                             <span>Naked</span>
                                         </a>
                                     </h1>
@@ -109,20 +106,20 @@
                                       </li>
                                       <li class="notification">
                                           <a href="#">
-                                              <i class="fa fa-bell-o"></i>
+                                              <i class="xn xn-bell-o"></i>
                                               <span class="badge">2</span>
                                           </a>
                                           <ul class="sub animated">
                                               <li>
                                                   <a href="#">
-                                                      <i class="fa fa-comment-o"></i>
+                                                      <i class="xn xn-comment-o"></i>
                                                       New Comment
                                                       <span class="sub-badge pull-right">+5</span>
                                                   </a>
                                               </li>
                                               <li>
                                                   <a href="#">
-                                                      <i class="fa fa-envelope-o"></i>
+                                                      <i class="xn xn-envelope-o"></i>
                                                       New Message
                                                       <span class="sub-badge pull-right">+2</span>
                                                   </a>
@@ -136,24 +133,24 @@
                                                   <small>Welcome, </small>
                                                   Admin
                                               </span>
-                                              <i class="fa fa-caret-down"></i>
+                                              <i class="xn xn-caret-down"></i>
                                           </a>
                                           <ul class="sub animated">
                                               <li>
                                                   <a href="#">
-                                                      <i class="fa fa-user"></i>
+                                                      <i class="xn xn-user"></i>
                                                       Profile
                                                   </a>
                                               </li>
                                               <li>
                                                   <a href="#">
-                                                      <i class="fa fa-cogs"></i>
+                                                      <i class="xn xn-cogs"></i>
                                                       Settings
                                                   </a>
                                               </li>
                                               <li>
                                                   <a href="#">
-                                                      <i class="fa fa-sign-out"></i>
+                                                      <i class="xn xn-sign-out"></i>
                                                       Logout
                                                   </a>
                                               </li>
@@ -206,7 +203,10 @@
                     <nav class="navbar">
                         <div class="row">
                             <div class="span-2">
-                                <a class="back-button" href="#">Back</a>
+                                <a class="direct" href="#">
+                                    <i class="xn xn-angle-left"></i> 
+                                    Back
+                                </a>
                             </div>
                             <div class="span-8">
                                 <ul class="button-group centered">
@@ -215,7 +215,9 @@
                                 </ul>
                             </div>
                             <div class="span-2">
-                                <a href="#" class="icon-menu"></a>
+                                <a href="#" class="icon-menu pull-right">
+                                    <i class="xn xn-bars"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -251,13 +253,18 @@
                     <nav class="navbar">
                         <div class="row">
                             <div class="span-2">
-                                <a class="back-button" href="#">Back</a>
+                                <a class="direct" href="#">
+                                    <i class="xn xn-angle-left"></i> 
+                                    Back
+                                </a>
                             </div>
                             <div class="span-8">
                                 <h6 class="label">Application</h6>
                             </div>
                             <div class="span-2">
-                                <a href="#" class="icon-menu"></a>
+                                <a href="#" class="icon-menu pull-right">
+                                    <i class="xn xn-bars"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -291,14 +298,19 @@
                     <nav class="navbar">
                         <div class="row">
                             <div class="span-3">
-                                <a class="back-button" href="#">Back</a>
+                                <a class="direct" href="#">
+                                    <i class="xn xn-angle-left"></i> 
+                                    Back
+                                </a>
                             </div>
                             <div class="span-6">
                                 <h6 class="label title">Application</h6>
                                 <p>Example Application</p>
                             </div>
                             <div class="span-3">
-                                <a href="#" class="icon-menu"></a>
+                                <a href="#" class="icon-menu pull-right">
+                                    <i class="xn xn-bars"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -333,13 +345,18 @@
                     <nav class="navbar">
                         <div class="row">
                             <div class="span-3">
-                                <a class="back-button" href="#">Back</a>
+                                <a class="direct" href="#">
+                                    <i class="xn xn-angle-left"></i> 
+                                    Back
+                                </a>
                             </div>
                             <div class="span-6">
                                 <input type="text" placeholder="Search...">
                             </div>
                             <div class="span-3">
-                                <a href="#" class="icon-menu"></a>
+                                <a href="#" class="icon-menu pull-right">
+                                    <i class="xn xn-bars"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -374,23 +391,23 @@
                     <div class="tabstrip">
                         <div class="row">
                             <a class="tabspan-2 tabs" href="#">
-                                <span class="icon star"></span>
+                                <i class="icon xn xn-star"></i>
                                 <span>Featured</span>
                             </a>
                             <a class="tabspan-2 tabs" href="#">
-                                <span class="icon profile"></span>
+                                <i class="icon xn xn-user"></i>
                                 <span>Profile</span>
                             </a>
                             <a class="tabspan-2 tabs" href="#">
-                                <span class="icon search"></span>
+                                <i class="icon xn xn-search"></i>
                                 <span>Search</span>
                             </a>
                             <a class="tabspan-2 tabs" href="#">
-                                <span class="icon more"></span>
-                                <span>More</span>
+                                <i class="icon xn xn-bell"></i>
+                                <span>Notification</span>
                             </a>
                             <a class="tabspan-2 tabs" href="#">
-                                <span class="icon more"></span>
+                                <i class="icon xn xn-ellipsis-h"></i>
                                 <span>More</span>
                             </a>
                         </div>
@@ -430,13 +447,11 @@
             </div>
         </div>
 
-        <footer>
-            <div class="wrapper">
-                <div class="copyright">
-                    <p>Copyright Xinix Technology 2013 - 2014. All Right Reserved</p>
-                </div>
-            </div>
-        </footer>
+        <div id="footer">
+            <p>Copyright &copy; 2014
+                <a href="http://xinix.co.id" target="blank">Xinix Technology</a>. Some right(s) reserved.
+            </p>
+        </div>
 
         <script>
             function closeMenu(){
