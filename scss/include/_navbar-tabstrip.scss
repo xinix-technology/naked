@@ -1,6 +1,13 @@
-.nav-menu {
-	background: #666;
-	width: 100%;
+nav.nav-menu {
+	background: #666; 
+	display: inline-block; 
+	width: 100%; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	z-index: 9; 
+	min-height: 45px;
 
 	.wrapper {
 		padding: 8px 20px;
@@ -37,6 +44,10 @@
 			float: none;
 			margin-right: 25px;
 			line-height: 40px;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 		li {
 			a {
@@ -65,6 +76,15 @@
 				-ms-border-radius: 500px;
 				-o-border-radius: 500px;
 				border-radius: 500px;
+				vertical-align: middle;
+			}
+
+			h6 {
+				display: inline-block;
+				margin: 0;
+				line-height: 120%;
+				font-size: 1em;
+				vertical-align: middle;
 			}
 
 			span {
@@ -79,7 +99,7 @@
 					display: block;
 				}
 			}
-			i.fa-caret-down {
+			i.xn-caret-down {
 				position: absolute;
 				right: 0;
 				top: 33%;
@@ -102,6 +122,7 @@
 
 			&.fadeInDown {
 				display: block;
+				z-index: 3;
 			}
 
 			&.sub li {
@@ -173,12 +194,6 @@
 		}
 	}
 }
-
-
-
-
-
-
 
 .navbar-menu {
 	background: #{$header-bg};
@@ -274,32 +289,16 @@
 		margin-bottom: 0;
 	}
 
-	a.back-button {
-		padding: 5px 0px 5px 20px;
-		display: block;
-		font-weight: 300;
+	a.direct {
+		padding: 5px 0;
+		display: inline-block;
+		font-weight: 700;
 		color: #333;
 		font-size: 1.2em;
 
-		&:before {
-			color: #97a0a4;
-			width: 12px;
-			height: 12px;
-			border-color: #000;
-			position: absolute;
-			left: 5px;
-			top: 50%;
-			margin-top: -0.35rem;
-			content: "";
-			display: inline-block;
-			vertical-align: middle;
-			border-style: solid;
-			border-width: .14rem .14rem 0 0;
-			-webkit-transform: rotate(-135deg);
-			-moz-transform: rotate(-135deg);
-			-ms-transform: rotate(-135deg);
-			-o-transform: rotate(-135deg);
-			transform: rotate(-135deg);
+		i {
+			font-size: 1.1em;
+			margin: 0px 5px;
 		}
 	}
 
@@ -311,16 +310,15 @@
 			a {
 				line-height: 120%;
 				border-radius: 0;
-				// background: transparent;
-				// color: #13c4ff;
-				border: 1px solid #{$navbar-bg};
+
+				&.solid {
+					border: 1px solid #{$navbar-bg}
+				}
 			}
 
 			a:hover,
 			a.active {
 				color: white;
-				// background: #13c4ff;
-				// border: 1px solid #13c4ff;
 			}
 
 			&:first-child {
@@ -371,18 +369,13 @@
 
 	.icon-menu {
 		position: relative;
-		display: block;
+		display: inline-block;
+		color: #333;
+		font-size: 1.5em;
+		padding: 3px 0 4px;
 
-		&.icon-menu:after {
-			content: "";
-			position: absolute;
-			right: 4%;
-			width: 23px;
-			height: 15px;
-			border-top: 9px double #000;
-			border-bottom: 3px solid #000;
-			margin-top: 0.4rem;
-			top: 50%;
+		i {
+			margin: 0 5px;
 		}
 	}
 
@@ -421,31 +414,20 @@
 	.tabs {
 		border-right: 1px solid #{$border-color};
 		text-align: center;
-		padding: 2px 0 2px;
+		padding: 3px 0;
 
 		.icon {
-			margin: 0 auto;
 			width: 32px;
 			height: 32px;
-			position: relative;
-
-			&.star {
-				background: url(../images/star-icon.png) center no-repeat;
-			}
-			&.profile {
-				background: url(../images/profile-icon.png) center no-repeat;
-			}
-			&.search {
-				background: url(../images/search-icon.png) center no-repeat;
-			}
-			&.more {
-				background: url(../images/more-icon.png) center no-repeat;
-			}
+			text-align: center;
+			font-size: 1.7em;
+			line-height: 140%;
+			color: #000;
 		}
 
 		span {
 			display: block;
-			font-weight: 300;
+			font-weight: 400;
 			font-size: 0.8em;
 			color: #333;
 		}

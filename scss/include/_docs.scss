@@ -17,8 +17,18 @@ header,
 		}
 	}
 }
-.brand {
-	float: left;
+nav.nav-menu {
+	position: relative;
+
+	.brand {
+		float: left;
+	}
+}
+.ex-navbar-menu {
+	.nav-menu {
+		position: relative; 
+		z-index: 8;
+	}
 }
 .ex-navbar {
 	float: right;

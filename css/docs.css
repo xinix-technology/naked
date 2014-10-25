@@ -22,37 +22,47 @@ header h1 a,
 }
 
 /* line 20, ../scss/include/_docs.scss */
-.brand {
+nav.nav-menu {
+  position: relative;
+}
+/* line 23, ../scss/include/_docs.scss */
+nav.nav-menu .brand {
   float: left;
 }
 
-/* line 23, ../scss/include/_docs.scss */
+/* line 28, ../scss/include/_docs.scss */
+.ex-navbar-menu .nav-menu {
+  position: relative;
+  z-index: 8;
+}
+
+/* line 33, ../scss/include/_docs.scss */
 .ex-navbar {
   float: right;
 }
-/* line 25, ../scss/include/_docs.scss */
+/* line 35, ../scss/include/_docs.scss */
 .ex-navbar ul.nav-menu {
   margin-top: 17px;
   margin-bottom: 15px;
 }
-/* line 28, ../scss/include/_docs.scss */
+/* line 38, ../scss/include/_docs.scss */
 .ex-navbar ul.nav-menu li {
   margin-right: 0;
   margin-left: 15px;
 }
-/* line 31, ../scss/include/_docs.scss */
+/* line 41, ../scss/include/_docs.scss */
 .ex-navbar ul.nav-menu li a {
   color: white;
   font-size: 15px;
 }
 
-/* line 38, ../scss/include/_docs.scss */
+/* line 48, ../scss/include/_docs.scss */
 footer {
   background: #333333;
   width: 100%;
   display: table;
 }
-/* line 42, ../scss/include/_docs.scss */
+/* line 52, ../scss/include/_docs.scss */
 footer p {
   color: #ddd;
   font-weight: normal;
@@ -61,7 +71,7 @@ footer p {
   font-size: 11px;
 }
 
-/* line 62, ../scss/include/_docs.scss */
+/* line 72, ../scss/include/_docs.scss */
 .xlarge-screen,
 .large-screen,
 .medium-screen,
@@ -71,13 +81,13 @@ footer p {
   margin-bottom: 30px;
 }
 
-/* line 65, ../scss/include/_docs.scss */
+/* line 75, ../scss/include/_docs.scss */
 .box {
   border: 1px solid #ccc;
   width: 100%;
   background-color: #eee;
 }
-/* line 69, ../scss/include/_docs.scss */
+/* line 79, ../scss/include/_docs.scss */
 .box p {
   margin: 0;
   line-height: 30px;
@@ -85,7 +95,7 @@ footer p {
   padding-right: 10px;
 }
 
-/* line 95, ../scss/include/_docs.scss */
+/* line 105, ../scss/include/_docs.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -105,35 +115,35 @@ span.field {
   margin: 0 0 1em 0;
 }
 
-/* line 97, ../scss/include/_docs.scss */
+/* line 107, ../scss/include/_docs.scss */
 .container h1.title {
   font-weight: normal;
   color: #0088cc;
   font-size: 3em;
   font-weight: 300;
 }
-/* line 104, ../scss/include/_docs.scss */
+/* line 114, ../scss/include/_docs.scss */
 .container h4.sub-title {
   font-weight: normal;
   color: #6f6f6f;
 }
-/* line 108, ../scss/include/_docs.scss */
+/* line 118, ../scss/include/_docs.scss */
 .container h5.showto {
   color: red;
   font-weight: normal;
 }
-/* line 112, ../scss/include/_docs.scss */
+/* line 122, ../scss/include/_docs.scss */
 .container h6.code {
   margin-bottom: 5px;
 }
 
-/* line 116, ../scss/include/_docs.scss */
+/* line 126, ../scss/include/_docs.scss */
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 120, ../scss/include/_docs.scss */
+/* line 130, ../scss/include/_docs.scss */
 .html {
   position: relative;
   width: 100%;
@@ -141,7 +151,7 @@ span.field {
   margin-bottom: 40px;
 }
 
-/* line 126, ../scss/include/_docs.scss */
+/* line 136, ../scss/include/_docs.scss */
 .highlight {
   background-color: #eee;
   border: 1px solid  #ccc;
@@ -155,14 +165,14 @@ span.field {
   -webkit-overflow-scrolling: touch;
   position: relative;
 }
-/* line 136, ../scss/include/_docs.scss */
+/* line 146, ../scss/include/_docs.scss */
 .highlight pre {
   font-size: 1em;
   line-height: 1.4em;
   margin: 0;
   border: none !important;
 }
-/* line 141, ../scss/include/_docs.scss */
+/* line 151, ../scss/include/_docs.scss */
 .highlight:before {
   content: "Code";
   position: absolute;
@@ -174,14 +184,14 @@ span.field {
   background-color: #fff;
 }
 
-/* line 152, ../scss/include/_docs.scss */
+/* line 162, ../scss/include/_docs.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #7f0a0c;
 }
 
-/* line 161, ../scss/include/_docs.scss */
+/* line 171, ../scss/include/_docs.scss */
 .ex-list-view-content {
   background: #fcfcfc;
   margin-bottom: 40px;
@@ -189,31 +199,31 @@ code {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 168, ../scss/include/_docs.scss */
+/* line 178, ../scss/include/_docs.scss */
 .ex-list-view-content .wrapper {
   padding: 5px 15px 5px 15px;
   padding: 0;
 }
 
-/* line 176, ../scss/include/_docs.scss */
+/* line 186, ../scss/include/_docs.scss */
 .mix .list-group h5 {
   margin: 0;
   line-height: 25px;
   font-weight: 400;
   margin-bottom: 5px;
 }
-/* line 182, ../scss/include/_docs.scss */
+/* line 192, ../scss/include/_docs.scss */
 .mix .list-group p {
   margin: 0;
 }
 
-/* line 191, ../scss/include/_docs.scss */
+/* line 201, ../scss/include/_docs.scss */
 .ex-navbar-content {
   border: 1px solid #eee;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 196, ../scss/include/_docs.scss */
+/* line 206, ../scss/include/_docs.scss */
 .ex-navbar-content .navbar {
   position: relative;
   padding: 10px 7px;
@@ -221,39 +231,39 @@ code {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 204, ../scss/include/_docs.scss */
+/* line 214, ../scss/include/_docs.scss */
 .ex-navbar-menu {
   border: 1px solid #ddd;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 209, ../scss/include/_docs.scss */
+/* line 219, ../scss/include/_docs.scss */
 .ex-navbar-menu .navbar-menu {
   position: relative;
 }
 
-/* line 214, ../scss/include/_docs.scss */
+/* line 224, ../scss/include/_docs.scss */
 .ex-tabstrip-content {
   border: 1px solid #eee;
   padding: 20px 0;
   margin-bottom: 40px;
 }
-/* line 219, ../scss/include/_docs.scss */
+/* line 229, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
-/* line 224, ../scss/include/_docs.scss */
+/* line 234, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip .tabs {
   border-right: 1px solid #ddd;
 }
-/* line 227, ../scss/include/_docs.scss */
+/* line 237, ../scss/include/_docs.scss */
 .ex-tabstrip-content .tabstrip .tabs:last-child {
   border-right: 0;
 }
 
-/* line 238, ../scss/include/_docs.scss */
+/* line 248, ../scss/include/_docs.scss */
 .ex-alert-content .alert {
   position: relative;
   left: 0;
@@ -261,53 +271,53 @@ code {
   top: 0;
 }
 
-/* line 249, ../scss/include/_docs.scss */
+/* line 259, ../scss/include/_docs.scss */
 .ex-dropdown-content {
   border: 1px solid #eeeeee;
 }
-/* line 252, ../scss/include/_docs.scss */
+/* line 262, ../scss/include/_docs.scss */
 .ex-dropdown-content .menu {
   margin: auto;
 }
 
-/* line 261, ../scss/include/_docs.scss */
+/* line 271, ../scss/include/_docs.scss */
 .ex-tooltip-content ul {
   margin: auto;
 }
-/* line 264, ../scss/include/_docs.scss */
+/* line 274, ../scss/include/_docs.scss */
 .ex-tooltip-content .tooltip-text {
   border: 1px solid #ddd;
   padding: 5px 10px 5px 10px;
   display: block;
 }
-/* line 269, ../scss/include/_docs.scss */
+/* line 279, ../scss/include/_docs.scss */
 .ex-tooltip-content .tooltip-text:hover {
   background: #f5f5f5;
 }
 
-/* line 277, ../scss/include/_docs.scss */
+/* line 287, ../scss/include/_docs.scss */
 .ex-tabs {
   display: table;
   width: 100%;
 }
-/* line 281, ../scss/include/_docs.scss */
+/* line 291, ../scss/include/_docs.scss */
 .ex-tabs article.tabs {
   margin-bottom: 50px;
 }
 
-/* line 289, ../scss/include/_docs.scss */
+/* line 299, ../scss/include/_docs.scss */
 .ex-login {
   margin-top: 30px;
 }
 
-/* line 294, ../scss/include/_docs.scss */
+/* line 304, ../scss/include/_docs.scss */
 .context-menu {
   position: relative;
   display: inline-block;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 302, ../scss/include/_docs.scss */
+  /* line 312, ../scss/include/_docs.scss */
   .ex-navbar {
     display: none;
   }

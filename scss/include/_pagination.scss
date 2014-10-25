@@ -14,9 +14,14 @@ ul.pagination {
 
     	a { 
     		display: block; 
-    		padding: 0 5px 0 5px; 
+    		padding: 0 7px; 
     		color: #{$pagination-color}; 
-    		font-weight: 300; 
+    		font-weight: 300;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
     	}
 
         a:hover, 
