@@ -39,9 +39,10 @@ ul.pagination {
 
         &.active a { 
         	background: #{$submit-bg}; 
-        	color: #{$pagination-active-color}; 
-        	font-weight: bold; 
-        	cursor: default; 
+        	color: #{$pagination-active-color};
+        	cursor: default;
+            line-height: 20px;
+            font-weight: 500;
         }
     }
 

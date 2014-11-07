@@ -1,52 +1,80 @@
-span.prefix,
-span.postfix {
-	display: block;
-	position: relative;
-	z-index: 2;
-	text-align: center;
-	width: 100%;
-	padding-top: 0;
-	padding-bottom: 0;
-	border: 1px solid #{$border-postprefix-color};
-	background: #{$prepostfix-bg};
-	overflow: hidden;
-	font-size: 0.875em;
-	height: 28px;
-	line-height: 2.2em;
-	color: #333333;
-}
-span.prefix {
-	border-right: none;
-}
-span.postfix {
-	border-left: none;
-}
-.postfix,
-.prefix,
-input.postfix-input {
-	height: 28px;
-	box-sizing: border-box;
+.pre-post {
+	span.prefix,
+	span.postfix {
+		display: block;
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 0;
+		border: 1px solid #{$border-postprefix-color};
+		background: #{$prepostfix-bg};
+		overflow: hidden;
+		font-size: 0.875em;
+		padding: 2px 0;
+		line-height: 2.2em;
+		color: #333333;
+	}
+	span.prefix {
+		border-right: none;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	span.postfix {
+		border-left: none;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+	.postfix,
+	.prefix,
+	input.postfix-input {
+		box-sizing: border-box;
+		border-radius: 0;
+	}
+	input.postfix-input {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	&.right {
+		input.postfix-input {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+	}
 }
 
 .input-button {
 	input[type="text"] {
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 
 	.button.solid {
 		width: 100%;
 		margin: 0;
 		border-radius: 0;
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
 		border: 0;
+		padding: 6px 16px 5px;
 	}
 
 	&.left {
 		input[type="text"] {
-			border-top-right-radius: 5px;
-			border-bottom-right-radius: 5px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 		}
@@ -54,8 +82,8 @@ input.postfix-input {
 		.button {
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
 		}
 	}
 }
