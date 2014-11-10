@@ -369,7 +369,7 @@ img.img-circle {
     border-radius: 500px;
 }
 #footer { 
-    background: #666;
+    background: #{$footer-bg};
     display: inline-block;
     width: 100%;
 
