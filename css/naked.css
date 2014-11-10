@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(../fonts/lato/lato.css);
 /*! naked.css v1.2.3 | MIT License | xinix.co.id */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -1655,14 +1655,19 @@ span.field {
   border-radius: 0;
   font-weight: 300;
   background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 
-/* line 216, ../scss/include/_globals.scss */
+/* line 221, ../scss/include/_globals.scss */
 textarea {
   height: 7em;
 }
 
-/* line 219, ../scss/include/_globals.scss */
+/* line 224, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1680,7 +1685,7 @@ input[type="checkbox"].swipe {
   vertical-align: top;
   outline: 0;
 }
-/* line 238, ../scss/include/_globals.scss */
+/* line 243, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:after {
   background-color: white;
   border: 1px solid lightgrey;
@@ -1695,7 +1700,7 @@ input[type="checkbox"].swipe:after {
   top: -0px;
   transition: border .25s .15s, left .25s .1s, right .15s .175s;
 }
-/* line 257, ../scss/include/_globals.scss */
+/* line 262, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:checked {
   border-color: #53d76a;
   box-shadow: inset 0 0 0 13px #53d76a;
@@ -1703,7 +1708,7 @@ input[type="checkbox"].swipe:checked {
   transition: border .25s, box-shadow .25s, padding .25s .15s;
   background: #53d76a;
 }
-/* line 266, ../scss/include/_globals.scss */
+/* line 271, ../scss/include/_globals.scss */
 input[type="checkbox"].swipe:checked:after {
   border-color: #53d76a;
   left: 20px;
@@ -1712,7 +1717,7 @@ input[type="checkbox"].swipe:checked:after {
   transition: border .25s, left .15s .25s, right .25s .175s;
 }
 
-/* line 278, ../scss/include/_globals.scss */
+/* line 283, ../scss/include/_globals.scss */
 input[type=submit],
 input[type=reset] {
   padding: 6px 16px;
@@ -1740,20 +1745,20 @@ input[type=reset] {
   border-radius: 5px;
   font-weight: 700;
 }
-/* line 304, ../scss/include/_globals.scss */
+/* line 309, ../scss/include/_globals.scss */
 input[type=submit]:active,
 input[type=reset]:active {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
-/* line 309, ../scss/include/_globals.scss */
+/* line 314, ../scss/include/_globals.scss */
 input[type=submit]:hover,
 input[type=reset]:hover {
   background: #0088cc;
   color: white;
 }
 
-/* line 314, ../scss/include/_globals.scss */
+/* line 319, ../scss/include/_globals.scss */
 select {
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
   background-size: 12px 12px;
@@ -1768,14 +1773,14 @@ select {
   text-indent: 0.01px;
 }
 
-/* line 327, ../scss/include/_globals.scss */
+/* line 332, ../scss/include/_globals.scss */
 span.field {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-/* line 333, ../scss/include/_globals.scss */
+/* line 338, ../scss/include/_globals.scss */
 form .radio,
 form .checkbox {
   padding: 3px;
@@ -1789,7 +1794,7 @@ form .checkbox {
   cursor: pointer;
 }
 
-/* line 344, ../scss/include/_globals.scss */
+/* line 349, ../scss/include/_globals.scss */
 .placeholder {
   display: inline;
   font-weight: 500;
@@ -1797,35 +1802,35 @@ form .checkbox {
   text-transform: none;
   font-size: 0.9em;
 }
-/* line 351, ../scss/include/_globals.scss */
+/* line 356, ../scss/include/_globals.scss */
 .placeholder.full {
   display: block;
 }
 
-/* line 355, ../scss/include/_globals.scss */
+/* line 360, ../scss/include/_globals.scss */
 .pull-right {
   float: right;
 }
 
-/* line 358, ../scss/include/_globals.scss */
+/* line 363, ../scss/include/_globals.scss */
 .pull-left {
   float: left;
 }
 
-/* line 361, ../scss/include/_globals.scss */
+/* line 366, ../scss/include/_globals.scss */
 img.img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px;
 }
 
-/* line 366, ../scss/include/_globals.scss */
+/* line 371, ../scss/include/_globals.scss */
 #footer {
-  background: #666;
+  background: #666666;
   display: inline-block;
   width: 100%;
 }
-/* line 371, ../scss/include/_globals.scss */
+/* line 376, ../scss/include/_globals.scss */
 #footer p {
   margin: 0;
   text-align: center;
@@ -1833,81 +1838,81 @@ img.img-circle {
   font-size: 0.8em;
   padding: 10px 0;
 }
-/* line 378, ../scss/include/_globals.scss */
+/* line 383, ../scss/include/_globals.scss */
 #footer p a {
   color: #E5D602;
 }
 
 @media screen {
-  /* line 387, ../scss/include/_globals.scss */
+  /* line 392, ../scss/include/_globals.scss */
   .container {
     width: 984px;
     margin: 0 auto;
   }
 
-  /* line 391, ../scss/include/_globals.scss */
+  /* line 396, ../scss/include/_globals.scss */
   #menu_icon {
     display: none;
   }
 
-  /* line 394, ../scss/include/_globals.scss */
+  /* line 399, ../scss/include/_globals.scss */
   ul.flat {
     margin: 0;
   }
 }
 @media only screen and (min-width: 1360px) {
-  /* line 399, ../scss/include/_globals.scss */
+  /* line 404, ../scss/include/_globals.scss */
   .container {
     width: 1320px;
     margin: 0 auto;
   }
 
-  /* line 403, ../scss/include/_globals.scss */
+  /* line 408, ../scss/include/_globals.scss */
   .hidden-xlarge {
     display: none;
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 408, ../scss/include/_globals.scss */
+  /* line 413, ../scss/include/_globals.scss */
   .container {
     width: 728px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 414, ../scss/include/_globals.scss */
+  /* line 419, ../scss/include/_globals.scss */
   .container {
     width: 440px;
     margin: 0 auto;
   }
 
-  /* line 418, ../scss/include/_globals.scss */
+  /* line 423, ../scss/include/_globals.scss */
   #menu_icon {
     display: block;
     position: absolute;
     right: 10px;
     top: 0;
   }
-  /* line 423, ../scss/include/_globals.scss */
+  /* line 428, ../scss/include/_globals.scss */
   #menu_icon a {
     font-size: 40px;
     color: white;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 430, ../scss/include/_globals.scss */
+  /* line 435, ../scss/include/_globals.scss */
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 438, ../scss/include/_globals.scss */
+  /* line 443, ../scss/include/_globals.scss */
   .touch * {
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-  /* line 442, ../scss/include/_globals.scss */
+  /* line 447, ../scss/include/_globals.scss */
   .touch .container, .touch .container-fluid {
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
@@ -2115,9 +2120,9 @@ img.img-circle {
     border-bottom: 0;
   }
 }
-/* line 2, ../scss/include/_form.scss */
-span.prefix,
-span.postfix {
+/* line 3, ../scss/include/_form.scss */
+.pre-post span.prefix,
+.pre-post span.postfix {
   display: block;
   position: relative;
   z-index: 2;
@@ -2129,59 +2134,81 @@ span.postfix {
   background: #f2f2f2;
   overflow: hidden;
   font-size: 0.875em;
-  height: 28px;
+  padding: 2px 0;
   line-height: 2.2em;
   color: #333333;
 }
-
-/* line 18, ../scss/include/_form.scss */
-span.prefix {
+/* line 19, ../scss/include/_form.scss */
+.pre-post span.prefix {
   border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-
-/* line 21, ../scss/include/_form.scss */
-span.postfix {
-  border-left: none;
-}
-
 /* line 26, ../scss/include/_form.scss */
-.postfix,
-.prefix,
-input.postfix-input {
-  height: 28px;
+.pre-post span.postfix {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 35, ../scss/include/_form.scss */
+.pre-post .postfix,
+.pre-post .prefix,
+.pre-post input.postfix-input {
   box-sizing: border-box;
+  border-radius: 0;
+}
+/* line 39, ../scss/include/_form.scss */
+.pre-post input.postfix-input {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* line 47, ../scss/include/_form.scss */
+.pre-post.right input.postfix-input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
-/* line 32, ../scss/include/_form.scss */
+/* line 57, ../scss/include/_form.scss */
 .input-button input[type="text"] {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
-/* line 37, ../scss/include/_form.scss */
+/* line 64, ../scss/include/_form.scss */
 .input-button .button.solid {
   width: 100%;
   margin: 0;
   border-radius: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   border: 0;
+  padding: 6px 16px 5px;
 }
-/* line 47, ../scss/include/_form.scss */
+/* line 75, ../scss/include/_form.scss */
 .input-button.left input[type="text"] {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 54, ../scss/include/_form.scss */
+/* line 82, ../scss/include/_form.scss */
 .input-button.left .button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
-/* line 64, ../scss/include/_form.scss */
+/* line 92, ../scss/include/_form.scss */
 .input-button.left .button {
   margin: 0;
 }
@@ -2447,35 +2474,36 @@ ul.pagination li.unavailable a:hover {
 ul.pagination li.active a {
   background: #0088cc;
   color: white;
-  font-weight: bold;
   cursor: default;
+  line-height: 20px;
+  font-weight: 500;
 }
-/* line 49, ../scss/include/_pagination.scss */
+/* line 50, ../scss/include/_pagination.scss */
 ul.pagination.centered {
   width: auto;
 }
 
-/* line 53, ../scss/include/_pagination.scss */
+/* line 54, ../scss/include/_pagination.scss */
 .pagination-mix {
   margin-bottom: 30px;
   position: relative;
 }
 
 @media screen {
-  /* line 62, ../scss/include/_pagination.scss */
+  /* line 63, ../scss/include/_pagination.scss */
   ul.centered {
     width: auto;
     margin: 0 auto;
   }
 
-  /* line 67, ../scss/include/_pagination.scss */
+  /* line 68, ../scss/include/_pagination.scss */
   .pagination-mix .left {
     position: absolute;
     left: 0;
     top: 0;
   }
 
-  /* line 72, ../scss/include/_pagination.scss */
+  /* line 73, ../scss/include/_pagination.scss */
   .pagination-mix .right {
     position: absolute;
     left: initial;
@@ -2484,24 +2512,24 @@ ul.pagination.centered {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 80, ../scss/include/_pagination.scss */
+  /* line 81, ../scss/include/_pagination.scss */
   ul.centered {
     margin: 0 auto;
   }
 
-  /* line 83, ../scss/include/_pagination.scss */
+  /* line 84, ../scss/include/_pagination.scss */
   ul.pagination {
     margin: 0 auto;
     float: none;
   }
 
-  /* line 87, ../scss/include/_pagination.scss */
+  /* line 88, ../scss/include/_pagination.scss */
   .pagination-mix .left {
     position: relative;
     margin: 0 auto;
   }
 
-  /* line 91, ../scss/include/_pagination.scss */
+  /* line 92, ../scss/include/_pagination.scss */
   .pagination-mix .right {
     position: relative;
     margin: 0 auto;
@@ -3557,11 +3585,11 @@ article.tabs section h2 {
   border: 1px solid #eee;
   background: #f9f9f9;
   width: 100%;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
 }
 /* line 13, ../scss/include/_login.scss */
 #login .title {
@@ -3577,7 +3605,7 @@ article.tabs section h2 {
 }
 /* line 23, ../scss/include/_login.scss */
 #login .title h2 strong {
-  color: #13c4ff;
+  color: #08c;
   font-weight: 400;
   font-size: 1.2em;
 }
