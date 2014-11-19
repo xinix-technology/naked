@@ -3770,3 +3770,76 @@ article.tabs section h2 {
 .sidebar .nav li.collapsible ul li:last-child a {
   border-bottom: 1px solid #e5e5e5;
 }
+
+/* line 1, ../scss/include/_popup.scss */
+#popupOverflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.64);
+}
+/* line 11, ../scss/include/_popup.scss */
+#popupOverflow #popupMargin {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 16, ../scss/include/_popup.scss */
+#popupOverflow #popupContent {
+  display: table;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 26, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .wrapper {
+  padding: 20px;
+}
+/* line 31, ../scss/include/_popup.scss */
+#popupOverflow h4 {
+  margin: 0;
+  color: #444;
+}
+/* line 34, ../scss/include/_popup.scss */
+#popupOverflow h4 i {
+  cursor: pointer;
+  font-size: 0.7em;
+}
+/* line 39, ../scss/include/_popup.scss */
+#popupOverflow p {
+  color: #666;
+}
+/* line 43, ../scss/include/_popup.scss */
+#popupOverflow .button-area {
+  margin-top: 15px;
+}
+/* line 48, ../scss/include/_popup.scss */
+#popupOverflow .content-area .row {
+  margin-bottom: 10px;
+}
+/* line 51, ../scss/include/_popup.scss */
+#popupOverflow .content-area .row:first-child {
+  margin-top: 15px;
+}
+/* line 58, ../scss/include/_popup.scss */
+#popupOverflow.scroll #popupMargin {
+  padding: 20px;
+  display: block;
+}
+/* line 63, ../scss/include/_popup.scss */
+#popupOverflow.scroll #popupContent {
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  position: absolute;
+  display: block;
+  overflow: auto;
+}
