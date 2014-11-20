@@ -3789,51 +3789,73 @@ article.tabs section h2 {
 }
 /* line 16, ../scss/include/_popup.scss */
 #popupOverflow #popupContent {
+  position: relative;
   display: table;
   margin: 0 auto;
   background-color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 26, ../scss/include/_popup.scss */
+/* line 27, ../scss/include/_popup.scss */
 #popupOverflow #popupContent .wrapper {
   padding: 20px;
 }
 /* line 31, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .buttonClose {
+  padding: 6px;
+  line-height: 12px;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  right: -11px;
+  font-size: 1.3em;
+  background: #fff;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+  border-radius: 500px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  -ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+}
+/* line 53, ../scss/include/_popup.scss */
 #popupOverflow h4 {
   margin: 0;
   color: #444;
 }
-/* line 34, ../scss/include/_popup.scss */
+/* line 56, ../scss/include/_popup.scss */
 #popupOverflow h4 i {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 39, ../scss/include/_popup.scss */
+/* line 61, ../scss/include/_popup.scss */
 #popupOverflow p {
   color: #666;
 }
-/* line 43, ../scss/include/_popup.scss */
+/* line 65, ../scss/include/_popup.scss */
 #popupOverflow .button-area {
   margin-top: 15px;
 }
-/* line 48, ../scss/include/_popup.scss */
+/* line 70, ../scss/include/_popup.scss */
 #popupOverflow .content-area .row {
   margin-bottom: 10px;
 }
-/* line 51, ../scss/include/_popup.scss */
+/* line 73, ../scss/include/_popup.scss */
 #popupOverflow .content-area .row:first-child {
   margin-top: 15px;
 }
-/* line 58, ../scss/include/_popup.scss */
+/* line 80, ../scss/include/_popup.scss */
 #popupOverflow.scroll #popupMargin {
   padding: 20px;
   display: block;
 }
-/* line 63, ../scss/include/_popup.scss */
+/* line 85, ../scss/include/_popup.scss */
 #popupOverflow.scroll #popupContent {
   top: 20px;
   bottom: 20px;
