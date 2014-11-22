@@ -1,5 +1,9 @@
 <article class="markdown-body entry-content" itemprop="mainContentOfPage">
 <h1><a href="">naked</a></h1>
+
+[![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](https://github.com/xinix-technology/naked/blob/master/LICENSE)
+[![Bower](http://img.shields.io/bower/v/xinix-technology/pants.svg?style=flat-square)](https://github.com/xinix-technology/naked)
+
 <p>The naked CSS framework you've been waiting for.</p>
 <h2>Table Of Content</h2>
 <ul>
