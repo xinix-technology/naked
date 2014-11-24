@@ -3776,92 +3776,158 @@ article.tabs section h2 {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 9999;
-  display: table;
-  width: 100%;
-  height: 100%;
+  display: block;
   background: rgba(0, 0, 0, 0.64);
 }
 /* line 11, ../scss/include/_popup.scss */
+#popupOverflow #popupTable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 20, ../scss/include/_popup.scss */
 #popupOverflow #popupMargin {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 16, ../scss/include/_popup.scss */
+/* line 25, ../scss/include/_popup.scss */
 #popupOverflow #popupContent {
   position: relative;
   display: table;
   margin: 0 auto;
-  background-color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 27, ../scss/include/_popup.scss */
-#popupOverflow #popupContent .wrapper {
-  padding: 20px;
+  padding: 0 16px;
 }
 /* line 31, ../scss/include/_popup.scss */
-#popupOverflow #popupContent .buttonClose {
-  padding: 6px;
-  line-height: 12px;
-  cursor: pointer;
+#popupOverflow #popupContent hr {
   margin: 0;
+}
+/* line 35, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .content {
+  background: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 43, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .content > .wrapper {
+  padding: 20px;
+}
+/* line 47, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .content .wrapper {
+  padding: 10px 20px;
+}
+/* line 52, ../scss/include/_popup.scss */
+#popupOverflow #popupContent a.close {
   position: absolute;
   top: -10px;
-  right: -11px;
-  font-size: 1.3em;
+  left: initial;
+  right: 6px;
   background: #fff;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  -ms-border-radius: 500px;
-  -o-border-radius: 500px;
-  border-radius: 500px;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
-  -ms-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
-  -o-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+  color: #000;
+  display: block;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  line-height: 24px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
 }
-/* line 53, ../scss/include/_popup.scss */
+/* line 60, ../scss/include/_popup.scss */
+#popupOverflow #popupContent a.close:hover {
+  color: #ed2b2b;
+}
+/* line 65, ../scss/include/_popup.scss */
+#popupOverflow #popupContent p.loading {
+  padding: 24px 32px;
+  margin: 0;
+  text-align: center;
+  color: #333;
+}
+/* line 72, ../scss/include/_popup.scss */
+#popupOverflow #popupContent p.error {
+  padding: 24px 32px;
+  margin: 0;
+  text-align: center;
+  color: #919191;
+}
+/* line 78, ../scss/include/_popup.scss */
+#popupOverflow #popupContent p.error i {
+  margin: 24px 0;
+  color: #d03030;
+}
+/* line 84, ../scss/include/_popup.scss */
+#popupOverflow #popupContent .scrollContent {
+  display: block;
+  overflow: auto;
+  margin: 0;
+  height: 300px;
+}
+/* line 92, ../scss/include/_popup.scss */
 #popupOverflow h4 {
   margin: 0;
   color: #444;
 }
-/* line 56, ../scss/include/_popup.scss */
+/* line 95, ../scss/include/_popup.scss */
 #popupOverflow h4 i {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 61, ../scss/include/_popup.scss */
+/* line 100, ../scss/include/_popup.scss */
 #popupOverflow p {
   color: #666;
 }
-/* line 65, ../scss/include/_popup.scss */
+/* line 104, ../scss/include/_popup.scss */
 #popupOverflow .button-area {
-  margin-top: 15px;
+  margin: 5px 0;
 }
-/* line 70, ../scss/include/_popup.scss */
+/* line 108, ../scss/include/_popup.scss */
+#popupOverflow .button-group {
+  width: 100%;
+  display: table;
+}
+/* line 112, ../scss/include/_popup.scss */
+#popupOverflow .button-group li {
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+}
+/* line 117, ../scss/include/_popup.scss */
+#popupOverflow .button-group li a.button {
+  font-size: 1.1em;
+  display: block;
+  margin: 0;
+  line-height: 48px;
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  border-left: none;
+  border-bottom: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 134, ../scss/include/_popup.scss */
+#popupOverflow .button-group li:last-child a.button {
+  border-right: 0;
+}
+/* line 142, ../scss/include/_popup.scss */
 #popupOverflow .content-area .row {
   margin-bottom: 10px;
 }
-/* line 73, ../scss/include/_popup.scss */
+/* line 145, ../scss/include/_popup.scss */
 #popupOverflow .content-area .row:first-child {
   margin-top: 15px;
-}
-/* line 80, ../scss/include/_popup.scss */
-#popupOverflow.scroll #popupMargin {
-  padding: 20px;
-  display: block;
-}
-/* line 85, ../scss/include/_popup.scss */
-#popupOverflow.scroll #popupContent {
-  top: 20px;
-  bottom: 20px;
-  right: 20px;
-  left: 20px;
-  position: absolute;
-  display: block;
-  overflow: auto;
 }
