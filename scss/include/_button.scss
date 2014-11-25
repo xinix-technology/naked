@@ -35,11 +35,11 @@ button,
 
     &.error {
     	background: transparent;
-	    border: 1px solid #{$button-alert};
-	    color: #{$button-alert};
+	    border: 1px solid #{$button-error};
+	    color: #{$button-error};
 
 	    &:hover {
-	        background: #{$button-alert};
+	        background: #{$button-error};
 		    color: #{$submit-solid-color};
 	    }
     }
@@ -79,7 +79,7 @@ button,
 	    color: #{$submit-solid-color};
 
 		&.error {
-	    	background: #{$button-alert};
+	    	background: #{$button-error};
 		    color: #{$submit-solid-color};
 	    }
 

@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naked CSS</title>
+    <link rel="stylesheet" href="../css/naked.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/prettify.min.css">
+    <link rel="stylesheet" href="../css/prettify.css">
+    <link rel="stylesheet" href="../css/transition.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" charset="utf-8" src="../third-party/jquery.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="wrapper">
+            <div class="row">
+                <div class="pull-left">
+                    <h1 class="brand">
+                        <a href="index.html">
+                            <span class="logo">
+                                <img src="../img/xinix-logo.png" alt="">
+                            </span>
+                            <span>Naked CSS</span>
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul class="nav">
+            <li>
+                <a href="grid-system.html">
+                    Grid System
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="container.html">
+                    Container
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="form.html">
+                    Form
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="button.html">
+                    Button
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="table.html">
+                    Table
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="sidebar.html">
+                    Sidebar
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="navbar-tabstrip.html">
+                    Navbar & Tabstrip
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="popup.html">
+                    Popup
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="select" href="listview.html">
+                    List View
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="typography.html">
+                    Typography
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="icon-layout.html">
+                    Icons & Layout
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="alert.html">
+                    Alert
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tooltip-dropdown.html">
+                    Tooltip & Dropdown
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="pagination.html">
+                    Pagination
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tree.html">
+                    Tree
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tabs.html">
+                    Tabs
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="context-menu.html">
+                    Context Menu
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- END OF SIDEBAR -->
+
+    <!-- CONTENT -->
+    <main class="content">
+        <div class="wrapper">
+            <h1 class="title">List View</h1>
+            <hr>
+            <p>
+                There are two ways to build pagination in Foundation 4: with our predefined HTML or with our mixin. Building pagination using our predefined classes isn't hard at all. You'll start with an unordered list and add a class of <code>.pagination</code> to it. From there, you just need to add list items with links in them. Those list items have a few options you can use:
+            </p>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li class="plain">
+                                    <a href="#">
+                                        Menu 1
+                                    </a>
+                                </li>
+                                <li class="plain">
+                                    <a href="#">
+                                        Menu 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tellus vel lacus ullamcorper elementum.
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Duis mollis, urna bibendum tincidunt blandit
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Sed tristique arcu vitae arcu blandit, nec vulputate dui sagittis. Etiam tincidunt turpis ullamcorper
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a class="swipe-toggle">
+                                        Network
+                                        <input class="swipe" type="checkbox" checked />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Line
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Song
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Videos
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Photos
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Applications
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Capacity
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li class="plain">
+                <a href="#">
+                    Menu 1
+                </a>
+            </li>
+            <li class="plain">
+                <a href="#">
+                    Menu 2
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tellus vel lacus ullamcorper elementum.
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Duis mollis, urna bibendum tincidunt blandit
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Sed tristique arcu vitae arcu blandit, nec vulputate dui sagittis. Etiam tincidunt turpis ullamcorper
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a class="swipe-toggle">
+                    Network
+                    <input class="swipe" type="checkbox" checked />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Line
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Song
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Videos
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Photos
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Applications
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Capacity
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        Mail
+                                        <i class="xn xn-angle-right"></i>
+                                        <span class="sub-title">Mail, Contact Calendars, Notes, Remainders, Documents and 6 more</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Line
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Song
+                                        <i class="xn xn-angle-right"></i>
+                                        <span class="sub-title">22 Hour 45 Minutes 21 Second </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Videos
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Photos
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Applications
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Capacity
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    Mail
+                    <i class="xn xn-angle-right"></i>
+                    <span class="sub-title">Mail, Contact Calendars, Notes, Remainders, Documents and 6 more</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Line
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Song
+                    <i class="xn xn-angle-right"></i>
+                    <span class="sub-title">22 Hour 45 Minutes 21 Second </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Videos
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Photos
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Applications
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Capacity
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Nested</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview nest">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        Network
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                    <ul class="nested">
+                                        <li>
+                                            <a href="#">
+                                                Line
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Song
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Videos
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Photos
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Applications
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Capacity
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview nest">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    Network
+                    <i class="xn xn-angle-right"></i>
+                </a>
+                <ul class="nested">
+                    <li>
+                        <a href="#">
+                            Line
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Song
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Videos
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    Photos
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Applications
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Capacity
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Icon</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview text">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/airplane-icon.png" alt="">
+                                        Airplane Mode
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/wifi-icon.png" alt="">
+                                        Wifi
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/bluetooth-icon.png" alt="">
+                                        Bluetooth
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        Cellular
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/hotspot-icon.png" alt="">
+                                        Personal Hotspot
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/phone-icon.png" alt="">
+                                        Carrier
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/notif-icon.png" alt="">
+                                        Notification Center
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        Cellular
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/wifi-icon.png" alt="">
+                                        Wifi
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview text">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/airplane-icon.png" alt="">
+                    Airplane Mode
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/wifi-icon.png" alt="">
+                    Wifi
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/bluetooth-icon.png" alt="">
+                    Bluetooth
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    Cellular
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/hotspot-icon.png" alt="">
+                    Personal Hotspot
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/phone-icon.png" alt="">
+                    Carrier
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/notif-icon.png" alt="">
+                    Notification Center
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    Cellular
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/wifi-icon.png" alt="">
+                    Wifi
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Icon 2</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview text">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/airplane-icon.png" alt="">
+                                        <span>Airplane Mode</span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/wifi-icon.png" alt="">
+                                        <span>Wifi</span>
+                                        <span class="side">Xinix 3</span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/bluetooth-icon.png" alt="">
+                                        <span>Bluetooth</span>
+                                        <span class="side">Off</span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        Cellular
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/hotspot-icon.png" alt="">
+                                        <span>Personal Hotspot</span>
+                                        <span class="side">Off</span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/phone-icon.png" alt="">
+                                        <span>Carrier</span>
+                                        <span class="side">IND INDOSAT</span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/notif-icon.png" alt="">
+                                        Notification Center
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        Cellular
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/wifi-icon.png" alt="">
+                                        Wifi
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview text">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/airplane-icon.png" alt="">
+                    <span>Airplane Mode</span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/wifi-icon.png" alt="">
+                    <span>Wifi</span>
+                    <span class="side">Xinix 3</span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/bluetooth-icon.png" alt="">
+                    <span>Bluetooth</span>
+                    <span class="side">Off</span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    Cellular
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/hotspot-icon.png" alt="">
+                    <span>Personal Hotspot</span>
+                    <span class="side">Off</span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/phone-icon.png" alt="">
+                    <span>Carrier</span>
+                    <span class="side">IND INDOSAT</span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/notif-icon.png" alt="">
+                    Notification Center
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    Cellular
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/wifi-icon.png" alt="">
+                    Wifi
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Icon + Mix Text</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview mix">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/airplane-icon.png" alt="">
+                                        <span class="title-list">Title 1</span>
+                                        <span>
+                                            Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        <span class="title-list">Title 2</span>
+                                        <span>
+                                            Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/hotspot-icon.png" alt="">
+                                        <span class="title-list">Title 3</span>
+                                        <span>
+                                            Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/phone-icon.png" alt="">
+                                        <span class="title-list">Title 4</span>
+                                        <span>
+                                            In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/notif-icon.png" alt="">
+                                        <span class="title-list">Title 5</span>
+                                        <span>
+                                            Duis cursus, est et commodo imperdiet, orci nulla accumsan quam, non congue libero dolor vehicula urna.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/cellular-icon.png" alt="">
+                                        <span class="title-list">Title 6</span>
+                                        <span>
+                                            Donec eget aliquet dolor. Aliquam sollicitudin sapien orci, sit amet aliquam massa malesuada feugiat.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="icon" src="../img/wifi-icon.png" alt="">
+                                        <span class="title-list">Title 7</span>
+                                        <span>
+                                            Duis porta consectetur tellus, ac cursus leo egestas a. Fusce faucibus lacus eu ante posuere pulvinar.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview mix">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/airplane-icon.png" alt="">
+                    <span class="title-list">Title 1</span>
+                    <span>
+                        Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    <span class="title-list">Title 2</span>
+                    <span>
+                        Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/hotspot-icon.png" alt="">
+                    <span class="title-list">Title 3</span>
+                    <span>
+                        Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/phone-icon.png" alt="">
+                    <span class="title-list">Title 4</span>
+                    <span>
+                        In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/notif-icon.png" alt="">
+                    <span class="title-list">Title 5</span>
+                    <span>
+                        Duis cursus, est et commodo imperdiet, orci nulla accumsan quam, non congue libero dolor vehicula urna.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/cellular-icon.png" alt="">
+                    <span class="title-list">Title 6</span>
+                    <span>
+                        Donec eget aliquet dolor. Aliquam sollicitudin sapien orci, sit amet aliquam massa malesuada feugiat.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="icon" src="../img/wifi-icon.png" alt="">
+                    <span class="title-list">Title 7</span>
+                    <span>
+                        Duis porta consectetur tellus, ac cursus leo egestas a. Fusce faucibus lacus eu ante posuere pulvinar.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Thumb</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview mix thumb">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/airplane-icon.png" alt="">
+                                        <span class="title-list">Title 1</span>
+                                        <span>
+                                            Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/cellular-icon.png" alt="">
+                                        <span class="title-list">Title 2</span>
+                                        <span>
+                                            Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/hotspot-icon.png" alt="">
+                                        <span class="title-list">Title 3</span>
+                                        <span>
+                                            Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/phone-icon.png" alt="">
+                                        <span class="title-list">Title 4</span>
+                                        <span>
+                                            In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview mix thumb">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/airplane-icon.png" alt="">
+                    <span class="title-list">Title 1</span>
+                    <span>
+                        Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/cellular-icon.png" alt="">
+                    <span class="title-list">Title 2</span>
+                    <span>
+                        Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/hotspot-icon.png" alt="">
+                    <span class="title-list">Title 3</span>
+                    <span>
+                        Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/phone-icon.png" alt="">
+                    <span class="title-list">Title 4</span>
+                    <span>
+                        In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Detail</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview mix thumb">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <img class="image" src="../img/doraemon.jpg" alt="">
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/airplane-icon.png" alt="">
+                                        <span class="title-list">Title 1</span>
+                                        <span>
+                                            Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/cellular-icon.png" alt="">
+                                        <span class="title-list">Title 2</span>
+                                        <span>
+                                            Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/hotspot-icon.png" alt="">
+                                        <span class="title-list">Title 3</span>
+                                        <span>
+                                            Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <img class="image" src="../img/cat.jpg" alt="">
+                            <ul class="list-group">
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/airplane-icon.png" alt="">
+                                        <span class="title-list">Title 1</span>
+                                        <span>
+                                            Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/cellular-icon.png" alt="">
+                                        <span class="title-list">Title 2</span>
+                                        <span>
+                                            Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="picture" src="../img/hotspot-icon.png" alt="">
+                                        <span class="title-list">Title 3</span>
+                                        <span>
+                                            Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                                        </span>
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview mix thumb">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <img class="image" src="../img/doraemon.jpg" alt="">
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/airplane-icon.png" alt="">
+                    <span class="title-list">Title 1</span>
+                    <span>
+                        Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/cellular-icon.png" alt="">
+                    <span class="title-list">Title 2</span>
+                    <span>
+                        Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/hotspot-icon.png" alt="">
+                    <span class="title-list">Title 3</span>
+                    <span>
+                        Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <img class="image" src="../img/cat.jpg" alt="">
+        <ul class="list-group">
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/airplane-icon.png" alt="">
+                    <span class="title-list">Title 1</span>
+                    <span>
+                        Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/cellular-icon.png" alt="">
+                    <span class="title-list">Title 2</span>
+                    <span>
+                        Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img class="picture" src="../img/hotspot-icon.png" alt="">
+                    <span class="title-list">Title 3</span>
+                    <span>
+                        Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+                    </span>
+                    <i class="xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">List View Detail Nested</h4>
+            <div class="ex-list-view-content">
+                <div class="wrapper">
+                    <ul class="listview mix thumb detail">
+                        <li class="list-group-container">
+                            <h5>Group Title</h5>
+                            <ul class="list-group detail-group">
+                                <li class="detail-content">
+                                    <img class="image" src="../img/doraemon.jpg" alt="">
+                                    <ul class="detail-list">
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="detail-content">
+                                    <img class="image" src="../img/doraemon.jpg" alt="">
+                                    <ul class="detail-list">
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="picture" src="../img/airplane-icon.png" alt="">
+                                                <span class="title-list">Title 1</span>
+                                                <span>
+                                                    Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                                                </span>
+                                                <i class="xn xn-angle-right"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="listview mix thumb detail">
+    <li class="list-group-container">
+        <h5>Group Title</h5>
+        <ul class="list-group detail-group">
+            <li class="detail-content">
+                <img class="image" src="../img/doraemon.jpg" alt="">
+                <ul class="detail-list">
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="detail-content">
+                <img class="image" src="../img/doraemon.jpg" alt="">
+                <ul class="detail-list">
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="picture" src="../img/airplane-icon.png" alt="">
+                            <span class="title-list">Title 1</span>
+                            <span>
+                                Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+                            </span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+
+
+
+
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2014
+                <a href="http://xinix.co.id" target="blank">Xinix Technology</a>. Some right(s) reserved.
+            </p>
+        </div>
+    </main>
+    <!-- END OF PAGE CONTENT -->
+
+    <!-- PAGE LEVEL SCRIPT -->
+    <script type="text/javascript" charset="utf-8" src="../third-party/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../third-party/prettify/prettify.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $.each($('.content pre.prettyprint'), function(index, dom) {
+            $(dom).html($('<div/>').text($(dom).html()).html());
+        });
+        prettyPrint();
+    </script>
+    <!-- END OF PAGE LEVEL SCRIPT -->
+</body>
+</html>

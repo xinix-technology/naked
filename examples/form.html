@@ -1,81 +1,181 @@
 <!doctype html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Naked CSS</title>
-        <link rel="stylesheet" href="../css/naked.css">
-        <link rel="stylesheet" href="../css/font-awesome.css">
-        <link rel="stylesheet" href="../css/docs.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <script type="text/javascript" src="../third-party/zepto.min.js"></script>
-        <script type="text/javascript" src="../third-party/run_prettify.js"></script>
-    </head>
-
-    <body>
-
-        <!-- use html5 header -->
-        <nav class="nav-menu">
-            <div class="wrapper">
-                <div class="row">
-                    <div class="pull-left">
-                        <h1 class="brand">
-                            <a href="index.html">
-                                <span>Naked</span>
-                            </a>
-                        </h1>
-                    </div>
-                    <div class="pull-right">
-                        <ul class="flat topbar">
-                            <li><a href="grid-system.html">Grid System</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="form.html">Form</a></li>
-                            <li><a href="button.html">Button</a></li>
-                            <li><a href="table.html">Table</a></li>
-                            <li><a href="pagination.html">Pagination</a></li>
-                            <li><a href="list-view.html">List View</a></li>
-                            <li><a href="navbar-tabstrip.html">Navbar & Tabstrip</a></li>
-                            <li><a href="alert.html">Alert</a></li>
-                            <li><a href="tooltip-dropdown.html">Tooltip - Dropdown</a></li>
-                            <li><a href="tabs.html">Tabs</a></li>
-                            <li><a href="tree.html">Tree</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="context-menu.html">Context Menu</a></li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Naked CSS</title>
+    <link rel="stylesheet" href="../css/naked.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/prettify.min.css">
+    <link rel="stylesheet" href="../css/prettify.css">
+    <link rel="stylesheet" href="../css/transition.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" charset="utf-8" src="../third-party/jquery.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="wrapper">
+            <div class="row">
+                <div class="pull-left">
+                    <h1 class="brand">
+                        <a href="index.html">
+                            <span class="logo">
+                                <img src="../img/xinix-logo.png" alt="">
+                            </span>
+                            <span>Naked CSS</span>
+                        </a>
+                    </h1>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
 
-        <div class="container">
-            <div class="wrapper">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <ul class="nav">
+            <li>
+                <a href="grid-system.html">
+                    Grid System
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="container.html">
+                    Container
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a class="select" href="form.html">
+                    Form
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="button.html">
+                    Button
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="table.html">
+                    Table
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="sidebar.html">
+                    Sidebar
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="navbar-tabstrip.html">
+                    Navbar & Tabstrip
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="popup.html">
+                    Popup
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="listview.html">
+                    List View
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="typography.html">
+                    Typography
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="icon-layout.html">
+                    Icons & Layout
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="alert.html">
+                    Alert
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tooltip-dropdown.html">
+                    Tooltip & Dropdown
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="pagination.html">
+                    Pagination
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tree.html">
+                    Tree
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="tabs.html">
+                    Tabs
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="context-menu.html">
+                    Context Menu
+                    <i class="icn-right xn xn-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- END OF SIDEBAR -->
 
-                <h1 class="title">Form</h1>
-                <hr>
-                <p>
-                    With Naked CSS, we set out to create an easy to handle, powerful and versatile form layout system. A combination of form styles and the Naked grid means you can do basically anything
-                </p>
-                <form>
-                    <fieldset>
-                        <legend>Fieldset</legend>
+    <!-- CONTENT -->
+    <main class="content">
+        <div class="wrapper">
+            <h1 class="title">Form</h1>
+            <hr>
+            <p>
+                With Naked CSS, we set out to create an easy to handle, powerful and versatile form layout system. A combination of form styles and the Naked grid means you can do basically anything
+            </p>
+            <form>
+                <fieldset>
+                    <legend>Fieldset</legend>
 
-                        <div class="row">
-                          <div class="span-12">
+                    <div class="row">
+                        <div class="span-12">
                             <div class="wrapper">
                                 <label>Input Label</label>
                                 <input type="text" placeholder="Input">
                             </div>
-                          </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                          <div class="span-4">
+                    <div class="row">
+                        <div class="span-4">
                             <div class="wrapper">
                                 <label>Input Label</label>
                                 <input type="text" placeholder="Input">
                             </div>
-                          </div>
-                          <div class="span-4">
+                        </div>
+                        <div class="span-4">
                             <div class="wrapper">
                                 <label>Input Label</label>
                                 <select>
@@ -84,338 +184,334 @@
                                     <option>Options #3</option>
                                 </select>
                             </div>
-                          </div>
-                          <div class="span-4">
+                        </div>
+                        <div class="span-4">
                             <div class="wrapper">
                                 <label>Input Label</label>
                                 <span class="field">This is read-only</span>
                             </div>
-                          </div>
                         </div>
-
-                        <div class="row">
-                            <div class="wrapper">
-                                <div class="span-12">
-                                    <label>Textarea Label</label>
-                                    <textarea placeholder="textarea"></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="wrapper">
-                                <input type="submit" value="Submit">
-                                <input type="reset" value="Reset">
-                                <a href="#" class="button">Back</a>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-                <div class="html">
-                    <div class="highlight">
-                        <pre class="prettyprint">
-&lt;form&gt;
-  &lt;fieldset&gt;
-    &lt;legend&gt;Fieldset&lt;/legend&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="span-12"&gt;
-        &lt;label&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" placeholder="Input"&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="span-4"&gt;
-        &lt;label&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" placeholder="Input"&gt;
-      &lt;/div&gt;
-      &lt;div class="span-4"&gt;
-        &lt;label&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" placeholder="Input"&gt;
-      &lt;/div&gt;
-      &lt;div class="span-4"&gt;
-        &lt;label&gt;Input Label&lt;/label&gt;
-        &lt;input type="text" placeholder="Input"&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-       &lt;div class="span-12"&gt;
-          &lt;label&gt;Textarea Label&lt;/label&gt;
-          &lt;textarea placeholder="textarea"&gt;&lt;/textarea&gt;
-       &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-      &lt;input type="submit" value="Submit"&gt;
-      &lt;input type="reset" value="Reset"&gt;
-      &lt;a href="#" class="button"&gt;Back&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;
-                        </pre>
                     </div>
-                </div>
-                <hr>
-                <h4 class="sub-title">Pre/Postfix Labels</h4>
-                <p>
-                    Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
-                </p>
-                <form>
+
                     <div class="row">
-                        <div class="span-6 pre-post">
-                            <div class="wrapper">
-                                <label>Input Domain</label>
-                                <div class="span-9">
-                                    <input class="postfix-input" type="text" placeholder="Enter your Domain...">
-                                </div>
-                                <div class="span-3">
-                                    <span class="postfix">.com</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span-6 pre-post right">
-                            <div class="wrapper">
-                                <label>Input URL</label>
-                                <div class="span-3">
-                                    <span class="prefix">http://</span>
-                                </div>
-                                <div class="span-9">
-                                    <input class="postfix-input" type="text" placeholder="Enter your URL...">
-                                </div>
+                        <div class="wrapper">
+                            <div class="span-12">
+                                <label>Textarea Label</label>
+                                <textarea placeholder="textarea"></textarea>
                             </div>
                         </div>
                     </div>
-                </form>
-                <div class="html">
-                    <div class="highlight">
-                        <pre class="prettyprint">
-&lt;div class="span-6 pre-post"&gt;
-   &lt;label&gt;Input Domain&lt;/label&gt;
-   &lt;div class="span-9"&gt;
-      &lt;input class="postfix-input" type="text" placeholder="Enter your Domain..."&gt;
-   &lt;/div&gt;
-   &lt;div class="span-3"&gt;
-      &lt;span class="postfix"&gt;.com&lt;/span&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class="span-6 pre-post right"&gt;
-   &lt;label&gt;Input URL&lt;/label&gt;
-   &lt;div class="span-3"&gt;
-      &lt;span class="prefix"&gt;http://&lt;/span&gt;
-   &lt;/div&gt;
-   &lt;div class="span-9"&gt;
-      &lt;input class="postfix-input" type="text" placeholder="Enter your URL..."&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
-                        </pre>
-                    </div>
-                </div>
-                <hr>
-
-
-
-                <h4 class="sub-title">Input Button</h4>
-                <p>
-                    Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
-                </p>
-                <form>
                     <div class="row">
-                        <div class="span-6 input-button">
-                            <div class="wrapper">
-                                <div class="span-9">
-                                    <input type="text" placeholder="Enter your Domain...">
-                                </div>
-                                <div class="span-3">
-                                    <a href="#" class="button solid">Clear</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="span-6 input-button left">
-                            <div class="wrapper">
-                                <div class="span-3">
-                                    <a href="#" class="button solid">Clear</a>
-                                </div>
-                                <div class="span-9">
-                                    <input type="text" placeholder="Enter your URL...">
-                                </div>
-                            </div>
+                        <div class="wrapper">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                            <a href="#" class="button">Back</a>
                         </div>
                     </div>
-                </form>
-                <div class="html">
-                    <div class="highlight">
-                        <pre class="prettyprint">
-&lt;div class="input-button"&gt;
-   &lt;div class="span-9"&gt;
-      &lt;input type="text" placeholder="Enter your Domain..."&gt;
-   &lt;/div&gt;
-   &lt;div class="span-3"&gt;
-      &lt;a href="#" class="button solid"&gt;Clear&lt;/a&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class="input-button left"&gt;
-   &lt;div class="span-3"&gt;
-      &lt;a href="#" class="button solid"&gt;Clear&lt;/a&gt;
-   &lt;/div&gt;
-   &lt;div class="span-9"&gt;
-      &lt;input type="text" placeholder="Enter your URL..."&gt;
-   &lt;/div&gt;
-&lt;/div&gt;
-                        </pre>
-                    </div>
-                </div>
-                <hr>
-
-
-
-
-                <h4 class="sub-title">Radio Button and Select Box</h4>
-                <form>
-                    <div class="row">
-                        <div class="span-6">
-                            <div class="wrapper">
-                                <span for="radio1" class="radio-label">
-                                    <input class="radio" name="radio1" type="radio" id="radio1" />Radio Button 1
-                                </span>
-                                <span for="radio1" class="radio-label">
-                                    <input class="radio" name="radio1" type="radio" id="radio2" />Radio Button 2
-                                </span>
-                                <span for="radio1" class="radio-label">
-                                    <input class="radio" name="radio1" type="radio" id="radio3" disabled />Radio Button 3
-                                </span>
-                            </div>
-                        </div>
-                        <div class="span-6">
-                            <div class="wrapper">
-                                <span class="dropdown-label">Selectbox Example</span>
-                                <select>
-                                    <option>This is a dropdown</option>
-                                    <option>This is another option</option>
-                                    <option>This is another option too</option>
-                                    <option>Look, a third option</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="html">
-                    <div class="highlight">
-                        <pre class="prettyprint">
-&lt;input class="radio" name="radio1" type="radio"&gt;Radio Button 1
-&lt;input class="radio" name="radio2" type="radio"&gt;Radio Button 1
-&lt;input class="radio" name="radio3" type="radio" disabled&gt;Radio Button 1
-
-&lt;select&gt;
-   &lt;option&gt;This is a dropdown&lt;/option&gt;
-   &lt;option&gt;This is another option&lt;/option&gt;
-   &lt;option&gt;This is another option too&lt;/option&gt;
-   &lt;option&gt;Look, a third option&lt;/option&gt;
-&lt;/select&gt;
-                        </pre>
-                    </div>
-                </div>
-                <hr>
-                <h4 class="sub-title">Checkbox & Checkbox Swipe</h4>
-                <p>
-                    Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
-                </p>
-                <div class="ex-checkbox">
-                    <form>
-                        <div class="row">
-                            <div class="span-6">
-                                <label class="placeholder">
-                                    <input class="checkbox" type="checkbox" id="checkbox1"/>
-                                    Checkbox 1
-                                </label>
-                                <label class="placeholder">
-                                    <input class="checkbox" type="checkbox" id="checkbox2" checked />
-                                    Checkbox 2
-                                </label>
-                                <label class="placeholder">
-                                    <input class="checkbox" type="checkbox" id="checkbox3" checked />
-                                    Checkbox 3
-                                </label>
-                            </div>
-                            <div class="span-6">
-                                <label class="placeholder full">
-                                    <input class="swipe" type="checkbox" checked />
-                                    Checkbox Swipe 1
-                                </label>
-                                <label class="placeholder full">
-                                    <input class="swipe" type="checkbox" />
-                                    Checkbox Swipe 2
-                                </label>
-                                <label class="placeholder full">
-                                    <input class="swipe" type="checkbox" checked />
-                                    Checkbox Swipe 3
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="html">
-                    <div class="highlight">
-                        <pre class="prettyprint">
-&lt;label class="placeholder"&gt;
-   &lt;input class="checkbox" type="checkbox"&gt;
-   Checkbox 1
-&lt;/label&gt;
-&lt;label class="placeholder"&gt;
-   &lt;input class="checkbox" type="checkbox" checked"&gt;
-   Checkbox 2
-&lt;/label&gt;
-&lt;label class="placeholder"&gt;
-   &lt;input class="checkbox" type="checkbox" checked"&gt;
-   Checkbox 3
-&lt;/label&gt;
-
-&lt;label class="placeholder"&gt;
-   &lt;input class="swipe" type="checkbox" checked&gt;
-   Checkbox Swipe 1
-&lt;/label&gt;
-&lt;label class="placeholder"&gt;
-   &lt;input class="swipe" type="checkbox"&gt;
-   Checkbox Swipe 2
-&lt;/label&gt;
-&lt;label class="placeholder"&gt;
-   &lt;input class="swipe" type="checkbox" checked&gt;
-   Checkbox Swipe 3
-&lt;/label&gt;
-                        </pre>
-                    </div>
-                </div>
-                <hr>
+                </fieldset>
+            </form>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<form>
+    <fieldset>
+        <legend>Fieldset</legend>
+        <div class="row">
+            <label>Input Label</label>
+            <input type="text" placeholder="Input">
+        </div>
+        <div class="row">
+            <div class="span-4">
+                <label>Input Label</label>
+                <input type="text" placeholder="Input">
+            </div>
+            <div class="span-4">
+                <label>Input Label</label>
+                <select>
+                    <option>Options #1</option>
+                    <option>Options #2</option>
+                    <option>Options #3</option>
+                </select>
+            </div>
+            <div class="span-4">
+                <label>Input Label</label>
+                <span class="field">This is read-only</span>
             </div>
         </div>
+        <div class="row">
+            <label>Textarea Label</label>
+            <textarea placeholder="textarea"></textarea>
+        </div>
+        <div class="row">
+            <div class="wrapper">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <a href="#" class="button">Back</a>
+            </div>
+        </div>
+    </fieldset>
+</form>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Pre/Postfix Labels</h4>
+            <p>
+                Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
+            </p>
+            <form>
+                <div class="row">
+                    <div class="span-6 pre-post">
+                        <div class="wrapper">
+                            <label>Input Domain</label>
+                            <div class="span-9">
+                                <input class="postfix-input" type="text" placeholder="Enter your Domain...">
+                            </div>
+                            <div class="span-3">
+                                <span class="postfix">.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span-6 pre-post right">
+                        <div class="wrapper">
+                            <label>Input URL</label>
+                            <div class="span-3">
+                                <span class="prefix">http://</span>
+                            </div>
+                            <div class="span-9">
+                                <input class="postfix-input" type="text" placeholder="Enter your URL...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="pre-post">
+    <label>Input Domain</label>
+    <div class="row">
+        <div class="span-9">
+            <input class="postfix-input" type="text" placeholder="Enter your Domain...">
+        </div>
+        <div class="span-3">
+            <span class="postfix">.com</span>
+        </div>
+    </div>
+</div>
 
+<div class="pre-post right">
+    <label>Input URL</label>
+    <div class="row">
+        <div class="span-3">
+            <span class="prefix">http://</span>
+        </div>
+        <div class="span-9">
+            <input class="postfix-input" type="text" placeholder="Enter your URL...">
+        </div>
+    </div>
+</div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+
+            <h4 class="sub-title">Input Button</h4>
+            <p>
+                Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
+            </p>
+            <form>
+                <div class="row">
+                    <div class="span-6 input-button">
+                        <div class="wrapper">
+                            <div class="span-9">
+                                <input type="text" placeholder="Enter your Domain...">
+                            </div>
+                            <div class="span-3">
+                                <a href="#" class="button solid">Clear</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span-6 input-button left">
+                        <div class="wrapper">
+                            <div class="span-3">
+                                <a href="#" class="button solid">Clear</a>
+                            </div>
+                            <div class="span-9">
+                                <input type="text" placeholder="Enter your URL...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="span-6 input-button">
+    <div class="span-9">
+        <input type="text" placeholder="Enter your Domain...">
+    </div>
+    <div class="span-3">
+        <a href="#" class="button solid">Clear</a>
+    </div>
+</div>
+
+<div class="span-6 input-button left">
+    <div class="span-3">
+        <a href="#" class="button solid">Clear</a>
+    </div>
+    <div class="span-9">
+        <input type="text" placeholder="Enter your URL...">
+    </div>
+</div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+
+            <h4 class="sub-title">Radio Button and Select Box</h4>
+            <form>
+                <div class="row">
+                    <div class="span-6">
+                        <div class="wrapper">
+                            <span for="radio1" class="radio-label">
+                                <input class="radio" name="radio1" type="radio" id="radio1" />Radio Button 1
+                            </span>
+                            <span for="radio1" class="radio-label">
+                                <input class="radio" name="radio1" type="radio" id="radio2" />Radio Button 2
+                            </span>
+                            <span for="radio1" class="radio-label">
+                                <input class="radio" name="radio1" type="radio" id="radio3" disabled />Radio Button 3
+                            </span>
+                        </div>
+                    </div>
+                    <div class="span-6">
+                        <div class="wrapper">
+                            <span class="dropdown-label">Selectbox Example</span>
+                            <select>
+                                <option>This is a dropdown</option>
+                                <option>This is another option</option>
+                                <option>This is another option too</option>
+                                <option>Look, a third option</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<span for="radio1" class="radio-label">
+    <input class="radio" name="radio1" type="radio" id="radio1" />Radio Button 1
+</span>
+<span for="radio1" class="radio-label">
+    <input class="radio" name="radio1" type="radio" id="radio2" />Radio Button 2
+</span>
+<span for="radio1" class="radio-label">
+    <input class="radio" name="radio1" type="radio" id="radio3" disabled />Radio Button 3
+</span>
+
+<span>Selectbox Example</span>
+<select>
+    <option>This is a dropdown</option>
+    <option>This is another option</option>
+    <option>This is another option too</option>
+    <option>Look, a third option</option>
+</select>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Checkbox & Checkbox Swipe</h4>
+            <p>
+                Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
+            </p>
+            <div class="ex-checkbox">
+                <form>
+                    <div class="row">
+                        <div class="span-6">
+                            <label class="placeholder">
+                                <input class="checkbox" type="checkbox" id="checkbox1"/>
+                                Checkbox 1
+                            </label>
+                            <label class="placeholder">
+                                <input class="checkbox" type="checkbox" id="checkbox2" checked />
+                                Checkbox 2
+                            </label>
+                            <label class="placeholder">
+                                <input class="checkbox" type="checkbox" id="checkbox3" checked />
+                                Checkbox 3
+                            </label>
+                        </div>
+                        <div class="span-6">
+                            <label class="placeholder full">
+                                <input class="swipe" type="checkbox" checked />
+                                Checkbox Swipe 1
+                            </label>
+                            <label class="placeholder full">
+                                <input class="swipe" type="checkbox" />
+                                Checkbox Swipe 2
+                            </label>
+                            <label class="placeholder full">
+                                <input class="swipe" type="checkbox" checked />
+                                Checkbox Swipe 3
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<label class="placeholder">
+    <input class="checkbox" type="checkbox" id="checkbox1"/>
+    Checkbox 1
+</label>
+<label class="placeholder">
+    <input class="checkbox" type="checkbox" id="checkbox2" checked />
+    Checkbox 2
+</label>
+<label class="placeholder">
+    <input class="checkbox" type="checkbox" id="checkbox3" checked />
+    Checkbox 3
+</label>
+
+<label class="placeholder full">
+    <input class="swipe" type="checkbox" checked />
+    Checkbox Swipe 1
+</label>
+<label class="placeholder full">
+    <input class="swipe" type="checkbox" />
+    Checkbox Swipe 2
+</label>
+<label class="placeholder full">
+    <input class="swipe" type="checkbox" checked />
+    Checkbox Swipe 3
+</label>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+        </div>
         <div id="footer">
             <p>Copyright &copy; 2014
                 <a href="http://xinix.co.id" target="blank">Xinix Technology</a>. Some right(s) reserved.
             </p>
         </div>
+    </main>
+    <!-- END OF CONTENT -->
 
-        <script>
-            function closeMenu(){
-                if ($('body').hasClass('navigating')) {
-                  $('body').removeClass('navigating')
-                  setTimeout(function(){
-                    $('.ex-navbar').css('display','none')
-                  }, 350)
-                }
-              }
-
-                $('#menu_icon a').on('click', function(){
-                if ($('body').hasClass('navigating')) {
-                  closeMenu()
-                } else {
-                  $('.ex-navbar').css('display','block')
-                  $('.ex-navbar')[0].offsetLeft // force render
-                  $('body').addClass('navigating')
-                }
-                return false
-              })
-        </script>
-
-    </body>
+    <!-- PAGE LEVEL SCRIPT -->
+    <script type="text/javascript" charset="utf-8" src="../third-party/main.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../third-party/prettify/prettify.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $.each($('.content pre.prettyprint'), function(index, dom) {
+            $(dom).html($('<div/>').text($(dom).html()).html());
+        });
+        prettyPrint();
+    </script>
+    <!-- END OF PAGE LEVEL SCRIPT -->
+</body>
 </html>
