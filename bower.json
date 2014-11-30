@@ -31,6 +31,6 @@
     "normalize.css": "~3.0.2",
     "font-awesome": "~4.2.0",
     "google-code-prettify": "~1.0.3",
-    "jacket-awesome": "https://github.com/dwaan/jacket-awesome.git"
+    "jacket-awesome": "dwaan/jacket-awesome"
   }
 }
