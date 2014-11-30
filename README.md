@@ -39,7 +39,6 @@
 	Example
 </h2>	
 <p>You can see the example in directory <code>example</code></p>
-<img src="http://farm8.staticflickr.com/7326/13618064164_0dcd2d0c89_b.jpg">
 <h2>
 	<a name="authors" class="anchor" href="#authors">
 		<span class="octicon octicon-link"></span>
