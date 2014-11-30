@@ -3,11 +3,16 @@
   "version": "0.0.1",
   "homepage": "https://github.com/xinix-technology/naked",
   "authors": [
-    "Xinix <hello@xinix.co.id>"
+    "Xinix <hello@xinix.co.id>",
+    "Dwan <me@dwaan.com>"
   ],
   "description": "The naked CSS framework you've been waiting for",
+  "moduleType": [
+    "globals"
+  ],
   "keywords": [
     "css",
+    "naked",
     "framework"
   ],
   "license": "MIT",
@@ -15,7 +20,17 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.0",
+    "jquery": "~2.1.1",
+    "lato": "~0.2.2",
+    "normalize.css": "~3.0.2",
+    "font-awesome": "~4.2.0",
+    "google-code-prettify": "~1.0.3",
+    "jacket-awesome": "dwaan/jacket-awesome"
+  }
 }

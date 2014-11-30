@@ -1,5 +1,7 @@
-/node_modules
-/bower_components
-/.sass-cache
-/project.sublime-*
-
+node_modules
+bower_components
+.sass-cache
+project.sublime-*
+vendor/*
+naked.sublime-project
+naked.sublime-workspace

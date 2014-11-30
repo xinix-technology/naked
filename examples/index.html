@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Naked CSS</title>
-    <link rel="stylesheet" href="../css/naked.css">
-    <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/prettify.min.css">
-    <link rel="stylesheet" href="../css/prettify.css">
-    <link rel="stylesheet" href="../css/transition.css">
+    <link rel="stylesheet" href="../css/naked.min.css">
+    <link rel="stylesheet" href="../vendor/jacket-awesome/jacket-awesome.css">
+    <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
+    <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
     <link rel="stylesheet" href="../css/docs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script type="text/javascript" charset="utf-8" src="../third-party/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <!-- CONTENT -->
@@ -19,11 +18,11 @@
             <div class="wrapper">
                 <div class="download">
                     <h4 class="sub-title">
-                        <strong>Naked CSS</strong>, The responsive front-end & back-end <strong>Framework</strong> you've been waiting for.
+                        <strong>Naked CSS</strong>, The responsive front-end &amp; back-end <strong>Framework</strong> you've been waiting for.
                     </h4>
                     <div class="button-area">
                         <a class="button" href="grid-system.html"><i class="xn xn-file-text-o"></i> Documentation</a>
-                        <a class="button success" target="blank" href="https://github.com/xinix-technology/naked.git"><i class="xn xn-download"></i> Naked CSS V.1.0</a>
+                        <a class="button success" target="_BLANK" href="https://github.com/xinix-technology/naked.git"><i class="xn xn-download"></i> Naked CSS V.1.0</a>
                     </div>
                 </div>
             </div>
@@ -33,8 +32,8 @@
     <!-- END OF PAGE CONTENT -->
 
     <!-- PAGE LEVEL SCRIPT -->
-    <script type="text/javascript" charset="utf-8" src="../third-party/main.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../third-party/prettify/prettify.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/docs.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/google-code-prettify/bin/prettify.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         $.each($('.content pre.prettyprint'), function(index, dom) {
             $(dom).html($('<div/>').text($(dom).html()).html());

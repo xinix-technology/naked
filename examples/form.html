@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Naked CSS</title>
-    <link rel="stylesheet" href="../css/naked.css">
-    <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/prettify.min.css">
-    <link rel="stylesheet" href="../css/prettify.css">
-    <link rel="stylesheet" href="../css/transition.css">
+    <link rel="stylesheet" href="../css/naked.min.css">
+    <link rel="stylesheet" href="../vendor/jacket-awesome/jacket-awesome.css">
+    <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
+    <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
     <link rel="stylesheet" href="../css/docs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script type="text/javascript" charset="utf-8" src="../third-party/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -73,7 +72,7 @@
             </li>
             <li>
                 <a href="navbar-tabstrip.html">
-                    Navbar & Tabstrip
+                    Navbar &amp; Tabstrip
                     <i class="icn-right xn xn-angle-right"></i>
                 </a>
             </li>
@@ -97,7 +96,7 @@
             </li>
             <li>
                 <a href="icon-layout.html">
-                    Icons & Layout
+                    Icons &amp; Layout
                     <i class="icn-right xn xn-angle-right"></i>
                 </a>
             </li>
@@ -497,15 +496,15 @@
         </div>
         <div id="footer">
             <p>Copyright &copy; 2014
-                <a href="http://xinix.co.id" target="blank">Xinix Technology</a>. Some right(s) reserved.
+                <a href="http://xinix.co.id" target="_BLANK">Xinix Technology</a>. Some right(s) reserved.
             </p>
         </div>
     </main>
     <!-- END OF CONTENT -->
 
     <!-- PAGE LEVEL SCRIPT -->
-    <script type="text/javascript" charset="utf-8" src="../third-party/main.js"></script>
-    <script type="text/javascript" charset="utf-8" src="../third-party/prettify/prettify.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../js/docs.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/google-code-prettify/bin/prettify.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         $.each($('.content pre.prettyprint'), function(index, dom) {
             $(dom).html($('<div/>').text($(dom).html()).html());
