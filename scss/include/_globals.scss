@@ -1,4 +1,4 @@
-@import url(../fonts/lato/lato.css);
+// @import url(../fonts/lato/lato.css);
 
 *, ::before, ::after {
     -moz-box-sizing: border-box;
@@ -37,13 +37,13 @@ body {
     }
 }
 
-main.content { 
-    padding-top: 56px; 
-    margin-left: 256px; 
-    height: 100%; 
+main.content {
+    padding-top: 56px;
+    margin-left: 256px;
+    height: 100%;
 
-    &>.wrapper { 
-        padding: 20px 30px 20px; 
+    &>.wrapper {
+        padding: 20px 30px 20px;
     }
 }
 
@@ -368,16 +368,16 @@ img.img-circle {
     -moz-border-radius: 500px;
     border-radius: 500px;
 }
-#footer { 
+#footer {
     background: #{$footer-bg};
     display: inline-block;
     width: 100%;
 
     p {
-        margin: 0; 
-        text-align: center; 
-        color: #fff; 
-        font-size: 0.8em; 
+        margin: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 0.8em;
         padding: 10px 0;
 
         a {
