@@ -10,24 +10,28 @@
     -o-border-radius: 20px;
     border-radius: 20px;
 
-    .title {
-		margin-bottom: 30px;
+	h1 {
+		margin: 0;
+		text-align: center;
+		font-weight: 300;
+		color: #ff9500;
+		line-height: 120%;
 
-		h2 {
-			margin: 0;
-			text-align: center;
-			font-weight: 300;
-			color: #ff9500;
-			line-height: 120%;
-
-			strong {
-				color: #08c;
-				font-weight: 400;
-				font-size: 1.2em;
-			}
+		strong {
+			color: #08c;
+			font-weight: 400;
+			font-size: 1.2em;
 		}
 	}
 
+    .xn {
+    	font-size: 128px;
+    	text-align: center;
+    	display: block;
+    	width: 128px;
+    	margin: 0 auto;
+    }
+    
 	.check-label {
 		margin-bottom: 20px;
 	}
