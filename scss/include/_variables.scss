@@ -89,10 +89,10 @@ $medium-screen: "767px";
 $large-screen: "1023px";
 $extra-large-screen: "1360px";
 $screen: "screen";
-$tiny: "only screen and (max-width:"#{$small-screen}")";
-$small: "only screen and (max-width:"#{$medium-screen}")";
-$medium: "only screen and (max-width:"#{$large-screen}") ";
-$large: "only screen and (min-width:"#{$extra-large-screen}")";
+$tiny: "only screen and (max-width:#{$small-screen})";
+$small: "only screen and (max-width:#{$medium-screen})";
+$medium: "only screen and (max-width:#{$large-screen}) ";
+$large: "only screen and (min-width:#{$extra-large-screen})";
 // ==============================================
 
 

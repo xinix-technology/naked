@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Naked CSS</title>
+    <title>Naked CSS</title>    <link rel="stylesheet" href="../vendor/normalize.css/normalize.css">
     <link rel="stylesheet" href="../css/naked.min.css">
+
+    <link rel="stylesheet" href="../css/naked.css">
+    <link rel="stylesheet" href="../vendor/normalize.css/normalize.css">
     <link rel="stylesheet" href="../vendor/jacket-awesome/jacket-awesome.css">
     <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
     <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
@@ -154,65 +157,29 @@
             <p>This is Naked Css Login Form</p>
             <div class="ex-login">
                 <div id="login">
-                    <div class="title">
-                        <h2>
-                            Xinix
-                            <br>
-                            <strong>Naked Css</strong>
-                        </h2>
-                    </div>
-                    <form action="" method="POST">
-                        <div class="row">
-                            <div class="span-12">
-                                <input type="text" name="username" placeholder="Email / Username" value="">
-                            </div>
-                            <div class="span-12">
-                                <input type="password" name="password" placeholder="Password">
-                            </div>
-                            <div class="span-12">
-                                <label class="placeholder">
-                                    <input class="checkbox" type="checkbox">
-                                    Keep me signed in
-                                </label>
-                            </div>
-                            <div class="span-12">
-                                <input type="submit" value="Sign In"></input>
-                            </div>
-                        </div>
+                    <i class="xn xn-unlock-alt xn-5x"></i>
+                    <form method="POST" class="row">
+                        <input type="text" name="username" value="" placeholder="Username" />
+                        <input type="password" name="password" placeholder="Password" />
+                        <input type="submit" value="Login" class="button solid" />
+                        <label class="placeholder"><input type="checkbox" class="checkbox"> Keep me sign in</label>
                     </form>
                 </div>
             </div>
             <div class="html">
                 <div class="highlight">
                     <pre class="prettyprint">
+
 <div id="login">
-    <div class="title">
-        <h2>
-            Xinix
-            <br>
-            <strong>Naked CSS</strong>
-        </h2>
-    </div>
-    <form>
-        <div class="row">
-            <div class="span-12">
-                <input type="text" name="username" placeholder="Email / Username" value="">
-            </div>
-            <div class="span-12">
-                <input type="password" name="password" placeholder="Password">
-            </div>
-            <div class="span-12">
-                <label class="placeholder">
-                    <input class="checkbox" type="checkbox">
-                    Keep me signed in
-                </label>
-            </div>
-            <div class="span-12">
-                <input type="submit" value="Sign In"></input>
-            </div>
-        </div>
+    <i class="xn xn-unlock-alt xn-5x"></i>
+    <form method="POST" class="row">
+        <input type="text" name="username" value="" placeholder="Username" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="Login" class="button solid" />
+        <label class="placeholder"><input type="checkbox" class="checkbox"> Keep me sign in</label>
     </form>
 </div>
+
                     </pre>
                 </div>
             </div>

@@ -1,10 +1,7 @@
-$version: "1.0.0";
-
-@import url(../../../vendor/lato/css/lato.min.css);
+$version: "1.0.1";
 
 /*! naked.css v#{$version} | MIT License | xinix.co.id */
 
-@import 'include/normalize';
 @import 'include/variables';
 @import 'include/grid';
 @import 'include/globals';
