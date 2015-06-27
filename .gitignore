@@ -5,3 +5,4 @@ project.sublime-*
 vendor/*
 naked.sublime-project
 naked.sublime-workspace
+.nide
