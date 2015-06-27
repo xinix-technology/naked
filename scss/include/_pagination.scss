@@ -10,7 +10,8 @@ ul.pagination {
     li { 
     	margin-right: 0; 
     	margin-left: 3px; 
-        float: left;
+        float: none;
+        display: inline-block;
 
     	a { 
     		display: block; 
@@ -49,6 +50,7 @@ ul.pagination {
 
     &.centered { 
         width: auto; 
+        text-align: center;
     }
 }
 .pagination-mix { 
