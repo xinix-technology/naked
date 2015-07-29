@@ -1,15 +1,15 @@
 .sidebar {
-    width: 256px;
+    width: #{$side-bar-width};
     position: fixed;
-    top: 56px;
+    top: #{$top-bar-height};
     bottom: 0;
     left: 0;
     z-index: 1000;
     display: block;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #f7f7f7;
-    border: 1px solid #e5e5e5;
+    background-color: #{$navbar-bg};
+    border-right: 1px solid #{$navbar-bg * 0.96};
 
     .nav {
         display: block;
@@ -20,20 +20,28 @@
             display: block;
             float: none;
             margin-bottom: -1px;
-            padding-left: 36px;
+            padding-left: 24px;
 
             a {
                 padding: 8px 24px 8px 0;
                 display: block;
                 color: #465d6f;
-                border-bottom: 1px solid #e5e5e5;
+                border-bottom: 1px solid #{$navbar-bg * 0.96};
                 border-top: 1px solid transparent;
                 position: relative;
 
-                i.icn-left {
-                    position: absolute;
-                    left: -20px;
-                    top: 13px;
+                &.select {
+                    i.icn-plus {
+                        -webkit-transform: rotate(45deg) scale(1);
+                        -moz-transform: rotate(45deg) scale(1);
+                        -ms-transform: rotate(45deg) scale(1);
+                        -o-transform: rotate(45deg) scale(1);
+                        transform: rotate(45deg) scale(1);
+                    }
+                }
+
+                &.select {
+                    color: #08c;
                 }
 
                 i.icn-right {
@@ -45,25 +53,20 @@
                 i.icn-plus {
                     font-style: normal; position: absolute; right: 15px; top: 10px;
                     -webkit-transform: rotate(0deg) scale(1);
+                    -moz-transform: rotate(0deg) scale(1);
                     -ms-transform: rotate(0deg) scale(1);
+                    -o-transform: rotate(0deg) scale(1);
                     transform: rotate(0deg) scale(1);
                     -webkit-transition: -webkit-transform 0.3s ease-out;
+                    -moz-transition: -webkit-transform 0.3s ease-out;
+                    -ms-transition: -webkit-transform 0.3s ease-out;
+                    -o-transition: -webkit-transform 0.3s ease-out;
                     transition: transform 0.3s ease-out;
                     -webkit-transform-origin: center center;
+                    -moz-transform-origin: center center;
                     -ms-transform-origin: center center;
+                    -o-transform-origin: center center;
                     transform-origin: center center;
-                }
-
-                &.select {
-                    i.icn-plus {
-                        -webkit-transform: rotate(45deg) scale(1);
-                        -ms-transform: rotate(45deg) scale(1);
-                        transform: rotate(45deg) scale(1);
-                    }
-                }
-
-                &.select {
-                    border-color: #ccc; color: #08c;
                 }
             }
 
@@ -96,6 +99,27 @@
                             }
                         }
                     }
+                }
+            }
+        }
+
+        li:first-child {
+            a,
+            a.select {
+                border-top: 0;
+            }
+        }
+    }
+
+    .nav.with-icon {
+        li {
+            padding-left: 36px;
+
+            a {
+                i.icn-left {
+                    position: absolute;
+                    left: -20px;
+                    top: 13px;
                 }
             }
         }

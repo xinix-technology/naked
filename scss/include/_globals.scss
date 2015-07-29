@@ -1,6 +1,8 @@
 *, ::before, ::after {
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
 }
 html {
@@ -33,8 +35,8 @@ body {
 }
 
 main.content {
-    padding-top: 56px;
-    margin-left: 256px;
+    padding-top: #{$top-bar-height};
+    margin-left: #{$side-bar-width};
     height: 100%;
 
     &>.wrapper {
@@ -381,12 +383,12 @@ img.img-circle {
     p {
         margin: 0;
         text-align: center;
-        color: #fff;
+        color: #333;
         font-size: 0.8em;
         padding: 10px 0;
 
         a {
-            color: #E5D602;
+            color: #000;
         }
     }
 }

@@ -8,9 +8,9 @@ $font-bolder: 900;
 
 
 // ============== background color ==============
-$header-bg: #333;
-$navbar-bg: #f5f5f5;
-$footer-bg: #666;
+$header-bg: #f5f5f5;
+$navbar-bg: #f7f7f7;
+$footer-bg: #f5f5f5;
 $bg-hover: #f5f5f5;
 $submit-bg: #08c;
 $submit-bg-hover: #f5f5f5;
@@ -99,4 +99,11 @@ $large: "only screen and (min-width:#{$extra-large-screen})";
 // ============ total grid system ===============
 $grid-total-columns: 12 !default;
 $tabstrip-columns: 10 !default;
+// ==============================================
+
+
+// ================= Measurement ================
+$top-bar-height: 48px;
+$side-bar-width: 256px;
+$grid: 4px;
 // ==============================================

@@ -1,16 +1,17 @@
 .nav-menu {
-	background: #666; 
-	display: inline-block; 
-	width: 100%; 
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-	right: 0; 
-	z-index: 9; 
-	min-height: 45px;
+	background: #{$header-bg};
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	height: #{$top-bar-height};
+	border-bottom: 1px solid #{$header-bg * 0.96};
 
 	.wrapper {
-		padding: 8px 20px;
+		padding: 8px 24px;
 	}
 
 	.brand {
@@ -21,18 +22,18 @@
 		a {
 			display: inline-block;
 			float: left;
-			line-height: 40px;
-			color: #fff;
+			line-height: 32px;
+			color: #000;
 		}
 
 		&:hover {
-			color: #f5f5f5;
+			color: #333;
 		}
 
 		.logo img {
-			height: 40px;
+			height: 32px;
 			float: left;
-			margin-right: 10px;
+			margin-right: 8px;
 			display: inline-block;
 		}
 	}
@@ -71,11 +72,11 @@
 				border: 2px solid #fff;
 				margin-right: 5px;
 				display: inline-block;
-				-webkit-border-radius: 500px;
-				-moz-border-radius: 500px;
-				-ms-border-radius: 500px;
-				-o-border-radius: 500px;
-				border-radius: 500px;
+				-webkit-border-radius: 666em;
+				-moz-border-radius: 666em;
+				-ms-border-radius: 666em;
+				-o-border-radius: 666em;
+				border-radius: 666em;
 				vertical-align: middle;
 			}
 
