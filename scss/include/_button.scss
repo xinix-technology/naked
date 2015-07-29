@@ -2,6 +2,7 @@ input[type="reset"],
 input[type="submit"],
 button,
 .button {
+	font: 1em #{$font-family};
     padding: 2px 24px;
     cursor: pointer;
     line-height: #{$body-line-height};

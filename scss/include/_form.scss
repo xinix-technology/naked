@@ -3,17 +3,16 @@ form {
 }
 fieldset {
     border: solid 1px #{$border-color};
-    padding: 1.25em;
-    margin: 10px 0 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+    padding: #{$grid * 3} #{$grid * 3} #{$grid * 2};
+    margin: #{$grid * 2} 0 #{$grid * 3};
+    -webkit-border-radius: #{$border-radius-pixels};
+    -moz-border-radius: #{$border-radius-pixels};
+    -ms-border-radius: #{$border-radius-pixels};
+    -o-border-radius: #{$border-radius-pixels};
+    border-radius: #{$border-radius-pixels};
 
     .wrapper {
-        padding-left: 5px;
-        padding-right: 5px
+        padding: 0 #{$grid};
     }
 }
 legend {
@@ -23,10 +22,12 @@ legend {
 }
 label {
     display: block;
+    margin: 0 0 #{$grid};
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.8em;
-    padding-bottom: 2px;
+    font-size: 0.7em;
+    letter-spacing: 0.048em;
+    padding-bottom: #{$grid / 2};
 }
 input[type="text"],
 input[type="password"],
@@ -44,29 +45,31 @@ input[type="url"],
 textarea,
 select,
 span.field {
-    box-sizing: border-box;
+    font: 1em/1.64em #{$font-family};
     display: block;
+    background: #fff;
+    font-weight: #{$font-light};
     margin: 0;
-    padding: 0.5em;
+    padding: #{$grid} #{$grid * 3} ;
     height: auto;
     width: 100%;
     border: 1px solid #{$border-input-color};
     outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    font-weight: 300;
-    background: #fff;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: #{$border-radius-pixels};
+    -moz-border-radius: #{$border-radius-pixels};
+    -ms-border-radius: #{$border-radius-pixels};
+    -o-border-radius: #{$border-radius-pixels};
+    border-radius: #{$border-radius-pixels};
 }
 textarea {
     height: 7em;
@@ -180,17 +183,11 @@ form .checkbox {
 	}
 	span.prefix {
 		border-right: none;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+        border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
 	}
 	span.postfix {
 		border-left: none;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-		border-top-right-radius: 3px;
-		border-bottom-right-radius: 3px;
+        border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
 	}
 	.postfix,
 	.prefix,
@@ -199,57 +196,41 @@ form .checkbox {
 		border-radius: 0;
 	}
 	input.postfix-input {
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
+        border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
 	}
 
 	&.right {
 		input.postfix-input {
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-			border-top-right-radius: 3px;
-			border-bottom-right-radius: 3px;
+            border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
 		}
 	}
 }
 
 .input-button {
-	input[type="text"] {
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
+    input[type="text"] {
+        border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+    }
 
-	.button.solid {
-		width: 100%;
-		margin: 0;
-		border-radius: 0;
-		border-top-right-radius: 3px;
-		border-bottom-right-radius: 3px;
-		border: 0;
-		padding: 6px 16px 5px;
-	}
+    .button.solid {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-right: 0;
+        padding: #{$grid + 1} #{$grid * 4};
+        border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+    }
 
-	&.left {
-		input[type="text"] {
-			border-top-right-radius: 3px;
-			border-bottom-right-radius: 3px;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
+    &.left {
+        input[type="text"] {
+            border-left: 0;
+            border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+        }
 
-		.button {
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-			border-top-left-radius: 3px;
-			border-bottom-left-radius: 3px;
-		}
-	}
+        .button {
+            border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+        }
+    }
 }
-
 
 .input-button.left .button {
 	margin: 0;

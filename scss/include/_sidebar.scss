@@ -6,8 +6,7 @@
     left: 0;
     z-index: 1000;
     display: block;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: auto;
     background-color: #{$navbar-bg};
     border-right: 1px solid #{$navbar-bg * 0.96};
 
