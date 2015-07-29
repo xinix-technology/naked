@@ -1,44 +1,44 @@
-.sidebar { 
-    width: 256px; 
-    position: fixed; 
-    top: 56px; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 1000; 
-    display: block; 
-    overflow-x: hidden; 
-    overflow-y: auto; 
-    background-color: #f7f7f7; 
-    border: 1px solid #e5e5e5; 
+.sidebar {
+    width: 256px;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
 
     .nav {
-        display: block; 
-        margin: 0; 
+        display: block;
+        margin: 0;
         padding: 0;
 
         li {
-            display: block; 
-            float: none; 
-            margin-bottom: -1px; 
-            padding-left: 35px;
+            display: block;
+            float: none;
+            margin-bottom: -1px;
+            padding-left: 36px;
 
             a {
-                padding: 10px 25px 10px 0; 
-                display: block; 
-                color: #465d6f; 
-                border-bottom: 1px solid #e5e5e5; 
-                border-top: 1px solid transparent; 
+                padding: 8px 24px 8px 0;
+                display: block;
+                color: #465d6f;
+                border-bottom: 1px solid #e5e5e5;
+                border-top: 1px solid transparent;
                 position: relative;
 
                 i.icn-left {
-                    position: absolute; 
-                    left: -20px; 
+                    position: absolute;
+                    left: -20px;
                     top: 13px;
                 }
 
                 i.icn-right {
-                    position: absolute; 
-                    right: 15px; 
+                    position: absolute;
+                    right: 15px;
                     top: 13px;
                 }
 
@@ -58,7 +58,7 @@
                     i.icn-plus {
                         -webkit-transform: rotate(45deg) scale(1);
                         -ms-transform: rotate(45deg) scale(1);
-                        transform: rotate(45deg) scale(1);   
+                        transform: rotate(45deg) scale(1);
                     }
                 }
 
@@ -73,7 +73,7 @@
 
             &:first-child {
                 a.select {
-                    border-top: 1px solid transparent;   
+                    border-top: 1px solid transparent;
                 }
             }
 
