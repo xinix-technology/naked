@@ -281,7 +281,7 @@
 	left: 0;
 	right: 0;
 	background: #{$navbar-bg};
-	padding: 10px 7px;
+	padding: 4px 8px;
 	border-top: 1px solid #{$border-color};
 	border-bottom: 1px solid #{$border-color};
 	z-index: 99;
@@ -304,7 +304,9 @@
 	}
 
 	ul.button-group {
+		margin-top: 4px;
 		margin-bottom: 0;
+
 		li {
 			padding: 1px 0;
 
@@ -373,20 +375,22 @@
 		display: inline-block;
 		color: #333;
 		font-size: 1.5em;
-		padding: 3px 0 4px;
+		padding: 2px 0 0;
 
 		i {
-			margin: 0 5px;
+			margin: 0 4px;
 		}
 	}
 
 	input[type="text"] {
 		text-align: center;
 		margin-bottom: 0;
-		height: 2.15em;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
+		height: 30px;
+		-webkit-border-radius: #{$border-radius-pixels};
+		-moz-border-radius: #{$border-radius-pixels};
+		-ms-border-radius: #{$border-radius-pixels};
+		-o-border-radius: #{$border-radius-pixels};
+		border-radius: #{$border-radius-pixels};
 
 		&:focus {
 			text-align: left;
