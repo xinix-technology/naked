@@ -1,4 +1,8 @@
-*, ::before, ::after {
+*,
+:before,
+::before,
+:after,
+::after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -34,6 +38,18 @@ body {
     }
 }
 
+.wrapper {
+    padding: 0 #{$grid * 5};
+}
+.row > .wrapper:first-child,
+.row > *:first-child .wrapper {
+    padding-left: 0!important;
+}
+.row > .wrapper:last-child,
+.row > *:last-child .wrapper {
+    padding-right: 0!important;
+}
+
 main.content {
     padding-top: #{$top-bar-height};
     margin-left: #{$side-bar-width};
@@ -64,22 +80,22 @@ h6 {
     margin-top:0;
 }
 h1 {
-    font-size: 2.2em;
-}
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 1.8em;
-}
-h4 {
     font-size: 1.6em;
 }
-h5 {
+h2 {
+    font-size: 1.5em;
+}
+h3 {
     font-size: 1.4em;
 }
-h6 {
+h4 {
+    font-size: 1.3em;
+}
+h5 {
     font-size: 1.2em;
+}
+h6 {
+    font-size: 1.1em;
 }
 h1 small,
 h2 small,
@@ -128,55 +144,58 @@ ul.flat {
     display: table;
     list-style: none;
     padding: 0;
+    margin: 0;
 
     li {
         float: left;
-        margin-right: 10px;
+        display: block;
+        margin-right: #{$grid * 4};
 
         &:last-child {
             margin-right: 0;
         }
     }
 }
-.subheader {
-    color: #{$subheader-color};
-    font-weight: 300;
+ul.plain {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
 }
-.clearfix {
-    clear: both
-}
-.pull-right {
-    float: right;
-}
-.pull-left {
-    float: left;
-}
+
 hr {
     border: 1px solid #{$border-color};
     border-width: 1px 0 0;
-}
-.placeholder {
-    display: inline;
-    font-weight: 500;
-    margin-bottom: 5px;
-    text-transform: none;
-    font-size: 0.9em;
-
-    &.full {
-        display: block;
-    }
-}
-.pull-right {
-    float: right;
-}
-.pull-left {
-    float: left;
 }
 img.img-circle {
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     border-radius: 500px;
 }
+
+.subheader {
+    color: #{$subheader-color};
+    font-weight: 300;
+}
+.clear,
+.clearfix {
+    clear: both
+}
+.right,
+.pull-right {
+    float: right;
+}
+.left,
+.pull-left {
+    float: left;
+}
+
 #footer {
     background: #{$footer-bg};
     display: inline-block;
@@ -260,18 +279,3 @@ img.img-circle {
         }
     }
 }
-
-// @media screen and (orientation:landscape) {
-//     body * {
-//         -webkit-touch-callout: none;
-//         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-//     }
-//     .container, .container-fluid {
-//         -webkit-user-select: none;
-//         -moz-user-select: -moz-none;
-//         user-select: none;
-//     }
-// }
-
-
-

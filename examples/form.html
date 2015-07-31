@@ -14,19 +14,15 @@
 <body>
     <!-- NAVBAR -->
     <nav class="nav-menu">
-        <div class="wrapper">
-            <div class="row">
-                <div class="pull-left">
-                    <h1 class="brand">
-                        <a href="index.html">
-                            <span class="logo">
-                                <img src="../img/xinix-logo.png" alt="">
-                            </span>
-                            <span>Naked CSS</span>
-                        </a>
-                    </h1>
-                </div>
-            </div>
+        <div class="pull-left">
+            <h1 class="brand">
+                <a href="index.html">
+                    <span class="logo">
+                        <img src="../img/xinix-logo.png" alt="">
+                    </span>
+                    <span>Naked CSS</span>
+                </a>
+            </h1>
         </div>
     </nav>
     <!-- END OF NAVBAR -->
@@ -85,14 +81,14 @@
                         <div class="span-4">
                             <div class="wrapper">
                                 <label>Input Label</label>
-                                <span class="field">This is read-only</span>
+                                <input type="text" value="This is read-only" disabled />
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="wrapper">
-                            <div class="span-12">
+                        <div class="span-12">
+                            <div class="wrapper">
                                 <label>Textarea Label</label>
                                 <textarea placeholder="textarea"></textarea>
                             </div>
@@ -101,9 +97,13 @@
 
                     <div class="row">
                         <div class="wrapper">
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="Reset">
-                            <a href="#" class="button">Back</a>
+                            <div class="pull-left">
+                                <input type="submit" value="Submit" />
+                                <input type="reset" value="Reset" />
+                            </div>
+                            <div class="pull-right">
+                                <a href="#" class="button disable">Back</a>
+                            </div>
                         </div>
                     </div>
 
@@ -134,7 +134,7 @@
             </div>
             <div class="span-4">
                 <label>Input Label</label>
-                <span class="field">This is read-only</span>
+                <input type="text" value="This is read-only" disabled />
             </div>
         </div>
         <div class="row">
@@ -142,10 +142,12 @@
             <textarea placeholder="textarea"></textarea>
         </div>
         <div class="row">
-            <div class="wrapper">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-                <a href="#" class="button">Back</a>
+            <div class="pull-left">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </div>
+            <div class="pull-right">
+                <a href="#" class="button disable">Back</a>
             </div>
         </div>
     </fieldset>
@@ -273,20 +275,20 @@
                 <div class="row">
                     <div class="span-6">
                         <div class="wrapper">
-                            <span for="radio1" class="radio-label">
-                                <input class="radio" name="radio1" type="radio" id="radio1" />Radio Button 1
-                            </span>
-                            <span for="radio1" class="radio-label">
-                                <input class="radio" name="radio1" type="radio" id="radio2" />Radio Button 2
-                            </span>
-                            <span for="radio1" class="radio-label">
-                                <input class="radio" name="radio1" type="radio" id="radio3" disabled />Radio Button 3
-                            </span>
+                            <label class="placeholder">
+                                <input name="radio-name" type="radio" />Radio Button 1
+                            </label>
+                            <label class="placeholder">
+                                <input name="radio-name" type="radio" />Radio Button 2
+                            </label>
+                            <label class="placeholder disabled">
+                                <input name="radio-name" type="radio" disabled />Radio Button 3
+                            </label>
                         </div>
                     </div>
                     <div class="span-6">
                         <div class="wrapper">
-                            <span class="dropdown-label">Selectbox Example</span>
+                            <label>Selectbox Example</label>
                             <select>
                                 <option>This is a dropdown</option>
                                 <option>This is another option</option>
@@ -300,17 +302,17 @@
             <div class="html">
                 <div class="highlight">
                     <pre class="prettyprint">
-<span for="radio1" class="radio-label">
-    <input class="radio" name="radio1" type="radio" id="radio1" />Radio Button 1
-</span>
-<span for="radio1" class="radio-label">
-    <input class="radio" name="radio1" type="radio" id="radio2" />Radio Button 2
-</span>
-<span for="radio1" class="radio-label">
-    <input class="radio" name="radio1" type="radio" id="radio3" disabled />Radio Button 3
-</span>
+<label class="placeholder">
+    <input name="radio-name" type="radio" />Radio Button 1
+</label>
+<label class="placeholder">
+    <input name="radio-name" type="radio" />Radio Button 2
+</label>
+<label class="placeholder disabled">
+    <input name="radio-name" type="radio" disabled />Radio Button 3
+</label>
 
-<span>Selectbox Example</span>
+<label>Selectbox Example</label>
 <select>
     <option>This is a dropdown</option>
     <option>This is another option</option>
@@ -321,7 +323,7 @@
                 </div>
             </div>
             <hr>
-            <h4 class="sub-title">Checkbox & Checkbox Swipe</h4>
+            <h4 class="sub-title">Checkbox &amp; Checkbox Swipe</h4>
             <p>
                 Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
             </p>
@@ -330,30 +332,33 @@
                     <div class="row">
                         <div class="span-6">
                             <label class="placeholder">
-                                <input class="checkbox" type="checkbox" id="checkbox1"/>
+                                <input type="checkbox"/>
                                 Checkbox 1
                             </label>
                             <label class="placeholder">
-                                <input class="checkbox" type="checkbox" id="checkbox2" checked />
+                                <input type="checkbox" checked />
                                 Checkbox 2
                             </label>
                             <label class="placeholder">
-                                <input class="checkbox" type="checkbox" id="checkbox3" checked />
+                                <input type="checkbox" checked />
                                 Checkbox 3
                             </label>
                         </div>
                         <div class="span-6">
                             <label class="placeholder full">
                                 <input class="swipe" type="checkbox" checked />
-                                Checkbox Swipe 1
+                                <span class="on">Checkbox Swipe 1 on</span>
+                                <span class="off">Checkbox Swipe 1 off</span>
                             </label>
                             <label class="placeholder full">
                                 <input class="swipe" type="checkbox" />
-                                Checkbox Swipe 2
+                                <span class="on">Checkbox Swipe 2 on</span>
+                                <span class="off">Checkbox Swipe 2 off</span>
                             </label>
                             <label class="placeholder full">
                                 <input class="swipe" type="checkbox" checked />
-                                Checkbox Swipe 3
+                                <span class="on">Checkbox Swipe 3 on</span>
+                                <span class="off">Checkbox Swipe 3 off</span>
                             </label>
                         </div>
                     </div>
@@ -363,29 +368,32 @@
                 <div class="highlight">
                     <pre class="prettyprint">
 <label class="placeholder">
-    <input class="checkbox" type="checkbox" id="checkbox1"/>
+    <input name="checkbox-name" type="checkbox"/>
     Checkbox 1
 </label>
 <label class="placeholder">
-    <input class="checkbox" type="checkbox" id="checkbox2" checked />
+    <input name="checkbox-name" type="checkbox" checked />
     Checkbox 2
 </label>
 <label class="placeholder">
-    <input class="checkbox" type="checkbox" id="checkbox3" checked />
+    <input name="checkbox-name" type="checkbox" checked />
     Checkbox 3
 </label>
 
 <label class="placeholder full">
     <input class="swipe" type="checkbox" checked />
-    Checkbox Swipe 1
+    <span class="on">Checkbox Swipe 1 on</span>
+    <span class="off">Checkbox Swipe 1 off</span>
 </label>
 <label class="placeholder full">
     <input class="swipe" type="checkbox" />
-    Checkbox Swipe 2
+    <span class="on">Checkbox Swipe 2 on</span>
+    <span class="off">Checkbox Swipe 2 off</span>
 </label>
 <label class="placeholder full">
     <input class="swipe" type="checkbox" checked />
-    Checkbox Swipe 3
+    <span class="on">Checkbox Swipe 3 on</span>
+    <span class="off">Checkbox Swipe 3 off</span>
 </label>
                     </pre>
                 </div>

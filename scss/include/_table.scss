@@ -1,50 +1,55 @@
 .table-container {
     overflow: auto;
-	-webkit-overflow-scrolling: touch;
 	border: 1px solid #{$table-border-color};
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-overflow-scrolling: touch;
+	-webkit-border-radius: #{$border-radius-pixels};
+	-moz-border-radius: #{$border-radius-pixels};
+	-ms-border-radius: #{$border-radius-pixels};
+	-o-border-radius: #{$border-radius-pixels};
+	border-radius: #{$border-radius-pixels};
 }
 
 .table-body {
 	position: relative;
 
 	.fixed {
-    	-webkit-overflow-scrolling: none;
     	overflow: auto;
 		border: 1px solid #{$table-border-color};
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		-ms-border-radius: 5px;
-		-o-border-radius: 5px;
-		border-radius: 5px;
+    	-webkit-overflow-scrolling: none;
+		-webkit-border-radius: #{$border-radius-pixels};
+		-moz-border-radius: #{$border-radius-pixels};
+		-ms-border-radius: #{$border-radius-pixels};
+		-o-border-radius: #{$border-radius-pixels};
+		border-radius: #{$border-radius-pixels};
 	}
 }
 
+table,
 .table {
 	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
 	max-width: 100%;
 
-	thead tr {
+	thead tr th {
 		background: #{$table-head-color};
 	}
 
-
 	th,
 	td {
-		padding: 5px;
+		padding: #{$grid} #{$grid * 4};
 		line-height: #{$body-line-height};
+		background: #{$table-color};
+		vertical-align: top;
 		border-left: 1px solid #{$table-border-color};
+	}
+	th {
+		vertical-align: middle;
 	}
 
 	th:first-child,
 	td:first-child {
-		border-left:0;
+		border-left: 0;
 	}
 
 	td {
@@ -56,40 +61,50 @@
 		td {
 			white-space: nowrap
 		}
+	}
 
-		&.fixed-tail {
-			th,
-			td {
-				&:nth-last-of-type(-n+2) {
-					padding-right: 100px;
-				}
-
-				&:last-child {
-					position: absolute;
-					right: 1px;
-					margin-right: 0;
-					padding-right: 5px;
-					background: white;
-				}
+	&.fixed-head {
+		th,
+		td {
+			&:nth-child(2) {
+				padding-left: #{50 + 1 + ($grid * 6)};
 			}
-			th {
-				&:last-child {
-					padding-right: 22px;
-					padding-left: 21px;
-				}
+
+			&:first-child {
+				position: absolute;
+				left: 1px;
+				width: 50px;
+				border-right: 1px solid #{$table-border-color};
+			}
+		}
+	}
+
+	&.fixed-tail {
+		th,
+		td {
+			&:nth-last-child(2) {
+				padding-right: #{101 + ($grid * 6)};
+			}
+
+			&:last-child {
+				position: absolute;
+				left: initial;
+				right: 1px;
+				width: 100px;
 			}
 		}
 	}
 
 	&.stripped {
-		tr.even,
-		tr.alt,
-		tr:nth-of-type(even) {
-			background: #{$table-stripped-color};
+		tr.alt td,
+		tr.even td,
+		tr:nth-of-type(even) td {
+			background: #{$table-stripe-color};
 		}
 	}
 
 	&.hover {
+		tr.hover td,
 		tr:hover td {
 			background: #{$table-hover-color};
 		}

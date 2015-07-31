@@ -10,11 +10,10 @@
 	height: #{$top-bar-height};
 	border-bottom: 1px solid #{$header-bg * 0.96};
 
-	.wrapper {
-		padding: 8px 24px;
+	.pull-left {
+		padding: #{$grid * 2} 0 0 #{$grid * 4};
 	}
-
-	.brand {
+	.pull-left h1 {
 		margin: 0;
 		float: left;
 		font-size: 1.5em;
@@ -38,21 +37,24 @@
 		}
 	}
 
-	.topbar {
-		>li {
-			display: inline-block;
+	.pull-right {
+		padding: 0 #{$grid * 4} 0 0;
+	}
+	.pull-right ul.flat {
+		> li {
+			margin-right: #{$grid * 6};
+			line-height: #{$top-bar-height};
 			vertical-align: middle;
-			float: none;
-			margin-right: 25px;
-			line-height: 40px;
 
 			&:last-child {
 				margin-right: 0;
 			}
 		}
 		li {
+			li {
+				line-height: 0em;
+			}
 			a {
-				color: #fff;
 				display: block;
 			}
 		}
@@ -60,32 +62,22 @@
 		.user {
 			position: relative;
 
-			>a {
-				padding-right: 20px;
-				position: relative;
-				line-height: 0;
+			> a {
+				padding-right: #{$grid * 3};
+				display: block;
 			}
 
 			.avatar {
-				width: 40px;
-				height: 40px;
-				border: 2px solid #fff;
-				margin-right: 5px;
-				display: inline-block;
+				width: #{$grid * 8};
+				height: #{$grid * 8};
+				margin: #{$grid} #{$grid * 2} 0 0;
+				display: block;
+				float: left;
 				-webkit-border-radius: 666em;
 				-moz-border-radius: 666em;
 				-ms-border-radius: 666em;
 				-o-border-radius: 666em;
 				border-radius: 666em;
-				vertical-align: middle;
-			}
-
-			h6 {
-				display: inline-block;
-				margin: 0;
-				line-height: 120%;
-				font-size: 1em;
-				vertical-align: middle;
 			}
 
 			span {
@@ -100,6 +92,7 @@
 					display: block;
 				}
 			}
+
 			i.xn-caret-down {
 				position: absolute;
 				right: 0;
@@ -111,15 +104,17 @@
 			display: none;
 			position: absolute;
 			padding: 0;
+			margin: -1px 0 0;
 			list-style: none;
 			width: 100%;
-			background: #f9f9f9;
-			border: 1px solid #e5e5e5;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			-ms-border-radius: 5px;
-			-o-border-radius: 5px;
-			border-radius: 5px;
+			background: #{$header-bg};
+			border: 1px solid #{$header-bg * 0.8};
+			border-top: none;
+			-webkit-border-radius: 0 0 #{$border-radius-pixels} #{$border-radius-pixels};
+			-moz-border-radius: 0 0 #{$border-radius-pixels} #{$border-radius-pixels};
+			-ms-border-radius: 0 0 #{$border-radius-pixels} #{$border-radius-pixels};
+			-o-border-radius: 0 0 #{$border-radius-pixels} #{$border-radius-pixels};
+			border-radius: 0 0 #{$border-radius-pixels} #{$border-radius-pixels};
 
 			&.fadeInDown {
 				display: block;
@@ -139,7 +134,8 @@
 
 			li {
 				a {
-					padding: 5px 15px 5px 0;
+					position: relative;
+					padding: #{$grid * 3} #{$grid * 8} #{$grid * 3} #{$grid * 6};
 					color: #465d6f;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -148,7 +144,7 @@
 					border-bottom: 1px solid #e5e5e5;
 
 					i {
-						margin-right: 3px;
+						margin-left: -#{$grid * 4};
 					}
 				}
 
@@ -184,7 +180,7 @@
 				border-radius: 500px;
 			}
 
-			>a {
+			> a {
 				font-size: 1.4em;
 			}
 
@@ -192,85 +188,6 @@
 				width: 210px;
 				margin-top: 7px;
 			}
-		}
-	}
-}
-
-.navbar-menu {
-	background: #{$header-bg};
-	display: inline-block;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 999;
-
-	h1 {
-		float: left;
-		margin: 0;
-		line-height: 140%;
-
-		a {
-			color: #fff;
-			font-size: 0.7em;
-		}
-	}
-
-	.topbar {
-		ul.menu {
-
-			li {
-				padding: 0;
-
-				a {
-					color: #fff;
-					line-height: 40px;
-
-					&:after {
-						border-color: white transparent transparent transparent;
-					}
-				}
-
-				&.active {
-					background: #13c4ff;
-				}
-
-				&:hover {
-					background: #13c4ff;
-				}
-
-				ul {
-					right: 0;
-					border: 0;
-
-					li {
-						background: #333;
-
-						a {
-							line-height: inherit;
-						}
-
-						&:hover {
-							a {
-								color: white;
-							}
-						}
-					}
-				}
-
-				&.divide {
-					border-bottom: none;
-					border-top: none;
-					border-right: solid 1px #4d4d4d;
-					clear: none;
-					height: 46px;
-					width: 0;
-				}
-			}
-
-
-
 		}
 	}
 }

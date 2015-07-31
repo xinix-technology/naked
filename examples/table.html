@@ -54,7 +54,7 @@
 			</p>
 			<h4 class="sub-title">Table Grid</h4>
 			<div class="table-container">
-				<table class="table" width="100%">
+				<table width="100%">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -109,7 +109,7 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table">
+<table>
     <thead>
         <tr>
             <th>#</th>
@@ -166,7 +166,7 @@
 			<hr>
 			<h4 class="sub-title">Table No Wrap</h4>
 			<div class="table-container">
-				<table class="table nowrap" width="100%">
+				<table class="nowrap" width="100%">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -211,7 +211,7 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table nowrap">
+<table class="nowrap">
     <thead>
         <tr>
             <th>#</th>
@@ -258,7 +258,7 @@
 			<hr>
 			<h4 class="sub-title">Table Stripped</h4>
 			<div class="table-container">
-				<table class="table nowrap stripped" width="100%">
+				<table class="nowrap stripped" width="100%">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -303,7 +303,7 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table nowrap stripped">
+<table class="nowrap stripped">
     <thead>
         <tr>
             <th>#</th>
@@ -348,10 +348,11 @@
 				</div>
 			</div>
 			<hr>
-			<h4 class="sub-title">Table Fixed Tail</h4>
+			<h4 class="sub-title">Table Fixed Head</h4>
+			<p>In this table, you need to set the first child of the th/td to have fixed width, and the second first child of th/td to have the same right padding as the size of the first child width + padding + border size.</p>
 			<div class="table-body">
 				<div class="fixed">
-					<table class="table nowrap stripped fixed-tail" width="100%">
+					<table class="nowrap fixed-head" width="100%">
 						<thead>
 							<tr>
 								<th>#</th>
@@ -397,7 +398,103 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table nowrap stripped fixed-tail">
+<table class="nowrap fixed-head">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+            <td><a href="#">Edit | Delete</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+            <td><a href="#">Edit | Delete</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+            <td><a href="#">Edit | Delete</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+            <td><a href="#">Edit | Delete</a></td>
+        </tr>
+    </tbody>
+</table>
+					</pre>
+				</div>
+			</div>
+			<hr>
+			<hr>
+			<h4 class="sub-title">Table Fixed Tail</h4>
+			<p>In this table, you need to set the last child of the th/td to have fixed width, and the second last child of th/td to have the same right padding as the size of the last child width + padding + border size.</p>
+			<div class="table-body">
+				<div class="fixed">
+					<table class="nowrap fixed-tail" width="100%">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Table Header</th>
+								<th>Table Header</th>
+								<th>Table Header</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+								<td><a href="#">Edit | Delete</a></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+								<td><a href="#">Edit | Delete</a></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+								<td><a href="#">Edit | Delete</a></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+								<td>Content Goes Here</td>
+								<td>Content Goes Here</td>
+								<td><a href="#">Edit | Delete</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="html">
+				<div class="highlight">
+					<pre class="prettyprint">
+<table class="nowrap fixed-tail">
     <thead>
         <tr>
             <th>#</th>
@@ -444,7 +541,7 @@
 			<hr>
 			<h4 class="sub-title">Table Hover</h4>
 			<div class="table-container">
-				<table class="table nowrap stripped hover" width="100%">
+				<table class="nowrap stripped hover" width="100%">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -484,7 +581,7 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table nowrap stripped hover">
+<table class="nowrap stripped hover">
     <thead>
         <tr>
             <th>#</th>
@@ -526,7 +623,7 @@
 			<hr>
 			<h4 class="sub-title">Table Flip Scroll</h4>
 			<div class="table-container">
-				<table class="table nowrap stripped flip-scroll">
+				<table class="nowrap stripped flip-scroll">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -560,7 +657,7 @@
 			<div class="html">
 				<div class="highlight">
 					<pre class="prettyprint">
-<table class="table nowrap stripped flip-scroll">
+<table class="nowrap stripped flip-scroll">
     <thead>
         <tr>
             <th>#</th>

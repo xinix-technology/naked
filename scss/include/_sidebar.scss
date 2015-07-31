@@ -1,11 +1,11 @@
 .sidebar {
-    width: #{$side-bar-width};
     position: fixed;
+    z-index: 1000;
     top: #{$top-bar-height};
     bottom: 0;
     left: 0;
-    z-index: 1000;
     display: block;
+    width: #{$side-bar-width};
     overflow: auto;
     background-color: #{$navbar-bg};
     border-right: 1px solid #{$navbar-bg * 0.96};
@@ -69,6 +69,7 @@
                 }
             }
 
+            &.hover a,
             &:hover a {
                 color: #08c;
             }
@@ -80,9 +81,9 @@
             }
 
             &.collapsible {
-                &>a {
+                & > a {
                     i.fa {
-                        float: right; line-height: 150%;
+                        float: right;
                     }
                 }
 
@@ -90,11 +91,11 @@
                     position: relative; padding: 0;
 
                     li {
-                        padding-left: 10px;
+                        padding-left: 0;
 
                         &:last-child {
                             a {
-                                border-bottom: 1px solid #e5e5e5;
+                                border-bottom: 1px solid #{$navbar-bg * 0.96};
                             }
                         }
                     }
@@ -112,13 +113,13 @@
 
     .nav.with-icon {
         li {
-            padding-left: 36px;
+            padding-left: #{$grid * 10};
 
             a {
                 i.icn-left {
                     position: absolute;
-                    left: -20px;
-                    top: 13px;
+                    left: -#{$grid * 6};
+                    top: #{($grid * 3) + 1};
                 }
             }
         }
