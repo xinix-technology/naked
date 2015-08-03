@@ -1,82 +1,86 @@
-ul.pagination { 
-	height: 1.8em; 
-	margin-top: 0; 
-	margin-bottom: 0; 
-	float: none; 
+ul.pagination {
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
     display: table;
     list-style: none;
     padding: 0;
 
-    li { 
-    	margin-right: 0; 
-    	margin-left: 3px; 
+    li {
+    	margin: 0 #{$grid};
         float: none;
         display: inline-block;
 
-    	a { 
-    		display: block; 
-    		padding: 0 7px; 
-    		color: #{$pagination-color}; 
-    		font-weight: 300;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            -ms-border-radius: 3px;
-            -o-border-radius: 3px;
-            border-radius: 3px;
+        &.first,
+        &:first-child {
+            margin-left: 0;
+        }
+        &.last,
+        &:last-child {
+            margin-right: 0;
+        }
+
+    	a {
+    		display: block;
+    		font-weight: #{$font-regular};
+            color: #{$pagination-color};
+            text-align: center;
+            min-width: #{$grid * 6};
+            line-height: #{$grid * 6};
+            padding: 0 #{$grid * 2};
+            -webkit-border-radius: #{$border-radius-pixels * 6};
+            -moz-border-radius: #{$border-radius-pixels * 6};
+            -ms-border-radius: #{$border-radius-pixels * 6};
+            -o-border-radius: #{$border-radius-pixels * 6};
+            border-radius: #{$border-radius-pixels * 6};
     	}
 
-        a:hover, 
-        a:focus { 
-        	background: #{$submit-bg-hover}; 
+        a:hover,
+        a:focus {
+        	background: #{$submit-bg-hover};
         }
 
-        &.unavailable a { 
-            cursor: default; 
+        &.unavailable a {
+            cursor: default;
+            background: transparent;
         }
 
-        &.unavailable a:hover { 
-            background: transparent; 
-        }
-
-        &.active a { 
-        	background: #{$submit-bg}; 
+        &.active a {
+        	background: #{$submit-bg};
         	color: #{$pagination-active-color};
         	cursor: default;
-            line-height: 20px;
-            font-weight: 500;
+            font-weight: #{$font-bold};
         }
     }
 
 
-    &.centered { 
-        width: auto; 
+    &.centered {
+        width: auto;
         text-align: center;
     }
 }
-.pagination-mix { 
-	margin-bottom: 30px; 
-	position: relative 
+.pagination-mix {
+	position: relative
 }
 
 
 // =========================== media query =======================
 
 @media #{$screen} {
-	ul.centered { 
-        width: auto; 
-        // display: inline-block; 
-        margin: 0 auto; 
+	ul.centered {
+        width: auto;
+        margin: 0 auto;
     }
-    .pagination-mix .left { 
-        position: absolute; 
-        left: 0; 
-        top: 0 
+    .pagination-mix .left {
+        position: absolute;
+        left: 0;
+        top: 0
     }
-    .pagination-mix .right { 
-        position: absolute; 
-        left: initial; 
-        right: 0; 
-        top: 0 
+    .pagination-mix .right {
+        position: absolute;
+        left: initial;
+        right: 0;
+        top: 0
     }
 }
 @media #{$small} {
@@ -87,13 +91,13 @@ ul.pagination {
         margin: 0 auto;
         float: none;
     }
-    .pagination-mix .left { 
-        position: relative; 
-        margin: 0 auto; 
+    .pagination-mix .left {
+        position: relative;
+        margin: 0 auto;
     }
-    .pagination-mix .right { 
-        position: relative; 
-        margin: 0 auto; 
+    .pagination-mix .right {
+        position: relative;
+        margin: 0 auto;
     }
 }
 

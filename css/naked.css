@@ -1479,10 +1479,10 @@ input[type="checkbox"].swipe {
   -o-appearance: none;
   appearance: none;
 }
-input[type="checkbox"].swipe + .on {
+input[type="checkbox"].swipe ~ .on {
   display: none;
 }
-input[type="checkbox"].swipe + .off {
+input[type="checkbox"].swipe ~ .off {
   display: inline;
 }
 input[type="checkbox"].swipe:before, input[type="checkbox"].swipe::before {
@@ -1508,11 +1508,11 @@ input[type="checkbox"].swipe:after, input[type="checkbox"].swipe::after {
   border-radius: 28px;
   transition: border .25s .15s, left .25s .1s, right .15s .175s;
 }
-input[type="checkbox"].swipe:checked + .off {
-  display: none;
-}
-input[type="checkbox"].swipe:checked + .on {
+input[type="checkbox"].swipe:checked ~ .on {
   display: inline;
+}
+input[type="checkbox"].swipe:checked ~ .off {
+  display: none;
 }
 input[type="checkbox"].swipe:checked:after, input[type="checkbox"].swipe:checked::after {
   background-color: #53d76a;
@@ -1839,7 +1839,6 @@ button.disable,
   }
 }
 ul.pagination {
-  height: 1.8em;
   margin-top: 0;
   margin-bottom: 0;
   float: none;
@@ -1848,21 +1847,29 @@ ul.pagination {
   padding: 0;
 }
 ul.pagination li {
-  margin-right: 0;
-  margin-left: 3px;
+  margin: 0 4px;
   float: none;
   display: inline-block;
 }
+ul.pagination li.first, ul.pagination li:first-child {
+  margin-left: 0;
+}
+ul.pagination li.last, ul.pagination li:last-child {
+  margin-right: 0;
+}
 ul.pagination li a {
   display: block;
-  padding: 0 7px;
-  color: #999;
-  font-weight: 300;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  min-width: 24px;
+  line-height: 24px;
+  padding: 0 8px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
 }
 ul.pagination li a:hover,
 ul.pagination li a:focus {
@@ -1870,16 +1877,13 @@ ul.pagination li a:focus {
 }
 ul.pagination li.unavailable a {
   cursor: default;
-}
-ul.pagination li.unavailable a:hover {
   background: transparent;
 }
 ul.pagination li.active a {
   background: #08c;
   color: #fff;
   cursor: default;
-  line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 ul.pagination.centered {
   width: auto;
@@ -1887,7 +1891,6 @@ ul.pagination.centered {
 }
 
 .pagination-mix {
-  margin-bottom: 30px;
   position: relative;
 }
 

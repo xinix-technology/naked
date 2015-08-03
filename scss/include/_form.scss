@@ -129,10 +129,10 @@ input[type="checkbox"].swipe {
     -o-appearance: none;
     appearance: none;
 
-    + .on {
+    ~ .on {
         display: none;
     }
-    + .off {
+    ~ .off {
         display: inline;
     }
 
@@ -165,11 +165,11 @@ input[type="checkbox"].swipe {
     }
 
     &:checked {
-        + .off {
-            display: none;
-        }
-        + .on {
+        ~ .on {
             display: inline;
+        }
+        ~ .off {
+            display: none;
         }
 
         &:after,

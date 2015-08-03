@@ -13,7 +13,6 @@ $(document).ready(function() {
     };
 
     $('.sidebar .nav li.collapsible').click(function (event) {
-
         var element = $(event.target);
 
         $( this ).find('a:first').addClass( "select" );
@@ -65,15 +64,17 @@ $(document).ready(function() {
         $(this).parent ().parent ().slideUp (100);
     });
 
-    stylized ();
+    $("main a").click (function () {
+        return false;
+    });
 
+    stylized ();
 });
 
 
 // ===================== xn =====================
 
 function stylized () {
-
     $("*").hover(function () {
         $(this).addClass("hover");
     }, function () {
@@ -112,10 +113,6 @@ function stylized () {
     $("[class^=tablelist] tr td:last-child").addClass ("last");
     $("[class^=tablelist] tr td:nth-child(odd)").addClass ("even");
     $("[class^=tablelist] tr td:nth-child(even)").addClass ("odd");
-
-    if ($('form').length) {
-        $('form').preventDoubleSubmission();
-    }
 }
 
 // ================================================

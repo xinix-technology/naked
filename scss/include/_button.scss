@@ -146,20 +146,20 @@ button,
 			}
 			&:first-child {
 				a {
-				    -webkit-border-radius: $border-radius-pixels 0 0 $border-radius-pixels;
-				    -moz-border-radius: $border-radius-pixels 0 0 $border-radius-pixels;
-				    -ms-border-radius: $border-radius-pixels 0 0 $border-radius-pixels;
-				    -o-border-radius: $border-radius-pixels 0 0 $border-radius-pixels;
-				    border-radius: $border-radius-pixels 0 0 $border-radius-pixels;
+				    -webkit-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+				    -moz-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+				    -ms-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+				    -o-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+				    border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
 				}
 			}
 			&:last-child {
 				a{
-				    -webkit-border-radius: 0 $border-radius-pixels $border-radius-pixels 0;
-				    -moz-border-radius: 0 $border-radius-pixels $border-radius-pixels 0;
-				    -ms-border-radius: 0 $border-radius-pixels $border-radius-pixels 0;
-				    -o-border-radius: 0 $border-radius-pixels $border-radius-pixels 0;
-				    border-radius: 0 $border-radius-pixels $border-radius-pixels 0;
+				    -webkit-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+				    -moz-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+				    -ms-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+				    -o-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+				    border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
 				}
 			}
 		}
