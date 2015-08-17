@@ -9,58 +9,76 @@ $font-bolder: 900;
 // ==============================================
 
 
+// ==================== Default color ===================
+
+$black: #000000;
+$red: #CF4741;
+$cyan: #08c;
+$blue: #416B9B;
+$yellow: #E1BF32;
+$green: #718F47;
+$white: #FFFFFF;
+$white-gray: #F5F5F5;
+$transparent: transparent;
+
 // ============== background color ==============
-$header-bg: #f5f5f5;
-$navbar-bg: rgba(0,0,0,0.024);
-$footer-bg: #f5f5f5;
-$bg-hover: #f5f5f5;
-$submit-bg: #08c;
-$submit-bg-hover: #f5f5f5;
-$prepostfix-bg: #f2f2f2;
-$button-error: #f3382e;
-$button-success: #44c25a;
-$button-warning: #ff9500;
-$alert-error: #ffdce6;
-$alert-border-error: #ffc8d4;
-$alert-success: #f1f9f7;
-$alert-border-success: #e0f1e9;
-$alert-warning: #fff7e4;
-$alert-border-warning: #ffecc2;
-$alert-info: #d7edff;
-$alert-border-info: #bbe1ff;
+$header-bg: $white;
+$navbar-bg: adjust-lightness($blue, 55%);
+$footer-bg: adjust-lightness($white-gray, 2%);
+
+$bg-hover: $white-gray;
+
+$submit-bg: $blue;
+$submit-bg-hover: $white-gray;
+
+$prepostfix-bg: $white-gray;
+
+$button-error: $red;
+$button-success: $green;
+$button-warning: $yellow;
+
+$alert-error: $red;
+$alert-border-error: $red;
+$alert-success: $green;
+$alert-border-success: $green;
+$alert-warning: $blue;
+$alert-border-warning: $blue;
+$alert-info: $blue;
+$alert-border-info: $blue;
 // ==============================================
 
 
 // ==================== color ===================
-$color: #000;
 
-$h1-color: #08c;
+$color: $black;
+
+$h1-color: $blue;
 $h1-small-color: #6f6f6f;
 $h4-color: #6f6f6f;
 $h5-color: #f00;
 
 $subheader-color: #6f6f6f;
 
-$a-color: #08c;
+$a-color: $blue;
 $a-color-amount: 15%;
 
-$submit-color: #08c;
-$submit-solid-color: #fff;
+$submit-color: $blue;
+$submit-solid-color: $white;
 
 $pagination-color: #333;
-$pagination-active-color: #fff;
+$pagination-active-color: $white;
 
-$table-head-color: #f5f5f5;
-$table-color: #fff;
-$table-stripe-color: #f9f9f9;
-$table-hover-color: #F9EFE8;
+$table-head-color: $white-gray;
+$table-color: $white;
+$table-stripe-color: adjust-lightness($blue, 50%);
+$table-hover-color: adjust-lightness($yellow, 30%);
 
 $listview-link-color: #97a0a4;
 $grouptitle-color: #333333;
 
-$checkbox-white: #fff;
-$checkbox-green: #53d76a;
-$checkbox-grey: #d3d3d3;
+$checkbox-white: $white;
+$checkbox-green: $green;
+$checkbox-grey: adjust-lightness($black, 60%);
 
 $alert-error-color: #ff3b30;
 $alert-success-color: #1d9d74;
@@ -71,9 +89,19 @@ $disable-color: #ccc;
 // ==============================================
 
 
+// ================ border color ================
+$border-color: 				adjust-lightness($black, 90%);
+$border-input-color: 		adjust-lightness($black, 90%);
+$border-postprefix-color: 	$border-input-color;
+$border-button-color: 		$blue;
+$table-border-color: 		$transparent;
+// ==============================================
+
+
 // =============== line height ==================
 $body-line-height: 1.64em;
 $listviewtext-line-height: inherit;
+$letter-spacing: 0.016em;
 // ==============================================
 
 
@@ -87,27 +115,19 @@ $img-image-height: auto;
 // =================================================
 
 
-// ================ border color ================
-$border-color: #eeeeee;
-$border-input-color: #ddd;
-$border-button-solid-color: #fff;
-$border-button-color: #08c;
-$border-postprefix-color: #cccccc;
-$table-border-color: #dddddd;
-// ==============================================
-
-
 // ============== screen resolution =============
-$tiny-screen: "240px";
-$small-screen: "480px";
-$medium-screen: "767px";
-$large-screen: "1023px";
-$extra-large-screen: "1360px";
+$tiny-screen: 			"240px";
+$small-screen: 			"480px";
+$medium-screen: 		"767px";
+$large-screen: 			"1023px";
+$extra-large-screen: 	"1360px";
+
 $screen: "screen";
-$tiny: "only screen and (max-width:#{$small-screen})";
-$small: "only screen and (max-width:#{$medium-screen})";
-$medium: "only screen and (max-width:#{$large-screen}) ";
-$large: "only screen and (min-width:#{$extra-large-screen})";
+
+$tiny: 		"only screen and (max-width:#{$small-screen})";
+$small: 	"only screen and (max-width:#{$medium-screen})";
+$medium: 	"only screen and (max-width:#{$large-screen}) ";
+$large: 	"only screen and (min-width:#{$extra-large-screen})";
 // ==============================================
 
 
@@ -123,3 +143,49 @@ $border-radius-pixels: $grid;
 $top-bar-height: $grid * 12;
 $side-bar-width: $grid * 64;
 // ==============================================
+
+
+// ================= Mixins ================
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-sizing($sizing) {
+    -webkit-box-sizing: $sizing;
+       -moz-box-sizing: $sizing;
+        -ms-box-sizing: $sizing;
+         -o-box-sizing: $sizing;
+            box-sizing: $sizing;
+}
+@mixin appearance($type) {
+    -webkit-appearance: $type;
+       -moz-appearance: $type;
+        -ms-appearance: $type;
+         -o-appearance: $type;
+            appearance: $type;
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+        -ms-box-shadow: $shadow;
+         -o-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+@mixin placeholder-color($color) {
+	::-webkit-input-placeholder { color:$color }
+	::-moz-placeholder 			{ color:$color }
+	::placeholder 				{ color:$color }
+	:-moz-placeholder 			{ color:$color }
+	:-ms-input-placeholder 		{ color:$color }
+	:placeholder 				{ color:$color }
+}
+// =========================================

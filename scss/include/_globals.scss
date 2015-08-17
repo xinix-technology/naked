@@ -3,12 +3,11 @@
 ::before,
 :after,
 ::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
+
+@include placeholder-color(#{adjust-lightness($black, 48%)});
+
 html,
 body {
     width: 100%;
@@ -33,7 +32,7 @@ body {
 
     &:after {
         content: "";
-        display: table;
+        display: block;
         clear: both;
     }
 }
@@ -109,6 +108,7 @@ h6 small {
 }
 p {
     font-size: 1em;
+    letter-spacing: #{$letter-spacing};
     line-height: #{$body-line-height};
     margin: 0 0 8px;
 }

@@ -8,23 +8,15 @@ button,
     line-height: #{$body-line-height};
     margin: 0 #{$grid * 2} 0 0;
     position: relative;
+    font-weight: #{$font-regular};
     text-decoration: none;
     text-align: center;
     background: transparent;
     border: 1px solid #{$border-button-color};
     color: #{$submit-color};
     display: inline-block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    -webkit-border-radius: #{$border-radius-pixels};
-    -moz-border-radius: #{$border-radius-pixels};
-    -ms-border-radius: #{$border-radius-pixels};
-    -o-border-radius: #{$border-radius-pixels};
-    border-radius: #{$border-radius-pixels};
-    font-weight: #{$font-regular};
+    @include appearance(none);
+    @include border-radius(#{$border-radius-pixels});
 
     &:hover {
         background: #{$submit-bg};
@@ -66,31 +58,30 @@ button,
 
     &.round {
     	padding: 2px 32px;
-        -webkit-border-radius: 666em;
-        -moz-border-radius: 666em;
-        -ms-border-radius: 666em;
-        -o-border-radius: 666em;
-        border-radius: 666em;
+    	@include border-radius(666em);
     }
 
     &.solid {
 		background: #{$submit-bg};
-	    border: 1px solid #{$border-button-solid-color};
+	    border: 1px solid #{$submit-bg};
 	    color: #{$submit-solid-color};
 
 		&.error {
 	    	background: #{$button-error};
 		    color: #{$submit-solid-color};
+		    border-color: #{$button-error};
 	    }
 
 	    &.success {
 	    	background: #{$button-success};
 		    color: #{$submit-solid-color};
+		    border-color: #{$button-success};
 	    }
 
 	    &.warning {
 	    	background: #{$button-warning};
 		    color: #{$submit-solid-color};
+		    border-color: #{$button-warning};
 	    }
     }
 
@@ -98,7 +89,7 @@ button,
     &.disable {
     	color: #{$disable-color}!important;
     	border-color: #{$disable-color}!important;
-    	background: #{$disable-color * 1.32}!important;
+    	background: #{lighten($disable-color, 18%)}!important;
     	cursor: default;
     }
 }
@@ -138,28 +129,16 @@ button,
 	&.round {
 		li {
 			a {
-				-webkit-border-radius:0;
-				-moz-border-radius:0;
-				-ms-border-radius:0;
-				-o-border-radius:0;
-				border-radius:0;
+				@include border-radius(0);
 			}
 			&:first-child {
 				a {
-				    -webkit-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
-				    -moz-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
-				    -ms-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
-				    -o-border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
-				    border-radius: #{$border-radius-pixels} 0 0 #{$border-radius-pixels};
+				    @include border-radius(#{$border-radius-pixels} 0 0 #{$border-radius-pixels});
 				}
 			}
 			&:last-child {
-				a{
-				    -webkit-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
-				    -moz-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
-				    -ms-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
-				    -o-border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
-				    border-radius: 0 #{$border-radius-pixels} #{$border-radius-pixels} 0;
+				a {
+				    @include border-radius(#{$border-radius-pixels} #{$border-radius-pixels} 0);
 				}
 			}
 		}

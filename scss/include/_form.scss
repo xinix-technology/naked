@@ -1,15 +1,11 @@
 form {
-    overflow:hidden
+    padding: #{$grid} 0;
 }
 fieldset {
     border: solid 1px #{$border-color};
     padding: #{$grid * 3} #{$grid * 4} #{$grid * 2};
     margin: #{$grid * 2} 0 #{$grid * 3};
-    -webkit-border-radius: #{$border-radius-pixels};
-    -moz-border-radius: #{$border-radius-pixels};
-    -ms-border-radius: #{$border-radius-pixels};
-    -o-border-radius: #{$border-radius-pixels};
-    border-radius: #{$border-radius-pixels};
+    @include border-radius(#{$border-radius-pixels});
 
     .wrapper {
         padding: 0 #{$grid};
@@ -65,39 +61,37 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
+input.text,
 textarea,
 select,
 select option,
 .field {
-    font: 1em/1.64em #{$font-family};
-    display: block;
-    background: #fff;
+    background: #{$white};
+    font: 1em #{$font-family};
+    line-height: #{$body-line-height};
     font-weight: #{$font-light};
+    letter-spacing: #{$letter-spacing};
+    outline: 0;
+    display: block;
     margin: 0;
     padding: #{$grid} #{$grid * 3} ;
     height: auto;
     width: 100%;
     border: 1px solid #{$border-input-color};
-    outline: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    -webkit-border-radius: #{$border-radius-pixels};
-    -moz-border-radius: #{$border-radius-pixels};
-    -ms-border-radius: #{$border-radius-pixels};
-    -o-border-radius: #{$border-radius-pixels};
-    border-radius: #{$border-radius-pixels};
+    border-bottom: 1px solid #{adjust-lightness($border-input-color, -8%)};
+    @include box-sizing(border-box);
+    @include appearance(none);
+    @include border-radius(#{$border-radius-pixels});
+    @include transition(border 0.32s);
+
+    &:focus,
+    &.focus {
+        @include box-shadow(0 0 0 2px #{adjust-lightness($blue, 32%)});
+    }
 
     &[disabled] {
         opacity: 0.64;
-        background: #f5f5f5;
+        background: #{$white-gray};
         cursor: text;
     }
 }
@@ -123,11 +117,7 @@ input[type="checkbox"].swipe {
     width: 50px;
     border-radius: 26px;
     transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
+    @include appearance(none);
 
     ~ .on {
         display: none;
@@ -185,7 +175,7 @@ input[type="checkbox"].swipe {
     }
 }
 select {
-    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
     background-size: 12px 12px;
     background-position: right 8px top 50%;
     padding-right: 30px;
