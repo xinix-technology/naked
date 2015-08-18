@@ -48,24 +48,22 @@ $alert-border-info: $blue;
 // ==============================================
 
 
-// ==================== color ===================
-
+// Basic text color
 $color: $black;
 
-$h1-color: $blue;
-$h1-small-color: #6f6f6f;
-$h4-color: #6f6f6f;
-$h5-color: #f00;
+// h1-6 colors
+$h-color: $black;
+$h-small-color: adjust-lightness($black, 32%);
+$h-subheader-color: adjust-lightness($black, 24%);
 
-$subheader-color: #6f6f6f;
-
+// Link colours
 $a-color: $blue;
-$a-color-amount: 15%;
+$a-color-amount: 16%;
 
 $submit-color: $blue;
 $submit-solid-color: $white;
 
-$pagination-color: #333;
+$pagination-color: adjust-lightness($black, 55%);;
 $pagination-active-color: $white;
 
 $table-head-color: $white-gray;
@@ -73,19 +71,19 @@ $table-color: $white;
 $table-stripe-color: adjust-lightness($blue, 50%);
 $table-hover-color: adjust-lightness($yellow, 30%);
 
-$listview-link-color: #97a0a4;
-$grouptitle-color: #333333;
+$listview-link-color: $blue;
+$grouptitle-color: adjust-lightness($black, 32%);;
 
 $checkbox-white: $white;
 $checkbox-green: $green;
 $checkbox-grey: adjust-lightness($black, 60%);
 
-$alert-error-color: #ff3b30;
-$alert-success-color: #1d9d74;
-$alert-warning-color: #ff9500;
-$alert-info-color: #007aff;
+$alert-error-color: $red;
+$alert-success-color: $green;
+$alert-warning-color: $yellow;
+$alert-info-color: $blue;
 
-$disable-color: #ccc;
+$disable-color: adjust-lightness($black, 64%);;
 // ==============================================
 
 

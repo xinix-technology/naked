@@ -59,17 +59,36 @@ main.content {
     }
 }
 
+// The Headings
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin: 16px 0 8px;
+    margin: #{$grid * 2} 0 0;
     line-height: #{$body-line-height};
     font-weight: #{$font-regular};
-}
+    color: $h-color;
 
+    &.subheader {
+        border-top: 1px solid #{$border-color};
+        margin-top: 0;
+        color: #{$h-subheader-color};
+        font-weight: 300;
+    }
+
+    small,
+    small,
+    small,
+    small,
+    small,
+    small {
+        font-size: 60%;
+        color: #{$h-small-color};
+        line-height: 0;
+    }
+}
 * > h1:first-child,
 * > h2:first-child,
 * > h3:first-child,
@@ -79,38 +98,59 @@ h6 {
     margin-top:0;
 }
 h1 {
-    font-size: 1.6em;
+    font-size: 1.7em;
+
+    &.subheader {
+        font-size: 1.5em;
+    }
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    color: $blue;
+
+    &.subheader {
+        font-size: 1.4em;
+    }
 }
 h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
+    color: $red;
+
+    &.subheader {
+        font-size: 1.3em;
+    }
 }
 h4 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    color: $green;
+
+    &.subheader {
+        font-size: 1.2em;
+    }
 }
 h5 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    color: $yellow;
+
+    &.subheader {
+        font-size: 1.1em;
+    }
 }
 h6 {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: adjust-lightness($black, 32%);
+
+    &.subheader {
+        font-size: 1em;
+    }
 }
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-    font-size: 60%;
-    color: #{$h1-small-color};
-    line-height: 0;
-}
+
+// Common styles
 p {
     font-size: 1em;
     letter-spacing: #{$letter-spacing};
     line-height: #{$body-line-height};
-    margin: 0 0 8px;
+    margin: #{$grid * 2} 0 0;
 }
 a {
     color: #{$a-color};
@@ -136,9 +176,22 @@ i {
     font-style: italic;
     line-height: inherit;
 }
+hr {
+    border: 1px solid #{$border-color};
+    border-width: 1px 0 0;
+}
+img.img-circle {
+    @include border-radius(666em);
+}
+
+// Lists style
 ul,
 ol {
     line-height: #{$body-line-height};
+
+    li {
+        margin: #{$grid} 0 0 0;
+    }
 }
 ul.flat {
     display: table;
@@ -149,10 +202,10 @@ ul.flat {
     li {
         float: left;
         display: block;
-        margin-right: #{$grid * 4};
+        margin: 0 #{$grid * 4} 0 0;
 
         &:last-child {
-            margin-right: 0;
+            margin: 0;
         }
     }
 }
@@ -169,20 +222,6 @@ ul.plain {
     }
 }
 
-hr {
-    border: 1px solid #{$border-color};
-    border-width: 1px 0 0;
-}
-img.img-circle {
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
-    border-radius: 500px;
-}
-
-.subheader {
-    color: #{$subheader-color};
-    font-weight: 300;
-}
 .clear,
 .clearfix {
     clear: both
