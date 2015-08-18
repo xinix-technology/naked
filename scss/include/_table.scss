@@ -1,27 +1,22 @@
 .table-container {
     overflow: auto;
-	border: 1px solid #{$table-border-color};
+    margin: #{$grid * 2} 0 0;
 	-webkit-overflow-scrolling: touch;
-	-webkit-border-radius: #{$border-radius-pixels};
-	-moz-border-radius: #{$border-radius-pixels};
-	-ms-border-radius: #{$border-radius-pixels};
-	-o-border-radius: #{$border-radius-pixels};
-	border-radius: #{$border-radius-pixels};
 }
-
 .table-body {
 	position: relative;
+    margin: #{$grid * 2} 0 0;
 
 	.fixed {
     	overflow: auto;
 		border: 1px solid #{$table-border-color};
     	-webkit-overflow-scrolling: none;
-		-webkit-border-radius: #{$border-radius-pixels};
-		-moz-border-radius: #{$border-radius-pixels};
-		-ms-border-radius: #{$border-radius-pixels};
-		-o-border-radius: #{$border-radius-pixels};
-		border-radius: #{$border-radius-pixels};
+		@include border-radius(#{$border-radius-pixels});
 	}
+}
+* > .table-container:first-child,
+* > .table-body:first-child {
+	margin: 0;
 }
 
 table,
@@ -37,11 +32,11 @@ table,
 
 	th,
 	td {
-		padding: #{$grid} #{$grid * 4};
+		padding: #{$grid * 2} #{$grid * 4};
 		line-height: #{$body-line-height};
 		background: #{$table-color};
 		vertical-align: top;
-		border-left: 1px solid #{$table-border-color};
+		text-align: left;
 	}
 	th {
 		vertical-align: middle;
@@ -91,11 +86,17 @@ table,
 				left: initial;
 				right: 1px;
 				width: 100px;
+				border-left: 1px solid #{$table-border-color};
 			}
 		}
 	}
 
 	&.stripped {
+		td,
+		th {
+			border: none;
+		}
+
 		tr.alt td,
 		tr.even td,
 		tr:nth-of-type(even) td {
@@ -174,7 +175,6 @@ table,
 		td {
 			display: block;
 			min-height: 1.25em;
-			text-align: left;
 			border-left: 0;
 			border-right: 0;
 			border-bottom: 0;

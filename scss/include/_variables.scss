@@ -22,8 +22,8 @@ $white-gray: #F5F5F5;
 $transparent: transparent;
 
 // ============== background color ==============
-$header-bg: $white;
-$navbar-bg: adjust-lightness($blue, 55%);
+$header-bg: adjust-lightness($blue, 64%);
+$navbar-bg: adjust-lightness($blue, 56%);
 $footer-bg: adjust-lightness($white-gray, 2%);
 
 $bg-hover: $white-gray;
@@ -33,9 +33,15 @@ $submit-bg-hover: $white-gray;
 
 $prepostfix-bg: $white-gray;
 
+// Button
+$button-info: $blue;
 $button-error: $red;
 $button-success: $green;
 $button-warning: $yellow;
+$button-lighter-value: 16%;
+$button-darker-value: -8%;
+$button-background-value: 100%;
+$button-text-hover: $white;
 
 $alert-error: $red;
 $alert-border-error: $red;
@@ -60,19 +66,18 @@ $h-subheader-color: adjust-lightness($black, 24%);
 $a-color: $blue;
 $a-color-amount: 16%;
 
-$submit-color: $blue;
-$submit-solid-color: $white;
-
+// Pagination color
 $pagination-color: adjust-lightness($black, 55%);;
 $pagination-active-color: $white;
 
-$table-head-color: $white-gray;
 $table-color: $white;
-$table-stripe-color: adjust-lightness($blue, 50%);
-$table-hover-color: adjust-lightness($yellow, 30%);
+$table-head-color: adjust-lightness($blue, 40%);
+$table-stripe-color: adjust-lightness($blue, 52%);
+$table-hover-color: adjust-lightness($yellow, 32%);
+$table-border-color: adjust-lightness($blue, 36%);
 
 $listview-link-color: $blue;
-$grouptitle-color: adjust-lightness($black, 32%);;
+$grouptitle-color: adjust-lightness($black, 32%);
 
 $checkbox-white: $white;
 $checkbox-green: $green;
@@ -83,18 +88,12 @@ $alert-success-color: $green;
 $alert-warning-color: $yellow;
 $alert-info-color: $blue;
 
-$disable-color: adjust-lightness($black, 64%);;
-// ==============================================
+$disable-color: adjust-lightness($black, 78%);
 
-
-// ================ border color ================
-$border-color: 				adjust-lightness($black, 90%);
+// Border color
+$border-color: 				adjust-lightness($black, 80%);
 $border-input-color: 		adjust-lightness($black, 90%);
 $border-postprefix-color: 	$border-input-color;
-$border-button-color: 		$blue;
-$table-border-color: 		$transparent;
-// ==============================================
-
 
 // =============== line height ==================
 $body-line-height: 1.64em;
@@ -135,12 +134,11 @@ $tabstrip-columns: 10 !default;
 // ==============================================
 
 
-// ================= Measurement ================
+// Measurement
 $grid: 4px;
 $border-radius-pixels: $grid;
-$top-bar-height: $grid * 12;
-$side-bar-width: $grid * 64;
-// ==============================================
+$top-bar-height: 48px;
+$side-bar-width: 256px;
 
 
 // ================= Mixins ================
@@ -177,6 +175,20 @@ $side-bar-width: $grid * 64;
         -ms-transition: $transition;
          -o-transition: $transition;
             transition: $transition;
+}
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+}
+@mixin transform-origin($transform-origin) {
+    -webkit-transform-origin: $transform-origin;
+       -moz-transform-origin: $transform-origin;
+        -ms-transform-origin: $transform-origin;
+         -o-transform-origin: $transform-origin;
+            transform-origin: $transform-origin;
 }
 @mixin placeholder-color($color) {
 	::-webkit-input-placeholder { color:$color }

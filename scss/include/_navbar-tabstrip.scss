@@ -8,7 +8,7 @@
 	right: 0;
 	z-index: 9;
 	height: #{$top-bar-height};
-	border-bottom: 1px solid #{$header-bg * 0.96};
+	border-bottom: 1px solid #{adjust-lightness($header-bg, -16%)};
 
 	.pull-left {
 		padding: #{$grid * 2} 0 0 #{$grid * 4};

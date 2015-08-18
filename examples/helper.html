@@ -27,33 +27,27 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <script type="text/javascript">
-            $("aside.sidebar").load("aside.html", function() {
-                var docname = window.location.href;
-                docname = docname.split("/");
-            });
-        </script>
-    <!-- NAVBAR -->
-    <nav class="nav-menu">
-        <div class="pull-left">
-            <h1 class="brand">
-                <a href="index.html">
-                    <span class="logo">
-                        <img src="../img/xinix-logo.png" alt="">
-                    </span>
-                    <span>Naked CSS</span>
-                </a>
-            </h1>
-        </div>
-    </nav>
-    <!-- END OF NAVBAR -->
-                $("aside.sidebar .nav a[href='" + docname[docname.length - 1] + "']").addClass ("select");
-            });
-        </script>
-    </aside>
-    <!-- END OF SIDEBAR -->
+	<!-- SIDEBAR -->
+	<aside class="sidebar">
+		<script type="text/javascript">
+			$("aside.sidebar").load("aside.html");
+		</script>
+		<!-- NAVBAR -->
+		<nav class="nav-menu">
+			<div class="pull-left">
+				<h1 class="brand">
+					<a href="index.html">
+						<span class="logo">
+							<img src="../img/xinix-logo.png" alt="">
+						</span>
+						<span>Naked CSS</span>
+					</a>
+				</h1>
+			</div>
+		</nav>
+		<!-- END OF NAVBAR -->
+	</aside>
+	<!-- END OF SIDEBAR -->
 
     <!-- CONTENT -->
     <main class="content">
@@ -107,8 +101,8 @@
                 </div>
             </div>
             <hr>
-            <h5>Plain Flat</h5>
-            <p>It's a list, but it's plan. Because sometime you don't need the bullet or numbering function.</p>
+            <h5>List Plain</h5>
+            <p>It's a list, but it's plain. Because sometimes you don't need the bullet or numbering function.</p>
             <div class="box">
                 <ul class="plain">
                     <li>List item</li>
