@@ -26,8 +26,23 @@ table,
 	border-spacing: 0;
 	max-width: 100%;
 
+	a {
+		background-color: #{$blue};
+		color: #{$white};
+		padding: #{$grid / 2} #{$grid * 2};
+		@include border-radius(#{$border-radius-pixels});
+	}
+
 	thead tr th {
 		background: #{$table-head-color};
+	}
+
+	tr {
+		border-bottom: 1px solid #{$table-border-color};
+	}
+	tbody tr:last-child,
+	tbody tr.last-child {
+		border-bottom: none;
 	}
 
 	th,
@@ -41,16 +56,6 @@ table,
 	th {
 		vertical-align: middle;
 	}
-
-	th:first-child,
-	td:first-child {
-		border-left: 0;
-	}
-
-	td {
-		border-top: 1px solid #{$table-border-color};
-	}
-
 	&.nowrap {
 		th,
 		td {
@@ -78,29 +83,27 @@ table,
 		th,
 		td {
 			&:nth-last-child(2) {
-				padding-right: #{101 + ($grid * 6)};
+				padding-right: #{131 + ($grid * 6)};
 			}
 
 			&:last-child {
 				position: absolute;
 				left: initial;
 				right: 1px;
-				width: 100px;
+				width: 130px;
 				border-left: 1px solid #{$table-border-color};
 			}
 		}
 	}
 
 	&.stripped {
-		td,
-		th {
+		tr {
 			border: none;
-		}
 
-		tr.alt td,
-		tr.even td,
-		tr:nth-of-type(even) td {
-			background: #{$table-stripe-color};
+			&.odd td,
+			&:nth-of-type(odd) td {
+				background: #{$table-stripe-color};
+			}
 		}
 	}
 
@@ -140,8 +143,6 @@ table,
 		th {
 			display: block;
 			text-align: right;
-			border-bottom: 0;
-			border-left: 0;
 		}
 
 		thead {
@@ -175,10 +176,6 @@ table,
 		td {
 			display: block;
 			min-height: 1.25em;
-			border-left: 0;
-			border-right: 0;
-			border-bottom: 0;
-			border-top: 0;
 		}
 	}
 

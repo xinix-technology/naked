@@ -69,7 +69,6 @@ button,
     }
 
     &.round {
-    	padding: 2px 32px;
     	@include border-radius(666em);
     }
 
@@ -102,6 +101,7 @@ button,
     }
 }
 
+.right,
 .pull-right {
 	input[type="reset"],
 	input[type="submit"],

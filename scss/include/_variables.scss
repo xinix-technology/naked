@@ -10,7 +10,6 @@ $font-bolder: 900;
 
 
 // ==================== Default color ===================
-
 $black: #000000;
 $red: #CF4741;
 $cyan: #08c;
@@ -51,7 +50,6 @@ $alert-warning: $blue;
 $alert-border-warning: $blue;
 $alert-info: $blue;
 $alert-border-info: $blue;
-// ==============================================
 
 
 // Basic text color
@@ -71,7 +69,7 @@ $pagination-color: adjust-lightness($black, 55%);;
 $pagination-active-color: $white;
 
 $table-color: $white;
-$table-head-color: adjust-lightness($blue, 40%);
+$table-head-color: $white;
 $table-stripe-color: adjust-lightness($blue, 52%);
 $table-hover-color: adjust-lightness($yellow, 32%);
 $table-border-color: adjust-lightness($blue, 36%);
@@ -112,7 +110,7 @@ $img-image-height: auto;
 // =================================================
 
 
-// ============== screen resolution =============
+// Screen resolution
 $tiny-screen: 			"240px";
 $small-screen: 			"480px";
 $medium-screen: 		"767px";
@@ -125,13 +123,11 @@ $tiny: 		"only screen and (max-width:#{$small-screen})";
 $small: 	"only screen and (max-width:#{$medium-screen})";
 $medium: 	"only screen and (max-width:#{$large-screen}) ";
 $large: 	"only screen and (min-width:#{$extra-large-screen})";
-// ==============================================
 
 
-// ============ total grid system ===============
+// Grid system
 $grid-total-columns: 12 !default;
 $tabstrip-columns: 10 !default;
-// ==============================================
 
 
 // Measurement
@@ -141,7 +137,7 @@ $top-bar-height: 48px;
 $side-bar-width: 256px;
 
 
-// ================= Mixins ================
+// Mixins
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -198,4 +194,3 @@ $side-bar-width: 256px;
 	:-ms-input-placeholder 		{ color:$color }
 	:placeholder 				{ color:$color }
 }
-// =========================================

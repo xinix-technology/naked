@@ -1,0 +1,66 @@
+.badge {
+	font-size: 0.7em;
+	font-weight: #{$font-bold};
+    text-align: center;
+	letter-spacing: 0.048em;
+	text-transform: uppercase;
+    position: relative;
+    padding: #{$grid / 4} #{$grid * 2};
+    margin: 0;
+    background: transparent;
+    border: 1px solid #{$button-info};
+    color: #{$button-info};
+    display: inline-block;
+    @include appearance(none);
+    @include border-radius(#{$border-radius-pixels});
+
+    &.error {
+    	background: transparent;
+	    border: 1px solid #{$button-error};
+	    color: #{$button-error};
+    }
+
+    &.success {
+    	background: transparent;
+	    border: 1px solid #{$button-success};
+	    color: #{$button-success};
+    }
+
+    &.warning {
+    	background: transparent;
+	    border: 1px solid #{$button-warning};
+	    color: #{$button-warning};
+    }
+
+    &.round {
+    	@include border-radius(666em);
+    }
+
+    &.solid {
+		background: #{$submit-bg};
+	    color: #{$button-text-hover};
+
+		&.error {
+	    	background: #{$button-error};
+		    color: #{$button-text-hover};
+	    }
+
+	    &.success {
+	    	background: #{$button-success};
+		    color: #{$button-text-hover};
+	    }
+
+	    &.warning {
+	    	background: #{$button-warning};
+		    color: #{$button-text-hover};
+	    }
+    }
+
+    &[disable],
+    &.disable {
+    	color: #{$disable-color}!important;
+    	border-color: #{$disable-color}!important;
+    	background: #{adjust-lightness($disable-color, 18%)}!important;
+    	cursor: default;
+    }
+}

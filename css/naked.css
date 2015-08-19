@@ -1243,9 +1243,29 @@ table,
   border-spacing: 0;
   max-width: 100%;
 }
+table a,
+.table a {
+  background-color: #416B9B;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
 table thead tr th,
 .table thead tr th {
-  background: #c2d3e6;
+  background: #FFFFFF;
+}
+table tr,
+.table tr {
+  border-bottom: 1px solid #b4c8e0;
+}
+table tbody tr:last-child,
+table tbody tr.last-child,
+.table tbody tr:last-child,
+.table tbody tr.last-child {
+  border-bottom: none;
 }
 table th,
 table td,
@@ -1260,16 +1280,6 @@ table td,
 table th,
 .table th {
   vertical-align: middle;
-}
-table th:first-child,
-table td:first-child,
-.table th:first-child,
-.table td:first-child {
-  border-left: 0;
-}
-table td,
-.table td {
-  border-top: 1px solid #b4c8e0;
 }
 table.nowrap th,
 table.nowrap td,
@@ -1296,7 +1306,7 @@ table.fixed-tail th:nth-last-child(2),
 table.fixed-tail td:nth-last-child(2),
 .table.fixed-tail th:nth-last-child(2),
 .table.fixed-tail td:nth-last-child(2) {
-  padding-right: 125px;
+  padding-right: 155px;
 }
 table.fixed-tail th:last-child,
 table.fixed-tail td:last-child,
@@ -1305,21 +1315,16 @@ table.fixed-tail td:last-child,
   position: absolute;
   left: initial;
   right: 1px;
-  width: 100px;
+  width: 130px;
   border-left: 1px solid #b4c8e0;
 }
-table.stripped td,
-table.stripped th,
-.table.stripped td,
-.table.stripped th {
+table.stripped tr,
+.table.stripped tr {
   border: none;
 }
-table.stripped tr.alt td,
-table.stripped tr.even td,
-table.stripped tr:nth-of-type(even) td,
-.table.stripped tr.alt td,
-.table.stripped tr.even td,
-.table.stripped tr:nth-of-type(even) td {
+table.stripped tr.odd td, table.stripped tr:nth-of-type(odd) td,
+.table.stripped tr.odd td,
+.table.stripped tr:nth-of-type(odd) td {
   background: #eef2f8;
 }
 table.hover tr.hover td,
@@ -1353,8 +1358,6 @@ table.hover tr:hover td,
   table.flip-scroll th {
     display: block;
     text-align: right;
-    border-bottom: 0;
-    border-left: 0;
   }
   table.flip-scroll thead {
     display: block;
@@ -1383,10 +1386,6 @@ table.hover tr:hover td,
   table.flip-scroll td {
     display: block;
     min-height: 1.25em;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    border-top: 0;
   }
 
   table.no-more-table thead,
@@ -1842,7 +1841,6 @@ input[type="reset"].round,
 input[type="submit"].round,
 button.round,
 .button.round {
-  padding: 2px 32px;
   -webkit-border-radius: 666em;
   -moz-border-radius: 666em;
   -ms-border-radius: 666em;
@@ -1889,6 +1887,10 @@ button.disable,
   cursor: default;
 }
 
+.right input[type="reset"],
+.right input[type="submit"],
+.right button,
+.right .button,
 .pull-right input[type="reset"],
 .pull-right input[type="submit"],
 .pull-right button,
@@ -1979,6 +1981,73 @@ button.disable,
     float: right;
   }
 }
+.badge {
+  font-size: 0.7em;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.048em;
+  text-transform: uppercase;
+  position: relative;
+  padding: 1px 8px;
+  margin: 0;
+  background: transparent;
+  border: 1px solid #416B9B;
+  color: #416B9B;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.badge.error {
+  background: transparent;
+  border: 1px solid #CF4741;
+  color: #CF4741;
+}
+.badge.success {
+  background: transparent;
+  border: 1px solid #718F47;
+  color: #718F47;
+}
+.badge.warning {
+  background: transparent;
+  border: 1px solid #E1BF32;
+  color: #E1BF32;
+}
+.badge.round {
+  -webkit-border-radius: 666em;
+  -moz-border-radius: 666em;
+  -ms-border-radius: 666em;
+  border-radius: 666em;
+}
+.badge.solid {
+  background: #416B9B;
+  color: #FFFFFF;
+}
+.badge.solid.error {
+  background: #CF4741;
+  color: #FFFFFF;
+}
+.badge.solid.success {
+  background: #718F47;
+  color: #FFFFFF;
+}
+.badge.solid.warning {
+  background: #E1BF32;
+  color: #FFFFFF;
+}
+.badge[disable], .badge.disable {
+  color: #c7c7c7!important;
+  border-color: #c7c7c7!important;
+  background: whitesmoke!important;
+  cursor: default;
+}
+
 ul.pagination {
   margin-top: 0;
   margin-bottom: 0;
