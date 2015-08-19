@@ -26,13 +26,6 @@ table,
 	border-spacing: 0;
 	max-width: 100%;
 
-	a {
-		background-color: #{$blue};
-		color: #{$white};
-		padding: #{$grid / 2} #{$grid * 2};
-		@include border-radius(#{$border-radius-pixels});
-	}
-
 	thead tr th {
 		background: #{$table-head-color};
 	}

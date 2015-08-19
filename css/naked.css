@@ -1243,16 +1243,6 @@ table,
   border-spacing: 0;
   max-width: 100%;
 }
-table a,
-.table a {
-  background-color: #416B9B;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
-}
 table thead tr th,
 .table thead tr th {
   background: #FFFFFF;
