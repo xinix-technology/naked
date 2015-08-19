@@ -3070,7 +3070,7 @@ article.tabs section h2 {
 .sidebar .nav li {
   display: block;
   float: none;
-  margin-bottom: -1px;
+  margin: 0 0 -1px;
   padding-left: 24px;
 }
 .sidebar .nav li a {
@@ -3095,14 +3095,14 @@ article.tabs section h2 {
   position: absolute;
   left: initial;
   right: 15px;
-  top: 13px;
+  top: 12px;
 }
 .sidebar .nav li a i.icn-plus {
   font-style: normal;
   position: absolute;
   left: initial;
   right: 15px;
-  top: 10px;
+  top: 8px;
   -webkit-transform: rotate(0deg) scale(1);
   -moz-transform: rotate(0deg) scale(1);
   -ms-transform: rotate(0deg) scale(1);

@@ -18,7 +18,7 @@
         li {
             display: block;
             float: none;
-            margin-bottom: -1px;
+            margin: 0 0 -1px;
             padding-left: 24px;
 
             a {
@@ -43,7 +43,7 @@
                     position: absolute;
                     left: initial;
                     right: 15px;
-                    top: 13px;
+                    top: 12px;
                 }
 
                 i.icn-plus {
@@ -51,7 +51,7 @@
                     position: absolute;
                     left: initial;
                     right: 15px;
-                    top: 10px;
+                    top: 8px;
                     @include transform(rotate(0deg) scale(1));
                     @include transition(-webkit-transform 0.3s ease-out);
                     @include transform-origin(center center);
