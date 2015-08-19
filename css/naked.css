@@ -3014,30 +3014,68 @@ article.tabs section h2 {
 }
 
 .context-menu {
-  margin: 0;
-  padding: 0;
+  margin: 16px 0 0;
+  padding: 8px 0;
   list-style: none;
-  border: 1px solid #ddd;
+  border: 1px solid #cccccc;
+  background: #FFFFFF;
   position: absolute;
   display: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 .context-menu li {
   padding: 0;
+  margin: 0;
 }
 .context-menu li.divider {
   border-top: 1px solid #cccccc;
+  margin: 8px 0;
   padding: 0px;
   overflow: hidden;
 }
-.context-menu li a {
-  padding: 5px 20px;
-  display: block;
-}
-.context-menu li a:hover {
-  background: #f5f5f5;
-}
-.context-menu li:last-child a {
+.context-menu li.first-child:before, .context-menu li:first-child:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #cccccc;
+  border-right: 0;
   border-bottom: 0;
+  background: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  left: 24px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.context-menu li.last-child a, .context-menu li:last-child a {
+  border-bottom: 0;
+}
+.context-menu li a {
+  padding: 4px 20px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.context-menu li a.hover, .context-menu li a:hover {
+  color: #FFFFFF;
+  background: #416B9B;
+}
+.context-menu li a.hover:before, .context-menu li a:hover:before {
+  background: #416B9B;
+}
+.context-menu.right {
+  float: none;
+}
+.context-menu.right li.first-child:before, .context-menu.right li:first-child:before {
+  left: initial;
+  right: 24px;
 }
 
 .sidebar {

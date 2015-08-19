@@ -1,32 +1,77 @@
 .context-menu {
-	margin: 0;
-	padding: 0;
+	margin: #{$grid * 4} 0 0;
+	padding: #{$grid * 2} 0;
 	list-style: none;
-	border: 1px solid #ddd;
+	border: 1px solid #{$border-color};
+	background: #{$white};
 	position: absolute;
 	display: none;
+	@include border-radius(#{$border-radius-pixels});
 
 	li {
 		padding: 0;
+		margin: 0;
 
 		&.divider {
 			border-top: 1px solid #{$border-color};
+			margin: #{$grid * 2} 0;
 			padding: 0px;
 			overflow: hidden;
 		}
 
-		a {
-			padding: 5px 20px;
-			display: block;
+		&.first-child,
+		&:first-child {
+			&:before {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				border: 1px solid #{$border-color};
+				border-right: 0;
+				border-bottom: 0;
+				background: #{$white};
+				width: #{$grid * 4};
+				height: #{$grid * 4};
+				top: -#{$grid * 2};
+				left: #{$grid * 6};
+				@include transform(rotate(45deg));
 
-			&:hover {
-				background: #f5f5f5;
+			}
+		}
+		&.last-child,
+		&:last-child {
+			a {
+				border-bottom: 0;
 			}
 		}
 
-		&:last-child {
-			a {
-				border-bottom: 0;	
+		a {
+			padding: #{$grid} #{$grid * 5};
+			display: block;
+			position: relative;
+			z-index: 2;
+
+			&.hover,
+			&:hover {
+				color: #{$white};
+				background: #{$blue};
+
+				&:before {
+					background: #{$blue};
+				}
+			}
+		}
+	}
+
+	&.right {
+		float: none;
+
+		li {
+			&.first-child,
+			&:first-child {
+				&:before {
+					left: initial;
+					right: #{$grid * 6};
+				}
 			}
 		}
 	}
