@@ -88,9 +88,7 @@ code {
 }
 
 .ex-list-view-content {
-  background: #fcfcfc;
-  margin-bottom: 40px;
-  border: 1px solid #eeeeee;
+  margin: 0 -12px;
   padding-top: 15px;
   padding-bottom: 15px;
 }

@@ -33,6 +33,6 @@
     "normalize.css": "~3.0.x",
     "jquery": "~2.1.x",
     "google-code-prettify": "~1.0.x",
-    "jacket-awesome": "~0.0.x"
+    "jacket-awesome": "~2.0.x"
   }
 }

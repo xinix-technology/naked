@@ -74,8 +74,8 @@ $table-stripe-color: adjust-lightness($blue, 52%);
 $table-hover-color: adjust-lightness($yellow, 32%);
 $table-border-color: adjust-lightness($blue, 36%);
 
-$listview-link-color: $blue;
-$grouptitle-color: adjust-lightness($black, 32%);
+// List view color
+$grouptitle-color: adjust-lightness($black, 48%);
 
 $checkbox-white: $white;
 $checkbox-green: $green;
@@ -89,9 +89,9 @@ $alert-info-color: $blue;
 $disable-color: adjust-lightness($black, 78%);
 
 // Border color
-$border-color: 				adjust-lightness($black, 80%);
-$border-input-color: 		adjust-lightness($black, 90%);
-$border-postprefix-color: 	$border-input-color;
+$border-color: 				    adjust-lightness($black, 90%);
+$border-input-color: 		  adjust-lightness($black, 90%);
+$border-postprefix-color: $border-input-color;
 
 // =============== line height ==================
 $body-line-height: 1.64em;
@@ -150,6 +150,13 @@ $side-bar-width: 256px;
         -ms-box-sizing: $sizing;
          -o-box-sizing: $sizing;
             box-sizing: $sizing;
+}
+@mixin background-clip($clip) {
+    -webkit-background-clip: $clip;
+       -moz-background-clip: $clip;
+        -ms-background-clip: $clip;
+         -o-background-clip: $clip;
+            background-clip: $clip;
 }
 @mixin appearance($type) {
     -webkit-appearance: $type;

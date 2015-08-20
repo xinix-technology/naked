@@ -930,7 +930,7 @@ h3.subheader,
 h4.subheader,
 h5.subheader,
 h6.subheader {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
   margin-top: 0;
   color: #3d3d3d;
   font-weight: 300;
@@ -1069,7 +1069,7 @@ i {
 }
 
 hr {
-  border: 1px solid #cccccc;
+  border: 1px solid #e6e6e6;
   border-width: 1px 0 0;
 }
 
@@ -1418,7 +1418,7 @@ form {
 }
 
 fieldset {
-  border: solid 1px #cccccc;
+  border: solid 1px #e6e6e6;
   padding: 12px 16px 8px;
   margin: 8px 0 12px;
   -webkit-border-radius: 4px;
@@ -2135,20 +2135,16 @@ ul.pagination.centered {
 }
 .listview,
 .listview * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-background-clip: border-box;
   -webkit-background-clip: border-box;
+  -moz-background-clip: border-box;
+  -ms-background-clip: border-box;
+  -o-background-clip: border-box;
   background-clip: border-box;
-}
-
-.listview:not > li:first-child {
-  border-top: 0;
-}
-
-.listview > li.list-group-container {
-  border: 0;
 }
 
 .listview {
@@ -2157,6 +2153,59 @@ ul.pagination.centered {
   margin: 0;
   list-style: none;
 }
+.listview h5 {
+  font-size: 0.8em;
+  letter-spacing: 0.032em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 12px;
+  color: #7a7a7a;
+  margin-bottom: 7px;
+}
+.listview a {
+  position: relative;
+  float: left;
+  padding: 8px 36px 8px 12px;
+  width: 100%;
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.2em;
+  cursor: pointer;
+}
+.listview a:hover {
+  background: #F5F5F5;
+}
+.listview a i.xn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -0.64rem;
+}
+.listview a input.swipe {
+  position: absolute;
+  right: 4px;
+  z-index: 9;
+  top: 50%;
+  margin-top: -0.64rem;
+}
+.listview a,
+.listview span,
+.listview small {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.listview span,
+.listview small {
+  line-height: 0em;
+  font-weight: 300;
+  width: 100%;
+}
+.listview:not > li:first-child {
+  border-top: 0;
+}
 .listview li {
   line-height: 1.64em;
   overflow: hidden;
@@ -2164,116 +2213,60 @@ ul.pagination.centered {
   display: block;
   position: relative;
   vertical-align: middle;
-  border-bottom: 1px solid #cccccc;
-  border-width: 0 0 1px 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
 }
-.listview li img, .listview li .icon {
+.listview li.list-group-container {
+  border: 0;
+}
+.listview li img,
+.listview li .icon {
   width: 30px;
   height: 30px;
   float: left;
-  margin-right: 10px;
+  margin-right: 8px;
 }
-.listview li img.picture {
+.listview li .picture {
   width: 40px;
   height: 40px;
   margin-right: 0;
 }
-.listview li img.image {
+.listview li .image {
   width: 100%;
   height: auto;
   margin-right: 0;
-}
-.listview li a {
-  font-weight: 300;
-  padding: 5px 10px;
-  margin: 0;
-  color: black;
-}
-.listview h5 {
-  font-size: 0.9em;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-left: 10px;
-  color: #525252;
-  margin-bottom: 7px;
 }
 .listview .list-group {
   padding: 0;
   list-style: none;
   margin-bottom: 20px;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
   background: white;
 }
 .listview .list-group li {
   padding: 0;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #e6e6e6;
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100%;
-}
-.listview .list-group li a {
-  padding: 8px 30px 8px 8px;
-  font-size: 1.2em;
-  width: 100%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  line-height: inherit;
-}
-.listview .list-group li a:hover {
-  background: #F5F5F5;
 }
 .listview .list-group li span {
   line-height: inherit;
   width: 100%;
-  display: block;
 }
 .listview .list-group li.plain a {
-  padding: 10px;
+  padding-right: 8px;
 }
 .listview .list-group li.plain a:after {
   border: 0;
 }
-.listview .list-group span.sub-title {
-  font-size: 0.8em;
-  color: #999;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  line-height: 15px;
-}
-.listview .list-group span.title-list {
-  font-size: 1.3em;
+.listview .list-group .title-list {
+  font-size: 1.1em;
   font-weight: 400;
-  margin-bottom: 3px;
+  margin: 0;
 }
-.listview .list-group a {
-  cursor: pointer;
-  position: relative;
-}
-.listview .list-group a i.xn {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  margin-top: -0.52rem;
-}
-.listview .list-group a.swipe-toggle {
-  padding: 14px 70px 14px 10px;
-}
-.listview .list-group a.swipe-toggle input.swipe {
-  position: absolute;
-  right: 10px;
-  z-index: 9;
-  top: 50%;
-  margin-top: -0.95rem;
-}
-.listview .list-group a.swipe-toggle:after {
-  border: 0;
+.listview .list-group small {
+  font-size: 0.8em;
+  letter-spacing: 0.064em;
 }
 .listview.text .list-group a {
   line-height: 30px;
@@ -2281,19 +2274,15 @@ ul.pagination.centered {
 .listview.text .list-group span {
   float: left;
   width: auto;
-  font-weight: 300;
   max-width: 49%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .listview.text .list-group span.side {
   float: right;
-  color: #999;
+  color: #7a7a7a;
   max-width: 35%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+}
+.listview.text .list-group i.xn {
+  margin-top: -0.94rem;
 }
 .listview.nest .list-group a:after {
   position: relative;
@@ -2302,15 +2291,6 @@ ul.pagination.centered {
   float: right;
   margin-top: 6px;
   margin-right: -19px;
-}
-.listview ul.nested {
-  padding-left: 20px;
-  float: left;
-  width: 100%;
-  border-top: 1px solid #cccccc;
-}
-.listview ul.nested li:last-child {
-  border-bottom: 0;
 }
 .listview.mix .list-group {
   padding: 0;
@@ -2330,7 +2310,7 @@ ul.pagination.centered {
   padding: 12px 30px 12px 60px;
 }
 .listview.thumb .list-group a img {
-  top: 14px;
+  top: 12px;
 }
 .listview.detail .detail-group li.detail-content {
   margin-bottom: 40px;
@@ -2339,9 +2319,18 @@ ul.pagination.centered {
   padding-left: 0;
   float: left;
   width: 100%;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
 }
 .listview.detail .detail-group ul.detail-list li:last-child {
+  border-bottom: 0;
+}
+.listview ul.nested {
+  padding-left: 20px;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+}
+.listview ul.nested li:last-child {
   border-bottom: 0;
 }
 
@@ -2515,8 +2504,8 @@ ul.pagination.centered {
   right: 0;
   background: #fcfdfe;
   padding: 4px 8px;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   z-index: 99;
 }
 .navbar .row {
@@ -2621,8 +2610,8 @@ ul.pagination.centered {
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   z-index: 99;
   background: #f5f5f5;
 }
@@ -2630,7 +2619,7 @@ ul.pagination.centered {
   margin-bottom: 0;
 }
 .tabstrip .tabs {
-  border-right: 1px solid #cccccc;
+  border-right: 1px solid #e6e6e6;
   text-align: center;
   padding: 3px 0;
 }
@@ -2727,7 +2716,7 @@ ul.menu li:hover ul, ul.menu li.selected ul {
   display: block;
   opacity: 1;
   visibility: visible;
-  border: 1px solid #cccccc;
+  border: 1px solid #e6e6e6;
 }
 ul.menu .collapsible > a {
   position: relative;
@@ -2769,7 +2758,7 @@ ul.menu .collapsible ul li > a {
   margin: 0;
 }
 ul.menu .collapsible ul li.divider {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
   padding: 0px;
   overflow: hidden;
 }
@@ -3017,7 +3006,7 @@ article.tabs section h2 {
   margin: 16px 0 0;
   padding: 8px 0;
   list-style: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #e6e6e6;
   background: #FFFFFF;
   position: absolute;
   display: none;
@@ -3031,7 +3020,7 @@ article.tabs section h2 {
   margin: 0;
 }
 .context-menu li.divider {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #e6e6e6;
   margin: 8px 0;
   padding: 0px;
   overflow: hidden;
@@ -3040,7 +3029,7 @@ article.tabs section h2 {
   content: "";
   position: absolute;
   z-index: 1;
-  border: 1px solid #cccccc;
+  border: 1px solid #e6e6e6;
   border-right: 0;
   border-bottom: 0;
   background: #FFFFFF;
@@ -3122,14 +3111,14 @@ article.tabs section h2 {
 .sidebar .nav li a i.icn-right {
   position: absolute;
   left: initial;
-  right: 15px;
-  top: 12px;
+  right: 12px;
+  top: 8px;
 }
 .sidebar .nav li a i.icn-plus {
   font-style: normal;
   position: absolute;
   left: initial;
-  right: 15px;
+  right: 16px;
   top: 8px;
   -webkit-transform: rotate(0deg) scale(1);
   -moz-transform: rotate(0deg) scale(1);
@@ -3176,7 +3165,7 @@ article.tabs section h2 {
 .sidebar .nav.with-icon li a i.icn-left {
   position: absolute;
   left: -24px;
-  top: 13px;
+  top: 10px;
 }
 
 #popupOverflow {

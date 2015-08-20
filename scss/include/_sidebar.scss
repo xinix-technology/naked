@@ -42,16 +42,16 @@
                 i.icn-right {
                     position: absolute;
                     left: initial;
-                    right: 15px;
-                    top: 12px;
+                    right: #{$grid * 3};
+                    top: #{$grid * 2};
                 }
 
                 i.icn-plus {
                     font-style: normal;
                     position: absolute;
                     left: initial;
-                    right: 15px;
-                    top: 8px;
+                    right: #{$grid * 4};
+                    top: #{$grid * 2};
                     @include transform(rotate(0deg) scale(1));
                     @include transition(-webkit-transform 0.3s ease-out);
                     @include transform-origin(center center);
@@ -108,7 +108,7 @@
                 i.icn-left {
                     position: absolute;
                     left: -#{$grid * 6};
-                    top: #{($grid * 3) + 1};
+                    top: #{($grid * 2.5)};
                 }
             }
         }
