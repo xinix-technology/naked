@@ -5,12 +5,14 @@
 	border: 1px solid #{$border-color};
 	background: #{$white};
 	position: absolute;
+	left: 0;
 	display: none;
 	@include border-radius(#{$border-radius-pixels});
 
 	li {
 		padding: 0;
 		margin: 0;
+		white-space: nowrap;
 
 		&.divider {
 			border-top: 1px solid #{$border-color};
@@ -63,7 +65,8 @@
 	}
 
 	&.right {
-		float: none;
+		left: initial;
+		right: 0;
 
 		li {
 			&.first-child,

@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="../vendor/jacket-awesome/dist/css/jacket-awesome.css">
     <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
     <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
-    <link rel="stylesheet" href="../css/naked.css">
-    <link rel="stylesheet" href="../css/docs.css">
+    <link rel="stylesheet" href="../css/naked.min.css">
+    <link rel="stylesheet" href="../css/docs.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <script type="text/javascript" charset="utf-8" src="../vendor/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
@@ -29,9 +28,6 @@
 
 	<!-- SIDEBAR -->
 	<aside class="sidebar">
-		<script type="text/javascript">
-			$("aside.sidebar").load("aside.html");
-		</script>
 	</aside>
 	<!-- END OF SIDEBAR -->
 
@@ -40,140 +36,62 @@
         <div class="wrapper">
             <h1 class="title">Navbar Menu</h1>
             <hr>
-            <p>
-                There are two ways to build pagination in Foundation 4: with our predefined HTML or with our mixin. Building pagination using our predefined classes isn't hard at all. You'll start with an unordered list and add a class of <code>.pagination</code> to it. From there, you just need to add list items with links in them. Those list items have a few options you can use:
-            </p>
-
+            <p>Navbar is integral part when building website, it provide easy to access navigation to visitor. Since it's placed on top, visitor can easily reach for it. Navbar element can only be implemented for a desktop website not mobile website.</p>
             <div class="ex-navbar-menu">
                 <nav class="nav-menu">
                     <div class="pull-left">
-                        <h1><a href="#">Naked</a></h1>
+                        <h1>
+                            <a href="#">
+                                <span class="logo"><img src="../img/xinix-logo.png" alt=""></span>
+                                <span>Naked</span>
+                            </a>
+                        </h1>
                     </div>
                     <div class="pull-right">
-                        <ul class="flat">
+                        <ul class="topbar">
                             <li><a href="#">Menu 1</a></li>
-                            <li><a href="#">Menu 2</a></li>
-                            <li class="user">
-                                <a href="#"><span class="avatar" style="background: url('../img/cat.jpg') center; background-size: cover;"></span> Admin User <i class="xn xn-caret-down"></i></a>
-                                <ul class="plain sub animated">
-                                    <li><a href="#"><i class="xn xn-user"></i> Profile</a></li>
-                                    <li><a href="#"><i class="xn xn-cogs"></i> Settings</a></li>
-                                    <li><a href="#"><i class="xn xn-sign-out"></i>Logout</a></li>
+                            <li class="sub">
+                                <a href="#">Menu 2</a>
+                                <ul class="context-menu">
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Illustrations</a></li>
+                                    <li><a href="#">Designer</a></li>
                                 </ul>
                             </li>
+                            <li class="sub notification">
+                                <a href="#">
+                                    <i class="xn xn-bell"></i>
+                                    <span class="badge solid round error">2</span>
+                                </a>
+                                <ul class="context-menu">
+                                    <li><a href="#">Inbox</a></li>
+                                    <li><a href="#">Trash</a></li>
+                                    <li><a href="#">Deleted</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub user">
+                                <a href="#">
+                                    <span class="photo" style="background: url('../img/cat.jpg') center no-repeat"></span>
+                                    <span>Admin</span>
+                                    <i class="xn xn-down-open-mini"></i>
+                                </a>
+                                <ul class="context-menu right">
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Illustrations</a></li>
+                                    <li><a href="#">Designer</a></li>
+                                </ul>
+                            </li>
+                            <li class="devider"></li>
+                            <li><a href="#"><i class="xn xn-help-circled"></i></a></li>
                         </ul>
                     </div>
                 </nav>
-            </div>
-            <div class="html">
-                <div class="highlight">
-                    <pre class="prettyprint">
-<nav class="nav-menu">
-    <div class="pull-left">
-        <h1 class="brand">
-            <a href="#">
-                <span>Naked</span>
-            </a>
-        </h1>
-    </div>
-    <div class="pull-right">
-        <ul class="flat topbar">
-            <li><a href="#">...</a></li>
-            <li><a href="#">...</a></li>
-            <li class="user">
-                <a href="#">
-                    <span class="avatar" style="background: url('../img/cat.jpg') center no-repeat; background-size: cover;"></span> User<i class="xn xn-caret-down"></i>
-                </a>
-                <ul class="sub animated">
-                    <li><a href="#"><i class="xn xn-user"></i> Profile</a></li>
-                    <li><a href="#"><i class="xn xn-cogs"></i> Settings</a></li>
-                    <li><a href="#"><i class="xn xn-sign-out"></i> Logout</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-                    </pre>
-                </div>
-            </div>
-            <div class="ex-navbar-menu">
-                <div class="row">
-                    <nav class="nav-menu">
-                        <div class="wrapper">
-                            <div class="row">
-                                <div class="pull-left">
-                                    <h1 class="brand">
-                                        <a href="#">
-                                            <span class="logo">
-                                                <img src="../img/cat.jpg" alt="">
-                                            </span>
-                                            <span>Naked</span>
-                                        </a>
-                                    </h1>
-                                </div>
-                                <div class="pull-right">
-                                    <ul class="flat topbar">
-                                        <li>
-                                            <a href="#">Menu 1</a>
-                                        </li>
-                                        <li class="notification">
-                                            <a href="#">
-                                                <i class="xn xn-bell-o"></i>
-                                                <span class="badge">2</span>
-                                            </a>
-                                            <ul class="sub animated">
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="xn xn-comment-o"></i>
-                                                        New Comment
-                                                        <span class="sub-badge pull-right">+5</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="xn xn-envelope-o"></i>
-                                                        New Message
-                                                        <span class="sub-badge pull-right">+2</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="user">
-                                            <a href="#">
-                                                <div class="avatar" style="background: url('../img/cat.jpg') center no-repeat; background-size: cover;"></div>
-                                                <span>
-                                                    <small>Welcome, </small>
-                                                    Admin
-                                                </span>
-                                                <i class="xn xn-caret-down"></i>
-                                            </a>
-                                            <ul class="sub animated">
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="xn xn-user"></i>
-                                                        Profile
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="xn xn-cogs"></i>
-                                                        Settings
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i class="xn xn-sign-out"></i>
-                                                        Logout
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
             </div>
             <div class="html">
                 <div class="highlight">
@@ -268,7 +186,7 @@
                     <div class="row">
                         <div class="span-2">
                             <a class="direct" href="#">
-                                <i class="xn xn-angle-left"></i>
+                                <i class="xn xn-left-open-big"></i>
                                 Back
                             </a>
                         </div>
@@ -293,7 +211,7 @@
     <div class="row">
         <div class="span-2">
             <a class="direct" href="#">
-                <i class="xn xn-angle-left"></i>
+                <i class="xn xn-left-open-big"></i>
                 Back
             </a>
         </div>
@@ -374,7 +292,7 @@
                     <div class="row">
                         <div class="span-2">
                             <a class="direct" href="#">
-                                <i class="xn xn-angle-left"></i>
+                                <i class="xn xn-left-open-big"></i>
                                 Back
                             </a>
                         </div>
@@ -396,7 +314,7 @@
     <div class="row">
         <div class="span-2">
             <a class="direct" href="#">
-                <i class="xn xn-angle-left"></i>
+                <i class="xn xn-left-open-big"></i>
                 Back
             </a>
         </div>
@@ -423,7 +341,7 @@
                     <div class="row">
                         <div class="span-2">
                             <a class="direct" href="#">
-                                <i class="xn xn-angle-left"></i>
+                                <i class="xn xn-left-open-big"></i>
                                 Back
                             </a>
                         </div>
@@ -446,7 +364,7 @@
     <div class="row">
         <div class="span-2">
             <a class="direct" href="#">
-                <i class="xn xn-angle-left"></i>
+                <i class="xn xn-left-open-big"></i>
                 Back
             </a>
         </div>
@@ -474,7 +392,7 @@
                     <div class="row">
                         <div class="span-2">
                             <a class="direct" href="#">
-                                <i class="xn xn-angle-left"></i>
+                                <i class="xn xn-left-open-big"></i>
                                 Back
                             </a>
                         </div>
@@ -496,7 +414,7 @@
     <div class="row">
         <div class="span-2">
             <a class="direct" href="#">
-                <i class="xn xn-angle-left"></i>
+                <i class="xn xn-left-open-big"></i>
                 Back
             </a>
         </div>
@@ -517,75 +435,76 @@
 
             <h1 class="title">Tab Strip</h1>
             <hr>
-            <p>
-                There are two ways to build pagination in Foundation 4: with our predefined HTML or with our mixin. Building pagination using our predefined classes isn't hard at all. You'll start with an unordered list and add a class of <code>.pagination</code> to it. From there, you just need to add list items with links in them. Those list items have a few options you can use:
-            </p>
+            <p>When building a mobile web app, there is a time we need to build a tab strip to contain our menu. When creating a tab strip, please provide and title that represent the content of the link. For the grid system, you can use <code>.tabspan-n</code> classes, with the n is a number between 1 - 10. It means when the you use <code>.tabspan-4</code>, the width of the span will be 100/4 % or 20%.</p>
             <div class="ex-navbar-menu">
-                <div class="tabstrip">
+                <tabstrip>
                     <div class="row">
-                        <a class="tabspan-2 tabs" href="#">
-                            <i class="icon xn xn-star"></i>
+                        <a class="tabspan-2 tabs active" href="#">
+                            <i class="xn xn-star"></i>
                             <span>Featured</span>
                         </a>
                         <a class="tabspan-2 tabs" href="#">
-                            <i class="icon xn xn-user"></i>
+                            <i class="xn xn-user"></i>
                             <span>Profile</span>
                         </a>
                         <a class="tabspan-2 tabs" href="#">
-                            <i class="icon xn xn-search"></i>
+                            <i class="xn xn-search"></i>
                             <span>Search</span>
                         </a>
                         <a class="tabspan-2 tabs" href="#">
-                            <i class="icon xn xn-bell"></i>
+                            <i class="xn xn-bell"></i>
                             <span>Notification</span>
                         </a>
                         <a class="tabspan-2 tabs" href="#">
-                            <i class="icon xn xn-ellipsis-h"></i>
+                            <i class="xn xn-dot-3"></i>
                             <span>More</span>
                         </a>
                     </div>
-                </div>
+                </tabstrip>
             </div>
             <div class="html">
                 <div class="highlight">
                     <pre class="prettyprint">
-<div class="tabstrip">
+<tabstrip>
     <div class="row">
-        <a class="tabspan-2 tabs" href="#">
-            <i class="icon xn xn-star"></i>
+        <a class="tabspan-2 tabs active" href="#">
+            <i class="xn xn-star"></i>
             <span>Featured</span>
         </a>
         <a class="tabspan-2 tabs" href="#">
-            <i class="icon xn xn-user"></i>
+            <i class="xn xn-user"></i>
             <span>Profile</span>
         </a>
         <a class="tabspan-2 tabs" href="#">
-            <i class="icon xn xn-search"></i>
+            <i class="xn xn-search"></i>
             <span>Search</span>
         </a>
         <a class="tabspan-2 tabs" href="#">
-            <i class="icon xn xn-bell"></i>
+            <i class="xn xn-bell"></i>
             <span>Notification</span>
         </a>
         <a class="tabspan-2 tabs" href="#">
-            <i class="icon xn xn-ellipsis-h"></i>
+            <i class="xn xn-dot-3"></i>
             <span>More</span>
         </a>
     </div>
-</div>
+</tabstrip>
                     </pre>
                 </div>
             </div>
-        </div>
-        <div id="footer">
-            <p>Copyright &copy; 2014
-                <a href="http://xinix.co.id" target="_BLANK">Xinix Technology</a>. Some right(s) reserved.
-            </p>
+            <p>By default, the tabstrip will be placed on the bottom of the screen, but if you want to put it on top of the screen, just add <code>top</code> class inside the tabstrip.</p>
         </div>
     </main>
     <!-- END OF CONTENT -->
 
+    <!-- FOOTER CONTENT -->
+    <footer>
+        <p>Copyright &copy; 2015 <a href="http://xinix.co.id" target="_BLANK">Xinix Technology</a>. Some right(s) reserved.</p>
+    </footer>
+    <!-- END OF FOOTER -->
+
     <!-- PAGE LEVEL SCRIPT -->
+    <script type="text/javascript" charset="utf-8" src="../js/tshirt.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="../js/docs.js"></script>
     <script type="text/javascript" charset="utf-8" src="../vendor/google-code-prettify/bin/prettify.min.js"></script>
     <script type="text/javascript" charset="utf-8">

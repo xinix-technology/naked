@@ -1,6 +1,5 @@
 .sidebar {
     position: fixed;
-    z-index: 1000;
     top: #{$top-bar-height};
     bottom: 0;
     left: 0;
@@ -21,52 +20,30 @@
             margin: 0 0 -1px;
             padding-left: 24px;
 
-            a {
-                padding: 8px 24px 8px 0;
-                display: block;
-                color: #465d6f;
-                border-bottom: 1px solid #{adjust-lightness($navbar-bg, -10%)};
-                border-top: 1px solid transparent;
-                position: relative;
-
-                &.select {
-                    i.icn-plus {
-                        @include transform(rotate(45deg) scale(1));
-                    }
-                }
-
-                &.select {
-                    color: #08c;
-                }
-
-                i.icn-right {
-                    position: absolute;
-                    left: initial;
-                    right: #{$grid * 3};
-                    top: #{$grid * 2};
-                }
-
-                i.icn-plus {
-                    font-style: normal;
-                    position: absolute;
-                    left: initial;
-                    right: #{$grid * 4};
-                    top: #{$grid * 2};
-                    @include transform(rotate(0deg) scale(1));
-                    @include transition(-webkit-transform 0.3s ease-out);
-                    @include transform-origin(center center);
-                }
-            }
-
             &.hover a,
             &:hover a {
                 color: #08c;
             }
 
+            &.first-child,
             &:first-child {
+                padding-top: #{$grid * 4};
+
                 a.select {
                     border-top: 1px solid transparent;
                 }
+            }
+            &.last-child,
+            &:last-child {
+                a {
+                    border: none;
+                }
+
+                padding-bottom: #{$grid * 4};
+            }
+
+            &.devider {
+                height: #{$grid * 4};
             }
 
             &.collapsible {
@@ -90,6 +67,42 @@
                     }
                 }
             }
+
+            a {
+                padding: #{$grid * 2} #{$grid * 6} #{$grid * 2} 0;
+                display: block;
+                color: #465d6f;
+                border-bottom: 1px solid #{adjust-lightness($navbar-bg, -10%)};
+                position: relative;
+                @include transform-style(preserve-3d);
+
+                &.select {
+                    i.icn-plus {
+                        @include transform(rotate(45deg) scale(1));
+                    }
+                }
+
+                &.select {
+                    color: #08c;
+                }
+
+                i.icn-right {
+                    position: absolute;
+                    left: initial;
+                    right: #{$grid * 3};
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+
+                i.icn-plus {
+                    font-style: normal;
+                    position: absolute;
+                    left: initial;
+                    right: #{$grid * 4};
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+            }
         }
 
         li:first-child {
@@ -108,9 +121,44 @@
                 i.icn-left {
                     position: absolute;
                     left: -#{$grid * 6};
-                    top: #{($grid * 2.5)};
+                    top: 50%;
+                    @include transform(translateY(-50%));
                 }
             }
         }
+    }
+}
+
+@media #{$medium} {
+    .sidebar {
+        top: 0;
+        @include transform(translate3d(-#{$side-bar-width}, 0, 0));
+        @include transitionCSS3(transform 0.24s cubic-bezier(0.33, 0.66, 0.66, 1));
+    }
+
+    .nav-menu,
+    main.content,
+    footer {
+        @include transitionCSS3(transform 0.24s cubic-bezier(0.33, 0.66, 0.66, 1));
+    }
+
+    // Display sidebar on medium screen
+    body.show-sidebar {
+        overflow: hidden;
+
+        .sidebar {
+            @include transform(translate3d(0, 0, 0));
+        }
+        .nav-menu,
+        main.content,
+        footer {
+            @include transform(translate3d(#{$side-bar-width}, 0, 0));
+        }
+    }
+}
+@media #{$min-medium} {
+    main.content,
+    footer {
+        margin-left: #{$side-bar-width};
     }
 }

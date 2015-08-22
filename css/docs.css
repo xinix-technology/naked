@@ -32,17 +32,25 @@ code {
 
 .ex-navbar-menu {
   border: 1px solid #ddd;
+  background-color: #F5F5F5;
   padding: 20px 0;
-  margin-bottom: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .ex-navbar-menu .nav-menu {
   position: relative;
   z-index: 8;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
 .ex-navbar-menu .navbar {
   position: relative;
   z-index: 8;
 }
+.ex-navbar-menu tabstrip,
 .ex-navbar-menu .tabstrip {
   position: relative;
   z-index: 8;
@@ -88,7 +96,9 @@ code {
 }
 
 .ex-list-view-content {
-  margin: 0 -12px;
+  background: #fcfcfc;
+  margin-bottom: 40px;
+  border: 1px solid #eeeeee;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -119,7 +129,7 @@ code {
 }
 
 .highlight {
-  max-height: 100px;
+  max-height: 200px;
   background-color: #F7F7F9;
   border: 1px solid  #ccc;
   color: #000;
@@ -133,7 +143,6 @@ code {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   cursor: text;
 }
@@ -142,9 +151,6 @@ code {
   line-height: 1.64em;
   margin: 0;
   border: none !important;
-}
-.highlight:hover {
-  max-height: initial;
 }
 .highlight:before {
   content: "Code";
@@ -155,31 +161,6 @@ code {
   border-right: 1px solid  #ccc;
   padding: 0 10px;
   background-color: #fff;
-}
-.highlight:after {
-  content: "";
-  position: absolute;
-  top: initial;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  pointer-events: none;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f9+0,f7f7f9+100&amp;0+0,1+100 */
-  background: -moz-linear-gradient(top, rgba(247, 247, 249, 0) 0%, #f7f7f9 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(247, 247, 249, 0)), color-stop(100%, #f7f7f9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(247, 247, 249, 0) 0%, #f7f7f9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(247, 247, 249, 0) 0%, #f7f7f9 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(247, 247, 249, 0) 0%, #f7f7f9 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(247, 247, 249, 0) 0%, #f7f7f9 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f7f7f9', endColorstr='#f7f7f9',GradientType=0 );
-  /* IE6-9 */
 }
 
 .box {
@@ -339,7 +320,7 @@ main.home .wrapper {
   display: inline-block;
 }
 
-.context-menu {
+.context-menu.example {
   position: relative;
   display: inline-block;
 }
@@ -369,6 +350,31 @@ main.home .wrapper {
   padding: 20px;
 }
 
+ul.the-icons li {
+  width: 25%;
+  display: block;
+  padding: 20px 0;
+  margin: 0;
+  line-height: 20px;
+}
+ul.the-icons li i {
+  line-height: 20px;
+  font-size: 20px;
+}
+ul.the-icons li .i-code {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  ul.the-icons li {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  ul.the-icons li {
+    width: 50%;
+  }
+}
 /*===========================================================================*/
 /*================================= SKIN BLUE =================================*/
 body.blue .nav-menu {

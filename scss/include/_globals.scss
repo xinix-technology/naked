@@ -18,6 +18,7 @@ body {
 body {
     font: 0.9em #{$font-family};
     color: #{$color};
+    background-color: #{$body-bg};
     -webkit-font-smoothing: antialiased;
 }
 .container {
@@ -50,11 +51,17 @@ body {
 }
 
 main.content {
+    position: relative;
     padding-top: #{$top-bar-height};
-    margin-left: #{$side-bar-width};
-    height: 100%;
+    min-height: 100%;
+    background-color: #{$content-bg};
 
-    & > .wrapper {
+    > .wrapper {
+        padding: #{$grid * 6} #{$grid * 5};
+    }
+}
+@media #{$min-medium} {
+    main.content > .wrapper {
         padding: #{$grid * 6} #{$grid * 12};
     }
 }
@@ -235,17 +242,19 @@ ul.plain {
     float: left;
 }
 
-#footer {
+footer {
+    position: relative;
     background: #{$footer-bg};
-    display: inline-block;
-    width: 100%;
+    display: block;
+    border-top: 1px solid #{$border-color};
 
     p {
         margin: 0;
         text-align: center;
         color: #333;
-        font-size: 0.8em;
-        padding: 10px 0;
+        font-size: 0.9em;
+        letter-spacing: 0.032em;
+        padding: #{$grid * 2} 0;
 
         a {
             color: #000;
@@ -254,7 +263,28 @@ ul.plain {
 }
 
 
-// ================== media query ====================
+// z-index
+.nav-menu {
+    z-index: 4;
+}
+main.content {
+    z-index: 3;
+}
+footer {
+    z-index: 2;
+}
+.sidebar {
+    z-index: 1;
+}
+
+// Helper
+.photo {
+    background-size: cover;
+    @include border-radius(666em);
+}
+
+
+// Media Query
 @media #{$screen} {
     .container {
         width: 984px;
@@ -311,7 +341,8 @@ ul.plain {
             -webkit-touch-callout: none;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
-        .container, .container-fluid {
+        .container,
+        .container-fluid {
             -webkit-user-select: none;
             -moz-user-select: -moz-none;
             user-select: none;
