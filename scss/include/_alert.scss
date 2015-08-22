@@ -1,49 +1,46 @@
 .alert {
-	position: absolute; 
-	top: 1px; 
-	padding: 0; 
-	left: 0; 
-	right: 0; 
+	position: absolute;
+	top: 1px;
+	padding: 0;
+	left: 0;
+	right: 0;
 	z-index: 8;
+	color: #{$white};
+	border: 1px solid transparent;
+	@include border-radius($border-radius-pixels);
 
 	&.error {
-		color: #{$alert-error-color};
 		background-color: #{$alert-error};
-		border: 1px solid #{$alert-border-error};
+		border-color: #{$alert-border-error};
 	}
 
 	&.success {
-		color: #{$alert-success-color};
 		background-color: #{$alert-success};
-		border: 1px solid #{$alert-border-success};
+		border-color: #{$alert-border-success};
 	}
 
 	&.warning {
-		color: #{$alert-warning-color};
 		background-color: #{$alert-warning};
-		border: 1px solid #{$alert-border-warning};
+		border-color: #{$alert-border-warning};
 	}
 
 	&.info {
-		color: #{$alert-info-color};
 		background-color: #{$alert-info};
-		border: 1px solid #{$alert-border-info};
+		border-color: #{$alert-border-info};
 	}
 
 	p {
 		font-weight: 500;
 		margin: 0;
 		text-align: center;
-		font-size: 1.2em;
-		padding: 5px 10px;
+        @include transform-style(preserve-3d);
 
-		.close { 
-			opacity: .7; 
-			top: -6px; 
-			right: -5px; 
-			position: relative; 
-			font-size: 0.6em; 
-			cursor: pointer; 
+		.close {
+			position: absolute;
+            top: 50%;
+            left: initial;
+            right: #{$grid * 2};
+            @include transform(translateY(-50%));
 		}
 	}
 }

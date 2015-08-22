@@ -1,4 +1,4 @@
 // Scripts
 $(function() {
-	$("aside.sidebar").load("aside.html");
+	$("body > aside.sidebar").load("aside.html");
 });

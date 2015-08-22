@@ -73,8 +73,8 @@ $(function() {
     $("form .has-error:first input").focus ();
 
     // Alert close
-    $(".alert .close").click (function () {
-        $(this).parent ().parent ().slideUp (100);
+    $(".alert").click (function () {
+        $(this).addClass ("bounceOutRight");
     });
 
     // Menu registry section

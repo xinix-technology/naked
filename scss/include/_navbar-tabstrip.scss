@@ -221,11 +221,7 @@
 		text-align: center;
 		margin-bottom: 0;
 		height: 30px;
-		-webkit-border-radius: #{$border-radius-pixels};
-		-moz-border-radius: #{$border-radius-pixels};
-		-ms-border-radius: #{$border-radius-pixels};
-		-o-border-radius: #{$border-radius-pixels};
-		border-radius: #{$border-radius-pixels};
+		@include border-radius(#{$border-radius-pixels});
 
 		&:focus {
 			text-align: left;
