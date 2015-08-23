@@ -11,10 +11,21 @@
             float: left;
         }
     }
+    @for $i from 1 through $grid-total-columns {
+        .xlarge-#{$i} {
+            display: block;
+            width: percentage($i/$grid-total-columns);
+        }
+    }
 }
 
 @media #{$large} {
     .row {
+        @for $i from 1 through $grid-total-columns {
+            .xlarge-#{$i} {
+                display: none;
+            }
+        }
         @for $i from 1 through $grid-total-columns {
             .large-#{$i} {
                 display: block;
@@ -27,6 +38,11 @@
 @media #{$medium} {
     .row {
         @for $i from 1 through $grid-total-columns {
+            .large-#{$i} {
+                display: none;
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
             .medium-#{$i} {
                 display: block;
                 width: percentage($i/$grid-total-columns);
@@ -38,6 +54,11 @@
 @media #{$small} {
     .row {
         @for $i from 1 through $grid-total-columns {
+            .medium-#{$i} {
+                display: none;
+            }
+        }
+        @for $i from 1 through $grid-total-columns {
             .small-#{$i} {
                 display: block;
                 width: percentage($i/$grid-total-columns);
@@ -48,6 +69,11 @@
 
 @media #{$tiny} {
     .row {
+        @for $i from 1 through $grid-total-columns {
+            .small-#{$i} {
+                display: none;
+            }
+        }
         @for $i from 1 through $grid-total-columns {
             .tiny-#{$i} {
                 display: block;
