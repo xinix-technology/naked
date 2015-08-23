@@ -65,6 +65,7 @@ code {
 		z-index: 8;
 		top: 0;
 		margin: 0 auto;
+        @include transform(translate3d(0, 0, 0)!important);
 	}
 
 	.ex-navbar-menu {

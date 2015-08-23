@@ -1,828 +1,413 @@
 /*! naked.css v1.0.1 | MIT License | xinix.co.id */
-@media screen {
-  .row .tiny-1,
-  .row .small-1,
-  .row .medium-1,
-  .row .xlarge-1 {
-    display: none;
-  }
-  .row .tiny-2,
-  .row .small-2,
-  .row .medium-2,
-  .row .xlarge-2 {
-    display: none;
-  }
-  .row .tiny-3,
-  .row .small-3,
-  .row .medium-3,
-  .row .xlarge-3 {
-    display: none;
-  }
-  .row .tiny-4,
-  .row .small-4,
-  .row .medium-4,
-  .row .xlarge-4 {
-    display: none;
-  }
-  .row .tiny-5,
-  .row .small-5,
-  .row .medium-5,
-  .row .xlarge-5 {
-    display: none;
-  }
-  .row .tiny-6,
-  .row .small-6,
-  .row .medium-6,
-  .row .xlarge-6 {
-    display: none;
-  }
-  .row .tiny-7,
-  .row .small-7,
-  .row .medium-7,
-  .row .xlarge-7 {
-    display: none;
-  }
-  .row .tiny-8,
-  .row .small-8,
-  .row .medium-8,
-  .row .xlarge-8 {
-    display: none;
-  }
-  .row .tiny-9,
-  .row .small-9,
-  .row .medium-9,
-  .row .xlarge-9 {
-    display: none;
-  }
-  .row .tiny-10,
-  .row .small-10,
-  .row .medium-10,
-  .row .xlarge-10 {
-    display: none;
-  }
-  .row .tiny-11,
-  .row .small-11,
-  .row .medium-11,
-  .row .xlarge-11 {
-    display: none;
-  }
-  .row .tiny-12,
-  .row .small-12,
-  .row .medium-12,
-  .row .xlarge-12 {
-    display: none;
-  }
-  .row .large-1 {
-    float: left;
-    position: relative;
-    width: 8.33333%;
-    display: block;
-  }
-  .row .large-2 {
-    float: left;
-    position: relative;
-    width: 16.66667%;
-    display: block;
-  }
-  .row .large-3 {
-    float: left;
-    position: relative;
-    width: 25%;
-    display: block;
-  }
-  .row .large-4 {
-    float: left;
-    position: relative;
-    width: 33.33333%;
-    display: block;
-  }
-  .row .large-5 {
-    float: left;
-    position: relative;
-    width: 41.66667%;
-    display: block;
-  }
-  .row .large-6 {
-    float: left;
-    position: relative;
-    width: 50%;
-    display: block;
-  }
-  .row .large-7 {
-    float: left;
-    position: relative;
-    width: 58.33333%;
-    display: block;
-  }
-  .row .large-8 {
-    float: left;
-    position: relative;
-    width: 66.66667%;
-    display: block;
-  }
-  .row .large-9 {
-    float: left;
-    position: relative;
-    width: 75%;
-    display: block;
-  }
-  .row .large-10 {
-    float: left;
-    position: relative;
-    width: 83.33333%;
-    display: block;
-  }
-  .row .large-11 {
-    float: left;
-    position: relative;
-    width: 91.66667%;
-    display: block;
-  }
-  .row .large-12 {
-    float: left;
-    position: relative;
-    width: 100%;
-    display: block;
-  }
-  .row .span-1 {
-    float: left;
-    position: relative;
-    width: 8.33333%;
-    display: block;
-  }
-  .row .span-2 {
-    float: left;
-    position: relative;
-    width: 16.66667%;
-    display: block;
-  }
-  .row .span-3 {
-    float: left;
-    position: relative;
-    width: 25%;
-    display: block;
-  }
-  .row .span-4 {
-    float: left;
-    position: relative;
-    width: 33.33333%;
-    display: block;
-  }
-  .row .span-5 {
-    float: left;
-    position: relative;
-    width: 41.66667%;
-    display: block;
-  }
-  .row .span-6 {
-    float: left;
-    position: relative;
-    width: 50%;
-    display: block;
-  }
-  .row .span-7 {
-    float: left;
-    position: relative;
-    width: 58.33333%;
-    display: block;
-  }
-  .row .span-8 {
-    float: left;
-    position: relative;
-    width: 66.66667%;
-    display: block;
-  }
-  .row .span-9 {
-    float: left;
-    position: relative;
-    width: 75%;
-    display: block;
-  }
-  .row .span-10 {
-    float: left;
-    position: relative;
-    width: 83.33333%;
-    display: block;
-  }
-  .row .span-11 {
-    float: left;
-    position: relative;
-    width: 91.66667%;
-    display: block;
-  }
-  .row .span-12 {
-    float: left;
-    position: relative;
-    width: 100%;
-    display: block;
-  }
-  .row .tabspan-1 {
-    float: left;
-    position: relative;
-    width: 10%;
-    display: block;
-  }
-  .row .tabspan-2 {
-    float: left;
-    position: relative;
-    width: 20%;
-    display: block;
-  }
-  .row .tabspan-3 {
-    float: left;
-    position: relative;
-    width: 30%;
-    display: block;
-  }
-  .row .tabspan-4 {
-    float: left;
-    position: relative;
-    width: 40%;
-    display: block;
-  }
-  .row .tabspan-5 {
-    float: left;
-    position: relative;
-    width: 50%;
-    display: block;
-  }
-  .row .tabspan-6 {
-    float: left;
-    position: relative;
-    width: 60%;
-    display: block;
-  }
-  .row .tabspan-7 {
-    float: left;
-    position: relative;
-    width: 70%;
-    display: block;
-  }
-  .row .tabspan-8 {
-    float: left;
-    position: relative;
-    width: 80%;
-    display: block;
-  }
-  .row .tabspan-9 {
-    float: left;
-    position: relative;
-    width: 90%;
-    display: block;
-  }
-  .row .tabspan-10 {
-    float: left;
-    position: relative;
-    width: 100%;
-    display: block;
-  }
+.row .span-1,
+.row .tiny-1,
+.row .small-1,
+.row .medium-1,
+.row .large-1,
+.row .xlarge-1 {
+  display: none;
+  position: relative;
+  float: left;
 }
+.row .span-2,
+.row .tiny-2,
+.row .small-2,
+.row .medium-2,
+.row .large-2,
+.row .xlarge-2 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-3,
+.row .tiny-3,
+.row .small-3,
+.row .medium-3,
+.row .large-3,
+.row .xlarge-3 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-4,
+.row .tiny-4,
+.row .small-4,
+.row .medium-4,
+.row .large-4,
+.row .xlarge-4 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-5,
+.row .tiny-5,
+.row .small-5,
+.row .medium-5,
+.row .large-5,
+.row .xlarge-5 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-6,
+.row .tiny-6,
+.row .small-6,
+.row .medium-6,
+.row .large-6,
+.row .xlarge-6 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-7,
+.row .tiny-7,
+.row .small-7,
+.row .medium-7,
+.row .large-7,
+.row .xlarge-7 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-8,
+.row .tiny-8,
+.row .small-8,
+.row .medium-8,
+.row .large-8,
+.row .xlarge-8 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-9,
+.row .tiny-9,
+.row .small-9,
+.row .medium-9,
+.row .large-9,
+.row .xlarge-9 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-10,
+.row .tiny-10,
+.row .small-10,
+.row .medium-10,
+.row .large-10,
+.row .xlarge-10 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-11,
+.row .tiny-11,
+.row .small-11,
+.row .medium-11,
+.row .large-11,
+.row .xlarge-11 {
+  display: none;
+  position: relative;
+  float: left;
+}
+.row .span-12,
+.row .tiny-12,
+.row .small-12,
+.row .medium-12,
+.row .large-12,
+.row .xlarge-12 {
+  display: none;
+  position: relative;
+  float: left;
+}
+
 @media only screen and (max-width: 1360px) {
-  .row .tiny-1,
-  .row .small-1,
-  .row .medium-1,
   .row .large-1 {
-    display: none;
-  }
-  .row .tiny-2,
-  .row .small-2,
-  .row .medium-2,
-  .row .large-2 {
-    display: none;
-  }
-  .row .tiny-3,
-  .row .small-3,
-  .row .medium-3,
-  .row .large-3 {
-    display: none;
-  }
-  .row .tiny-4,
-  .row .small-4,
-  .row .medium-4,
-  .row .large-4 {
-    display: none;
-  }
-  .row .tiny-5,
-  .row .small-5,
-  .row .medium-5,
-  .row .large-5 {
-    display: none;
-  }
-  .row .tiny-6,
-  .row .small-6,
-  .row .medium-6,
-  .row .large-6 {
-    display: none;
-  }
-  .row .tiny-7,
-  .row .small-7,
-  .row .medium-7,
-  .row .large-7 {
-    display: none;
-  }
-  .row .tiny-8,
-  .row .small-8,
-  .row .medium-8,
-  .row .large-8 {
-    display: none;
-  }
-  .row .tiny-9,
-  .row .small-9,
-  .row .medium-9,
-  .row .large-9 {
-    display: none;
-  }
-  .row .tiny-10,
-  .row .small-10,
-  .row .medium-10,
-  .row .large-10 {
-    display: none;
-  }
-  .row .tiny-11,
-  .row .small-11,
-  .row .medium-11,
-  .row .large-11 {
-    display: none;
-  }
-  .row .tiny-12,
-  .row .small-12,
-  .row .medium-12,
-  .row .large-12 {
-    display: none;
-  }
-  .row .xlarge-1 {
-    float: left;
-    position: relative;
+    display: block;
     width: 8.33333%;
-    display: block;
   }
-  .row .xlarge-2 {
-    float: left;
-    position: relative;
+  .row .large-2 {
+    display: block;
     width: 16.66667%;
-    display: block;
   }
-  .row .xlarge-3 {
-    float: left;
-    position: relative;
+  .row .large-3 {
+    display: block;
     width: 25%;
-    display: block;
   }
-  .row .xlarge-4 {
-    float: left;
-    position: relative;
+  .row .large-4 {
+    display: block;
     width: 33.33333%;
-    display: block;
   }
-  .row .xlarge-5 {
-    float: left;
-    position: relative;
+  .row .large-5 {
+    display: block;
     width: 41.66667%;
-    display: block;
   }
-  .row .xlarge-6 {
-    float: left;
-    position: relative;
+  .row .large-6 {
+    display: block;
     width: 50%;
-    display: block;
   }
-  .row .xlarge-7 {
-    float: left;
-    position: relative;
+  .row .large-7 {
+    display: block;
     width: 58.33333%;
-    display: block;
   }
-  .row .xlarge-8 {
-    float: left;
-    position: relative;
+  .row .large-8 {
+    display: block;
     width: 66.66667%;
-    display: block;
   }
-  .row .xlarge-9 {
-    float: left;
-    position: relative;
+  .row .large-9 {
+    display: block;
     width: 75%;
-    display: block;
   }
-  .row .xlarge-10 {
-    float: left;
-    position: relative;
+  .row .large-10 {
+    display: block;
     width: 83.33333%;
-    display: block;
   }
-  .row .xlarge-11 {
-    float: left;
-    position: relative;
+  .row .large-11 {
+    display: block;
     width: 91.66667%;
-    display: block;
   }
-  .row .xlarge-12 {
-    float: left;
-    position: relative;
-    width: 100%;
+  .row .large-12 {
     display: block;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1023px) {
-  .row .large-1 {
-    display: none;
-  }
-  .row .large-2 {
-    display: none;
-  }
-  .row .large-3 {
-    display: none;
-  }
-  .row .large-4 {
-    display: none;
-  }
-  .row .large-5 {
-    display: none;
-  }
-  .row .large-6 {
-    display: none;
-  }
-  .row .large-7 {
-    display: none;
-  }
-  .row .large-8 {
-    display: none;
-  }
-  .row .large-9 {
-    display: none;
-  }
-  .row .large-10 {
-    display: none;
-  }
-  .row .large-11 {
-    display: none;
-  }
-  .row .large-12 {
-    display: none;
-  }
   .row .medium-1 {
-    float: left;
-    position: relative;
-    width: 8.33333%;
     display: block;
+    width: 8.33333%;
   }
   .row .medium-2 {
-    float: left;
-    position: relative;
-    width: 16.66667%;
     display: block;
+    width: 16.66667%;
   }
   .row .medium-3 {
-    float: left;
-    position: relative;
-    width: 25%;
     display: block;
+    width: 25%;
   }
   .row .medium-4 {
-    float: left;
-    position: relative;
-    width: 33.33333%;
     display: block;
+    width: 33.33333%;
   }
   .row .medium-5 {
-    float: left;
-    position: relative;
-    width: 41.66667%;
     display: block;
+    width: 41.66667%;
   }
   .row .medium-6 {
-    float: left;
-    position: relative;
-    width: 50%;
     display: block;
+    width: 50%;
   }
   .row .medium-7 {
-    float: left;
-    position: relative;
-    width: 58.33333%;
     display: block;
+    width: 58.33333%;
   }
   .row .medium-8 {
-    float: left;
-    position: relative;
-    width: 66.66667%;
     display: block;
+    width: 66.66667%;
   }
   .row .medium-9 {
-    float: left;
-    position: relative;
-    width: 75%;
     display: block;
+    width: 75%;
   }
   .row .medium-10 {
-    float: left;
-    position: relative;
-    width: 83.33333%;
     display: block;
+    width: 83.33333%;
   }
   .row .medium-11 {
-    float: left;
-    position: relative;
-    width: 91.66667%;
     display: block;
+    width: 91.66667%;
   }
   .row .medium-12 {
-    float: left;
-    position: relative;
-    width: 100%;
     display: block;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  .row .tiny-1,
-  .row .medium-1,
-  .row .large-1,
-  .row .xlarge-1 {
-    display: none;
-  }
-  .row .tiny-2,
-  .row .medium-2,
-  .row .large-2,
-  .row .xlarge-2 {
-    display: none;
-  }
-  .row .tiny-3,
-  .row .medium-3,
-  .row .large-3,
-  .row .xlarge-3 {
-    display: none;
-  }
-  .row .tiny-4,
-  .row .medium-4,
-  .row .large-4,
-  .row .xlarge-4 {
-    display: none;
-  }
-  .row .tiny-5,
-  .row .medium-5,
-  .row .large-5,
-  .row .xlarge-5 {
-    display: none;
-  }
-  .row .tiny-6,
-  .row .medium-6,
-  .row .large-6,
-  .row .xlarge-6 {
-    display: none;
-  }
-  .row .tiny-7,
-  .row .medium-7,
-  .row .large-7,
-  .row .xlarge-7 {
-    display: none;
-  }
-  .row .tiny-8,
-  .row .medium-8,
-  .row .large-8,
-  .row .xlarge-8 {
-    display: none;
-  }
-  .row .tiny-9,
-  .row .medium-9,
-  .row .large-9,
-  .row .xlarge-9 {
-    display: none;
-  }
-  .row .tiny-10,
-  .row .medium-10,
-  .row .large-10,
-  .row .xlarge-10 {
-    display: none;
-  }
-  .row .tiny-11,
-  .row .medium-11,
-  .row .large-11,
-  .row .xlarge-11 {
-    display: none;
-  }
-  .row .tiny-12,
-  .row .medium-12,
-  .row .large-12,
-  .row .xlarge-12 {
-    display: none;
-  }
   .row .small-1 {
-    float: left;
-    position: relative;
-    width: 8.33333%;
     display: block;
+    width: 8.33333%;
   }
   .row .small-2 {
-    float: left;
-    position: relative;
-    width: 16.66667%;
     display: block;
+    width: 16.66667%;
   }
   .row .small-3 {
-    float: left;
-    position: relative;
-    width: 25%;
     display: block;
+    width: 25%;
   }
   .row .small-4 {
-    float: left;
-    position: relative;
-    width: 33.33333%;
     display: block;
+    width: 33.33333%;
   }
   .row .small-5 {
-    float: left;
-    position: relative;
-    width: 41.66667%;
     display: block;
+    width: 41.66667%;
   }
   .row .small-6 {
-    float: left;
-    position: relative;
-    width: 50%;
     display: block;
+    width: 50%;
   }
   .row .small-7 {
-    float: left;
-    position: relative;
-    width: 58.33333%;
     display: block;
+    width: 58.33333%;
   }
   .row .small-8 {
-    float: left;
-    position: relative;
-    width: 66.66667%;
     display: block;
+    width: 66.66667%;
   }
   .row .small-9 {
-    float: left;
-    position: relative;
-    width: 75%;
     display: block;
+    width: 75%;
   }
   .row .small-10 {
-    float: left;
-    position: relative;
-    width: 83.33333%;
     display: block;
+    width: 83.33333%;
   }
   .row .small-11 {
-    float: left;
-    position: relative;
-    width: 91.66667%;
     display: block;
+    width: 91.66667%;
   }
   .row .small-12 {
-    float: left;
-    position: relative;
-    width: 100%;
     display: block;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
-  .row .small-1,
-  .row .medium-1,
-  .row .large-1,
-  .row .xlarge-1 {
-    display: none;
-  }
-  .row .small-2,
-  .row .medium-2,
-  .row .large-2,
-  .row .xlarge-2 {
-    display: none;
-  }
-  .row .small-3,
-  .row .medium-3,
-  .row .large-3,
-  .row .xlarge-3 {
-    display: none;
-  }
-  .row .small-4,
-  .row .medium-4,
-  .row .large-4,
-  .row .xlarge-4 {
-    display: none;
-  }
-  .row .small-5,
-  .row .medium-5,
-  .row .large-5,
-  .row .xlarge-5 {
-    display: none;
-  }
-  .row .small-6,
-  .row .medium-6,
-  .row .large-6,
-  .row .xlarge-6 {
-    display: none;
-  }
-  .row .small-7,
-  .row .medium-7,
-  .row .large-7,
-  .row .xlarge-7 {
-    display: none;
-  }
-  .row .small-8,
-  .row .medium-8,
-  .row .large-8,
-  .row .xlarge-8 {
-    display: none;
-  }
-  .row .small-9,
-  .row .medium-9,
-  .row .large-9,
-  .row .xlarge-9 {
-    display: none;
-  }
-  .row .small-10,
-  .row .medium-10,
-  .row .large-10,
-  .row .xlarge-10 {
-    display: none;
-  }
-  .row .small-11,
-  .row .medium-11,
-  .row .large-11,
-  .row .xlarge-11 {
-    display: none;
-  }
-  .row .small-12,
-  .row .medium-12,
-  .row .large-12,
-  .row .xlarge-12 {
-    display: none;
-  }
   .row .tiny-1 {
-    float: left;
-    position: relative;
-    width: 8.33333%;
     display: block;
+    width: 8.33333%;
   }
   .row .tiny-2 {
-    float: left;
-    position: relative;
-    width: 16.66667%;
     display: block;
+    width: 16.66667%;
   }
   .row .tiny-3 {
-    float: left;
-    position: relative;
-    width: 25%;
     display: block;
+    width: 25%;
   }
   .row .tiny-4 {
-    float: left;
-    position: relative;
-    width: 33.33333%;
     display: block;
+    width: 33.33333%;
   }
   .row .tiny-5 {
-    float: left;
-    position: relative;
-    width: 41.66667%;
     display: block;
+    width: 41.66667%;
   }
   .row .tiny-6 {
-    float: left;
-    position: relative;
-    width: 50%;
     display: block;
+    width: 50%;
   }
   .row .tiny-7 {
-    float: left;
-    position: relative;
-    width: 58.33333%;
     display: block;
+    width: 58.33333%;
   }
   .row .tiny-8 {
-    float: left;
-    position: relative;
-    width: 66.66667%;
     display: block;
+    width: 66.66667%;
   }
   .row .tiny-9 {
-    float: left;
-    position: relative;
-    width: 75%;
     display: block;
+    width: 75%;
   }
   .row .tiny-10 {
-    float: left;
-    position: relative;
-    width: 83.33333%;
     display: block;
+    width: 83.33333%;
   }
   .row .tiny-11 {
-    float: left;
-    position: relative;
-    width: 91.66667%;
     display: block;
+    width: 91.66667%;
   }
   .row .tiny-12 {
-    float: left;
-    position: relative;
-    width: 100%;
     display: block;
+    width: 100%;
+  }
+}
+@media screen {
+  .row .span-1 {
+    display: block;
+    width: 8.33333%;
+  }
+  .row .span-2 {
+    display: block;
+    width: 16.66667%;
+  }
+  .row .span-3 {
+    display: block;
+    width: 25%;
+  }
+  .row .span-4 {
+    display: block;
+    width: 33.33333%;
+  }
+  .row .span-5 {
+    display: block;
+    width: 41.66667%;
+  }
+  .row .span-6 {
+    display: block;
+    width: 50%;
+  }
+  .row .span-7 {
+    display: block;
+    width: 58.33333%;
+  }
+  .row .span-8 {
+    display: block;
+    width: 66.66667%;
+  }
+  .row .span-9 {
+    display: block;
+    width: 75%;
+  }
+  .row .span-10 {
+    display: block;
+    width: 83.33333%;
+  }
+  .row .span-11 {
+    display: block;
+    width: 91.66667%;
+  }
+  .row .span-12 {
+    display: block;
+    width: 100%;
+  }
+  .row .tabspan-1 {
+    display: block;
+    width: 10%;
+  }
+  .row .tabspan-2 {
+    display: block;
+    width: 20%;
+  }
+  .row .tabspan-3 {
+    display: block;
+    width: 30%;
+  }
+  .row .tabspan-4 {
+    display: block;
+    width: 40%;
+  }
+  .row .tabspan-5 {
+    display: block;
+    width: 50%;
+  }
+  .row .tabspan-6 {
+    display: block;
+    width: 60%;
+  }
+  .row .tabspan-7 {
+    display: block;
+    width: 70%;
+  }
+  .row .tabspan-8 {
+    display: block;
+    width: 80%;
+  }
+  .row .tabspan-9 {
+    display: block;
+    width: 90%;
+  }
+  .row .tabspan-10 {
+    display: block;
+    width: 100%;
   }
 }
 *,

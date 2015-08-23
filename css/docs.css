@@ -64,6 +64,11 @@ code {
   z-index: 8;
   top: 0;
   margin: 0 auto;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  -moz-transform: translate3d(0, 0, 0) !important;
+  -ms-transform: translate3d(0, 0, 0) !important;
+  -o-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
 .ex-sidebar .ex-navbar-menu {
   margin: 30px 0;
