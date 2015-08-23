@@ -77,7 +77,7 @@
                 @include transform-style(preserve-3d);
 
                 &.select {
-                    i.icn-plus {
+                    .icn-plus {
                         @include transform(rotate(45deg) scale(1));
                     }
                 }
@@ -86,7 +86,11 @@
                     color: #08c;
                 }
 
-                i.icn-right {
+                .badge {
+                    padding: #{$grid / 4} #{$grid};
+                }
+
+                .icn-right {
                     position: absolute;
                     left: initial;
                     right: #{$grid * 3};
@@ -94,7 +98,7 @@
                     @include transform(translateY(-50%));
                 }
 
-                i.icn-plus {
+                .icn-plus {
                     font-style: normal;
                     position: absolute;
                     left: initial;
@@ -118,7 +122,7 @@
             padding-left: #{$grid * 10};
 
             a {
-                i.icn-left {
+                .icn-left {
                     position: absolute;
                     left: -#{$grid * 6};
                     top: 50%;

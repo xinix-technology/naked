@@ -1787,6 +1787,7 @@ button.disable,
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.048em;
+  line-height: 1em;
   text-transform: uppercase;
   position: relative;
   padding: 1px 8px;
@@ -2910,7 +2911,7 @@ article.tabs section h2 {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.sidebar .nav li a.select i.icn-plus {
+.sidebar .nav li a.select .icn-plus {
   -webkit-transform: rotate(45deg) scale(1);
   -moz-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
@@ -2920,7 +2921,10 @@ article.tabs section h2 {
 .sidebar .nav li a.select {
   color: #08c;
 }
-.sidebar .nav li a i.icn-right {
+.sidebar .nav li a .badge {
+  padding: 1px 4px;
+}
+.sidebar .nav li a .icn-right {
   position: absolute;
   left: initial;
   right: 12px;
@@ -2931,7 +2935,7 @@ article.tabs section h2 {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.sidebar .nav li a i.icn-plus {
+.sidebar .nav li a .icn-plus {
   font-style: normal;
   position: absolute;
   left: initial;
@@ -2950,7 +2954,7 @@ article.tabs section h2 {
 .sidebar .nav.with-icon li {
   padding-left: 40px;
 }
-.sidebar .nav.with-icon li a i.icn-left {
+.sidebar .nav.with-icon li a .icn-left {
   position: absolute;
   left: -24px;
   top: 50%;
