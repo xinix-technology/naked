@@ -16,7 +16,7 @@ body {
     margin: 0;
 }
 body {
-    font: 0.9em #{$font-family};
+    font: #{$font-size} #{$font-family};
     color: #{$color};
     background-color: #{$body-bg};
     -webkit-font-smoothing: antialiased;

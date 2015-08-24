@@ -647,7 +647,7 @@ body {
 }
 
 body {
-  font: 0.9em Lato, sans-serif;
+  font: 14px Lato, sans-serif;
   color: #000000;
   background-color: #F5F5F5;
   -webkit-font-smoothing: antialiased;
@@ -1411,12 +1411,21 @@ textarea {
 }
 
 input[type="checkbox"].swipe {
+  outline: 0;
   position: relative;
   margin: 0 8px 0 0;
   height: 30px;
   width: 50px;
+  border: none;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
   border-radius: 26px;
-  transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+  -webkit-transition: border 0.25s 0.15s, box-shadow 0.25s 0.3s, padding 0.25s;
+  -moz-transition: border 0.25s 0.15s, box-shadow 0.25s 0.3s, padding 0.25s;
+  -ms-transition: border 0.25s 0.15s, box-shadow 0.25s 0.3s, padding 0.25s;
+  -o-transition: border 0.25s 0.15s, box-shadow 0.25s 0.3s, padding 0.25s;
+  transition: border 0.25s 0.15s, box-shadow 0.25s 0.3s, padding 0.25s;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;

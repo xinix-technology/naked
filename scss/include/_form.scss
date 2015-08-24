@@ -111,12 +111,14 @@ textarea {
     height: 7em;
 }
 input[type="checkbox"].swipe {
+    outline: 0;
     position: relative;
     margin: 0 #{$grid * 2} 0 0;
     height: 30px;
     width: 50px;
-    border-radius: 26px;
-    transition: border .25s .15s, box-shadow .25s .3s, padding .25s;
+    border: none;
+    @include border-radius(26px);
+    @include transition(#{border .25s .15s, box-shadow .25s .3s, padding .25s});
     @include appearance(none);
 
     ~ .on {
