@@ -34,155 +34,59 @@
     <!-- CONTENT -->
     <main class="content">
         <div class="wrapper">
-            <h1 class="title">Icons</h1>
-            <hr>
-            <h6>
-                Naked CSS is Use <code><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></code> for Icon.
-            </h6>
-            <div class="html">
-                <div class="highlight">
-                    <pre class="prettyprint lang-html">
-<link rel="stylesheet" href="css/font-awesome.css">
-                    </pre>
-                </div>
-            </div>
-            <p>
-                You can place the Icons just about anywhere using the CSS Prefix <code>xn</code> and the icon's name. The Icons is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).
-            </p>
-            <hr>
-            <h4 class="sub-title">Basic Icons</h4>
-            <div class="row">
-                <div class="span-5">
-                    <div class="wrapper">
-                        <div class="icon-box">
-                            <p>
-                                <i class="xn xn-camera-retro"></i>
-                                xn-camera-retro
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span-7">
-                    <div class="wrapper">
-                        <div class="html">
-                            <div class="highlight">
-                                <pre class="prettyprint lang-html">
-<i class="xn xn-camera-retro"></i>
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <h4 class="sub-title">Larger Icons</h4>
-            <div class="row">
-                <div class="span-5">
-                    <div class="wrapper">
-                        <div class="icon-box">
-                            <p>
-                                <i class="xn xn-spinner xn-spin xn-lg"></i>
-                                xn-lg
-                            </p>
-                            <p>
-                                <i class="xn xn-spinner xn-spin xn-2x"></i>
-                                xn-2x
-                            </p>
-                            <p>
-                                <i class="xn xn-spinner xn-spin xn-3x"></i>
-                                xn-3x
-                            </p>
-                            <p>
-                                <i class="xn xn-spinner xn-spin xn-4x"></i>
-                                xn-4x
-                            </p>
-                            <p>
-                                <i class="xn xn-spinner xn-spin xn-5x"></i>
-                                xn-5x
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span-7">
-                    <div class="wrapper">
-                        <div class="html">
-                            <div class="highlight">
-                                <pre class="prettyprint lang-html">
-<i class="xn xn-spinner xn-spin xn-lg"></i></i>xn-lg
-
-<i class="xn xn-spinner xn-spin xn-2x"></i>xn-2x
-
-<i class="xn xn-spinner xn-spin xn-3x"></i>xn-3x
-
-<i class="xn xn-spinner xn-spin xn-4x"></i></i>xn-4x
-
-<i class="xn xn-spinner xn-spin xn-5x"></i>xn-5x
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
             <h1 class="title">Layout</h1>
-            <hr>
-            <h5>Here the example Naked CSS Layouting :</h5>
+            <p>Here the example Naked CSS Layouting :</p>
             <div class="frame-image">
                 <img src="../img/layout.png" alt="">
             </div>
             <div class="html">
                 <div class="highlight">
                     <pre class="prettyprint lang-html">
-
 <!-- NAVBAR -->
 <nav class="nav-menu">
-    <div class="wrapper">
-        <div class="row">
-            <div class="pull-left">
-                <h1 class="brand">
-                    <a href="index.html">
-                        <span class="logo">
-                            <img src="../img/naked.png" alt="Naked CSS" />
-                        </span>
-                        <span>Naked CSS</span>
-                    </a>
-                </h1>
-            </div>
-            <div class="pull-right">
-                <ul class="flat topbar">
-                    <li class="user">
+    <div class="pull-left">
+        <h1 class="brand">
+            <a href="index.html">
+                <span class="logo">
+                    <img src="../img/naked.png" alt="Naked CSS" />
+                </span>
+                <span>Naked CSS</span>
+            </a>
+        </h1>
+    </div>
+    <div class="pull-right">
+        <ul class="flat topbar">
+            <li class="user">
+                <a href="#">
+                    <div class="avatar" style="background: url('') center no-repeat; background-size: cover;"></div>
+                    <span>
+                        <small>Welcome, </small>
+                        Admin
+                    </span>
+                    <i class="xn xn-caret-down"></i>
+                </a>
+                <ul class="sub animated">
+                    <li>
                         <a href="#">
-                            <div class="avatar" style="background: url('img/xinix-logo.png') center no-repeat; background-size: cover;"></div>
-                            <span>
-                                <small>Welcome, </small>
-                                Admin
-                            </span>
-                            <i class="xn xn-caret-down"></i>
+                            <i class="xn xn-user"></i>
+                            Profile
                         </a>
-                        <ul class="sub animated">
-                            <li>
-                                <a href="#">
-                                    <i class="xn xn-user"></i>
-                                    Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="xn xn-cogs"></i>
-                                    Settings
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="xn xn-sign-out"></i>
-                                    Logout
-                                </a>
-                            </li>
-                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="xn xn-cogs"></i>
+                            Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="xn xn-sign-out"></i>
+                            Logout
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 </nav>
 <!-- END OF NAVBAR -->
@@ -293,7 +197,6 @@
         </p>
     </div>
 </main>
-
                     </pre>
                 </div>
             </div>
