@@ -2603,57 +2603,65 @@ ul.menu .collapsible ul .collapsible ul {
   display: block;
 }
 
-ul.tree, ol.tree {
-  padding-left: 25px;
+.tree {
+  margin: 0 0 0 20px;
+  padding: 0;
 }
-ul.tree li, ol.tree li {
+.tree li {
   padding: 0;
   list-style: none;
-  margin-left: -15px;
   position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-ul.tree li label, ol.tree li label {
-  position: relative;
-  padding-left: 15px;
-  cursor: pointer;
-  text-transform: none;
-  font-size: 1em;
+.tree li input {
+  position: absolute;
+  left: -20px;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
-ul.tree li label:before, ol.tree li label:before {
+.tree li input:before {
   content: "+";
-  left: 0px;
   position: absolute;
+  left: 0;
+  top: 6px;
+  height: 12px;
+  width: 12px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #416B9B;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
 }
-ul.tree li label > a, ol.tree li label > a {
-  padding-left: 0;
-}
-ul.tree li label > a:before, ol.tree li label > a:before {
-  content: " ";
-}
-ul.tree li input, ol.tree li input {
-  position: absolute;
-  left: -15px;
-  top: 0;
-  margin-top: 5px;
+.tree li input ~ ol,
+.tree li input ~ ul {
   display: none;
+  margin: 0 0 0 20px;
+  padding: 0;
 }
-ul.tree li input ~ ol, ul.tree li input ~ ul, ol.tree li input ~ ol, ol.tree li input ~ ul {
-  display: none;
-  padding-left: 30px;
-}
-ul.tree li input:checked + label:before, ol.tree li input:checked + label:before {
+.tree li input:checked:before {
   content: "-";
-  left: 0px;
-  position: absolute;
 }
-ul.tree li input:checked ~ ol, ul.tree li input:checked ~ ul, ol.tree li input:checked ~ ol, ol.tree li input:checked ~ ul {
+.tree li input:checked ~ ol,
+.tree li input:checked ~ ul,
+.tree li input:checked ol.show,
+.tree li input:checked ul.show {
   display: block;
 }
-ul.tree li a, ol.tree li a {
-  display: block;
-  font-size: 0.9em;
-  padding-bottom: 2px;
-  color: #000;
+.tree li a {
   position: relative;
 }
 
@@ -2830,6 +2838,7 @@ article.tabs section h2 {
   background: #416B9B;
 }
 .context-menu.right {
+  float: none;
   left: initial;
   right: 0;
 }

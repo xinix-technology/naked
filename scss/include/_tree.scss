@@ -1,67 +1,59 @@
-ul.tree, ol.tree {
-    padding-left: 25px;
+.tree {
+    margin: 0 0 0 #{$grid * 5};
+    padding: 0;
 
     li {
         padding: 0;
         list-style: none;
-        margin-left: -15px;
         position: relative;
-
-        label {
-            position: relative;
-            padding-left: 15px;
-            cursor: pointer;
-            text-transform: none;
-            font-size: 1em;
-            &:before {
-                content: "+";
-                left: 0px;
-                position: absolute;
-            }
-
-            > a {
-                padding-left: 0;
-
-                &:before {
-                    content: " ";
-                }
-            }
-        }
+        @include transform-style(preserve-3d);
 
         input {
             position: absolute;
-            left: -15px;
-            top: 0;
-            margin-top: 5px;
-            display: none;
-        }
+            left: -#{$grid * 5};
+            border: none;
+            background: none;
+            @include appearance(none);
 
-
-        input ~ ol, input ~ ul {
-            display: none;
-            padding-left: 30px;
-        }
-
-        input:checked + label {
             &:before {
-                content: "-";
-                left: 0px;
+                content: "+";
                 position: absolute;
+                left: 0;
+                top: #{$grid * 1.5};
+                height: #{$grid * 3};
+                width: #{$grid * 3};
+                padding: 0;
+                font-size: #{$grid * 3};
+                line-height: #{$grid * 3};
+                text-align: center;
+                color: #{$white};
+                background: #{$blue};
+                @include border-radius(#{$border-radius-pixels / 2});
+            }
+
+            ~ ol,
+            ~ ul {
+                display: none;
+                margin: 0 0 0 #{$grid * 5};
+                padding: 0;
             }
         }
 
-        input:checked ~ ol, input:checked ~ ul {
-            display: block;
+        input:checked {
+            &:before {
+                content: "-";
+            }
+
+            ~ ol,
+            ~ ul,
+            ol.show,
+            ul.show {
+                display: block;
+            }
         }
 
         a {
-            display: block;
-            font-size: 0.9em;
-            padding-bottom: 2px;
-            color: #000;
-
             position: relative;
         }
     }
-
 }

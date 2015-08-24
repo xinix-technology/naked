@@ -108,6 +108,29 @@ $(function() {
         return false;
     });
 
+    // Tree fallback and saving function
+    $(".tree input").click(function () {
+        if ($(this).is(':checked')) {
+            $(this).siblings ("ul, ol").addClass("show");
+            if(typeof(Storage) !== "undefined") {
+                localStorage.setItem("xntree" + $(this).data ("id-save"), $(this).is(':checked'));
+            }
+        } else {
+            $(this).siblings ("ul, ol").removeClass("show");
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("xntree" + $(this).data ("id-save"));
+            }
+        }
+    });
+    // Restore tree state
+    if(typeof(Storage) !== "undefined") {
+        $.each(localStorage, function (name, value) {
+            if (name.substring(0, 6) == "xntree") {
+                $("[data-id-save='" + name.substring(6) + "']").attr ("checked", "checked").siblings ("ul, ol").addClass("show");
+            }
+        })
+    }
+
     xn.stylized ();
 });
 
