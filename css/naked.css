@@ -959,7 +959,7 @@ footer {
 
 @media screen {
   .container {
-    width: 984px;
+    width: "1360px"-20;
     margin: 0 auto;
   }
 
@@ -973,7 +973,7 @@ footer {
 }
 @media only screen and (max-width: 1360px) {
   .container {
-    width: 1320px;
+    width: "1023px"-20;
     margin: 0 auto;
   }
 
@@ -983,13 +983,13 @@ footer {
 }
 @media only screen and (max-width: 1023px) {
   .container {
-    width: 728px;
+    width: "767px"-20;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 767px) {
   .container {
-    width: 440px;
+    width: "480px"-20;
     margin: 0 auto;
   }
 
@@ -1790,7 +1790,7 @@ button.disable,
   line-height: 1em;
   text-transform: uppercase;
   position: relative;
-  padding: 1px 8px;
+  padding: 2px 4px;
   margin: 0;
   background: transparent;
   border: 1px solid #416B9B;
@@ -1969,7 +1969,6 @@ ul.pagination.centered {
   font-size: 0.8em;
   letter-spacing: 0.032em;
   text-transform: uppercase;
-  font-weight: 600;
   padding-left: 12px;
   color: #7a7a7a;
   margin-bottom: 7px;
@@ -1981,25 +1980,27 @@ ul.pagination.centered {
   width: 100%;
   color: #000000;
   font-size: 1.1em;
-  font-weight: 400;
   line-height: 1.2em;
   cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 .listview a:hover {
   background: #F5F5F5;
 }
-.listview a i.xn {
+.listview a .xn,
+.listview a .swipe {
   position: absolute;
   right: 12px;
   top: 50%;
-  margin-top: -0.64rem;
-}
-.listview a input.swipe {
-  position: absolute;
-  right: 4px;
-  z-index: 9;
-  top: 50%;
-  margin-top: -0.64rem;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .listview a,
 .listview span,
@@ -2011,9 +2012,12 @@ ul.pagination.centered {
 }
 .listview span,
 .listview small {
-  line-height: 0em;
-  font-weight: 300;
   width: 100%;
+  font-weight: 300;
+}
+.listview small {
+  font-size: 0.9em;
+  letter-spacing: 0.016em;
 }
 .listview:not > li:first-child {
   border-top: 0;
@@ -2024,7 +2028,6 @@ ul.pagination.centered {
   margin: 0;
   display: block;
   position: relative;
-  vertical-align: middle;
   border-bottom: 1px solid #e6e6e6;
 }
 .listview li.list-group-container {
@@ -2061,24 +2064,11 @@ ul.pagination.centered {
   display: block;
   width: 100%;
 }
-.listview .list-group li span {
-  line-height: inherit;
-  width: 100%;
-}
 .listview .list-group li.plain a {
   padding-right: 8px;
 }
 .listview .list-group li.plain a:after {
   border: 0;
-}
-.listview .list-group .title-list {
-  font-size: 1.1em;
-  font-weight: 400;
-  margin: 0;
-}
-.listview .list-group small {
-  font-size: 0.8em;
-  letter-spacing: 0.064em;
 }
 .listview.text .list-group a {
   line-height: 30px;
@@ -2092,9 +2082,6 @@ ul.pagination.centered {
   float: right;
   color: #7a7a7a;
   max-width: 35%;
-}
-.listview.text .list-group i.xn {
-  margin-top: -0.94rem;
 }
 .listview.nest .list-group a:after {
   position: relative;
@@ -2122,7 +2109,12 @@ ul.pagination.centered {
   padding: 12px 30px 12px 60px;
 }
 .listview.thumb .list-group a img {
-  top: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .listview.detail .detail-group li.detail-content {
   margin-bottom: 40px;
@@ -2920,9 +2912,6 @@ article.tabs section h2 {
 }
 .sidebar .nav li a.select {
   color: #08c;
-}
-.sidebar .nav li a .badge {
-  padding: 1px 4px;
 }
 .sidebar .nav li a .icn-right {
   position: absolute;

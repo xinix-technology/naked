@@ -108,12 +108,20 @@ code {
 	background: #fcfcfc;
 	margin-bottom: 40px;
 	border: 1px solid #eeeeee;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	border-left: none;
+	border-right: none;
+	padding: #{$grid * 4} 0;
+	margin: #{$grid * 4} -#{$grid * 5};
 
 	.wrapper {
 		padding: 0;
 	}
+}
+@media #{$min-small} {
+	.ex-list-view-content {
+		border: 1px solid #eeeeee;
+		margin: #{$grid * 4} 0;
+    }
 }
 
 .ex-login {

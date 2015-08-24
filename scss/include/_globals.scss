@@ -287,7 +287,7 @@ footer {
 // Media Query
 @media #{$screen} {
     .container {
-        width: 984px;
+        width: #{$extra-large-screen - 20};
         margin: 0 auto;
     }
     #menu_icon {
@@ -299,7 +299,7 @@ footer {
 }
 @media #{$large} {
     .container {
-        width: 1320px;
+        width: #{$large-screen - 20};
         margin: 0 auto;
     }
     .hidden-xlarge {
@@ -308,13 +308,13 @@ footer {
 }
 @media #{$medium} {
     .container {
-        width: 728px;
+        width: #{$medium-screen - 20};
         margin: 0 auto;
     }
 }
 @media #{$small} {
     .container {
-        width: 440px;
+        width: #{$small-screen - 20};
         margin: 0 auto;
     }
     #menu_icon {

@@ -13,7 +13,6 @@
 		font-size: 0.8em;
 		letter-spacing: 0.032em;
 		text-transform: uppercase;
-		font-weight: 600;
 		padding-left: #{$grid * 3};
 		color: #{$grouptitle-color};
 		margin-bottom: 7px;
@@ -26,29 +25,23 @@
 		width: 100%;
 		color: #{$black};
 		font-size: 1.1em;
-		font-weight: #{$font-regular};
 		line-height: 1.2em;
 		cursor: pointer;
+		@include transform-style(preserve-3d);
 
 		&:hover {
 			background: $bg-hover;
 		}
 
-		i.xn {
+		.xn,
+		.swipe {
 			position: absolute;
 			right: #{$grid * 3};
 			top: 50%;
-			margin-top: -0.64rem;
-		}
-
-		input.swipe {
-			position: absolute;
-			right: #{$grid};
-			z-index: 9;
-			top: 50%;
-			margin-top: -0.64rem;
+			@include transform(translateY(-50%));
 		}
 	}
+
 	a,
 	span,
 	small {
@@ -59,9 +52,12 @@
 	}
 	span,
 	small {
-		line-height: 0em;
-		font-weight: #{$font-light};
 		width: 100%;
+		font-weight: #{$font-light};
+	}
+	small {
+		font-size: 0.9em;
+		letter-spacing: #{$letter-spacing-wide};
 	}
 
 	&:not > li:first-child {
@@ -74,7 +70,6 @@
 		margin: 0;
 		display: block;
 		position: relative;
-		vertical-align: middle;
 		border-bottom: 1px solid #{$border-color};
 
 		&.list-group-container {
@@ -114,11 +109,6 @@
 			display: block;
 			width: 100%;
 
-			span {
-				line-height: #{$listviewtext-line-height};
-				width: 100%;
-			}
-
 			&.plain {
 				a {
 					padding-right: #{$grid * 2};
@@ -128,16 +118,6 @@
 					}
 				}
 			}
-		}
-
-		.title-list {
-			font-size: 1.1em;
-			font-weight: #{$font-regular};
-			margin: 0;
-		}
-		small {
-			font-size: 0.8em;
-			letter-spacing: 0.064em;
 		}
 	}
 
@@ -157,10 +137,6 @@
 					color: adjust-lightness($color, 48%);
 					max-width: 35%;
 				}
-			}
-
-			i.xn {
-				margin-top: -0.94rem;
 			}
 		}
 	}
@@ -202,7 +178,8 @@
 				padding: 12px 30px 12px 60px;
 
 				img {
-					top: 12px;
+					top: 50%;
+					@include transform(translateY(-50%));
 				}
 			}
 		}

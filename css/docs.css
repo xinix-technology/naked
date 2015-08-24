@@ -104,13 +104,21 @@ code {
   background: #fcfcfc;
   margin-bottom: 40px;
   border: 1px solid #eeeeee;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-left: none;
+  border-right: none;
+  padding: 16px 0;
+  margin: 16px -20px;
 }
 .ex-list-view-content .wrapper {
   padding: 0;
 }
 
+@media only screen and (min-width: 767px) {
+  .ex-list-view-content {
+    border: 1px solid #eeeeee;
+    margin: 16px 0;
+  }
+}
 .ex-login {
   margin-top: 30px;
 }
