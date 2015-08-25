@@ -100,7 +100,7 @@ $(function() {
     });
 
     // Show side menu
-    $(".brand a").click(function () {
+    $(".nav-menu a").click(function () {
         if ($(".sidebar").length > 0) {
             $("body").toggleClass ("show-sidebar")
         }
