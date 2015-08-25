@@ -100,7 +100,7 @@ $(function() {
     });
 
     // Show side menu
-    $(".nav-menu a").click(function () {
+    $(".nav-menu h1 a").click(function () {
         if ($(".sidebar").length > 0) {
             $("body").toggleClass ("show-sidebar")
         }
