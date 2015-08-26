@@ -61,6 +61,8 @@ xn.stylized = function  () {
 
 // Scripts
 $(function() {
+    // TODO: Create touch event
+
     var s4 = window.s4 = function () {
         return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
     };
@@ -81,8 +83,6 @@ $(function() {
     $("html").click(function (event) {
         var element = null;
 
-        $('.sub').find("ul").fadeOut (128);
-
         // Sub menu
         if ($(event.target).parent().parent().hasClass("sub")) {
             element = $(event.target).parent().parent();
@@ -93,9 +93,12 @@ $(function() {
         }
 
         if (element) {
-            element.find("ul").fadeIn (128);
+            element.siblings(".sub").find("ul").fadeOut(128);
+            element.find("ul").fadeIn(128);
             event.stopPropagation();
             return false;
+        } else {
+            $('.sub').find("ul").fadeOut (128);
         }
     });
 
@@ -127,6 +130,37 @@ $(function() {
         $.each(localStorage, function (name, value) {
             if (name.substring(0, 6) == "xntree") {
                 $("[data-id-save='" + name.substring(6) + "']").attr ("checked", "checked").siblings ("ul, ol").addClass("show");
+            }
+        })
+    }
+
+    // Collapsible
+    $(".collapsible .action").click(function () {
+        var submenu = $(this).parent().siblings("ul, ol");
+
+        if (submenu.data("show")) {
+            $(this).removeClass("xn-minus").addClass("xn-plus");
+            submenu.slideUp (128);
+            submenu.data ("show", false);
+            if(typeof(Storage) !== "undefined") {
+                localStorage.removeItem("xncollapsible" + $(this).data ("id-save"));
+            }
+        } else {
+            submenu.slideDown (128);
+            $(this).removeClass("xn-plus").addClass("xn-minus");
+            submenu.data ("show", true);
+            if(typeof(Storage) !== "undefined") {
+                localStorage.setItem("xncollapsible" + $(this).data ("id-save"), submenu.data ("show"));
+            }
+        }
+
+        return false;
+    })
+    // Restore collapsible state
+    if(typeof(Storage) !== "undefined") {
+        $.each(localStorage, function (name, value) {
+            if (name.substring(0, 13) == "xncollapsible") {
+                $("[data-id-save='" + name.substring(13) + "']").removeClass("xn-plus").addClass("xn-minus").parent().siblings ("ul, ol").data ("show", true).removeClass("hide");
             }
         })
     }
