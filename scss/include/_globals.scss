@@ -282,7 +282,15 @@ footer {
     background-size: cover;
     @include border-radius(666em);
 }
-
+.error {
+    color: #{$button-error};
+}
+.success {
+    color: #{$button-success};
+}
+.warning {
+    color: #{$button-warning};
+}
 
 // Media Query
 @media #{$screen} {

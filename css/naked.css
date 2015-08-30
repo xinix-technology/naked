@@ -957,6 +957,18 @@ footer {
   border-radius: 666em;
 }
 
+.error {
+  color: #CF4741;
+}
+
+.success {
+  color: #718F47;
+}
+
+.warning {
+  color: #E1BF32;
+}
+
 @media screen {
   .container {
     width: "1360px"-20;
