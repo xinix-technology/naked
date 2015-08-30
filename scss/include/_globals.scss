@@ -282,13 +282,19 @@ footer {
     background-size: cover;
     @include border-radius(666em);
 }
-.error {
+.error,
+.error.hover,
+.error:hover {
     color: #{$button-error};
 }
-.success {
+.success,
+.success.hover,
+.success:hover {
     color: #{$button-success};
 }
-.warning {
+.warning,
+.warning.hover
+.warning:hover {
     color: #{$button-warning};
 }
 

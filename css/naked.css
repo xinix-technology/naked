@@ -957,15 +957,21 @@ footer {
   border-radius: 666em;
 }
 
-.error {
+.error,
+.error.hover,
+.error:hover {
   color: #CF4741;
 }
 
-.success {
+.success,
+.success.hover,
+.success:hover {
   color: #718F47;
 }
 
-.warning {
+.warning,
+.warning.hover
+.warning:hover {
   color: #E1BF32;
 }
 
