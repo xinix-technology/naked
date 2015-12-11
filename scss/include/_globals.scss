@@ -43,12 +43,13 @@ body {
 }
 .row > .wrapper:first-child,
 .row > *:first-child .wrapper {
-    padding-left: 0!important;
+    padding-left: 0;
 }
 .row > .wrapper:last-child,
 .row > *:last-child .wrapper {
-    padding-right: 0!important;
+    padding-right: 0;
 }
+
 
 main.content {
     position: relative;
@@ -195,6 +196,8 @@ img.img-circle {
 ul,
 ol {
     line-height: #{$body-line-height};
+    margin: 0;
+    padding: 0 0 0 #{$grid * 7};
 
     li {
         margin: #{$grid} 0 0 0;

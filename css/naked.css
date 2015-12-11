@@ -674,12 +674,12 @@ body {
 
 .row > .wrapper:first-child,
 .row > *:first-child .wrapper {
-  padding-left: 0 !important;
+  padding-left: 0;
 }
 
 .row > .wrapper:last-child,
 .row > *:last-child .wrapper {
-  padding-right: 0 !important;
+  padding-right: 0;
 }
 
 main.content {
@@ -867,6 +867,8 @@ img.img-circle {
 ul,
 ol {
   line-height: 1.64em;
+  margin: 0;
+  padding: 0 0 0 28px;
 }
 ul li,
 ol li {
@@ -2926,7 +2928,7 @@ article.tabs section h2 {
   padding-left: 0;
 }
 .sidebar .nav li.collapsible ul li:last-child a {
-  border-bottom: 1px solid #f1f2f3;
+  border-bottom: 1px solid #f2f3f4;
 }
 .sidebar .nav li a {
   padding: 8px 24px 8px 0;
@@ -3092,6 +3094,7 @@ article.tabs section h2 {
   position: absolute;
   top: -10px;
   left: initial;
+  font-size: 20px;
   right: 6px;
   background: #fff;
   color: #000;
@@ -3108,6 +3111,10 @@ article.tabs section h2 {
 }
 #popupOverflow #popupContent a.close:hover {
   color: #ed2b2b;
+}
+#popupOverflow #popupContent a.close i {
+  margin: 0;
+  padding: 0;
 }
 #popupOverflow #popupContent p.loading {
   padding: 24px 32px;

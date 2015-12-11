@@ -1,38 +1,38 @@
-#popupOverflow { 
-	position:fixed; 
-	top:0; 
-	left:0; 
-	right:0; 
-	bottom:0; 
-	z-index:9999; 
-	display:block; 
+#popupOverflow {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:9999;
+	display:block;
 	background:rgba(0, 0, 0, 0.64);
 
-	#popupTable { 
-		position:fixed; 
-		top:0; 
-		left:0; 
-		display:table; 
-		width:100%; 
-		height:100%; 
+	#popupTable {
+		position:fixed;
+		top:0;
+		left:0;
+		display:table;
+		width:100%;
+		height:100%;
 	}
 
-	#popupMargin { 
-		display:table-cell; 
-		vertical-align:middle; 
+	#popupMargin {
+		display:table-cell;
+		vertical-align:middle;
 	}
 
-	#popupContent { 
-		position:relative; 
-		display:table; 
-		margin:0 auto; 
+	#popupContent {
+		position:relative;
+		display:table;
+		margin:0 auto;
 		padding:0 16px;
 
 		hr {
 			margin: 0;
 		}
 
-		.content { 
+		.content {
 			background:#fff; overflow:hidden;
 		    -webkit-border-radius:4px;
 		    -moz-border-radius:4px;
@@ -50,68 +50,72 @@
 		}
 
 		a.close {
-		    position:absolute; top:-10px; left:initial; right:6px; background:#fff; color:#000; display:block; height:24px; width:24px; text-align:center; line-height:24px;
+		    position:absolute; top:-10px; left:initial; font-size:20px; right:6px; background:#fff; color:#000; display:block; height:24px; width:24px; text-align:center; line-height:24px;
 		    -webkit-border-radius:100%;
 		    -moz-border-radius:100%;
 		    -ms-border-radius:100%;
 		    -o-border-radius:100%;
 		    border-radius:100%;
 
-			&:hover { 
-				color:#ed2b2b 
+			&:hover {
+				color:#ed2b2b
+			}
+
+			i {
+				margin: 0; padding: 0
 			}
 		}
 
-		p.loading { 
-			padding:24px 32px; 
-			margin:0; 
-			text-align:center; 
+		p.loading {
+			padding:24px 32px;
+			margin:0;
+			text-align:center;
 			color:#333;
 		}
 
-		p.error { 
-			padding:24px 32px; 
-			margin:0; 
-			text-align:center; 
+		p.error {
+			padding:24px 32px;
+			margin:0;
+			text-align:center;
 			color:#919191;
 
-			i { 
-				margin:24px 0; 
+			i {
+				margin:24px 0;
 				color:#d03030;
 			}
 		}
 
 		.scrollContent {
-			display: block; 
-			overflow: auto; 
-			margin: 0; 
+			display: block;
+			overflow: auto;
+			margin: 0;
 			height: 300px;
 		}
 	}
 
-	h4 { 
-		margin: 0; color: #444; 
+	h4 {
+		margin: 0; color: #444;
 
-		i { 
-			cursor: pointer; font-size: 0.7em; 
+		i {
+			cursor: pointer; font-size: 0.7em;
 		}
 	}
 
-	p { 
-		color: #666; 
+	p {
+		color: #666;
 	}
 
-	.button-area { 
-		margin: 5px 0; 
+	.button-area {
+		margin: 5px 0;
 	}
 
 	.button-group {
-		width: 100%; 
+		width: 100%;
 		display: table;
 
 		li {
-			display: table-cell; 
-			padding: 0; 
+			display: table-cell;
+			padding: 0;
 			margin: 0;
 
 			a.button {
@@ -139,11 +143,11 @@
 	}
 
 	.content-area {
-		.row { 
-			margin-bottom: 10px; 
+		.row {
+			margin-bottom: 10px;
 
-			&:first-child { 
-				margin-top: 15px; 
+			&:first-child {
+				margin-top: 15px;
 			}
 		}
 	}
