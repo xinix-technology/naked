@@ -649,7 +649,7 @@ body {
 body {
   font: 14px Lato, sans-serif;
   color: #000000;
-  background-color: #F5F5F5;
+  background-color: #FCFDFE;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -932,7 +932,7 @@ ul.plain li {
 
 footer {
   position: relative;
-  background: #F5F5F5;
+  background: #FCFDFE;
   display: block;
   border-top: 1px solid #e6e6e6;
 }
