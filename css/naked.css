@@ -2192,6 +2192,16 @@ ul.pagination.centered {
   height: 48px;
   border-bottom: 1px solid #c6d5e7;
 }
+.nav-menu .actions {
+  position: fixed;
+  left: 256px;
+}
+.nav-menu .actions a {
+  display: block;
+}
+.nav-menu .actions a .xn {
+  float: left;
+}
 .nav-menu .xn {
   font-size: 24px;
 }
@@ -2497,6 +2507,19 @@ tabstrip .tabs span.badge i,
 tabstrip .tabs.active span,
 .tabstrip .tabs.active span {
   color: #416B9B;
+}
+
+#contextual {
+  position: fixed;
+  left: 256px;
+  right: 0;
+  top: initial;
+  bottom: 0;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
+  background: #fff;
+  border-top: 1px solid #ccc;
 }
 
 .alert {
