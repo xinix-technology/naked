@@ -2195,6 +2195,8 @@ ul.pagination.centered {
 .nav-menu .actions {
   position: fixed;
   left: 256px;
+  right: 256px;
+  top: 12px;
 }
 .nav-menu .actions a {
   display: block;
