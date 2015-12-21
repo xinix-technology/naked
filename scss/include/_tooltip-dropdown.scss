@@ -14,6 +14,7 @@ ul.menu {
 		display: inline-block;
 		position: relative;
 		cursor: pointer;
+		margin: 0;
 
 		a {
 			color: #333;
@@ -32,8 +33,83 @@ ul.menu {
 				display: block;
 				opacity: 1;
 				visibility: visible;
-				border: 1px solid #{$border-color};
 			}
+		}
+	}
+
+
+	ul.context-menu {
+		margin: 0;
+		z-index: 9;
+
+		li {
+			&.first-child,
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+
+			a {
+				margin: 0;
+				padding: 4px 20px;
+			}
+
+			&.collapse {
+				.xn {
+					width: auto;
+					position: absolute;
+				    top: 0;
+				    line-height: 30px;
+				}
+
+				ul {
+					display: none;
+					// display: inline-block;
+					z-index: 2;
+				    width: 100%;
+				    border: 1px solid #ddd;
+				    position: absolute;
+				    padding: 0;
+				}
+
+				&.left {
+					ul {
+					    right: 100%;
+					    top: 0;
+					    bottom: initial;
+					    left: initial;
+					}
+
+					.xn {
+						margin-right: 5px;
+			    		left: 8px;
+					}
+				}
+
+				&.right {
+					ul {
+						top: 0;
+					    left: 100%;
+					    bottom: initial;
+					    right: initial;
+					}
+
+					.xn {
+						margin-left: 5px;
+					    right: 8px;
+					}
+				}
+
+				&:hover,
+				&.hover,
+				&.selected {
+					ul {
+						display: inline-block;
+					}
+				}
+			}
+
 		}
 	}
 
@@ -43,45 +119,31 @@ ul.menu {
 
 			i.xn {
 				margin-left: 5px;
+				margin-right: 0;
+    			width: auto;
 			}
 		}
 
 		&.up {
-			> a {
-				position: relative;
-
-				&:after {
-					border-color: transparent transparent black transparent;
-					border-width: 0.5em;
-					margin-top: -0.6em;
-				}
-			}
-
 			ul {
-				top: -83px;
+			    top: initial;
+			    bottom: 100%;
+			    right: initial;
+			    left: initial;
+			}
+		}
+
+		&.down {
+			ul {
+			    bottom: initial;
+			    top: 100%;
+			    right: initial;
+			    left: initial;
 			}
 		}
 
 		ul {
-			padding: 0;
-			position: absolute;
-			top: 100%;
-			display: none;
-			opacity: 0;
-			z-index: 1001;
-			visibility: hidden;
-			-webkit-transition: all 0.2s;
-			-moz-transition: all 0.2s;
-			-ms-transition: all 0.2s;
-			-o-transition: all 0.2s;
-			transition: all 0.2s;
-
 			li {
-				> a {
-					padding: 3px 25px;
-					margin: 0;
-				}
-
 				display: block;
 				background: #fff;
 
@@ -89,55 +151,17 @@ ul.menu {
 					border-top: 1px solid #{$border-color};
 					padding: 0px;
 					overflow: hidden;
+				    margin: 8px 0;
 				}
 
 				&:hover,
+				&.hover,
 				&.selected {
-					background: #f5f5f5;
-
 					ul {
 						display: block;
 						left: 100%;
 						top: 0;
 					}
-				}
-
-				&.left:hover,
-				&.left.selected {
-					ul {
-						left: -70%;
-					}
-				}
-			}
-
-			.collapsible {
-				&.right {
-					> a {
-						position: relative;
-
-						i.xn {
-							margin: 0;
-							position: absolute;
-							right: 12px;
-							top: 7px
-						}
-					}
-				}
-
-				&.left {
-					> a {
-						position: relative;
-
-						i.xn {
-							margin: 0;
-							position: absolute;
-							left: 12px;
-							top: 7px
-						}
-					}
-				}
-				ul {
-					display: none;
 				}
 			}
 		}
