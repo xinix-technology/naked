@@ -2509,7 +2509,7 @@ body.has-sidebar #contextual {
   line-height: 44px;
   padding: 0 16px;
   background: #fff;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #c6d5e7;
 }
 
 .alert {
@@ -3021,7 +3021,7 @@ article.tabs section h2 {
   width: 256px;
   overflow: auto;
   background-color: #fcfdfe;
-  border-right: 1px solid #d8e3ef;
+  border-right: 1px solid #c6d5e7;
 }
 .sidebar .nav {
   display: block;
@@ -3069,7 +3069,7 @@ article.tabs section h2 {
   padding: 8px 24px 8px 0;
   display: block;
   color: #465d6f;
-  border-bottom: 1px solid #d8e3ef;
+  border-bottom: 1px solid #c6d5e7;
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;

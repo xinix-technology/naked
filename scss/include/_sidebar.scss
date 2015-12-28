@@ -7,7 +7,7 @@
     width: #{$side-bar-width};
     overflow: auto;
     background-color: #{$navbar-bg};
-    border-right: 1px solid #{adjust-lightness($navbar-bg, -10%)};
+    border-right: 1px solid #c6d5e7;
 
     .nav {
         display: block;
@@ -72,7 +72,7 @@
                 padding: #{$grid * 2} #{$grid * 6} #{$grid * 2} 0;
                 display: block;
                 color: #465d6f;
-                border-bottom: 1px solid #{adjust-lightness($navbar-bg, -10%)};
+                border-bottom: 1px solid #c6d5e7;
                 position: relative;
                 @include transform-style(preserve-3d);
 
