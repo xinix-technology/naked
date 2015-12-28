@@ -157,8 +157,10 @@
     }
 }
 @media #{$min-medium} {
-    main.content,
-    footer {
-        margin-left: #{$side-bar-width};
+    body.has-sidebar {
+        main.content,
+        footer {
+            margin-left: #{$side-bar-width};
+        }
     }
 }

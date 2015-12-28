@@ -2192,18 +2192,6 @@ ul.pagination.centered {
   height: 48px;
   border-bottom: 1px solid #c6d5e7;
 }
-.nav-menu .actions {
-  position: fixed;
-  left: 256px;
-  right: 256px;
-  top: 12px;
-}
-.nav-menu .actions a {
-  display: block;
-}
-.nav-menu .actions a .xn {
-  float: left;
-}
 .nav-menu .xn {
   font-size: 24px;
 }
@@ -2511,7 +2499,7 @@ tabstrip .tabs.active span,
   color: #416B9B;
 }
 
-#contextual {
+body.has-sidebar #contextual {
   position: fixed;
   left: 256px;
   right: 0;
@@ -3186,8 +3174,8 @@ article.tabs section h2 {
   }
 }
 @media only screen and (min-width: 1023px) {
-  main.content,
-  footer {
+  body.has-sidebar main.content,
+  body.has-sidebar footer {
     margin-left: 256px;
   }
 }

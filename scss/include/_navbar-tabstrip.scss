@@ -9,22 +9,6 @@
 	height: #{$top-bar-height};
 	border-bottom: 1px solid #{adjust-lightness($header-bg, -16%)};
 
-
-	.actions {
-		position: fixed;
-	    left: 256px;
-        right: 256px;
-    	top: 12px;
-
-	    a {
-		    display: block;
-
-		    .xn {
-	    	    float: left;
-		    }
-		}
-	}
-
 	.xn {
 		font-size: #{$top-bar-height - ($grid * 6)};
 	}
@@ -358,15 +342,17 @@ tabstrip,
 	}
 }
 
-#contextual {
-    position: fixed;
-    left: 256px;
-    right: 0;
-    top: initial;
-    bottom: 0;
-    height: 44px;
-    line-height: 44px;
-    padding: 0 16px;
-    background: #fff;
-    border-top: 1px solid #ccc;
+body.has-sidebar {
+	#contextual {
+	    position: fixed;
+	    left: 256px;
+	    right: 0;
+	    top: initial;
+	    bottom: 0;
+	    height: 44px;
+	    line-height: 44px;
+	    padding: 0 16px;
+	    background: #fff;
+	    border-top: 1px solid #ccc;
+	}
 }
