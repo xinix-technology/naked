@@ -1096,6 +1096,10 @@ table tr,
 .table tr {
   border-bottom: 1px solid #b4c8e0;
 }
+table tr.selected td,
+.table tr.selected td {
+  background: #d8e4c8;
+}
 table tbody tr:last-child,
 table tbody tr.last-child,
 .table tbody tr:last-child,
@@ -1166,7 +1170,7 @@ table.hover tr.hover td,
 table.hover tr:hover td,
 .table.hover tr.hover td,
 .table.hover tr:hover td {
-  background: #f6ebc0;
+  background: #d8e4c8;
 }
 
 @media only screen and (max-width: 1023px) {
