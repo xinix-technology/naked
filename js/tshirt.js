@@ -112,7 +112,9 @@ $(function() {
     });
 
     // Tree fallback and saving function
-    $(".tree input").click(function () {
+    $(".tree input").each(function(idx) {
+        $(this).attr("data-id-save", 'xntree' + idx);
+    }).click(function () {
         if ($(this).is(':checked')) {
             $(this).siblings ("ul, ol").addClass("show");
             if(typeof(Storage) !== "undefined") {
