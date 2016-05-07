@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/docs.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
-<body>
+<body class="has-sidebar">
     <!-- NAVBAR -->
     <nav class="nav-menu">
         <div class="pull-left">
@@ -38,6 +38,31 @@
             <hr>
             <p>There are several helper that you can use to help your life</p>
             <h4 class="sub-title">Positioning</h4>
+            <p>Sometimes you need to put something on the center of the screen. Just adding fix height css <code>height: 500px;</code> or full height content <code>height: 100%;</code> to the container content</p>
+            <hr>
+            <h5>Content Center</h5>
+            <div class="box">
+	            <div class="contentcenter">
+	                <div class="middle">
+                        <div class="ex-image">
+                            <img src="../img/naked.png" alt="">
+                        </div>
+	            	</div>
+	            </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="contentcenter">
+    <div class="middle">
+        <img src="../img/naked.png" alt="">
+    </div>
+</div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h5>Content Left &amp; Right</h5>
             <p>Sometimes you need to put something on the left or right side. We have the regular .pull-right, .pull-left and .clearfix helper that you can use.</p>
             <div class="box">
                 <div class="pull-left">Content Left</div>
@@ -126,7 +151,8 @@
                     </pre>
                 </div>
             </div>
-            <hr>        </div>
+            <hr>
+        </div>
     </main>
     <!-- END OF CONTENT -->
 

@@ -76,7 +76,7 @@ $(function() {
 
     // Alert close
     $(".alert").click (function () {
-        $(this).addClass ("bounceOutRight");
+        $(this).addClass ("bounceOutUp");
     });
 
     // Menu registry section

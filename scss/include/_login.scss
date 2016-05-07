@@ -1,14 +1,31 @@
 #login {
 	padding: 40px;
 	margin: 0 auto;
-    border: 1px solid #eee;
-    background: #f9f9f9;
+    border: 1px solid #c6d5e7;
+    background: #FAFCFD;
+    color: #465d6f;
     width: 100%;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
+    margin: 0; 
+    text-align: center; 
+    display: inline-block;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border-radius: 16px;
+
+    form {
+    	padding: 0;
+
+    	input[type="text"],
+    	input[type="password"],
+		textarea,
+		select {
+			border-color: #d8e3ef;
+		    font-weight: 400;
+		    color: #416B9B;
+    	}
+    }
 
 	h1 {
 		margin: 0;
@@ -24,12 +41,25 @@
 		}
 	}
 
+	p {
+		margin: 0 0 30px; 
+		font-size: 1.3em; 
+		line-height: 25px;
+	}
+
+	small {
+	    font-size: 1.1em;
+	    line-height: 25px;
+        margin-top: 10px;
+        display: block;
+	}
+
     .xn {
     	font-size: 128px;
     	text-align: center;
     	display: block;
     	width: 128px;
-    	margin: 0 auto;
+    	margin: 0 auto 20px;
     }
     
 	.check-label {
@@ -49,13 +79,21 @@
 	
 	.placeholder {
 		cursor: pointer;
-		margin: 0 auto;
-		margin-bottom: 20px;
-		margin-top: 10px;
 		display: table;
-		font-size: 1.15em;
-		font-weight: 300;
 		line-height: 25px;
 		padding: 0;
+		margin: 10px auto 0; 
+		font-weight: 400; 
+		font-size: 1.1em; 
+		color: #416B9B;
+	}
+
+	.button-area { 
+		margin: 15px 0 10px; 
+
+		.button.solid { 
+			background: #416B9B; 
+			margin: 0; font-size: 16px;
+		}
 	}
 }

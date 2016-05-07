@@ -33,6 +33,12 @@ table,
 
 	tr {
 		border-bottom: 1px solid #{$table-border-color};
+
+		&.selected {
+			td {
+				background: #{$table-hover-color};
+			}
+		}
 	}
 	tbody tr:last-child,
 	tbody tr.last-child {

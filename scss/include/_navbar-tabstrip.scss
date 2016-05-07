@@ -243,6 +243,25 @@ tabstrip,
 	display: block;
 	border-top: 1px solid #{$border-color};
 	background: #{adjust-lightness($white-gray, 2%)};
+	border: 0; 
+	z-index: 9999; 
+	height: 50px; 
+
+	.tabspan-2 { 
+		width: 50%; 
+	}
+
+	.tabspan-3 { 
+		width: 33.3%; 
+	}
+
+	.tabspan-4 { 
+		width: 25%; 
+	}
+
+	.tabspan-5 { 
+		width: 20%; 
+	}
 
 	.top {
 		top: 0;
@@ -255,22 +274,27 @@ tabstrip,
 	}
 
 	.tabs {
-		border-right: 1px solid #{$border-color};
 		text-align: center;
 		padding: #{$grid} 0;
 		color: adjust-lightness($color, 32%);
+		font-size: 1.5em; 
+		padding: 6px 0; 
+		position: relative; 
+		border-top: 1px solid #{$border-color}; 
+		float: left; 
+		display: block; 
 
 		&.active {
 			color: #{$blue};
 		}
 
-		.xn {
-			width: #{$tabstrip-icon-size};
-			height: #{$tabstrip-icon-size};
-			margin: 0 0 #{$grid} 0;
-			text-align: center;
-			font-size: #{$tabstrip-icon-size};
-			line-height: 140%;
+		.xn { 
+			font-size: 1.1em; 
+			margin-top: 0; 
+			margin: 0; 
+			width: auto; 
+			height: auto; 
+			line-height: 100%; 
 		}
 
 		span {
@@ -278,9 +302,57 @@ tabstrip,
 			font-weight: #{$font-regular};
 			font-size: 0.8em;
 			letter-spacing: #{$letter-spacing-wider};
+			color: #7c7b83; 
+			font-size: 0.5em; 
+			margin-top: 3px;
+
+			&.badge { 
+				position: absolute; 
+				top: -10px; 
+				right: 5px; 
+				background: #F23030; 
+				border-radius: 100%; 
+				z-index: 9999; 
+				margin: 0; 
+				font-size: 0.7em; 
+				line-height: 90%; 
+
+				&.empty {
+					top: 2px; 
+					right: 12px; 
+					min-width: 10px; 
+					min-height: 10px;
+				}
+
+				i {
+					color: #fff; 
+					margin: 0; 
+					line-height: 25px; 
+					font-weight: 600; 
+					font-size: 1.2em; 
+					font-style: normal;
+				}
+			}
+		}
+
+
+		&.active span { 
+			color: #{$blue};
 		}
 	}
-	.tabs:last-child {
-		border-right: 0;
+}
+
+body.has-sidebar {
+	#contextual {
+	    position: fixed;
+	    left: 256px;
+	    right: 0;
+	    top: initial;
+	    bottom: 0;
+	    height: 44px;
+	    line-height: 44px;
+	    padding: 0 16px;
+	    background: #fff;
+	    border-top: 1px solid #c6d5e7;
 	}
 }

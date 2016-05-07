@@ -1,3 +1,8 @@
+html.ex-index,
+html.ex-index body,
+html.ex-index .home {
+	height: 100%;
+}
 body > iframe {
 	display: none;
 }
@@ -199,6 +204,10 @@ code {
 	margin: 30px 0 40px;
 }
 
+.ex-image {
+	margin: 30px 0;
+}
+
 .content {
 	h1.title {
 		font-weight: normal;
@@ -305,47 +314,51 @@ main.home {
 
 	.wrapper {
 		width: 100%;
-		padding: 0 100px;
 	}
 }
 
 .home {
 	.download {
-	    padding: 40px 20px;
-	    -webkit-border-radius: 5px;
-	    -moz-border-radius: 5px;
-	    -ms-border-radius: 5px;
-	    -o-border-radius: 5px;
-	    border-radius: 5px;
+
+	    .wording {
+	    	text-align: center;
+    		margin-top: 50px;
+	    }
+
+		h3 {
+			text-align: center;
+    		margin-bottom: 20px;
+	    	font-size: 6em;
+    		line-height: 120%;
+    		font-weight: 300;
+    		color: #718F47;
+		}
 
 		h4 {
-			text-align:
-			center;
+			text-align: center;
 			margin: 0;
-			font-size: 2.5em;
-			font-weight: 300;
+			font-size: 1.8em;
+			line-height: 130%;
+		}
 
-			strong {
-				font-weight: 500;
+		h5 {
+			font-size: 1.6em;
+
+			a {
+				margin: 0;
+
+				.xn {
+					width: auto;
+    				margin-right: 5px;
+				}
 			}
 		}
 
-		.button-area {
-			display: table;
-			margin: 50px auto 0;
+		h6 {
+			font-size: 1.1em;
+			margin-top: 20px;
 		}
-		.button {
-			font-size: 1.4em;
-			font-weight: 500;
 
-			&:first-child {
-				margin-right: 30px;
-			}
-
-			i {
-				margin-right: 10px;
-			}
-		}
 	}
 }
 

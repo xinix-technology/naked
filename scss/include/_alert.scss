@@ -12,21 +12,41 @@
 	&.error {
 		background-color: #{$alert-error};
 		border-color: #{$alert-border-error};
+		
+		&.hover,
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	&.success {
 		background-color: #{$alert-success};
 		border-color: #{$alert-border-success};
+
+		&.hover,
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	&.warning {
 		background-color: #{$alert-warning};
 		border-color: #{$alert-border-warning};
+
+		&.hover,
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	&.info {
 		background-color: #{$alert-info};
 		border-color: #{$alert-border-info};
+
+		&.hover,
+		&:hover {
+			color: #fff;
+		}
 	}
 
 	p {
@@ -39,6 +59,7 @@
 			position: absolute;
             top: 50%;
             left: initial;
+            cursor: pointer;
             right: #{$grid * 2};
             @include transform(translateY(-50%));
 		}

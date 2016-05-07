@@ -55,10 +55,11 @@ $yellow: #E1BF32;
 $green: #718F47;
 $white: #FFFFFF;
 $white-gray: #F5F5F5;
+$white-blue: #FCFDFE;
 $transparent: transparent;
 
 // Background color
-$body-bg: $white-gray;
+$body-bg: $white-blue;
 $header-bg: adjust-lightness($blue, 64%);
 $navbar-bg: adjust-lightness($blue, 56%);
 $content-bg: $white;
@@ -110,7 +111,7 @@ $pagination-active-color: $white;
 $table-color: $white;
 $table-head-color: $white;
 $table-stripe-color: adjust-lightness($blue, 52%);
-$table-hover-color: adjust-lightness($yellow, 32%);
+$table-hover-color: adjust-lightness($green, 42%);
 $table-border-color: adjust-lightness($blue, 36%);
 
 // List view color
