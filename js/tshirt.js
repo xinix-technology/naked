@@ -113,20 +113,22 @@ $(function() {
 
     // Tree fallback and saving function
     var treeid = "xntree";
-    $(".tree input").each(function(idx) {
-        $(this).attr("data-id-save", treeid + $(this).parents(".tree").attr("id") + idx);
-    }).click(function () {
-        if ($(this).is(':checked')) {
-            $(this).siblings ("ul, ol").addClass("show");
-            if(typeof(Storage) !== "undefined") {
-                localStorage.setItem($(this).data ("id-save"), $(this).is(':checked'));
+    $(".tree").each(function() {
+        $(this).find("input").each(function(idx) {
+            $(this).attr("data-id-save", treeid + $(this).parents(".tree").attr("id") + idx);
+        }).click(function () {
+            if ($(this).is(':checked')) {
+                $(this).siblings ("ul, ol").addClass("show");
+                if(typeof(Storage) !== "undefined") {
+                    localStorage.setItem($(this).data ("id-save"), $(this).is(':checked'));
+                }
+            } else {
+                $(this).siblings ("ul, ol").removeClass("show");
+                if(typeof(Storage) !== "undefined") {
+                    localStorage.removeItem($(this).data ("id-save"));
+                }
             }
-        } else {
-            $(this).siblings ("ul, ol").removeClass("show");
-            if(typeof(Storage) !== "undefined") {
-                localStorage.removeItem($(this).data ("id-save"));
-            }
-        }
+        });
     });
     // Restore tree state
     if(typeof(Storage) !== "undefined") {
