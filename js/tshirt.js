@@ -112,26 +112,27 @@ $(function() {
     });
 
     // Tree fallback and saving function
+    var treeid = "xntree";
     $(".tree input").each(function(idx) {
-        $(this).attr("data-id-save", 'xntree' + idx);
+        $(this).attr("data-id-save", treeid + $(this).parents(".tree").attr("id") + idx);
     }).click(function () {
         if ($(this).is(':checked')) {
             $(this).siblings ("ul, ol").addClass("show");
             if(typeof(Storage) !== "undefined") {
-                localStorage.setItem("xntree" + $(this).data ("id-save"), $(this).is(':checked'));
+                localStorage.setItem($(this).data ("id-save"), $(this).is(':checked'));
             }
         } else {
             $(this).siblings ("ul, ol").removeClass("show");
             if(typeof(Storage) !== "undefined") {
-                localStorage.removeItem("xntree" + $(this).data ("id-save"));
+                localStorage.removeItem($(this).data ("id-save"));
             }
         }
     });
     // Restore tree state
     if(typeof(Storage) !== "undefined") {
         $.each(localStorage, function (name, value) {
-            if (name.substring(0, 6) == "xntree") {
-                $("[data-id-save='" + name.substring(6) + "']").attr ("checked", "checked").siblings ("ul, ol").addClass("show");
+            if (name.substring(0, 6) == treeid) {
+                $("[data-id-save='" + name + "']").attr ("checked", "checked").siblings ("ul, ol").addClass("show");
             }
         })
     }
