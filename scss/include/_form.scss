@@ -6,10 +6,6 @@ fieldset {
     padding: #{$grid * 3} #{$grid * 4} #{$grid * 2};
     margin: #{$grid * 2} 0 #{$grid * 3};
     @include border-radius(#{$border-radius-pixels});
-
-    .wrapper {
-        padding: 0 #{$grid};
-    }
 }
 legend {
     border: 0;

@@ -49,8 +49,26 @@ body {
 .row > *:last-child .wrapper {
     padding-right: 0;
 }
-
-
+.row {
+    > .xlarge-12,
+    > .large-12,
+    > .medium-12,
+    > .small-12,
+    > .tiny-12 {
+        .wrapper {
+            padding: 0 0 #{$grid * 5} 0;
+        }
+    }
+    > .xlarge-12:last-child,
+    > .large-12:last-child,
+    > .medium-12:last-child,
+    > .small-12:last-child,
+    > .tiny-12:last-child {
+        .wrapper {
+            padding-bottom: 0;
+        }
+    }
+}
 main.content {
     position: relative;
     padding-top: #{$top-bar-height};
@@ -66,6 +84,7 @@ main.content {
         padding: #{$grid * 6} #{$grid * 12};
     }
 }
+
 
 // The Headings
 h1,
