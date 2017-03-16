@@ -21,7 +21,6 @@ $min-large:   "only screen and (min-width:#{$extra-large-screen})";
 $grid-total-columns: 12 !default;
 $tabstrip-columns: 10 !default;
 
-
 // Measurement
 $grid: 4px;
 $border-radius-pixels: $grid;
@@ -60,8 +59,8 @@ $transparent: transparent;
 
 // Background color
 $body-bg: $white-blue;
-$header-bg: adjust-lightness($blue, 64%);
-$navbar-bg: adjust-lightness($blue, 56%);
+$header-bg: lighten($blue, 64%);
+$navbar-bg: lighten($blue, 56%);
 $content-bg: $white;
 $footer-bg: $body-bg;
 
@@ -78,7 +77,7 @@ $button-error: $red;
 $button-success: $green;
 $button-warning: $yellow;
 $button-lighter-value: 16%;
-$button-darker-value: -8%;
+$button-darker-value: 8%;
 $button-background-value: 100%;
 $button-text-hover: $white;
 
@@ -97,40 +96,40 @@ $color: $black;
 
 // h1-6 colors
 $h-color: $black;
-$h-small-color: adjust-lightness($black, 32%);
-$h-subheader-color: adjust-lightness($black, 24%);
+$h-small-color: lighten($black, 32%);
+$h-subheader-color: lighten($black, 24%);
 
 // Link colours
 $a-color: $blue;
 $a-color-amount: 16%;
 
 // Pagination color
-$pagination-color: adjust-lightness($black, 55%);;
+$pagination-color: lighten($black, 55%);;
 $pagination-active-color: $white;
 
 $table-color: $white;
 $table-head-color: $white;
-$table-stripe-color: adjust-lightness($blue, 52%);
-$table-hover-color: adjust-lightness($green, 42%);
-$table-border-color: adjust-lightness($blue, 36%);
+$table-stripe-color: lighten($blue, 52%);
+$table-hover-color: lighten($green, 42%);
+$table-border-color: lighten($blue, 36%);
 
 // List view color
-$grouptitle-color: adjust-lightness($black, 48%);
+$grouptitle-color: lighten($black, 48%);
 
 $checkbox-white: $white;
 $checkbox-green: $green;
-$checkbox-grey: adjust-lightness($black, 60%);
+$checkbox-grey: lighten($black, 60%);
 
 $alert-error-color: $red;
 $alert-success-color: $green;
 $alert-warning-color: $yellow;
 $alert-info-color: $blue;
 
-$disable-color: adjust-lightness($black, 78%);
+$disable-color: lighten($black, 78%);
 
 // Border color
-$border-color: 				    adjust-lightness($black, 90%);
-$border-input-color: 		  adjust-lightness($black, 90%);
+$border-color: 				    lighten($black, 90%);
+$border-input-color: 		  lighten($black, 90%);
 $border-postprefix-color: $border-input-color;
 
 // Line height

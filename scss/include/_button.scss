@@ -13,9 +13,9 @@ button,
     text-align: center;
     background: transparent;
     border: 1px solid #{$button-info};
-    border-top-color: #{adjust-lightness($button-info, $button-lighter-value)};
-    border-bottom-color: #{adjust-lightness($button-info, $button-darker-value)};
-    background-color: #{adjust-lightness($button-info, $button-background-value)};
+    border-top-color: #{lighten($button-info, $button-lighter-value)};
+    border-bottom-color: #{lighten($button-info, $button-darker-value)};
+    background-color: #{lighten($button-info, $button-background-value)};
     color: #{$button-info};
     display: inline-block;
     @include appearance(none);
@@ -29,9 +29,9 @@ button,
     &.error {
     	background: transparent;
 	    border: 1px solid #{$button-error};
-	    border-top-color: #{adjust-lightness($button-error, $button-lighter-value)};
-	    border-bottom-color: #{adjust-lightness($button-error, $button-darker-value)};
-	    background-color: #{adjust-lightness($button-error, $button-background-value)};
+	    border-top-color: #{lighten($button-error, $button-lighter-value)};
+	    border-bottom-color: #{lighten($button-error, $button-darker-value)};
+	    background-color: #{lighten($button-error, $button-background-value)};
 	    color: #{$button-error};
 
 	    &:hover {
@@ -43,9 +43,9 @@ button,
     &.success {
     	background: transparent;
 	    border: 1px solid #{$button-success};
-	    border-top-color: #{adjust-lightness($button-success, $button-lighter-value)};
-	    border-bottom-color: #{adjust-lightness($button-success, $button-darker-value)};
-	    background-color: #{adjust-lightness($button-success, $button-background-value)};
+	    border-top-color: #{lighten($button-success, $button-lighter-value)};
+	    border-bottom-color: #{lighten($button-success, $button-darker-value)};
+	    background-color: #{lighten($button-success, $button-background-value)};
 	    color: #{$button-success};
 
 	    &:hover {
@@ -57,9 +57,9 @@ button,
     &.warning {
     	background: transparent;
 	    border: 1px solid #{$button-warning};
-	    border-top-color: #{adjust-lightness($button-warning, $button-lighter-value)};
-	    border-bottom-color: #{adjust-lightness($button-warning, $button-darker-value)};
-	    background-color: #{adjust-lightness($button-warning, $button-background-value)};
+	    border-top-color: #{lighten($button-warning, $button-lighter-value)};
+	    border-bottom-color: #{lighten($button-warning, $button-darker-value)};
+	    background-color: #{lighten($button-warning, $button-background-value)};
 	    color: #{$button-warning};
 
 	    &:hover {
@@ -96,7 +96,7 @@ button,
     &.disable {
     	color: #{$disable-color}!important;
     	border-color: #{$disable-color}!important;
-    	background: #{adjust-lightness($disable-color, 18%)}!important;
+    	background: #{lighten($disable-color, 18%)}!important;
     	cursor: default;
     }
 }

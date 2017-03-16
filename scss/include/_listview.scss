@@ -134,7 +134,7 @@
 
 				&.side {
 					float: right;
-					color: adjust-lightness($color, 48%);
+					color: lighten($color, 48%);
 					max-width: 35%;
 				}
 			}

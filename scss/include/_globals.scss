@@ -6,7 +6,7 @@
     @include box-sizing(border-box);
 }
 
-@include placeholder-color(#{adjust-lightness($black, 48%)});
+@include placeholder-color(#{lighten($black, 48%)});
 
 html,
 body {
@@ -165,7 +165,7 @@ h5 {
 }
 h6 {
     font-size: 1.2em;
-    color: adjust-lightness($black, 32%);
+    color: lighten($black, 32%);
 
     &.subheader {
         font-size: 1em;

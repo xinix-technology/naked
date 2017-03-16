@@ -74,7 +74,7 @@ select option,
     height: auto;
     width: 100%;
     border: 1px solid #{$border-input-color};
-    border-bottom: 1px solid #{adjust-lightness($border-input-color, -8%)};
+    border-bottom: 1px solid #{lighten($border-input-color, 8%)};
     @include box-sizing(border-box);
     @include appearance(none);
     @include border-radius(#{$border-radius-pixels});
@@ -82,7 +82,7 @@ select option,
 
     &:focus,
     &.focus {
-        @include box-shadow(0 0 0 2px #{adjust-lightness($blue, 32%)});
+        @include box-shadow(0 0 0 2px #{lighten($blue, 32%)});
     }
 
     &[disabled] {

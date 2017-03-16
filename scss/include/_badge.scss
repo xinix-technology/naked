@@ -61,7 +61,7 @@
     &.disable {
     	color: #{$disable-color}!important;
     	border-color: #{$disable-color}!important;
-    	background: #{adjust-lightness($disable-color, 18%)}!important;
+    	background: #{lighten($disable-color, 18%)}!important;
     	cursor: default;
     }
 }

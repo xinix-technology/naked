@@ -1358,7 +1358,7 @@ select option,
   height: auto;
   width: 100%;
   border: 1px solid #e6e6e6;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #fafafa;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1622,7 +1622,7 @@ button,
   background: transparent;
   border: 1px solid #416B9B;
   border-top-color: #6c94c1;
-  border-bottom-color: #35577e;
+  border-bottom-color: #4f7fb5;
   background-color: white;
   color: #416B9B;
   display: inline-block;
@@ -1650,7 +1650,7 @@ button.error,
   background: transparent;
   border: 1px solid #CF4741;
   border-top-color: #df8682;
-  border-bottom-color: #b9342f;
+  border-bottom-color: #d76762;
   background-color: white;
   color: #CF4741;
 }
@@ -1668,7 +1668,7 @@ button.success,
   background: transparent;
   border: 1px solid #718F47;
   border-top-color: #9ab870;
-  border-bottom-color: #5b7439;
+  border-bottom-color: #87aa55;
   background-color: white;
   color: #718F47;
 }
@@ -1686,7 +1686,7 @@ button.warning,
   background: transparent;
   border: 1px solid #E1BF32;
   border-top-color: #ebd579;
-  border-bottom-color: #ccaa1e;
+  border-bottom-color: #e6ca56;
   background-color: white;
   color: #E1BF32;
 }
@@ -2206,7 +2206,7 @@ ul.pagination.centered {
   left: 0;
   right: 0;
   height: 48px;
-  border-bottom: 1px solid #c6d5e7;
+  border-bottom: 1px solid white;
 }
 .nav-menu .xn {
   font-size: 24px;
